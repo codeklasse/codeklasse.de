@@ -1,3 +1,10 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseURL = "https://codeklasse.de/"
+languageCode = "de-DE"
+title = "codeklasse"
+
+tags = []
+features = []
+
+[author]
+  name = "Sergej Grilborzer"
+  homepage = "https://grilborzer.de"
