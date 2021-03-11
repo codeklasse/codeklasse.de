@@ -8,3 +8,12 @@ features = []
 [author]
   name = "Sergej Grilborzer"
   homepage = "https://grilborzer.de"
+
+[params]
+  favicon = ''
+  facebook = ''
+  twitter = 'https://twitter.com/GoHugoIO'
+  instagram = ''
+  youtube = ''
+  github = ''
+  linkedin = ''
