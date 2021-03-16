@@ -9,7 +9,6 @@ features = []
   homepage = "https://grilborzer.de"
 
 [params]
-  favicon = ''
   facebook = ''
   twitter = 'https://twitter.com/GoHugoIO'
   instagram = ''

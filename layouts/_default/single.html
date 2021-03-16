@@ -1,6 +1,12 @@
-<div style="margin: 25px">
-    <h1>{{.Title}}</h1>
-    <div style="color: grey; font-size: 16px">{{ dateFormat "Monday, Jan 2, 2006" .Date }}</div>
-    <div style="color: grey; font-size: 16px">{{if .Params.author}}Author: {{.Params.Author}}{{end}}</div>
-    <div style="font-size: 18px">{{.Content}}</div>
-</div>
+{{ define "main" }}
+<section class="hero">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h2 class="subtitle is-spaced">The New Internet</h2>
+        <h1 class="title">We've built a decentralized internet where information is totally free</h1>
+        <a href="#">Read more &raquo;</a>
+      </div>
+    </div>
+ </section>
+{{ .Content }}
+{{ end }}
