@@ -5,7 +5,11 @@
 <meta name="viewport" content="width=device-width,minimum-scale=1" />
 <meta name="robots" content="index, follow" />
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.2/css/bulma.min.css" />
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.2/css/bulma.min.css" /> -->
+
+{{ $bulma := resources.Get "scss/bulma-theme.scss" | resources.ToCSS (dict "outputStyle" "compressed") }}
+<link rel="stylesheet" href="{{ $bulma.Permalink }}">
+
 <link rel="icon" href="/favicon.ico">
 <script src="/js/main.js"></script>
 
