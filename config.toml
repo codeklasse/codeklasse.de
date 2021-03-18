@@ -4,6 +4,9 @@ title = "codeklasse"
 tags = []
 features = []
 
+[markup.goldmark.renderer]
+  unsafe= true
+
 [author]
   name = "Sergej Grilborzer"
   homepage = "https://grilborzer.de"
