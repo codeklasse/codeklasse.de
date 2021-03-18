@@ -12,7 +12,6 @@
   {{ .Content }}
   {{ end }}
 
-
   {{ partialCached "footer.html" . }}
 
   {{ block "scripts" . }}{{ partialCached "site-scripts.html" . }}{{ end }}
