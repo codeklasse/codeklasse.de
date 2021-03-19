@@ -8,9 +8,11 @@
 <body>
   {{ partialCached "navbar.html" . }}
 
+  <div class="content container px-6 py-4">
   {{ block "main" . }}
   {{ .Content }}
   {{ end }}
+  </div>
 
   {{ partialCached "footer.html" . }}
 

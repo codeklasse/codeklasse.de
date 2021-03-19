@@ -1,0 +1,12 @@
+// http://versions.bulma.io/0.9.2/documentation/customize/variables/
+
+@font-face {
+    font-family: 'robin-schooler';
+    src: url("/RobinSchooler.ttf") format("truetype");
+}
+
+$family-sans-serif: "robin-schooler", sans-serif;
+
+.title {
+    font-family: $family-sans-serif;
+}
