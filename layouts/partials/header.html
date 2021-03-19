@@ -5,8 +5,6 @@
 <meta name="viewport" content="width=device-width,minimum-scale=1" />
 <meta name="robots" content="index, follow" />
 
-<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.2/css/bulma.min.css" /> -->
-
 {{ $bulma := resources.Get "bulma-theme.scss" | resources.ToCSS (dict "outputStyle" "compressed") }}
 <link rel="stylesheet" href="{{ $bulma.RelPermalink }}">
 
@@ -20,10 +18,4 @@
 {{ end }} 
 {{ end }}
 
-<!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/cookie-bar/cookiebar-latest.min.js?theme=momh&tracking=1&always=1"></script> -->
-
 {{ partialCached "cookie-consent.html" . }}
-
-{{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production") }}
-<!-- {{ template "_internal/google_analytics_async.html" . }} -->
-{{ end }}
