@@ -18,9 +18,12 @@
 <link href="{{ .Permalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />
 <link href="{{ .Permalink }}" rel="feed" type="application/rss+xml" title="{{ $.Site.Title }}" />
 {{ end }} 
-{{ end }} 
+{{ end }}
+
+<!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/cookie-bar/cookiebar-latest.min.js?theme=momh&tracking=1&always=1"></script> -->
+
+{{ partialCached "cookie-consent.html" . }}
 
 {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production") }}
-
 <!-- {{ template "_internal/google_analytics_async.html" . }} -->
 {{ end }}
