@@ -1,7 +1,14 @@
 {{ define "main" }}
-{{ partial "elements/title-hero.html" (dict "context" . "blockCaption" "asd" ) }}
+  {{ partial "elements/title-hero.html" (dict "context" . "blockCaption" "" ) }}
 
-<div class="content container px-6 py-4">
-  {{ .Content }}
-</div>
+  <div class="columns">
+    {{ range .Pages }}
+      <div class="column is-one-third-widescreen is-one-quarter-fullhd">
+        <a href="{{ .RelPermalink }}">
+          {{ partial "elements/blog-post-tile.html" . }}
+        </a>
+      </div>
+    {{ end }}
+
+  </div>
 {{ end }}
