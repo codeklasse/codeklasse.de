@@ -11,24 +11,31 @@
         <!-- <a class="level-item" href="">Kontakt</a> -->
       </div>
     <hr>
-    <div class="columns">
-      <div class="column">
-        <div class="buttons">
-          <a class="button" target="_blank" href="https://deletefacebook.com/"><img src="/placeholder/icons/facebook-f.svg" alt=""></a>
-          <a class="button" target="_blank" href="#"><img src="/placeholder/icons/instagram.svg" alt=""></a>
-          <a class="button" target="_blank" href="https://twitter.com/s_gbz"><img src="/placeholder/icons/twitter.svg" alt=""></a>
+    <!-- is-mobile is-centered -->
+      <div class="columns">
+        <div class="column has-text-centered-mobile has-text-left-tablet">
+          <div class="buttons ">
+            <a class="button" target="_blank" href="https://deletefacebook.com/"><img src="/placeholder/icons/facebook-f.svg" alt=""></a>
+            <a class="button" target="_blank" href="#"><img src="/placeholder/icons/instagram.svg" alt=""></a>
+            <a class="button" target="_blank" href="https://twitter.com/s_gbz"><img src="/placeholder/icons/twitter.svg" alt=""></a>
+          </div>
         </div>
-      </div>
-      <div class="column has-text-centered has-text-right-tablet">
-        <p class="subtitle is-6">&copy; {{ now.Year }} codeklasse</p>
-        <a href="https://bulma.io">
-          <img
-            src="https://bulma.io/images/made-with-bulma.png"
-            alt="Made with Bulma"
-            width="128"
-            height="24">
-        </a>
-      </div>
+        <div class="column has-text-centered has-text-right-tablet">
+          <p class="subtitle is-6">&copy; {{ now.Year }} codeklasse</p>
+          <a href="https://bulma.io">
+            <img
+              src="https://bulma.io/images/made-with-bulma.png"
+              alt="Made with Bulma"
+              width="128"
+              height="24">
+          </a>
+        </div>
     </div>
   </div>
 </footer>
+
+<style>
+.has-text-centered-mobile {
+  flex-direction: column;
+}
+</style>

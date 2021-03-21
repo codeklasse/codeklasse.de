@@ -2,22 +2,51 @@
 {{ partial "elements/title-hero.html" (dict "context" . "blockCaption" "Ein starkes Team = Ein starkes Produkt" ) }}
 
 <div class="content is-large container px-6 py-4">
-  <div class="columns">
-    <div class="column">
-      <h2 class="">Sergej Grilborzer</h2>
 
-      <ul class="block-list is-large is-outlined is-success">
-        <li class="list-item">> Fact 1</li>
-        <li class="list-item">> Fact 2</li>
-        <li class="list-item">> Fact 3</li>
-      </ul>
+  <article class="tile is-horizontal notification is-primary">
+    <h1 class="title">Unsere Mission - </h1>
+  </article>
+  <div class="tile is-ancestor">
+    <div class="tile is-vertical is-8">
+      <div class="tile">
+        <div class="tile is-parent is-vertical">
+          <article class="tile is-child notification is-primary">
+            <h2 class="title">Sergej Grilborzer</h2>
+            <ul class="block-list is-large is-outlined is-success">
+              <li class="list-item"><i class="fas fa-check"></i> Fact 1</li>
+              <li class="list-item"><i class="fas fa-check"></i> Fact 2</li>
+              <li class="list-item"><i class="fas fa-check"></i> Fact 3</li>
+            </ul>
+          </article>
+        </div>
+        <div class="tile is-parent">
+            <figure class="tile is-child notification is-info image">
+              <img src="/images/s-gbz.jpg">
+            </figure>
+        </div>
+      </div>
+      <div class="tile is-parent">
+        <article class="tile is-child notification is-danger">
+          <p class="title">Wide tile</p>
+          <p class="subtitle">Aligned with the right tile</p>
+          <div class="content">
+            <!-- Content -->
+          </div>
+        </article>
+      </div>
     </div>
-    
-    <div class="column has-text-centered">
-      <figure class="image">
-          <img class="" src="/images/s-gbz.jpg">
-      </figure>
+    <div class="tile is-parent">
+      <article class="tile is-child notification is-success">
+        <div class="content">
+          <p class="title">Tall tile</p>
+          <p class="subtitle">With even more content</p>
+          <div class="content">
+            <!-- Content -->
+          </div>
+        </div>
+      </article>
     </div>
   </div>
+
 </div>
 {{ end }}
