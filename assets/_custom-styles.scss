@@ -10,3 +10,9 @@ $family-sans-serif: "robin-schooler", sans-serif;
 .title {
     font-family: $family-sans-serif;
 }
+
+@include mobile {
+    .footer-social-buttons {
+      justify-content: center;
+    }
+  }
