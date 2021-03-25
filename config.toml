@@ -7,9 +7,14 @@ features = []
 [markup.goldmark.renderer]
   unsafe= true
 
+[taxonomies]
+  author = "authors"
+  category = "categories"
+
 [author]
   name = "Sergej Grilborzer"
   homepage = "https://grilborzer.de"
+  photo = "/images/s-gbz.jpg"
 
 [params]
   facebook = ''
