@@ -2,9 +2,9 @@
     <div class="hero-body">
       <div class="container has-text-centered">
         {{ if .customTitle }}
-          <h1 class="title is-size-1">{{ .customTitle }}</h1>
+          <h1 class="title is-size-1-tablet is-size-3-mobile"><u>{{ .customTitle }}</u></h1>
         {{else}}
-          <h1 class="title is-size-1">{{ .context.Title }}</h1>
+          <h1 class="title is-size-1-tablet is-size-3-mobile"><u>{{ .context.Title }}</u></h1>
         {{ end }}
 
         {{ if .blockCaption }}
