@@ -10,3 +10,15 @@ $family-sans-serif: "robin-schooler", sans-serif;
 .title {
     font-family: $family-sans-serif;
 }
+
+
+/* Reverse column order when needed.
+*  For example to have table of content on right side on desktop, but on top on mobile
+*  Snippet provided by jvarness https://github.com/jgthms/bulma/issues/297#issuecomment-499961774
+*/
+@include mobile {
+    .columns.is-reversed-mobile{
+        display: flex;
+        flex-direction: column-reverse;
+   }
+}

@@ -1,6 +1,7 @@
 ---
 title: "Programmierbedarf in Deutschland"
 releaseDate: "15.03.2021"
+toc: true
 thumbnail: "/images/test.jpg"
 categories: ["x", "y"]
 author: "Sergej Grilborzer"
