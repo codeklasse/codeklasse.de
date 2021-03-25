@@ -16,6 +16,10 @@
 {{ partial "elements/title-hero.html" (dict "context" . "blockCaption" "asd" ) }}
 
 <div class="content container">
+  <aside>
+    {{ .TableOfContents }}
+  </aside>
+  
   {{ .Content }}
 </div>
 {{ end }}

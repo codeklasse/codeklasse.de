@@ -1,27 +1,13 @@
 {{ define "main" }}
 {{ partial "elements/title-hero.html" (dict "context" . "blockCaption" "" "customTitle" "Blog" ) }}
 
-{{ if (gt (.Pages | len) 3) }}
-<div class="columns">
-    <!-- Layout for more than 3 blog posts -->
+<div class="columns is-multiline my-3 mb-6 is-centered">
     {{ range .Pages }}
-    <div class="column is-one-third-widescreen is-one-quarter-fullhd">
+    <div class="column is-half-tablet is-one-third-widescreen is-one-quarter-fullhd">
         <a href="{{ .RelPermalink }}">
             {{ partial "elements/blog-post-tile.html" . }}
         </a>
     </div>
     {{ end }}
 </div>
-{{ else }}
-<!-- Layout for less than 4 blog posts -->
-<div class="columns is-centered">
-    {{ range .Pages }}
-    <div class="column is-centered is-one-third-widescreen">
-        <a href="{{ .RelPermalink }}">
-            {{ partial "elements/blog-post-tile.html" . }}
-        </a>
-    </div>
-    {{ end }}
-</div>
-{{ end }}
 {{ end }}
