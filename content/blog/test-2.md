@@ -1,6 +1,11 @@
 ---
-title: "Test 2"
-date: 2021-03-21T10:24:02+01:00
+title: "Digitale Schule in Deutschland"
+releaseDate: "23.03.2021"
 draft: true
+thumbnail: "/images/test2.jpg"
+author: "Sergej Grilborzer"
 ---
 
+Schule muss digital werden!
+Erstmal Brockhaus gönnen.
+<!--more-->

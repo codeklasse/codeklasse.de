@@ -1,10 +1,10 @@
 ---
-title: "Test"
-date: 2021-03-10T20:40:41+01:00
-draft: false
-author: Sergej Grilborzer
-tags: ["x", "y"]
+title: "Programmierbedarf in Deutschland"
+releaseDate: "15.03.2021"
+thumbnail: "/images/test.jpg"
 categories: ["x", "y"]
+author: "Sergej Grilborzer"
+draft: false
 ---
 
 
@@ -12,6 +12,7 @@ The Lodge offers us what The Shining offered viewers in the 70's:
 A fresh take on (psychological) horror.
 Welcome to my discussion on modern horror! - **Spoilers included!**
 
+<!--more-->
 # Clichés of horror
 Most of whom saw The Lodge probably saw a number of different horror movies before.
 The result is an understanding of established tropes and clichés of the genre, which leads to familiarity.
