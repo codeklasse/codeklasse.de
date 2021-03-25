@@ -26,7 +26,7 @@ features = []
 
 [module]
   [[module.mounts]]
-    source = "node_modules/@fortawesome/fontawesome-free/js"
+    source = "./node_modules/@fortawesome/fontawesome-free/js"
     target = "static/fontawesome"
 
   [[module.mounts]]
