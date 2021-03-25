@@ -1,14 +1,27 @@
 {{ define "main" }}
-  {{ partial "elements/title-hero.html" (dict "context" . "blockCaption" "" "customTitle" "Blog" ) }}
+{{ partial "elements/title-hero.html" (dict "context" . "blockCaption" "" "customTitle" "Blog" ) }}
 
-  <div class="columns">
+{{ if (gt (.Pages | len) 3) }}
+<div class="columns">
+    <!-- Layout for more than 3 blog posts -->
     {{ range .Pages }}
-      <div class="column is-one-third-widescreen is-one-quarter-fullhd">
+    <div class="column is-one-third-widescreen is-one-quarter-fullhd">
         <a href="{{ .RelPermalink }}">
-          {{ partial "elements/blog-post-tile.html" . }}
+            {{ partial "elements/blog-post-tile.html" . }}
         </a>
-      </div>
+    </div>
     {{ end }}
-
-  </div>
+</div>
+{{ else }}
+<!-- Layout for less than 4 blog posts -->
+<div class="columns is-centered">
+    {{ range .Pages }}
+    <div class="column is-centered is-one-third-widescreen">
+        <a href="{{ .RelPermalink }}">
+            {{ partial "elements/blog-post-tile.html" . }}
+        </a>
+    </div>
+    {{ end }}
+</div>
+{{ end }}
 {{ end }}
