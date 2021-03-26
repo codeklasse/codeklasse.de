@@ -20,12 +20,5 @@
 
 {{ partialCached "cookie-consent.html" . }}
 
-<!-- <script defer src="/your-path-to-fontawesome/js/brands.min.js"></script> -->
-<!-- TODO: Fix me -->
-<!-- <script defer src="/fontawesome/solid.min.js"></script>
-<script defer src="/fontawesome/fontawesome.min.js"></script> -->
-<!-- <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/solid.min.css"></script> -->
-<!-- <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css"></script> -->
-
 {{ $fontawesome := resources.Get "fontawesome-import.scss" | resources.ToCSS (dict "outputStyle" "compressed") }}
 <link rel="stylesheet" href="{{ $fontawesome.RelPermalink }}">
