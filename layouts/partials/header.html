@@ -9,7 +9,6 @@
 <link rel="stylesheet" href="{{ $bulma.RelPermalink }}">
 
 <link rel="icon" href="/favicon.ico">
-<script src="/js/main.js"></script>
 
 {{ if .OutputFormats.Get "RSS" }}
 {{ with .OutputFormats.Get "RSS" }}
@@ -19,6 +18,8 @@
 {{ end }}
 
 {{ partialCached "cookie-consent.html" . }}
+
+<script src="/js/dropdown-menu.js"></script>
 
 {{ $fontawesome := resources.Get "fontawesome-import.scss" | resources.ToCSS (dict "outputStyle" "compressed") }}
 <link rel="stylesheet" href="{{ $fontawesome.RelPermalink }}">
