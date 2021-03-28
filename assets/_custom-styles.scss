@@ -1,3 +1,15 @@
+// Keep footer at the bottom
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+body .site-content {
+    flex: 1;
+}
+
+
 // http://versions.bulma.io/0.9.2/documentation/customize/variables/
 
 @font-face {
