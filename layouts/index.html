@@ -1,6 +1,7 @@
 {{ define "main" }}
+<div class="columns is-multiline">
 
-<section class="section">
+<section class="column is-12 section">
     <div class="container has-text-centered py-4">
         <h2 class="title mb-6">codeklasse</h2>
         <div class="block"><img class="is-16by9 mb-6"
@@ -40,7 +41,7 @@
     </div>
 </section>
 
-<section class="section">
+<section class="column is-12 section">
     <div class="container py-4">
         <h2 class="title has-text-centered mb-6">Some of our awesome features</h2>
         <div class="columns">
@@ -68,7 +69,7 @@
     </div>
 </section>
 
-<section class="section">
+<section class="column is-12 section">
     <div class="container py-4">
         <h2 class="title has-text-centered mb-6">PiperNet Setup</h2>
         <div class="columns is-vcentered">
@@ -99,9 +100,11 @@
     </div>
 </section>
 
-<!-- {{ partial "faq.html" . }} -->
-<!-- {{ partial "contact-form.html" . }} -->
-{{ partial "mailing-list.html" . }}
-
+<section class="column is-12 section">
+    <!-- {{ partial "faq.html" . }} -->
+    <!-- {{ partial "contact-form.html" . }} -->
+    {{ partial "mailing-list.html" . }}
+</section>
+</div>
 
 {{end}}
