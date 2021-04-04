@@ -1,11 +1,12 @@
 {{ define "main" }}
-{{ partial "elements/title-hero.html" (dict "context" . "blockCaption" "Ein starkes Team = Ein starkes Produkt" ) }}
+<!-- {{ partial "elements/title-hero.html" (dict "context" . "blockCaption" "Ein starkes Team = Ein starkes Produkt" ) }} -->
+{{ partial "elements/title-hero-tile.html" (dict "context" . "blockCaption" "Ein starkes Team = Ein starkes Produkt" ) }}
 
 <div class="content is-large container">
   
 
   <section class="tile columns is-multiline is-horizontal notification is-primary">
-    <h1 class="column is-12 is-horizontal title">Unsere Mission - </h1>
+    <h1 class="column is-12 is-horizontal fancy-title">Unsere Mission - </h1>
 
     <div class="column is-12 columns">
       <div class="column is-third">

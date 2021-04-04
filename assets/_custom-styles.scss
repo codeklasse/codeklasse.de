@@ -14,12 +14,21 @@ body .site-content {
 
 @font-face {
     font-family: 'robin-schooler';
-    src: url("/RobinSchooler.ttf") format("truetype");
+    src: url("/Calittra.otf") format("truetype");
+    // src: url("/Bienchen a.ttf") format("truetype") format("truetype");
 }
+
+// @font-face {
+//     font-family: 'robin-schooler';
+//     font-style: italic;
+//     //src: url("/Calittra.otf") format("truetype");
+//     src: url("/Bienchen b.ttf") format("truetype");
+// }
 
 $family-sans-serif: "robin-schooler", sans-serif;
 
-.title {
+.fancy-title {
+    @extend .title;
     font-family: $family-sans-serif;
 }
 
