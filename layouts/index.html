@@ -1,67 +1,76 @@
 {{ define "main" }}
 <div class="columns is-multiline">
 
-<section class="column is-12 has-background-primary is-medium section">
-    <h2 class="title has-text-primary-light">Programmieren ist eine Kernkompetenz der Zukunft</h2>
-    <h3 class="subtitle has-text-primary-light"></h3>
-    <h3 class="subtitle has-text-primary-light">Wie machen wir unsere Kinder zukunftsfähig?</h3>
-</section>
+    <section class="column is-12 has-background-primary is-medium section">
+        <h2 class="title has-text-primary-light">Programmieren ist eine Kernkompetenz der Zukunft</h2>
+        <h3 class="subtitle has-text-primary-light"></h3>
+        <h3 class="subtitle has-text-primary-light">Wie machen wir unsere Kinder zukunftsfähig?</h3>
+    </section>
 
-<section class="column is-12 section">
-    <div class="container ">
-        <div class="columns is-vcentered">
-            <div class="column">
-                <h2 class="title is-spaced">Emoji Editor</h2>
-                <p class="subtitle">Let's get you connected! We've designed a simple, efficient process for
-                    companies migrating to PiperNet. Here's how it works.</p>
-                <a class="button is-primary" href="#">Start Setup!</a>
-            </div>
-            <div class="column"><img src="/images/emoji-editor.png" alt="">
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="column is-12 has-text-centered-tablet has-background-info is-medium section">
-    {{ partial "contact-form.html" . }}
-</section>
-
-<section class="column is-12 has-text-centered-tablet has-background-info is-medium section">
-   
-</section>
-
-<section class="column is-12 section">
-    <!-- {{ partial "faq.html" . }} -->
-</section>
-
-
-<section class="column is-12 section">
-    <div class="container py-4">
-        <h2 class="title has-text-centered mb-6">Some of our awesome features</h2>
-        <div class="columns">
-            <div class="column is-3">
-                <h4 class="title is-spaced is-4">Decentralized</h4>
-                <p class="subtitle is-6">Your data is stored in many places at once. Awesome, right?</p>
-                <a href="#">Read more</a>
-            </div>
-            <div class="column is-3">
-                <h4 class="title is-spaced is-4">Secure</h4>
-                <p class="subtitle is-6">Nobody will be able to use your data without your consent.</p>
-                <a href="#">Read more</a>
-            </div>
-            <div class="column is-3">
-                <h4 class="title is-spaced is-4">Private</h4>
-                <p class="subtitle is-6">Your online activity is only yours to know. Always.</p>
-                <a href="#">Read more</a>
-            </div>
-            <div class="column is-3">
-                <h4 class="title is-spaced is-4">Speed</h4>
-                <p class="subtitle is-6">Unimaginable transfer speed thanks to middle-out compression.</p>
-                <a href="#">Read more</a>
+    <section class="column is-12 section">
+        <div class="container ">
+            <div class="columns is-vcentered">
+                <div class="column">
+                    <h2 class="title is-spaced">Emoji Editor</h2>
+                    <p class="subtitle">Let's get you connected! We've designed a simple, efficient process for
+                        companies migrating to PiperNet. Here's how it works.</p>
+                    <a class="button is-primary" href="#">Start Setup!</a>
+                </div>
+                <div class="column"><img src="/images/emoji-editor.png" alt="">
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    <section class="column is-12 has-text-centered-tablet has-background-info section">
+        {{ partial "contact-form.html" . }}
+    </section>
+
+    <section class="column is-12 has-background-primary my-6 section">
+        <div class="container py-4">
+
+            <div class="columns ">
+                <section class="column mx-3">
+                    <h2 class="column is-12 title has-text-centered has-text-justify-mobile mb-6 has-text-primary-light">Als Schüler..</h2>
+                    <div class="columns is-multiline box has-text-centered">
+                        <div class="column is-6">
+                            <h4 class="title is-spaced is-5">Visuell</h4>
+                            <p class="subtitle is-6 has-text-left">Your data is stored in many places at once. Awesome, right?</p>
+                        </div>
+                        <div class="column is-6">
+                            <h4 class="title is-spaced is-5">Altersgerecht</h4>
+                            <p class="subtitle is-6 has-text-left">Nobody will be able to use your data without your consent.</p>
+                        </div>
+                        <div class="my-4 column">
+                            <h4 class="title is-spaced is-5">Visuell</h4>
+                            <p class="subtitle is-6 has-text-left">Your data is stored in many places at once. Awesome, right?</p>
+                        </div>
+                        <div class="my-4 column">
+                            <h4 class="title is-spaced is-5">Altersgerecht</h4>
+                            <p class="subtitle is-6 has-text-left">Nobody will be able to use your data without your consent.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="column mx-3">
+                    <h2 class="column is-12 title has-text-centered has-text-justify-mobile mb-6 has-text-primary-light">Als Lehrkraft..</h2>
+                    <div class="columns is-multiline box has-text-centered">
+                        <div class="column">
+                            <h4 class="title is-spaced is-5">Visuell</h4>
+                            <p class="subtitle is-6 has-text-left">Your data is stored in many places at once. Awesome, right?</p>
+                        </div>
+                        <div class="column">
+                            <h4 class="title is-spaced is-5">Altersgerecht</h4>
+                            <p class="subtitle is-6 has-text-left">Nobody will be able to use your data without your consent.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <section class="column is-12 section">
+        <!-- {{ partial "faq.html" . }} -->
+    </section>
 </div>
-
 {{end}}
