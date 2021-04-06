@@ -8,7 +8,11 @@
     </section>
 
     <section class="column is-12 section">
-        <div class="container ">
+        {{ partial "product-demo.html" . }}
+    </section>
+
+    <section class="column is-12 section">
+        <div class="container">
             <div class="columns is-vcentered">
                 <div class="column">
                     <h2 class="title is-spaced">Emoji Editor</h2>
@@ -19,11 +23,18 @@
                 <div class="column"><img src="/images/emoji-editor.png" alt="">
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section class="column is-12 has-text-centered-tablet has-background-info section">
-        {{ partial "contact-form.html" . }}
+            <div class="columns is-vcentered">
+                <div class="column">
+                    <h2 class="title is-spaced">Emoji Editor</h2>
+                    <p class="subtitle">Let's get you connected! We've designed a simple, efficient process for
+                        companies migrating to PiperNet. Here's how it works.</p>
+                    <a class="button is-primary" href="#">Start Setup!</a>
+                </div>
+                <div class="column"><img src="/images/emoji-editor-ausgabe.png" alt="">
+                </div>
+            </div>
+        </div>
     </section>
 
     <section class="column is-12 has-background-primary my-6 section">
@@ -67,6 +78,10 @@
                 </section>
             </div>
         </div>
+    </section>
+
+    <section class="column is-12 has-text-centered-tablet has-background-info section">
+        {{ partial "contact-form.html" . }}
     </section>
 
     <section class="column is-12 section">

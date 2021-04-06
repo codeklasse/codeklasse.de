@@ -5,7 +5,7 @@ toc: true
 thumbnail: "/images/test.jpg"
 categories: ["x", "y"]
 author: "Sergej Grilborzer"
-draft: false
+draft: true
 ---
 
 

@@ -32,6 +32,10 @@ $family-sans-serif: "robin-schooler", sans-serif;
     font-family: $family-sans-serif;
 }
 
+.border-color-primary-dark{
+    border: 1px solid $primary-dark;
+}
+
 /* Reverse column order when needed.
 *  For example to have table of content on right side on desktop, but on top on mobile
 *  Snippet provided by jvarness https://github.com/jgthms/bulma/issues/297#issuecomment-499961774
