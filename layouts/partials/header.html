@@ -23,3 +23,5 @@
 
 {{ $fontawesome := resources.Get "fontawesome-import.scss" | resources.ToCSS (dict "outputStyle" "compressed") }}
 <link rel="stylesheet" href="{{ $fontawesome.RelPermalink }}">
+<!-- animate.css disabled for now - considering necessity when used without jQuery -->
+<!-- <link rel="stylesheet" href="/css/animate.min.css"> -->
