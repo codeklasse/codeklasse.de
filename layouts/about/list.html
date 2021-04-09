@@ -1,52 +1,77 @@
 {{ define "main" }}
-{{ partial "elements/title-hero.html" (dict "context" . "blockCaption" "Ein starkes Team = Ein starkes Produkt" ) }}
+{{ partial "shared/title-hero-tile.html" (dict "context" . "blockCaption" "" ) }}
 
-<div class="content is-large container">
+<div class="columns">
+  <section class="column is-12 content is-large container">
+    <div class="column is-12 columns">
+      <div class="column is-third">
+        1
+      </div>
+      <div class="column is-third">
+        2
+      </div>
+      <div class="column is-third">
+        3
+      </div>
+    </div>
 
-  <article class="tile is-horizontal notification is-primary">
-    <h1 class="title">Unsere Mission - </h1>
-  </article>
-  <div class="tile is-ancestor">
-    <div class="tile is-vertical is-8">
-      <div class="tile">
-        <div class="tile is-parent is-vertical">
-          <article class="tile is-child notification is-primary">
-            <h2 class="title">Sergej Grilborzer</h2>
-            <ul class="block-list is-large is-outlined is-success">
-              <li class="list-item"><i class="fas fa-check"></i> Fact 1</li>
-              <li class="list-item"><i class="fas fa-check"></i> Fact 2</li>
-              <li class="list-item"><i class="fas fa-check"></i> Fact 3</li>
-            </ul>
-          </article>
-        </div>
-        <div class="tile is-parent">
-            <figure class="tile is-child notification is-info image">
-              <img src="/images/s-gbz.jpg">
+
+    <!-- Right sided introduction -->
+    <div class="tile is-ancestor">
+      <div class="tile"></div>
+      <div class="tile is-vertical is-8">
+        <div class="tile">
+          <div class="tile is-parent is-vertical">
+            <article class="tile is-child notification is-primary">
+              <h2 class="title">Sergej Grilborzer</h2>
+              <ul class="block-list is-large is-outlined">
+                <li class="list-item"><i class="fas fa-check"></i> Fact 1</li>
+                <li class="list-item"><i class="fas fa-check"></i> Fact 2</li>
+                <li class="list-item"><i class="fas fa-check"></i> Fact 3</li>
+              </ul>
+            </article>
+          </div>
+          <div class="tile is-parent">
+            <figure class="tile is-child notification is-primary image">
+              <img src="/images/IMG_8898.jpg">
             </figure>
-        </div>
-      </div>
-      <div class="tile is-parent">
-        <article class="tile is-child notification is-danger">
-          <p class="title">Wide tile</p>
-          <p class="subtitle">Aligned with the right tile</p>
-          <div class="content">
-            <!-- Content -->
-          </div>
-        </article>
-      </div>
-    </div>
-    <div class="tile is-parent">
-      <article class="tile is-child notification is-success">
-        <div class="content">
-          <p class="title">Tall tile</p>
-          <p class="subtitle">With even more content</p>
-          <div class="content">
-            <!-- Content -->
           </div>
         </div>
-      </article>
+      </div>
     </div>
-  </div>
 
+    <section class="tile is-12 notification is-danger">
+      <p class="title">Wide tile</p>
+      <p class="subtitle">Aligned with the right tile</p>
+      <div class="content">
+      </div>
+    </section>
+
+    <!-- Left sided introduction -->
+    <div class="tile is-ancestor">
+      <div class="tile is-vertical is-8">
+        <div class="tile">
+          <div class="tile is-parent is-vertical">
+            <article class="tile is-child notification is-primary">
+              <h2 class="title">Sergej Grilborzer</h2>
+              <ul class="block-list is-large is-outlined">
+                <li class="list-item"><i class="fas fa-check"></i> Fact 1</li>
+                <li class="list-item"><i class="fas fa-check"></i> Fact 2</li>
+                <li class="list-item"><i class="fas fa-check"></i> Fact 3</li>
+              </ul>
+            </article>
+          </div>
+          <div class="tile is-parent">
+            <figure class="tile is-child notification is-primary image">
+              <img src="/images/IMG_8898.jpg">
+            </figure>
+          </div>
+        </div>
+        <div class="tile"></div>
+      </div>
+    </div>
+
+</div>
+</section>
 </div>
 {{ end }}

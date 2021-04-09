@@ -1,0 +1,17 @@
+<section class="hero">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        {{ if .customTitle }}
+          <h1 class="fancy-title is-size-1-tablet is-size-3-mobile"><u>{{ .customTitle }}</u></h1>
+        {{else}}
+          <h1 class="fancy-title is-size-1-tablet is-size-3-mobile"><u>{{ .context.Title }}</u></h1>
+        {{ end }}
+
+        {{ if .blockCaption }}
+            <div class="block">
+                {{ .blockCaption }}
+            </div>
+        {{ end }}
+      </div>
+    </div>
+</section>

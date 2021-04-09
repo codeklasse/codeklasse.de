@@ -9,7 +9,6 @@
 <link rel="stylesheet" href="{{ $bulma.RelPermalink }}">
 
 <link rel="icon" href="/favicon.ico">
-<script src="/js/main.js"></script>
 
 {{ if .OutputFormats.Get "RSS" }}
 {{ with .OutputFormats.Get "RSS" }}
@@ -20,12 +19,9 @@
 
 {{ partialCached "cookie-consent.html" . }}
 
-<!-- <script defer src="/your-path-to-fontawesome/js/brands.min.js"></script> -->
-<!-- TODO: Fix me -->
-<!-- <script defer src="/fontawesome/solid.min.js"></script>
-<script defer src="/fontawesome/fontawesome.min.js"></script> -->
-<!-- <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/solid.min.css"></script> -->
-<!-- <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css"></script> -->
+<script src="/js/dropdown-menu.js"></script>
 
 {{ $fontawesome := resources.Get "fontawesome-import.scss" | resources.ToCSS (dict "outputStyle" "compressed") }}
 <link rel="stylesheet" href="{{ $fontawesome.RelPermalink }}">
+<!-- animate.css disabled for now - considering necessity when used without jQuery -->
+<!-- <link rel="stylesheet" href="/css/animate.min.css"> -->
