@@ -41,6 +41,11 @@ figure.image-size-max-120 img{
     max-height: 120px;
 }
 
+.image.is-2by3.resize-66-percent img {
+	height: 66%;
+	width: auto;
+}
+
 /* Reverse column order when needed.
 *  For example to have table of content on right side on desktop, but on top on mobile
 *  Snippet provided by jvarness https://github.com/jgthms/bulma/issues/297#issuecomment-499961774
@@ -52,10 +57,16 @@ figure.image-size-max-120 img{
    }
 }
 
+/*
+*  Enable smooth scrolling for all elements
+*/
 *{
     scroll-behavior: smooth;
 }
 
+/*
+*  Make image unselectable and hence undraggable
+*/
 .unselectable {
     user-drag: none; 
     user-select: none;
