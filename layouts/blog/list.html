@@ -1,11 +1,11 @@
 {{ define "main" }}
-{{ partial "elements/title-hero-tile.html" (dict "context" . "blockCaption" "" "customTitle" "Blog" ) }}
+{{ partial "shared/title-hero-tile.html" (dict "context" . "blockCaption" "" "customTitle" "Blog" ) }}
 
 <div class="columns is-multiline my-3 mb-6 is-centered">
     {{ range .Pages }}
     <div class="column is-half-tablet is-one-third-widescreen is-one-quarter-fullhd">
         <a href="{{ .RelPermalink }}">
-            {{ partial "elements/blog-post-tile.html" . }}
+            {{ partial "shared/blog-post-tile.html" . }}
         </a>
     </div>
     {{ end }}

@@ -1,14 +1,36 @@
 {{ define "main" }}
 <div class="columns is-multiline">
-
-    <section class="column is-12 has-background-primary is-medium section">
-        <h2 class="title has-text-primary-invert">codeklasse</h2>
+    <section class="column is-12 ">
+        <h1 class="title has-text-primary-invert">codeklasse</h1>
         <h3 class="subtitle has-text-primary-invert">Programmieren mit Emojis</h3>
-        <!-- <h3 class="subtitle has-text-primary-invert">Programmieren ist eine Kernkompetenz der Zukunft</h3> -->
+    </section>
 
-        <div class="columns">
-            <div class="column is-3"></div>
-            <div class="column"><img src="/images/hello-world-demo-codeklasse-gelb.png" alt="">
+    <section class="column is-12 has-background-primary  section">
+        <h2 class="title has-text-centered has-text-primary-invert">Programmieren lernen leichtgemacht</h2>
+        <h3 class="subtitle has-text-centered has-text-primary-invert">Kinderleichter Einstieg mit dem Emoji Editor</h3>
+        <p class="is-size-3  has-text-primary-invert">
+            <!-- <u>Programmieren ist eine Kernkompetenz der Zukunft..</u>
+            ist Kindern das Programmieren lernen zu erleichtern. -->
+            
+        </p>
+
+        <div class="columns mt-6">
+            <!-- tile is-ancestor  -->
+                <div class="column is-3 has-text-left has-text-centered-mobile">
+                    <h4 class="title is-spaced is-5">Drag and Drop Eingabe</h4>
+                    <p class="subtitle is-6 has-text-left-tablet">Emojis einfach von links nach rechts ziehen</p>
+                    <br>
+                    <h4 class="title is-spaced is-5">Keine Fehler, kein Frust!</h4>
+                    <p class="subtitle is-6 has-text-left-tablet">Der Code ist immer lauffähig</p>
+                    <br>
+                    <h4 class="title is-spaced is-5">Direktes Feedback</h4>
+                    <p class="subtitle is-6 has-text-left-tablet">Neue Eingabe von Emojis führt immer zu Reaktion</p>
+                    <br>
+                    <h4 class="title is-spaced is-5">Flexible Palette an Emojis</h4>
+                    <p class="subtitle is-6 has-text-left-tablet">Die Menge der Emojis ist einstellbar</p>
+                </div>
+
+            <div class="column "><img draggable="false" (dragstart)="false;" class="unselectable" src="/images/hello-world-demo-codeklasse-gelb.png" alt="">
             <div class="column is-3"></div>
         </div>
     </section>
@@ -16,12 +38,12 @@
     <!-- <section class="column is-12 section">
         <div class="columns">
             <div class="column">
-                {{ partial "product-demo.html" . }}
+                {{ partial "home/product-demo.html" . }}
             </div>
         </div>
     </section> -->
 
-    <section class="column is-12 section">
+    <!-- <section class="column is-12 section">
         <div class="container">
             <div class="columns is-vcentered">
                 <div class="column">
@@ -34,65 +56,20 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <section class="column is-12 has-background-primary my-6 section">
+    <section id="benefits" class="column is-12 has-background-info my-6 section">
         <div class="container py-4">
-
-            <div class="columns">
-                <section class="column mx-3">
-                    <h2 class="column title has-text-centered-mobile mb-6 has-text-primary-invert">Für Lehrkräfte</h2>
-                    <div class="columns is-multiline box has-text-centered">
-                        <div class="column is-6 has-text-left has-text-centered-mobile">
-                            <h4 class="title is-spaced is-5">Schneller Einstieg</h4>
-                            <p class="subtitle is-6 has-text-left-tablet">Ausführliche Dokumentation und Coaching für den Blitzstart im Unterricht.</p>
-                        </div>
-
-                        <div class="column is-6 has-text-left has-text-centered-mobile">
-                            <h4 class="title is-spaced is-5">Messbarer Erfolg</h4>
-                            <p class="subtitle is-6 has-text-left-tablet">Ergebnisse der Klasse werden gespeichert. Verständnislücken schnell finden und Leistung messen</p>
-                        </div>
-
-                        <div class="column has-text-left has-text-centered-mobile">
-                            <h4 class="title is-spaced is-5">Einfache Unterrichtsvorbereitung</h4>
-                            <p class="subtitle is-6 has-text-left-tablet">Aufgaben werden in Modullen verwaltet. Ein Modul = Ein neuer Lerninhalt. Keine Zeit? Bedienen Sie sich aus einer Bibliothek grundlegender Modulle.</p>
-                        </div>
-                    </div>
-                </section>
-
-                <div class="column is-3"></div>
-            </div>
-
-            <div class="columns">
-                <div class="column is-3"></div>
-
-                <section class="column mx-3">
-                    <h2 class="column is-12 title has-text-centered-mobile mt-6 has-text-primary-invert">Für Schüler</h2>
-                    <div class="columns is-multiline box">
-                        <div class="column is-6 has-text-centered-mobile">
-                            <h4 class="title is-spaced is-5">Visuelles Lernen</h4>
-                            <p class="subtitle is-6">Your data is stored in many places at once. Awesome, right?</p>
-                        </div>
-                        <div class="column is-6 has-text-centered-mobile">
-                            <h4 class="title is-spaced is-5">Sichtbarer Erfolg</h4>
-                            <p class="subtitle is-6 has-text-left-tablet">Kinder erstellen virtuelle Buddies. Jedes neue Programm ist ein neuer "Trick" mit dem ihr Buddy wächst.</p>
-                        </div>
-                        <div class="my-4 column has-text-centered-mobile">
-                            <h4 class="title is-spaced is-5">Allgemeine Programmierkenntnisse</h4>
-                            <p class="subtitle is-6">Programmieren ist eine Kernkompetenz der Zukunft. Zeit unsere Kinder zukunftssicher zu machen.</p>
-                        </div>
-                    </div>
-                </section>
-            </div>
+            {{ partial "home/benefits.html" . }}
         </div>
     </section>
 
-    <section class="column is-12 has-text-centered-tablet has-background-info section">
-        {{ partial "contact-form.html" . }}
+    <section id="contact" class="column is-12 has-text-centered-tablet has-background-primary section">
+        {{ partial "home/contact-form.html" . }}
     </section>
 
     <section class="column is-12 section">
-        <!-- {{ partial "faq.html" . }} -->
+        <!-- {{ partial "home/faq.html" . }} -->
     </section>
 </div>
 {{end}}
