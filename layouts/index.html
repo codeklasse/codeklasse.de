@@ -1,11 +1,11 @@
 {{ define "main" }}
 <div class="columns is-multiline">
-    <section id="home" class="column is-12 ">
+    <section class="column is-12">
         <h1 class="title has-text-primary-invert">codeklasse</h1>
         <h3 class="subtitle has-text-primary-invert">Programmieren mit Emojis</h3>
     </section>
 
-    <section class="column is-12 has-background-primary  section">
+    <section id="emoji-editor" class="column is-12 has-background-primary  section">
         <h2 class="title has-text-centered has-text-primary-invert">Programmieren lernen leichtgemacht</h2>
         <h3 class="subtitle has-text-centered has-text-primary-invert">Kinderleichter Einstieg mit dem Emoji Editor</h3>
 
@@ -26,7 +26,7 @@
                 <br>
 
                 <h4 class="title is-spaced is-5 icon-text">
-                    <span class="icon"><i class="fas fa-reply fa-sm"></i></span>
+                    <span class="icon"><i class="fas fa-thumbs-up"></i></span>
                     <span>Direktes Feedback</span>
                 </h4>
                 <p class="subtitle is-6 has-text-left-tablet">Neue Eingabe von Emojis führt immer zu Reaktion</p>
@@ -54,24 +54,9 @@
         </div>
     </section> -->
 
-    <!-- <section class="column is-12 section">
-        <div class="container">
-            <div class="columns is-vcentered">
-                <div class="column">
-                    <h2 class="title is-spaced">Emoji Editor</h2>
-                    <p class="subtitle">Let's get you connected! We've designed a simple, efficient process for
-                        companies migrating to PiperNet. Here's how it works.</p>
-                    <a class="button is-primary" href="#">Start Setup!</a>
-                </div>
-                <div class="column"><img src="/images/hello-world-demo-codeklasse-gelb.png" alt="">
-                </div>
-            </div>
-        </div>
-    </section> -->
-
     <section id="features" class="column is-12 has-background-info my-6 section">
         <div class="container py-4">
-            {{ partial "home/benefits.html" . }}
+            {{ partial "home/features.html" . }}
         </div>
     </section>
 
