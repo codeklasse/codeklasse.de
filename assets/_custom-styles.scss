@@ -75,3 +75,7 @@ figure.image-size-max-120 img{
     -webkit-user-select: none;
     -ms-user-select: none;
 }
+
+input#newsletter:focus {
+    border-color: $primary-dark !important;
+}

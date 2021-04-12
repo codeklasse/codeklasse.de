@@ -69,24 +69,8 @@
                         target="_blank">Datenschutz</a>.</span>
             </div>
 
-            <div class="field control has-icons-left has-icons-right mt-6">
-                <input class="input" type="email" placeholder="max@musterfrau.de">
-
-                <span class="icon is-small is-left">
-                    <i class="fas fa-envelope"></i>
-                </span>
-
-                <span class="icon is-large is-right">
-                    <i class="fas fa-check fa-lg"></i>
-                </span>
-            </div>
-
-            <div class="is-third control is-expanded">
-                <p class="control">
-                    <button class="button is-info-inverted is-fullwidth" type="submit">
-                        Newsletter abonnieren
-                    </button>
-                </p>
+            <div class="field">
+                {{ partial "contact/newsletter.html" . }}
             </div>
         </section>
     </div>
@@ -103,3 +87,10 @@
         </section>
     </div>
 </div>
+
+<!-- MailerLite baggage -->
+<script>
+	function ml_webform_success_3887371(){var r=ml_jQuery||jQuery;r(".ml-subscribe-form-3887371 .row-success").show(),r(".ml-subscribe-form-3887371 .row-form").hide()}
+</script>
+<img src="https://track.mailerlite.com/webforms/o/3887371/g6n9a3?v1618250158" width="1" height="1" style="max-width:1px;max-height:1px;visibility:hidden;padding:0;margin:0;display:block" alt="." border="0">
+<script src="https://static.mailerlite.com/js/w/webforms.min.js?v0c75f831c56857441820dcec3163967c" type="text/javascript"></script>
