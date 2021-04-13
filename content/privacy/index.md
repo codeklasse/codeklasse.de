@@ -146,11 +146,11 @@ author: Sergej Grilborzer
 </ul>
 
 <h4>2. Name und Anschrift des für die Verarbeitung Verantwortlichen</h4>
-<p>Verantwortlicher im Sinne der Datenschutz-Grundverordnung, sonstiger in den Mitgliedstaaten der Europäischen Union geltenden Datenschutzgesetze und anderer Bestimmungen mit datenschutzrechtlichem Charakter ist die:</p>
+<p>Verantwortlicher im Sinne der Datenschutz-Grundverordnung, sonstiger in den Mitgliedstaaten der Europäischen Union geltenden Datenschutzgesetze und anderer Bestimmungen mit datenschutzrechtlichem Charakter ist</p>
 
-<p>codeklasse</p>
-<p>Pirolstr. 5</p>
-<p>44867 Bochum</p>
+<p>Sergej Grilborzer</p>
+<p>Asenberg 11</p>
+<p>58507 Lüdenscheid</p>
 <p>Deutschland</p>
 <p>Tel.: 01623292122</p>
 <p>E-Mail: sergej@codeklasse.de</p>
