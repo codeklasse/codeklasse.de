@@ -1,32 +1,32 @@
-<div class="tile is-ancestor">
-    <div class="tile is-parent is-1"></div>
+<section class="columns">
+    <div class="column is-1"></div>
 
-    <div class="tile is-parent" style="max-height: 100vh;">
-        <section class="tile is-child notification is-primary has-text-left columns is-multiline">
-
-            <figure class="column is-12" style="max-height: 70%;">
+    <div class="column notification is-primary has-text-left has-text-primary-invert">
+        <div class="columns is-multiline">
+            <div class="column is-2"></div>
+            
+            <figure class="column is-6">
                 <img src="/images/sergej_grilborzer.jpg"
-                    alt="Portrait von Sergej Grilborzer, Gründer des Unternehmens codeklasse"
-                    style="max-height: 100%;">
+                    alt="Portrait von Sergej Grilborzer, Gründer des Unternehmens codeklasse">
             </figure>
-            <!-- <section class="tile is-child notification is-primary has-text-left" style="max-height: 100vh;">
-            <figure class="" style=" height: 100%; background-size: 100% 100%;">
-                <img src="/images/sergej_grilborzer.jpg" alt="Portrait von Sergej Grilborzer, Gründer des Unternehmens codeklasse" style="max-height: 100%;">
-            </figure> -->
             <hr>
 
-            <h2 class="column is-12 title has-text-primary-invert">Hi, mein Name ist Sergej Grilborzer</h2>
-            <h3 class="column is-12 subtitle has-text-primary-invert has-text-justify">und ich sollte "damals"
-                Lehrer werden*.
-                Heute bin ich Gründer von codeklasse und <span class="has-text-weight-bold">Software Entwickler mit
-                    Passion für Bildung</span>.
-            </h3>
-            <small class="column is-12 is-size-7">*Laut den engagierten Abiturlehrern die mich dazu ermutigt hatten
-                :)</small>
-        </section>
+            <p class="column">
+                <h2 class="title">Hi, mein Name ist Sergej Grilborzer</h2>
+                <h3 class="subtitle has-text-justify">und ich sollte "damals"
+                    Lehrer werden*.
+                    Heute bin ich Gründer von codeklasse und <span class="has-text-weight-bold">Software Entwickler mit
+                        Passion für Bildung</span>.
+                </h3>
+                <small class="is-size-7">*Laut den engagierten Abiturlehrern die mich dazu ermutigt hatten
+                    :)</small>
+            </p>
+            <hr>
+
+        </div>
     </div>
 
-    <div class="tile is-parent">
+    <div class="column">
         <section class="tile is-child has-text-left">
             <h2 class="title has-text-primary-invert">Fragen, Interesse, Feedback?</h2>
             <!-- <h3 class="subtitle has-text-primary-invert">Ich freue mich auf's Gespräch!</h3> -->
@@ -49,9 +49,9 @@
                 <span class="icon"><i class="fab fa-facebook fa-lg"></i></span>
                 <span>Facebook - Direktnachricht</span>
             </div> -->
-            <hr>
+            <!-- <hr> -->
 
-            <h2 class="title has-text-primary-invert">.. oder abonnieren Sie den Newsletter</h2>
+            <h2 class="title has-text-primary-invert pt-4">.. oder abonnieren Sie den Newsletter</h2>
 
             <div class="field icon-text is-large">
                 <span class="icon"><i class="fas fa-check"></i></span>
@@ -69,28 +69,14 @@
                         target="_blank">Datenschutz</a>.</span>
             </div>
 
-            <div class="field control has-icons-left has-icons-right mt-6">
-                <input class="input" type="email" placeholder="max@musterfrau.de">
-
-                <span class="icon is-small is-left">
-                    <i class="fas fa-envelope"></i>
-                </span>
-
-                <span class="icon is-large is-right">
-                    <i class="fas fa-check fa-lg"></i>
-                </span>
-            </div>
-
-            <div class="is-third control is-expanded">
-                <p class="control">
-                    <button class="button is-info-inverted is-fullwidth" type="submit">
-                        Newsletter abonnieren
-                    </button>
-                </p>
+            <div class="field">
+                {{ partial "contact/newsletter.html" . }}
             </div>
         </section>
     </div>
-</div>
+
+</section>
+
 
 <div class="tile is-ancestor">
     <div class="tile is-parent">
@@ -101,3 +87,10 @@
         </section>
     </div>
 </div>
+
+<!-- MailerLite baggage -->
+<script>
+	function ml_webform_success_3887371(){var r=ml_jQuery||jQuery;r(".ml-subscribe-form-3887371 .row-success").show(),r(".ml-subscribe-form-3887371 .row-form").hide()}
+</script>
+<img src="https://track.mailerlite.com/webforms/o/3887371/g6n9a3?v1618250158" width="1" height="1" style="max-width:1px;max-height:1px;visibility:hidden;padding:0;margin:0;display:block" alt="." border="0">
+<script src="https://static.mailerlite.com/js/w/webforms.min.js?v0c75f831c56857441820dcec3163967c" type="text/javascript"></script>
