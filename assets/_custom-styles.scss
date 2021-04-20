@@ -3,6 +3,8 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+
+    font-family: 'segoe-ui';
 }
 
 body .site-content {
@@ -10,15 +12,21 @@ body .site-content {
 }
 
 @font-face {
-    font-family: 'logo-font';
-    src: url("/OpenSeason_filled.otf") format("truetype");
+    font-family: 'SourceSansPro';
+    src: url("/fonts/SourceSansPro-Regular.ttf") format("truetype");
 }
 
-$family-sans-serif: "logo-font", sans-serif;
+@font-face {
+    font-family: 'logo-font';
+    src: url("/fonts/OpenSeason_filled.otf") format("truetype");
+}
+
+$family-primary: "logo-font", sans-serif;
+$family-sans-serif: "SourceSansPro", sans-serif;
 
 .logo-font {
     @extend .title;
-    font-family: $family-sans-serif;
+    font-family: $family-primary;
 }
 
 .border-color-primary-dark{
@@ -40,10 +48,18 @@ figure.image-size-max-120 img{
 *  Snippet provided by jvarness https://github.com/jgthms/bulma/issues/297#issuecomment-499961774
 */
 @include mobile {
-    .columns.is-reversed-mobile{
+    .columns.is-reversed-mobile {
         display: flex;
         flex-direction: column-reverse;
    }
+}
+
+@include desktop {
+    .resize-50-percent.image img {
+        // display: block;
+        // height: auto;
+        width: 50%;
+    }
 }
 
 /*
