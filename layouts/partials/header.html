@@ -8,7 +8,7 @@
 {{ $bulma := resources.Get "bulma-theme.scss" | resources.ToCSS (dict "outputStyle" "compressed") }}
 <link rel="stylesheet" href="{{ $bulma.RelPermalink }}">
 
-<link rel="icon" href="/favicon.ico">
+<link rel="icon" href="/favicon-no-bg.ico">
 
 {{ if .OutputFormats.Get "RSS" }}
 {{ with .OutputFormats.Get "RSS" }}

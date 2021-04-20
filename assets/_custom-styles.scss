@@ -9,25 +9,14 @@ body .site-content {
     flex: 1;
 }
 
-
-// http://versions.bulma.io/0.9.2/documentation/customize/variables/
-
 @font-face {
-    font-family: 'robin-schooler';
-    src: url("/Calittra.otf") format("truetype");
-    // src: url("/Bienchen a.ttf") format("truetype") format("truetype");
+    font-family: 'logo-font';
+    src: url("/OpenSeason_filled.otf") format("truetype");
 }
 
-// @font-face {
-//     font-family: 'robin-schooler';
-//     font-style: italic;
-//     //src: url("/Calittra.otf") format("truetype");
-//     src: url("/Bienchen b.ttf") format("truetype");
-// }
+$family-sans-serif: "logo-font", sans-serif;
 
-$family-sans-serif: "robin-schooler", sans-serif;
-
-.fancy-title {
+.logo-font {
     @extend .title;
     font-family: $family-sans-serif;
 }
