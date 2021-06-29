@@ -12,9 +12,8 @@ features = []
   category = "categories"
 
 [author]
-  name = "Sergej Grilborzer"
-  homepage = "https://grilborzer.de"
-  photo = "/images/s-gbz.jpg"
+  name = "codeklasse Team"
+  photo = "/images/logo-small.jpg"
 
 [params]
   facebook = ''
