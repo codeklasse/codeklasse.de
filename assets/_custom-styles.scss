@@ -4,7 +4,7 @@ body {
     min-height: 100vh;
     flex-direction: column;
 
-    font-family: 'segoe-ui';
+    font-family: "segoe-ui";
 }
 
 body .site-content {
@@ -12,12 +12,12 @@ body .site-content {
 }
 
 @font-face {
-    font-family: 'SourceSansPro';
+    font-family: "SourceSansPro";
     src: url("/fonts/SourceSansPro-Regular.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: 'logo-font';
+    font-family: "logo-font";
     src: url("/fonts/OpenSeason_filled.otf") format("truetype");
 }
 
@@ -29,18 +29,18 @@ $family-sans-serif: "SourceSansPro", sans-serif;
     font-family: $family-primary;
 }
 
-.border-color-primary-dark{
+.border-color-primary-dark {
     border: 1px solid $primary-dark;
 }
 
-figure.image-size-max-120 img{
+figure.image-size-max-120 img {
     max-width: 120px;
     max-height: 120px;
 }
 
 .image.is-2by3.resize-66-percent img {
-	height: 66%;
-	width: auto;
+    height: 66%;
+    width: auto;
 }
 
 /* Reverse column order when needed.
@@ -51,7 +51,7 @@ figure.image-size-max-120 img{
     .columns.is-reversed-mobile {
         display: flex;
         flex-direction: column-reverse;
-   }
+    }
 }
 
 @include desktop {
@@ -65,7 +65,7 @@ figure.image-size-max-120 img{
 /*
 *  Enable smooth scrolling for all elements
 */
-*{
+* {
     scroll-behavior: smooth;
 }
 
@@ -73,7 +73,7 @@ figure.image-size-max-120 img{
 *  Make image unselectable and hence undraggable
 */
 .unselectable {
-    user-drag: none; 
+    user-drag: none;
     user-select: none;
     -moz-user-select: none;
     -webkit-user-drag: none;
@@ -83,4 +83,18 @@ figure.image-size-max-120 img{
 
 input#newsletter:focus {
     border-color: $primary-dark !important;
+}
+
+// Set padding only on Firefox
+@supports (-moz-appearance: none) {
+    .padding-left-blog-list {
+        padding-left: 3rem !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .px-6 {
+        padding-left: 1.25rem !important;
+        padding-right: 1.25rem !important;
+    }
 }

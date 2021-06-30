@@ -1,9 +1,11 @@
 {{ define "main" }}
-{{ partial "shared/title-hero-tile.html" (dict "context" . "blockCaption" "" "customTitle" "Blog" ) }}
+{{ partial "shared/title-hero-blog-list.html" (dict "context" . "blockCaption" "" "customTitle" "Blog" ) }}
 
-<div class="columns is-multiline my-3 mb-6 is-centered">
+<!-- is-centered - rausgenommen -->
+<div class="columns is-multiline my-3 mb-6 padding-left-blog-list">
     {{ range .Pages }}
-    <div class="column is-half-tablet is-one-third-widescreen is-one-quarter-fullhd">
+    <!-- is-one-quarter-fullhd - rausgenommen -->
+    <div class="column is-half-tablet is-one-third-widescreen ">
         <a href="{{ .RelPermalink }}">
             {{ partial "shared/blog-post-tile.html" . }}
         </a>
