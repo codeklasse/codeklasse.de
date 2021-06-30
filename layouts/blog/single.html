@@ -1,11 +1,17 @@
 {{ define "main" }}
 
-<nav class="breadcrumb" aria-label="breadcrumbs">
+<nav
+  class="breadcrumb px-6"
+  aria-label="breadcrumbs"
+>
   <ul>
     <li>
       <a href="/blog">
         <span class="icon is-small">
-          <i class="fas fa-angle-double-left" aria-hidden="true"></i>
+          <i
+            class="fas fa-angle-double-left"
+            aria-hidden="true"
+          ></i>
         </span>
         <span>Blog</span>
       </a>
@@ -13,39 +19,55 @@
   </ul>
 </nav>
 
-{{ partial "shared/title-hero-tile.html" (dict "context" . "blockCaption" "" ) }}
+{{ partial "shared/title-hero-blog-single.html" (dict "context" . "blockCaption" "" ) }}
 
-<div class="columns is-multiline is-reversed-mobile">
+<div class="columns is-multiline my-3">
 
-  <section class="column content">
+  <div class="column is-12 is-flex is-justify-content-center">
+    <figure class="image" style="max-width: 50%; height: auto;">
+      <img
+        src="{{ .Params.thumbnail }}"
+        alt="Placeholder image"
+      >
+    </figure>
+  </div>
+
+  <section class="column content container px-6 is-size-5">
     {{ .Content }}
   </section>
 
+  <!-- is-reversed-mobile war ursprünglich für TOC gedacht - to fix! -->
   {{ if (eq .Params.toc true) }}
-    <aside class="column is-one-quarter-widescreen">
-      <div class="card content is-fullwidth">
-          <header class="card-header">
-            <p class="card-header-title is-centered">Inhalt</p>
-            <a class="card-header-icon card-toggle">
-              <i class="fa fa-angle-down"></i>
-            </a>
-          </header>
-          <div class="card-content is-hidden">
-            <div class="content">
-              {{ .TableOfContents }}
-            </div>
-          </div>
+  <aside class="column is-one-quarter-widescreen">
+    <div class="card content is-fullwidth">
+      <header class="card-header">
+        <p class="card-header-title is-centered">Inhalt</p>
+        <a class="card-header-icon card-toggle">
+          <i class="fa fa-angle-down"></i>
+        </a>
+      </header>
+      <div class="card-content is-hidden">
+        <div class="content">
+          {{ .TableOfContents }}
+        </div>
       </div>
-    </aside>
+    </div>
+  </aside>
   {{ end }}
 </div>
 
-<nav class="breadcrumb" aria-label="breadcrumbs">
+<nav
+  class="breadcrumb px-6"
+  aria-label="breadcrumbs"
+>
   <ul>
     <li>
       <a href="/blog">
         <span class="icon is-small">
-          <i class="fas fa-angle-double-left" aria-hidden="true"></i>
+          <i
+            class="fas fa-angle-double-left"
+            aria-hidden="true"
+          ></i>
         </span>
         <span>Blog</span>
       </a>
@@ -54,6 +76,9 @@
 </nav>
 
 
-<script src="/js/toggle-is-hidden.js" async></script>
+<script
+  src="/js/toggle-is-hidden.js"
+  async
+></script>
 
 {{ end }}
