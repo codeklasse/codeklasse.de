@@ -17,7 +17,7 @@ Das Grundkonzept von „codeklasse“ begann im März letzten Jahres in meinem K
 
 Eine Hausarbeit an der Hochschule Bochum inspirierte mich eine Emoji-basierte Programmiersprache zu entwickeln. 
 Mein Professor sprach damals in der Vorlesung von der Idee, das Kennenlernen von Programmiersprachen bereits früh in die schulische Erziehung zu integrieren, in einer für die Schüler zugänglichen & spannenden Form.
-In diesem Moment wusste ich, dass ich mich dieser Herausforderung annehmen will.
+Auch wenn der Zeitpunkt hierfür noch nicht passend war, blieb der Gedanke im Verlauf des Masterstudiums fortwährend bei mir.
 Meine Leidenschaft für Softwareentwicklung und mein Interesse an Pädagogik liefen an dieser Stelle, wie vom Schicksal geleitet, perfekt zusammen.
 Ein halbes Jahr später raubte mir die Idee, Programmieren anschaulich und zugänglich zu vermitteln, fortwährend den Schlaf. 
 
