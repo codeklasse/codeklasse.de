@@ -35,7 +35,6 @@ Nun aber genug der Vorrede – was konkret macht unser Projekt einzigartig?
 Wir machen das Programmieren ab der 3. Klasse möglich, und das mit Emojis!
 Unser Projekt steht für die frühzeitige Förderung der Digitalkompetenz in Deutschland. 
 Unsere Vision ist es allen Schülern den Zugang zur digitaler Grundbildung zu vermitteln.
-Lernen ist ein dynamischer Prozess.
 Unser Projekt bietet die perfekte Gelegenheit, die Basics zu lernen und in der Zukunft auf komplexere Plattformen umzusteigen. 
 
 codeklasse wird finanziell durch das NRW-Gründerstipendium, sowie moralisch durch unendlich viel Motivation, Spaß und eine gesunde Prise Perfektionismus seitens unseres Teams unterstützt. 
