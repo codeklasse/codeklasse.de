@@ -44,5 +44,3 @@ Digitalisierung made in Ruhrpott.
 So wie in jeder Geschichte, die das Potential zu einer Blockbuster-Reihe hat, lassen wir das Ende offen und hoffen Sie mit unserem Mission Statement sowie unserer Vision von codeklasse überzeugt zu haben. 
 Über jegliche Form vom Feedback freuen wir uns sehr, um unser Projekt noch besser gestalten zu können. 
 Auf eine gute Zusammenarbeit!
-
-Eure digitalen Weltverbesserer vom Team codeklasse. 
