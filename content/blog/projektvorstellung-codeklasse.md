@@ -5,6 +5,7 @@ releaseDate: "19.07.2021"
 draft: false
 toc: false
 thumbnail: "/images/fb-banner-bigger.png"
+---
 
 Hinter jedem Projekt steckt eine Geschichte.
 Hier ist die unsere!
