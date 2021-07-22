@@ -13,7 +13,7 @@ Hier ist die unsere!
 <!--more-->
 
 Hi, ich bin Sergej Grilborzer, Softwareentwickler und Gründer von codeklasse. 
-Das Konzept von „codeklasse“ ist im März letzten Jahres entstanden.
+Die Idee von dem Projekt ist im März letzten Jahres entstanden.
 
 Eine Hausarbeit an der Hochschule Bochum inspirierte mich eine Emoji-basierte Programmiersprache zu entwickeln. 
 Mein Professor hat mich damals auf die Idee gebracht, das Konzept im schulischen Umfeld umzusetzten.
@@ -36,7 +36,7 @@ Mit Blick auf die eher konservative, bürokratische Bildungslandschaft Deutschla
 Unsere Vision ist es allen Schülern den Zugang zur digitaler Grundbildung zu vermitteln.
 codeklasse bietet die perfekte Gelegenheit, die Basics zu lernen und in der Zukunft auf komplexere Plattformen umzusteigen. 
 
-codeklasse wird finanziell durch das NRW-Gründerstipendium, sowie moralisch durch unendlich viel Motivation, Spaß und eine gesunde Prise Perfektionismus seitens unseres Teams unterstützt. Aktuell befindet sich das Projekt in der aktiven Entwicklungphase. Nutzen Sie die Möglichkeit und werden Sie unsere Pilotschule! 
+codeklasse wird finanziell durch das NRW-Gründerstipendium, sowie moralisch durch unendlich viel Motivation, Spaß und eine gesunde Prise Perfektionismus seitens unseres Teams unterstützt. Aktuell befindet sich das Projekt in der aktiven Entwicklungphase. Nutzen Sie die Möglichkeit und werden Sie jetzt unsere Pilotschule! 
 
 So wie in jeder spannenden Geschichte lassen wir das Ende offen und hoffen Sie mit unserem Mission Statement sowie unserer Vision von codeklasse überzeugt zu haben. 
 Über jegliche Form vom Feedback freuen wir uns sehr, um unser Projekt noch besser gestalten zu können. 
