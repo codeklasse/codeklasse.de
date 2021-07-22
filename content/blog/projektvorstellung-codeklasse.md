@@ -16,6 +16,7 @@ Hi, ich bin Sergej Grilborzer, Softwareentwickler und Gründer codeklasse.
 Das Konzept von „codeklasse“ ist im März letzten Jahres entstanden.
 
 Eine Hausarbeit an der Hochschule Bochum inspirierte mich eine Emoji-basierte Programmiersprache zu entwickeln. 
+Mein Professor hat mich damals auf die Idee gebracht, das Kozept im schulischen Umfeld umzusetzten.
 
 Auch wenn der Zeitpunkt hierfür noch nicht passend war, blieb der Gedanke im Verlauf des Masterstudiums fortwährend bei mir.
 Meine Leidenschaft für Softwareentwicklung und mein Interesse an Pädagogik liefen an dieser Stelle, wie vom Schicksal geleitet, perfekt zusammen.
