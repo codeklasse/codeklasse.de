@@ -22,7 +22,7 @@ Meine Leidenschaft für Softwareentwicklung und mein Interesse an Pädagogik lie
 Ein halbes Jahr später raubte mir die Idee, Programmieren anschaulich und zugänglich zu vermitteln, fortwährend den Schlaf. 
 
 Das Resultat dieser vielen schlaflosen Nächte, ist die aktuell immer noch zarte Blüte mit dem Namen codeklasse. 
-Der Gedanke wird nun zur Realität. 
+Ein halbes Jahr später entwickelte der Gedanke sich Stück für Stück zur Realität. 
 Nur ist das Fundament für die erfolgreiche Umsetzung dieser Idee nicht lediglich technischer Natur – eine offene und konstruktive Kommunikation mit der Zielgruppe der zukünftigen Anwender ist genauso kritisch. 
 Deshalb trat ich im Rahmen einer Projektarbeit mit zahlreichen Lehrkräften an verschiedensten Lehranstalten in den Dialog.
 Das Ziel war es, die Wünsche, Vorstellungen, Bedürfnisse – aber auch mögliche Hürden bzw. Schmerzpunkte in den Augen der Menschen auf beiden Seiten des Lehrerpults zu verstehen. 
