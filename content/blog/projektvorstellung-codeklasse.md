@@ -23,8 +23,7 @@ Ein halbes Jahr später raubte mir die Idee, Programmieren anschaulich und zugä
 
 Das Resultat dieser vielen schlaflosen Nächte, ist die aktuell immer noch zarte Blüte mit dem Namen codeklasse. 
 Ein halbes Jahr später entwickelte der Gedanke schrittweise zur Realität / Ein halbes Jahr später nahm der Gedanke eine entsprechende Form an. 
-Deshalb trat ich im Rahmen einer Projektarbeit mit zahlreichen Lehrkräften an verschiedensten Lehranstalten in den Dialog.
-Das Ziel war es, die Wünsche, Vorstellungen, Bedürfnisse – aber auch mögliche Hürden bzw. Schmerzpunkte in den Augen der Menschen auf beiden Seiten des Lehrerpults zu verstehen. 
+Um Bedürfnisse beider Seiten des Lehrerpults zu verstehen, trat ich im Rahmen einer kleinen Marktstudie mit verschiedenen Lehrkräften in Kontakt.
 
 Ich muss gestehen, dass dieser Weg kein leichter sein wird, zumal ich den alleine antrat. 
 Nichtsdestotrotz ist es ein Weg mit einem enorm wichtigen Ziel und ich bin froh, in letzter Zeit neue Mitstreiter als Begleiter gewonnen zu haben, die sich bereits aktiv einsetzen und die Sache vorantreiben. 
