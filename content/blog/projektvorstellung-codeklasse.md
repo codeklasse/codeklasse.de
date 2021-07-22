@@ -1,7 +1,3 @@
-<<<<<<< Updated upstream:content/blog/projektvorstellung-codeklasse.md
----
-=======
->>>>>>> Stashed changes:content/blog/Projektvorstellung.md
 title: "Projektvorstellung"
 author: "codeklasse Team"
 date: 2021-07-18T15:47:15+02:00
@@ -9,8 +5,6 @@ releaseDate: "19.07.2021"
 draft: false
 toc: false
 thumbnail: "/images/fb-banner-bigger.png"
----
-<<<<<<< Updated upstream:content/blog/projektvorstellung-codeklasse.md
 
 Hinter jedem Projekt steckt eine Geschichte.
 Hier ist die unsere!
@@ -19,7 +13,6 @@ Hier ist die unsere!
 Hi, ich bin Sergej Grilborzer, Softwareentwickler und Gründer von codeklasse. 
 Die Idee von dem Projekt ist im März letzten Jahres entstanden.
 
-<<<<<<< Updated upstream
 Eine Hausarbeit an der Hochschule Bochum inspirierte mich eine Emoji-basierte Programmiersprache zu entwickeln. 
 Mein Professor hat mich damals auf die Idee gebracht, das Konzept im schulischen Umfeld umzusetzten.
 
@@ -39,7 +32,6 @@ codeklasse macht das ab der 3. Klasse möglich, und zwar mit Emojis!
 Unser Ziel ist die frühzeitige Förderung der Digitalkompetenz in Deutschland. 
 Mit Blick auf die eher konservative, bürokratische Bildungslandschaft Deutschlands ist das Ziel sicherlich kein einfaches. 
 Unsere Vision ist es allen Schülern den Zugang zur digitaler Grundbildung zu vermitteln.
-<<<<<<< Updated upstream
 codeklasse bietet die perfekte Gelegenheit, die Basics zu lernen und in der Zukunft auf komplexere Plattformen umzusteigen. 
 
 codeklasse wird finanziell durch das NRW-Gründerstipendium, sowie moralisch durch unendlich viel Motivation, Spaß und eine gesunde Prise Perfektionismus seitens unseres Teams unterstützt. Aktuell befindet sich das Projekt in der aktiven Entwicklungphase. Nutzen Sie die Möglichkeit und werden Sie jetzt unsere Pilotschule! 
