@@ -1,5 +1,4 @@
 ---
-
 title: "Projektvorstellung"
 author: "codeklasse Team"
 date: 2021-07-18T15:47:15+02:00
@@ -13,7 +12,12 @@ Hinter jedem Projekt steckt eine Geschichte.
 Hier ist die unsere!
 <!--more-->
 
+**Information über Gründer**
+
 Hi, ich bin Sergej Grilborzer, Softwareentwickler und Gründer von codeklasse. 
+
+**
+
 Die Idee von dem Projekt ist im März letzten Jahres entstanden.
 
 Eine Hausarbeit an der Hochschule Bochum inspirierte mich eine Emoji-basierte Programmiersprache zu entwickeln. 
