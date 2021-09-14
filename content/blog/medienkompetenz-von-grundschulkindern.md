@@ -5,7 +5,7 @@ date: 2021-09-13T21:30:21+02:00
 releaseDate: "13.09.2021"
 draft: false
 toc: false
-thumbnail: "/images/medienkompetenz-von-grundschulkindern.png"
+thumbnail: "/images/medienkompetenz-von-grundschulkindern.jpg"
 ---
 
 Digitale Medien sind im Alltag von Erwachsenen sehr präsent. 
