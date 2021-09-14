@@ -3,7 +3,7 @@ title: "Medienkompetenz von Grundschulkindern fördern"
 author: "codeklasse Team"
 date: 2021-09-13T21:30:21+02:00
 releaseDate: "13.09.2021"
-draft: true
+draft: false
 toc: false
 thumbnail: "/images/medienkompetenz-von-grundschulkindern.png"
 ---
