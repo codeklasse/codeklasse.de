@@ -49,7 +49,7 @@ Hier finden Sie <a href = "https://www.pinterest.de/search/pins/?rs=ac&len=2&q=l
 ### Fazit ###
 
 Wir sind fest davon überzeugt, dass Kinder im Lernprozess ganz viel Unterstützung und Zuneigung seitens der Eltern und Lehrkräfte brauchen. 
-Unserer Meinung nach ist es auch wichtig den Kindern beizubringen, auf sich selbst für kleine Erfolge und Fortschritte stolz zu sein. 
+Unserer Meinung nach ist es wichtig den Kindern beizubringen kleine Erfolge zu feiern und somit iterative Lösungen zu erarbeiten. 
 Das ist unsere Priorität Nummer 1. Mit besonderer Technologie der Fehlerbehandlung beim Programmieren Lernen und unserer bedürfnisorientierten Unterstützung ist nun Spaß am Programmieren angesagt. 
 
 
