@@ -23,7 +23,7 @@ Unsere Antwort ist eindeutig.
 Keiner. 
 Es ist gerade für Erwachsene nicht leicht Prokrastination zu überwinden. 
 Für die Kinder ist es noch schwerer, weil die Lernroutine sich erst entwickelt. 
-Die Lösung ist einen festen ruhigen Arbeitsplatz für Ihr Kind zu finden.
+Die Lösung ist einen festen, ruhigen Arbeitsplatz für Ihr Kind zu finden.
 Hierzu ist es wichtig die Bedürfnisse des Kindes zu erkennen. 
 Vielleicht passt es für Ihr Kind besser am Küchentisch zu lernen oder sogar an Ihrem Arbeitstisch statt bei sich im Zimmer, wo Spielzeug eine konstante Ablenkung darstellt?
 
