@@ -25,7 +25,7 @@ Keiner.
 Es ist gerade für Erwachsene nicht leicht Prokrastination zu überwinden. 
 Für die Kinder ist es noch schwerer, weil die Lernroutine sich erst entwickelt. 
 Die Lösung ist einen festen, ruhigen Arbeitsplatz für Ihr Kind zu finden.
-Hierzu ist es wichtig die Bedürfnisse des Kindes zu erkennen. 
+Hierzu ist es wichtig, die Bedürfnisse des Kindes zu erkennen. 
 Vielleicht passt es für Ihr Kind besser am Küchentisch zu lernen oder sogar an Ihrem Arbeitstisch statt bei sich im Zimmer, wo Spielzeug eine konstante Ablenkung darstellt. 
 
 # Individuellen Biorhythmus zum Lernen beachten 
@@ -37,15 +37,15 @@ Hierfür empfehlen wir den eigenen Biorhythmus ihres Kindes zu betrachten und et
 # Verschiedene Lernmethoden ausprobieren 
 
 Es gibt mittlerweile so viele Möglichkeiten verschiedene Lernmethoden für Ihre Kinder auszuprobieren. 
-Laut <a href = "https://learnattack.de/magazin/wp-content/uploads/2018/02/Studie-School-Life-Balance-Digitales-Lernen.pdf" target="_blank">der Learnattack-Studie</a> nimmt die Mehrzahl(59%) der befragten Eltern Lernangebote aus dem Internet in Anspruch. 
+Laut <a href = "https://learnattack.de/magazin/wp-content/uploads/2018/02/Studie-School-Life-Balance-Digitales-Lernen.pdf" target="_blank">der Learnattack-Studie</a> nimmt die Mehrzahl (59 Prozent) der befragten Eltern Lernangebote aus dem Internet in Anspruch. 
 Laut der befragten Eltern können die Kinder von folgenden Online-Inhalten profitieren:
 
-* Interaktive-Übungen (45% der Befragten)
-* Suchmaschinen (40% der Befragten)
-* Lernvideos(39% der Befragten)
+* Interaktive-Übungen (45 Prozent)
+* Suchmaschinen (40 Prozent)
+* Lernvideos (39 Prozent)
 
-Mit Online-Lernmethoden oder alternativen analogen Lernmöglichkeiten können Sie selbsständiges Lernen Ihrer Kinder fördern und Motivation zum Lernprozess im Großen und Ganzen stärken. 
-Zu beachten ist nur wie fit sich Ihr Kind für eigenständiges Agieren im Internet fühlt. 
+Mit Online-Lernmethoden oder alternativen analogen Lernmöglichkeiten können Sie selbständiges Lernen Ihrer Kinder fördern und Motivation zum Lernprozess im Großen und Ganzen stärken. 
+Zu beachten ist nur, wie fit sich Ihr Kind für eigenständiges Agieren im Internet fühlt. 
 Hierfür helfen Ihnen unsere <a href = "https://codeklasse.de/blog/medienkompetenz-von-grundschulkindern/"  target="_blank">Empfehlungen</a>.
 
 # Selbstbewusstsein stärken 
@@ -54,7 +54,7 @@ Wir sind fest davon überzeugt, dass Kinder im Lernprozess ganz viel Unterstütz
 Sie können Ihrem Kind seine Stärken verdeutlichen und Erfolgserlebnisse verschaffen.
 Diese beiden Merkmale werden positiv das Selbstbewusstsein Ihres Kindes beeinflussen. 
 Zeigt Ihr Kind ein großes Engagement in einem Schulprojekt oder findet ein Schulfach besonders spannend? 
-In diesem Fall könnten Sie die Ergebnisse unabhängig von Leistungen/Erfolgen annerkennen und  wertschätzen. 
+In diesem Fall könnten Sie die Ergebnisse unabhängig von Leistungen/Erfolgen anerkennen und  wertschätzen. 
 So helfen Sie Ihrem Kind nicht aufzugeben und neue Herausforderungen anzunehmen. 
 Unserer Meinung nach ist es wichtig den Kindern beizubringen kleine Erfolge zu feiern und somit iterative Lösungen zu erarbeiten. 
 
@@ -63,7 +63,7 @@ Unserer Meinung nach ist es wichtig den Kindern beizubringen kleine Erfolge zu f
 Der Stress lässt sich beim Lernen durch ausreichende Zeit für geplante Aufgaben minimieren. 
 Sie könnten gerne einen selbstgemachten Lernplan basteln, damit die Zeiten fürs Lernen und für angemessene Pausen festgelegt werden können. 
 Hier finden Sie <a href = "https://www.pinterest.de/search/pins/?rs=ac&len=2&q=lernplan%20vorlage%20kinder&eq=lernplan%20kinder&etslf=3860&term_meta[]=lernplan%7Cautocomplete%7C2&term_meta[]=vorlage%7Cautocomplete%7C2&term_meta[]=kinder%7Cautocomplete%7C2" target="_blank">ein paar Vorlagen für einen Kinderlernplan</a>. 
-Ausserdem sind spanennde Aktivitäten als Abwechslung zum Lernen nicht zu unterschätzen. 
+Außerdem sind spannende Aktivitäten als Abwechslung zum Lernen nicht zu unterschätzen. 
 Aus diesem guten Grund stammt die Idee codeklasse.
 Unsere Mission ist frustfreies Lernen der wichtigen Programmierinhalte für jedes Kind zu ermöglichen. 
 Apropos können Sie hier etwas nach unten scrollen und unseren <a href="https://codeklasse.de/" target="_blank">Newsletter</a> abonnieren😉!
