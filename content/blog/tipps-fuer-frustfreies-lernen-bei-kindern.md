@@ -76,7 +76,7 @@ Doch der Spaß am Lernprozess bereitet Eltern meistens Kopfschmerzen.
 Langeweile, fehlende Motivation der Kinder machen es noch schwieriger.
 Wir haben aber die passende Lösung entdeckt.  
 codeklasse tritt als Schmerzmittel gegen auftretende Symptome der fehlenden Motivation bei Kindern und Kopfschmerzen bei Eltern hervor. 
-Mit besonderer Technologie der Fehlerbehandlung beim Programmieren Lernen und unserer bedürfnisorientierten Unterstützung ist nun Spaß am Programmieren angesagt. 
+Mit besonderer Technologie der Fehlerbehandlung beim Programmieren Lernen und unserer bedürfnisorientierten Unterstützung ist nun Spaß am Programmieren angesagt.
 
 # Quellen 
 
