@@ -1,8 +1,8 @@
 ---
 title: "Tipps für frustfreies Lernen bei Kindern"
 author: "codeklasse Team"
-date: 2021-10-15T12:30:21+02:00
-releaseDate: "15.10.2021"
+date: 2021-10-17T12:30:21+02:00
+releaseDate: "18.10.2021"
 draft: false
 toc: false
 thumbnail: "/images/tipps-fuer-frustfreies-lernen.jpg"
@@ -44,8 +44,8 @@ Laut der befragten Eltern können die Kinder von folgenden Online-Inhalten profi
 * Suchmaschinen (40 Prozent)
 * Lernvideos (39 Prozent)
 
-Mit Online-Lernmethoden oder alternativen analogen Lernmöglichkeiten können Sie selbständiges Lernen Ihrer Kinder fördern und Motivation zum Lernprozess im Großen und Ganzen stärken. 
-Zu beachten ist nur, wie fit sich Ihr Kind für eigenständiges Agieren im Internet fühlt. 
+Mit Online-Lernmethoden oder alternativen, analogen Lernmöglichkeiten können Sie selbständiges Lernen Ihrer Kinder fördern und Motivation zum Lernprozess im Großen und Ganzen stärken. 
+Zu beachten ist nur wie fit sich Ihr Kind für eigenständiges Agieren im Internet fühlt. 
 Hierfür helfen Ihnen unsere <a href = "https://codeklasse.de/blog/medienkompetenz-von-grundschulkindern/"  target="_blank">Empfehlungen</a>.
 
 # Selbstbewusstsein stärken 
@@ -61,24 +61,24 @@ Unserer Meinung nach ist es wichtig den Kindern beizubringen kleine Erfolge zu f
 # Lernen durch abwechslungsreiche Aktivitäten und Pausen unterstützen 
 
 Der Stress lässt sich beim Lernen durch ausreichende Zeit für geplante Aufgaben minimieren. 
-Sie könnten gerne einen selbstgemachten Lernplan basteln, damit die Zeiten fürs Lernen und für angemessene Pausen festgelegt werden können. 
+Sie könnten z.B. einen selbstgemachten Lernplan basteln, damit die Zeiten für's Lernen und für angemessene Pausen einen Rahmen erhalten. 
 Hier finden Sie <a href = "https://www.pinterest.de/search/pins/?rs=ac&len=2&q=lernplan%20vorlage%20kinder&eq=lernplan%20kinder&etslf=3860&term_meta[]=lernplan%7Cautocomplete%7C2&term_meta[]=vorlage%7Cautocomplete%7C2&term_meta[]=kinder%7Cautocomplete%7C2" target="_blank">ein paar Vorlagen für einen Kinderlernplan</a>. 
 Außerdem sind spannende Aktivitäten als Abwechslung zum Lernen nicht zu unterschätzen. 
-Aus diesem guten Grund stammt die Idee codeklasse.
+Aus diesem guten Grund stammt die Idee zu codeklasse.
 Unsere Mission ist frustfreies Lernen der wichtigen Programmierinhalte für jedes Kind zu ermöglichen. 
-Apropos können Sie hier etwas nach unten scrollen und unseren <a href="https://codeklasse.de/" target="_blank">Newsletter</a> abonnieren😉!
+Apropos können Sie hierzu auch gerne unseren <a href="https://codeklasse.de/#contact" target="_blank">Newsletter</a> abonnieren😉!
 
 # Fazit 
 
-Frustfreies Lernen ist mit vielen herausfordernden Aspekten, wie richtige Umgebung, produktive Zeiten zum Lernen und Spaß am Lernprozess verknüpft.
+Frustfreies Lernen ist mit vielen herausfordernden Aspekten wie der richtigen Umgebung, produktiven Lernzeiten und Spaß am Lernprozess verknüpft.
 Mit richtiger Strategie der Eltern sind räumliche und zeitliche Aspekte leicht zu bewältigen.
 Doch der Spaß am Lernprozess bereitet Eltern meistens Kopfschmerzen.
-Langeweile, fehlende Motivation der Kinder machen es noch schwieriger.
-Wir haben aber die passende Lösung entdeckt.  
-codeklasse tritt als Schmerzmittel gegen auftretende Symptome der fehlenden Motivation bei Kindern und Kopfschmerzen bei Eltern hervor. 
-Mit besonderer Technologie der Fehlerbehandlung beim Programmieren Lernen und unserer bedürfnisorientierten Unterstützung ist nun Spaß am Programmieren angesagt.
+Langeweile und fehlende Motivation der Kinder machen es noch schwieriger.
 
-# Quellen 
+**Für's Programmieren haben wir hierfür die passende Lösung entdeckt:**
+Mit codeklasse zeigen wir das Programmieren Lernen anschaulich, spaßig und automatisiert unterstützend sein kann. 
+
+## Quellen 
 
 * https://www.sueddeutsche.de/leben/familie-kinder-zu-hause-zum-lernen-motivieren-dpa.urn-newsml-dpa-com-20090101-200313-99-318937
 * https://learnattack.de/magazin/lernen-leicht-gemacht-learnattack-lernmethode/
