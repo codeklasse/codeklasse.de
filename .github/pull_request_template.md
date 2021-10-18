@@ -10,6 +10,7 @@ Checkliste mittels der _Live Preview_ abzuhacken:
 - [ ] Die obigen Punkte mit Hilfe der _Live Preview_ gecheckt
 _
 - [ ] Im Fall eines Blogartikels: Squash-Merge benutzen 
+
 ## Allgemeine Hinweise:
 - codeklasse nicht Codeklasse
 - Lehrkräfte statt Lehrer
