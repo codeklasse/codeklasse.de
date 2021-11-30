@@ -1,8 +1,8 @@
 ---
 title: "Schüler testen codeklasse"
 author: "codeklasse Team"
-date: 2021-12-01T14:30:21+02:00
-releaseDate: "01.12.2021"
+date: 2021-11-30T14:30:21+02:00
+releaseDate: "30.11.2021"
 draft: false
 toc: false
 thumbnail: "/images/kinder-ogs.jpg"
