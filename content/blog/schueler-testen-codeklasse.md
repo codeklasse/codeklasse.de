@@ -1,5 +1,5 @@
 ---
-title: "Schüler testen codeklasse"
+title: "News: Schüler testen codeklasse"
 author: "codeklasse Team"
 date: 2021-12-03T14:30:21+02:00
 releaseDate: "04.12.2021"
@@ -8,52 +8,90 @@ toc: false
 thumbnail: "/images/kinder-ogs.jpg"
 ---
 
-Wir haben an letztem Freitag unseren nächsten Meilenstein erfolgreich erreicht.
-Unsere App wurde von 9 neugierigen Drittklässlern getestet!
-Die Lernerfolge und Eindrücke der Kinder sowie unsere Meinung dazu wollen wir mit euch teilen. 
+Vergangenen Freitag durften wir unseren nächsten Meilenstein abstempeln:
+In einem Feldtest wurde unsere App von 9 neugierigen Drittklässlern getestet!
+Wir freuen uns in diesem Post zu Lernerfolgen und Learnings zu berichten.
+Spoiler: Das eingeblendete Foto war eine Nachricht an das codeklasse Team :) 
 <!--more-->
 
 # Vorbereitung
-
-Vor zwei Wochen wurde unser Testtermin **in Bochumer Grundschule** bestätigt. 
-Seitdem liefen die Vorbereitungen auf Hochtouren. 
-Detaillierter Ablauf mit den Lernkonzepten, umfangreiche Testaufgaben, Aufbereitung der Endgeräte, das alles musste für die Schüler vorbereitet werden.  
+Vor zwei Wochen wurde unser Testtermin an einer **Bochumer Grundschule** bestätigt. 
+Seitdem liefen die Vorbereitungen auf Hochtouren:
+Konzeption eines Moderationsplans, die Vorbereitung von Testaufgaben und Bereitstellung der Endgeräte
+sind einige der Aufgaben, die neben der regulären Entwicklung umgesetzt werden mussten.  
 
 # Ablauf
+Die **Testgruppe** bestand aus 7 Mädchen und 2 Jungs einer Ganztagsbetreuung.
+Es hat unsere Erwartungen sehr positiv übertroffen,
+dass die Mehrzahl der aller Teilnehmenden Mädchen waren.
+Mit einem Durchschnittsalter von 8 Jahren, war die Altersgruppe eine perfekte Repräsentation der potenziellen Zielgruppe.
+Im Rahmen einer 90 Minütigen Veranstaltung, hatten wir ein kleines Programm zusammengestellt:
 
-Die **Testgruppe** bestand aus 7 Mädchen und 2 Jungen.
-Die Mehrzahl teilnehmender Mädchen hat unsere Erwartungen übertroffen.  
-Das Alter der Schüler war 8 Jahre, was wir als perfekt für den Einstieg in unsere App empfehlen. 
-Aus 9 Schüler wurden 3 Testgruppen gebildet.
-Jeder Gruppe wurde einen Tutor zugewiesen, um Interaktionen der Kinder mit codeklasse möglichst effektiv zu unterstützen. 
-**Folgende Programmierkonzepte** wie Eingabe, Ausgabe und Variablen wurden in der Teststunde altersgerecht vermittelt. 
-Die Schüler konnten folgende Konzepte anhand der Beispiele aus dem Alltag gut identifizieren. 
-Unser Ziel war nicht nur Programmierkonzepte altersgerecht zu präsentieren, sondern auch **Testen dieser Konzepte in codeklasse** zu beobachten. 
+Nach einem kurzen Kennenlernen sowie Aufwärmen mit altersgerechten Energizern
+wurden die 9 Teilnehmenden mit unserem dreiköpfigen Team auf 3 Kleingruppen verteilt.
+Mit Abfrage und Interaktion des Wissens hinsichtlich dem *Programmieren*, began die heiße Phase.
+Anhand des Programms haben wir **grundlegende Konzepte der Programmierung** im Dialog vermittelt
+und anhand von [codeklasse](https://app.codeklasse.de) demonstriert. 
+Da die noch junge Programmversion einen beschränkten Funktionsumfang trägt,
+haben wir in der ersten Stunde die Konzepte Ein- & Ausgabe sowie Datenspeicherung in Variablen behandelt.
 
-# Ergebnisse
+Sogleich durften die Kinder das Programm selbst ausprobieren und ihr neues Wissen praktisch erkunden.
+Neben der Wissensvermittlung und der **Mission zu begeistern**,
+war die Evaluation der Plattformhandhabung eine wichtige Teilaufgabe der Veranstaltung. 
+Um dies möglichst empirisch zu messen,
+haben wir einen Usability Tests mit einer Reihe von Aufgaben vorbereitet.
+Dabei haben wir unseren Kleingruppen Aufgaben gestellt
+und die Ausführung, mit Ermutigung laut zu denken, beobachtet.
+Aufgaben des Usability Tests umfassten Aktionen wie
+- "Platziert einen Emoji in eine Zeile"
+- "Löscht einen Emoji"
+- "Öffnet/ schließt die Vorschau"
+- ...
 
-Während des Testens haben wir folgende Erkenntnisse gewonnen:
-* die Oberfläche unserer App war für die Schüler einfach und intuitiv zu bedienen
-* die Kinder konnten **Emoji für den Programmcode** an richtigen Stellen platzieren 
-* die Schüler konnten selbständig ein kleines Programm mit erlernten Konzepten schreiben und danach ausführen 
-* 3D-Elemente halfen den Kindern den Zusammenhang zwischen dem Programmcode und Funktion des Programms herzustellen 
-* Ausführung der Testaufgaben stellte kein Problem für die Schüler dar
+Mit Ausnahme der Teilaufgabe zum Designwechsel hat dies in allen Gruppen gut funktioniert.
+
+## Ergebnisse
+Konkreter haben wir aus dem Test folgende Erkenntnisse mitgenommen:
+- Das Konzept kommt an! Die Kinder hatten Spaß und haben angegeben die Programmierkonzepte verstanden zu haben.
+  - Es braucht jedoch mehr Funktionalität! Das Programm wurde regelrecht verschlungen!
+- Grundlegender Umgang mit der Oberfläche funktioniert. Alle Aufgaben konnten zügig erfüllt werden.
+  - Auch wenn die Drag & Drop Bedienung erstmal funktioniert, muss das Platzieren noch reibungsloser werden.
+- Die Gruppenführung und Gruppengröße war hinsichtlich dem Moderationsteam genau passend (3 Teilnehmende pro Moderator).
+  - Die dialognahe Vermittlung war spitze (vor allem an konzentrationsarmen Nachmittagen)!
+  - In anschließenden Tests könnte aber ggf. mit anfänglichem Frontalunterricht herangeführt werden,
+    um die Moderationsrolle anfangs etwas klarer zu etablieren.
+<!-- - Der zeitliche Rahmen von 90 Minuten kann bei Bedarf auf 60 Minuten gestaucht werden, -->
+  <!-- geht jedoch gut auf und wird mit steigenden Funktionsumfang umso notwendiger. -->
 
 # Feedback
+Nachdem Testen haben die Schüler einen Fragebogen ausgefüllt und ihre Wahrnehmung anonym mitgeteilt. 
+Die Begeisterung für das Programmieren war bei den Kindern jedoch nicht zu übersehen.
+In einem anschließenden Stuhlkreis haben wir ausführlicher über den Ablauf gesprochen
+und neben viel Lob den Bedarf von individuellen Endgeräten mitgenommen.
+Mit einer beschränkten Anzahl an Notebooks,
+hat die Kooperation hinsichtlich der Geräteteilung in den Kleingruppen unterschiedlich gut funktioniert.
+Da mit 4 selbstgestellten Laptops nicht die gesamte Gruppe bedient werden konnte
+und die verfügbaren iPads,
+aufgrund eines unerwarteten Fehlers mit Safari ausgefallen sind,
+war es suboptimal das 2-3 Teilnehmende sich ein Gerät teilen mussten.
 
-Nachdem Testen haben die Schüler einen Fragebogen ausgefüllt und ihre Erfolgserlebnisse anonym mitgeteilt. 
-Begeisterung für Programmieren war bei den Kindern nicht zu übersehen. 
-Ein paar Tage später kam das Feedback von der OGS-Leiterin. 
-Sie hat uns mitgeteilt, dass die Kinder das Programmieren nicht als Anstrengung wahrgenommen haben. 
-Darauf haben wir in codeklasse durch den Ansatz der Emojis einen sehr großen Wert gelegt. 
-**Die Erfahrung mit Programmieren** hat die Schüler positiv beeinflusst. 
-Einige wirkten direkt selbsbewusster. 
+Mit pünktlichem Abschied der Gruppe began bereits beim Verlass des Klassenzimmers der Flurfunk der OGS:
+Bereits am folgenden Tag konnte die OGS-Leitung uns bestätigen,
+dass die Veranstaltung erfolgreich war.
+Unter den Kindern herrschte viel Begeisterung als von den Erlebnissen erzählt wurde.
+Besonders nachhaltig war, dass die Teilnehmende ihre neu erlernten Kompetenzen in eigenen Worten ausdrücken konnten.
+Als ungeahnter Bonus stellte sich heraus,
+dass auch Kinder mit Migrationshintergrund und Leserechtschreibschwäche beteiligt waren,
+denen das Programmieren einen Schub an Selbstbewusstsein vermittelt hatte.
 
 # Fazit
+Dieser Testtermin hat auch uns nachhaltig begeistert und Ansporn gebracht, die App großartig zu machen.
+Auch wenn die Arbeit mit Kindern nicht einfach ist, ist die erfahrene Dankbarkeit umso größer.
+Mit neuen Impulsen in der Tasche, freuen wir uns auf weitere Tests
+und hoffen in naher Zukunft unser fertiges Produkt der gleichen Schülergruppe vorzustellen.
+Das Projekt mit direktem Einfluss der Zielgruppe zu gestalten ist nicht nur eine große Bereicherung,
+sondern auch Voraussetzung, um den Ansprüchen der Gruppe gerecht zu werden. 
 
-Dieser Testtermin hat uns noch mehr Motivation und Ansporn gegeben, unsere App weiterzuentwickeln.
-Für unsere Arbeit werden wir sowohl Wünsche als auch Anforderungen unserer anspruchsvollen Testgruppe berücksichtigen und umsetzen.
-Wir hoffen in naher Zukunft unser fertiges Produkt den gleichen Schülern vorzustellen.
-Außerdem sind wir so froh über die Möglichkeit, codeklasse mit direktem Einfluss **der Zielgruppe** gestalten zu können. 
-Wenn Sie unsere App auch in Ihrer Schule testen möchten, schreiben Sie uns an. 
-Wir sind sicher, dass **Programmieren mit codeklasse** auch Ihren Schülern viel Spaß bereiten wird.
+Wenn auch Sie unsere App in Ihrer Schule testen möchten, freuen wir uns von
+<a href="mailto:sergej@codeklasse.de?subject=codeklasse testen">Ihnen zu hören</a>. 
+Wir sind sicher das **Programmieren mit codeklasse** auch Ihrer Klasse viel Spaß bereiten wird!
