@@ -2,3 +2,5 @@
 /resources
 /public
 *.content
+
+.vscode/
