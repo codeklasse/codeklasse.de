@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+#title-section {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 10px;
+
+    grid-template-areas:
+        ". . . ."
+        ". TitleText TitleText ."
+        ". ActionButtons DemoImage DemoImage"
+        ". . . . "
+        ;
+}
+
+#title-teaser-text {
+    grid-area: TitleText;
+}
+
+#title-action-buttons {
+    grid-area: ActionButtons;
+}
+
+#title-demo-image {
+    grid-area: DemoImage;
+}
+
+.div4 {
+    grid-area: FachlicheUmsetzung;
+}
+
+.column.center-content {
+    justify-content: center;
+    display: flex;
+}
+
+.sponsor-image {
+    height: auto;
+    max-width: 50%;
+}
+
+.social-media-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: max-content;
+}

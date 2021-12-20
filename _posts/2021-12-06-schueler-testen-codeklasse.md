@@ -1,7 +1,7 @@
 ---
 title: "News: Schüler testen codeklasse"
 author: "codeklasse Team"
-date: 2021-12-03T14:30:21+02:00
+date: 2021-12-06T14:30:21+02:00
 releaseDate: "06.12.2021"
 draft: false
 toc: false
