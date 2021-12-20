@@ -3,6 +3,10 @@
 @charset "utf-8";
 @import 'bulma-theme';
 
+.site-content {
+    padding: 0 7.5rem;
+}
+
 #title-section {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
