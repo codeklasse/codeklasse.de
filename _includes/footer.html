@@ -1,33 +1,65 @@
-<footer class="footer mt-4">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 col-sm-4 text-center">
-            </div>
-            <div class="col-md-4  text-center">
-                <a class="href-no-color-change" href="/feed.xml" target="_blank"><i class="fas fa-rss fa-lg"></i>&nbsp; Atom Feed</a>
-                &nbsp;
-                <a class="href-no-color-change" href="https://github.com/s-gbz/grilborzer.de" target="_blank"><i class="fab fa-github fa-lg"></i>&nbsp; GitHub</a>
-            </div>
-            <div class="col-md-4 col-sm-4 text-center">
-            </div>
+<footer class="footer">
+    <div class="columns">
+        <div class="column">
+            <b class="is-6">Unternehmen</b>
+
+            <p>Über uns</p>
+            <p>Impressum</p>
+            <p>Datenschutz</p>
         </div>
-        <div class="row" style="padding-top: 9px;">
-            <div class="col-md-4 col-sm-4 text-center text-lg-left" style="padding-top: 9px;">
-                Copyright © {{ site.time | date: "%Y" }} {{ site.name }} - all rights reserved.
-            </div>
 
-            <div class="col-md-4 col-sm-4 text-center text-lg-center">
-                <div class="row">
-                    <a class="nav-link col" href="{{ site.baseurl }}/privacy">Privacy Policy</a>
-                    <a class="nav-link col" href="{{ site.baseurl }}/legal">Legal</a>
-                </div>
-            </div>
+        <div class="column">
+            <b class="is-6">Ressourcen</b>
 
-            <div class="col-md-4 col-sm-4 text-center text-lg-right" style="padding-top: 9px;">
-                Powered by <a href="https://jekyllrb.com/">Jekyll</a>
-                and a customized <a target="_blank"
-                    href="https://www.wowthemes.net/mediumish-free-jekyll-template/">Mediumish Theme</a>.
-            </div>
+            <p>Blog</p>
+            <p>Fragen & Antwort</p>
+        </div>
+
+        <div class="column">
+            <b class="is-6">Kontakt</b>
+
+            <p>hi@codeklasse.de</p>
+            <p>+49 123 456 789</p>
+        </div>
+
+        <div class="column has-text-right social-media-icons">
+            <a
+                class="button"
+                target="_blank"
+                href="https://instagram.com/codeklasse"
+            ><i class="fab fa-instagram fa-lg"></i></a>
+            <a
+                class="button"
+                target="_blank"
+                href="https://www.linkedin.com/in/sergej-grilborzer-b28736205"
+            ><i class="fab fa-linkedin fa-lg"></i></a>
+            <a
+                class="button"
+                target="_blank"
+                href="https://www.facebook.com/codeklasse-102971225364051"
+            ><i class="fab fa-facebook fa-lg"></i></a>
+            <a
+                class="button"
+                target="_blank"
+                href="https://twitter.com/s_gbz"
+            ><i class="fab fa-twitter fa-lg"></i></a>
+            <a
+                class="button"
+                target="_blank"
+                href="https://github.com/codeklasse/codeklasse.de"
+            ><i class="fab fa-github fa-lg"></i></a>
         </div>
     </div>
+
+    <section class="level">
+        <p class="level-left">&copy; codeklasse {{ 'now' | date: "%Y" }}</p>
+
+        <figure
+            class="level-right image"
+            style="width: 7.5rem;"
+        >
+            <img src="assets/images/made-with-bulma.png">
+        </figure>
+    </section>
+    <!-- <p class="subtitle is-6">&copy; {{ now.Year }} codeklasse</p> -->
 </footer>

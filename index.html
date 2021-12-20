@@ -1,3 +1,8 @@
+---
+layout: home
+title: Welcome
+---
+
 <!DOCTYPE html>
 <html>
 
@@ -12,7 +17,10 @@
     content="width=device-width, initial-scale=1"
   >
   <title>My *third Bulma website</title>
-  <link rel="stylesheet" href="assets/css/main.css">
+  <link
+    rel="stylesheet"
+    href="assets/css/main.css"
+  >
   <link
     rel="icon"
     href="/assets/favicon.ico"
@@ -150,70 +158,7 @@
     </div>
   </section>
 
-
-  <footer class="footer">
-    <div class="columns">
-      <div class="column">
-        <b class="is-6">Unternehmen</b>
-
-        <p>Über uns</p>
-        <p>Impressum</p>
-        <p>Datenschutz</p>
-      </div>
-
-      <div class="column">
-        <b class="is-6">Ressourcen</b>
-
-        <p>Blog</p>
-        <p>Fragen & Antwort</p>
-      </div>
-
-      <div class="column">
-        <b class="is-6">Kontakt</b>
-
-        <p>hi@codeklasse.de</p>
-        <p>+49 123 456 789</p>
-      </div>
-
-      <div class="column has-text-right social-media-icons">
-        <a
-          class="button"
-          target="_blank"
-          href="https://instagram.com/codeklasse"
-        ><i class="fab fa-instagram fa-lg"></i></a>
-        <a
-          class="button"
-          target="_blank"
-          href="https://www.linkedin.com/in/sergej-grilborzer-b28736205"
-        ><i class="fab fa-linkedin fa-lg"></i></a>
-        <a
-          class="button"
-          target="_blank"
-          href="https://www.facebook.com/codeklasse-102971225364051"
-        ><i class="fab fa-facebook fa-lg"></i></a>
-        <a
-          class="button"
-          target="_blank"
-          href="https://twitter.com/s_gbz"
-        ><i class="fab fa-twitter fa-lg"></i></a>
-        <a
-          class="button"
-          target="_blank"
-          href="https://github.com/codeklasse/codeklasse.de"
-        ><i class="fab fa-github fa-lg"></i></a>
-      </div>
-    </div>
-
-    <p>&copy; codeklasse 2021</p>
-    <!-- <p class="subtitle is-6">&copy; {{ now.Year }} codeklasse</p> -->
-  </footer>
-
-  <!-- <script
-    type="text/javascript"
-    src="lib/main.js"
-  ></script> -->
-
-
+  {% include footer.html %}
 </body>
 
 </html>
