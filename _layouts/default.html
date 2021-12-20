@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="{{ site.baseurl }}/assets/images/logo.png">
+    <title>{{ page.title }} | {{site.name}}</title>
+
+    <!-- <script type="text/javascript" src="/assets/js/jquery.min.js"></script> -->
+
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+{% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
+
+<body class="{{layout}}">
+    <noscript id="deferred-styles">
+        <link href="/assets/fonts/Righteous-Merriweather.css" rel="stylesheet">
+        <link rel="stylesheet" href="/assets/css/fontawesome-all.css">
+    </noscript>
+
+    {% include navbar.html %}
+
+    <div class="site-content">
+        <div class="container">
+            <div class="main-content">
+                {{ content }}
+            </div>
+        </div>
+
+    {% include footer.html %}
+    </div>
+  
+    <script type="text/javascript" src="/assets/js/popper.min.js" defer></script>
+    <script type="text/javascript" src="/assets/js/bootstrap.min.js" defer></script>
+    <script type="text/javascript" src="/assets/js/mediumish.js" defer></script>
+
+    {% if site.lazyimages == "enabled" %}
+    <script type="text/javascript" src="/assets/js/lazyload.js"></script>
+    {% endif %}
+    
+    <script type="text/javascript" src="/assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>
