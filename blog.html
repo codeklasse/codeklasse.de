@@ -3,36 +3,23 @@ layout: default
 title: Blog
 ---
 
-<section class="featured-posts">
-    <div class="section-title">
-        <h2><span>Featured</span></h2>
+<div class="columns mb-3">
+    <section class="column is-12 content is-large container">
+        <div class="columns is-multiline is-horizontal notification is-primary logo-font">
+            <h1 class="column is-12 is-horizontal is-size-1-tablet is-size-4-mobile"><u>{{ page.title }}</u></h1>
+
+            <div class="block">
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="columns is-multiline my-3 mb-6 padding-left-blog-list">
+    {% for post in site.posts %}
+    <div class="column is-half-tablet is-one-third-widescreen">
+        <a href="{{ post.url }}">
+            {% include blog-post-tile.html %}
+        </a>
     </div>
-    <div class="row">
-        <ul>
-            {% for post in site.posts %}
-            <li>
-                <a href="{{ post.url }}">{{ post.title }}</a>
-            </li>
-            {% endfor %}
-        </ul>
-    </div>
-</section>
-
-
-<section class="recent-posts">
-
-    <div class="section-title">
-        <h2><span>All Stories</span></h2>
-    </div>
-
-    <div class="row listrecent">
-
-        {% for post in paginator.posts %}
-
-        {% include postbox.html %}
-
-        {% endfor %}
-
-    </div>
-
-</section>
+    {% endfor %}
+</div>

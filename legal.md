@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Impressum
+last_updated_date: "2021-12-21"
 ---
 <!-- "Zuletzt aktualisiert" hinzufügen -->
 

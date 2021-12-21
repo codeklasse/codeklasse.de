@@ -1,11 +1,17 @@
 ---
+layout: blogpost
 title: "Medienkompetenz von Grundschulkindern fördern"
 author: "codeklasse Team"
-date: 2021-09-14T14:30:21+02:00
+categories: [Movie Review]
+image: assets/images/medienkompetenz-von-grundschulkindern.jpg
+image_caption: ""
 releaseDate: "14.09.2021"
+
+toc: true
+comments: false
+featured: false
+hidden: false
 draft: false
-toc: false
-thumbnail: "/images/medienkompetenz-von-grundschulkindern.jpg"
 ---
 
 Digitale Medien sind im Alltag von Erwachsenen sehr präsent. 

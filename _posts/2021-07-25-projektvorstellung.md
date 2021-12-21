@@ -1,11 +1,16 @@
 ---
-title: "Eine kurze Projektvorstellung"
+layout: blogpost
+title:  "Eine kurze Projektvorstellung"
 author: "codeklasse Team"
-date: 2021-07-25T10:47:15+02:00
+categories: [Movie Review]
+image: assets/images/fb-banner-bigger.png
+image_caption: ""
 releaseDate: "25.07.2021"
-draft: false
 toc: false
-thumbnail: "/images/fb-banner-bigger.png"
+comments: false
+featured: false
+hidden: false
+draft: false
 ---
 
 <!-- Kontaktsektion unter dem Post einbauen & mit optionalen Parameter freischalten -->

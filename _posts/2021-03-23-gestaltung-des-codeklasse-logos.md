@@ -8,8 +8,8 @@ image_caption: ""
 toc: true
 comments: false
 featured: false
-hidden: false
-draft: false
+hidden: true
+draft: true
 ---
 
 # Gestaltung des codeklasse Logos

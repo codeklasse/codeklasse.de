@@ -3,7 +3,45 @@ layout: default
 title: Häufig gestellte Fragen
 ---
 
-{% for question in site.faq %}
-  <h2>{{ question.title }}</h2>
-  <p>{{ question.excerpt | strip_html }}</p>
-{% endfor %}
+<section
+    class="section"
+    data-category="faqs"
+>
+    <div class="container py-4">
+        <h2
+            class="title has-text-centered mb-6"
+            data-config-id="header"
+        >
+            {{ page.title }}
+        </h2>
+
+        <div class="mb-6">
+            {% for question in site.faq %}
+            <div class="card block">
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-left">
+                            <figure class="image is-64x64"><img
+                                    class="is-rounded"
+                                    src="placeholder/check.svg?primary=00d1b2"
+                                    alt=""
+                                ></figure>
+                        </div>
+                        <div class="media-content">
+                            <h3 class="title is-4">"{{ question.title }}"</h3>
+                            <p>{{ question.excerpt | strip_html }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="buttons is-centered">
+            <a
+                class="button is-primary"
+                href="mailto:hi@codeklasse.de"
+            >Fragen offen? Wir freuen uns von Ihnen zu hören!</a>
+        </div>
+    </div>
+</section>

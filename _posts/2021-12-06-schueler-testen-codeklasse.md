@@ -1,12 +1,19 @@
 ---
+layout: blogpost
 title: "News: Schüler testen codeklasse"
 author: "codeklasse Team"
-date: 2021-12-06T14:30:21+02:00
+categories: [Movie Review]
+image: assets/images/kinder-ogs.jpg
+image_caption: ""
 releaseDate: "06.12.2021"
+
+toc: true
+comments: false
+featured: false
+hidden: false
 draft: false
-toc: false
-thumbnail: "/images/kinder-ogs.jpg"
 ---
+
 
 Vergangenen Freitag durften wir unseren nächsten Meilenstein abstempeln:
 In einem Feldtest wurde unsere App von 9 neugierigen Drittklässlern getestet!

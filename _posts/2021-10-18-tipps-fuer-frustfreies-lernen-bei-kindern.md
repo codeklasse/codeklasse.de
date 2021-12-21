@@ -1,11 +1,17 @@
 ---
+layout: blogpost
 title: "Tipps für frustfreies Lernen bei Kindern"
 author: "codeklasse Team"
-date: 2021-10-17T12:30:21+02:00
+categories: [Movie Review]
+image: assets/images/tipps-fuer-frustfreies-lernen.jpg
+image_caption: ""
 releaseDate: "18.10.2021"
+
+toc: true
+comments: false
+featured: false
+hidden: false
 draft: false
-toc: false
-thumbnail: "/images/tipps-fuer-frustfreies-lernen.jpg"
 ---
 
 Motivation und Neugier am Lernen sind bei Grundschulkindern sehr stark ausgeprägt.
