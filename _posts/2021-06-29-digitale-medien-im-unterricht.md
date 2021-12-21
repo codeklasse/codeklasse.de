@@ -1,12 +1,17 @@
 ---
+layout: blogpost
 title: "Digitale Medien im Unterricht"
 author: "codeklasse Team"
-date: 2021-06-29T15:47:15+02:00
-releaseDate: "29.06.2021"
+categories: [Movie Review]
+image: assets/images/digitale-medien-im-unterricht.jpeg
+image_caption: ""
+toc: true
+comments: false
+featured: true
+hidden: false
 draft: false
-toc: false
-thumbnail: "/images/digitale-medien-im-unterricht.jpeg"
 ---
+
 
 Lange Zeit war Mediengebrauch im Bildungssektor ein umstrittenes Thema.
 Die Pandemie hat diesen Umstand zerrüttet.

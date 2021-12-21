@@ -1,10 +1,15 @@
 ---
-title: "Gestaltung des codeklasse Logos"
-releaseDate: "23.03.2021"
-toc: false
-thumbnail: "/images/test2.jpg"
-author: "Sergej Grilborzer"
-draft: true
+layout: blogpost
+title:  "Gestaltung des codeklasse Logos"
+author: "codeklasse Team"
+categories: [Movie Review]
+image: assets/images/test2.jpg
+image_caption: ""
+toc: true
+comments: false
+featured: false
+hidden: false
+draft: false
 ---
 
 # Gestaltung des codeklasse Logos
