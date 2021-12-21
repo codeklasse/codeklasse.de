@@ -1,0 +1,31 @@
+<div class="align-self-center text-center">
+    <ul class="list-group list-group-horizontal flex-wrap">
+        {% assign categories_list = site.categories %}
+
+        {% if categories_list.first[0] == null %}
+        {% for category in categories_list %}
+        <a
+            class="list-group-item flex-fill category-item-li"
+            href="{{site.baseurl}}/categories#{{ category | url_escape | strip | replace: ' ', '-' }}"
+            style="border-width: 1px;"
+        >
+            {{ category | camelcase }}
+            <span class="badge badge-primary badge-pill">{{ site.tags[category].size }}</span>
+        </a>
+        {% endfor %}
+        {% else %}
+        {% for category in categories_list %}
+        <a
+            class="list-group-item flex-fill category-item-li"
+            href="{{site.baseurl}}/categories#{{ category[0] | url_escape | strip | replace: ' ', '-' }}"
+            style="border-width: 1px;"
+        >
+            {{ category[0] | camelcase }}
+            <span class="badge badge-primary badge-pill">{{ category[1].size }}</span>
+        </a>
+
+        {% endfor %}
+        {% endif %}
+        {% assign categories_list = nil %}
+    </ul>
+</div>

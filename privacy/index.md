@@ -1,9 +1,9 @@
 ---
-title: "Datenschutzerklärung"
-date: 2021-03-10T20:40:41+01:00
-draft: false
-author: Sergej Grilborzer
+layout: default
+title: Datenschutzerklärung
 ---
+<!-- "Zuletzt aktualisiert" hinzufügen -->
+
 
 <!-- https://sos-recht.de/datenschutz/dsgvo-datenschutz-generator/ -->
 <!-- https://www.mein-datenschutzbeauftragter.de/datenschutzerklaerung-konfigurator/ -->

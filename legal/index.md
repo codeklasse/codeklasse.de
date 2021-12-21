@@ -1,9 +1,8 @@
 ---
-title: "Impressum"
-date: 2021-03-10T20:40:41+01:00
-draft: false
-author: Sergej Grilborzer
+layout: default
+title: Impressum
 ---
+<!-- "Zuletzt aktualisiert" hinzufügen -->
 
 **Verantwortlich für den Inhalt (gem. § 55 Abs. 2 RStV) / Responsible for content**
 
