@@ -1,0 +1,9 @@
+---
+layout: default
+title: Häufig gestellte Fragen
+---
+
+{% for question in site.faq %}
+  <h2>{{ question.title }}</h2>
+  <p>{{ question.excerpt | strip_html }}</p>
+{% endfor %}

@@ -11,3 +11,5 @@ but it was *somehow magically* resolved via this [GitHub comment](https://github
 How to use scss in Jekyll: 
 - https://riptutorial.com/jekyll/example/28925/sass-scss
 - https://jekyllrb.com/docs/assets/
+
+FAQ section created via [Jekyll collections](https://jekyllrb.com/docs/collections/)

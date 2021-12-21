@@ -19,3 +19,6 @@ exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock, vendor, p
 
 sass:
     sass_dir: _sass
+
+collections:
+  - faq
