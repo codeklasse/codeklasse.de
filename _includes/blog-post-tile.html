@@ -1,43 +1,56 @@
 <div class="card">
-  <p class="is-size-3-tablet is-size-4-mobile is-flex is-justify-content-center"><u>{{ post.title }}</u></p>
-  <div class="card-image">
-    <figure class="image">
-      <img
-        src="{{ site.baseurl }}{{ post.image }}"
-        alt="Placeholder image"
-      >
-    </figure>
-  </div>
-  <div class="card-content">
-    <div class="media">
-      <div class="media-left">
-        <figure class="image is-48x48">
-          {% if author.avatar %}
-          <img
-            class="author-thumb"
-            src="{{ site.baseurl }}/{{ author.avatar }}"
-            alt="{{ author.display_name }}"
-          >
-          {% else %}
-          <img
-            class="author-thumb"
-            src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250&d=mm&r=x"
-            alt="{{ author.display_name }}"
-          >
-          {% endif %}
+    <div class="card-image p-5">
+        <figure class="image is-4by3">
+            <!-- Crop image according to ratio via "object-fit: cover" -->
+            <img
+                src="{{ site.baseurl }}{{ post.image }}"
+                alt="{{ post.image_caption }}"
+                style="object-fit: cover;"
+            >
         </figure>
-      </div>
-      <div class="media-content">
-        <p class="subtitle is-6">
-          author name
-          <br>
-          21.12.2021
-        </p>
-      </div>
     </div>
 
-    <div class="content">
-      {{ post.excerpt | strip_html | truncatewords:25 }}
+    <!-- <section
+        class="hero is-primary is-overlay"
+        style="height: max-content;"
+    >
+        <div class="hero-body">
+            <p class="subtitle">
+                {{ post.title }}
+            </p>
+        </div>
+    </section> -->
+
+    <div class="box has-background-primary has-text-centered is-overlay" style="height: max-content;  border-radius: 0;">
+        <h2 class="has-text-weight-bold">{{ post.title }}</h2>
     </div>
-  </div>
+
+    <!-- <div class="card-content is-overlay">
+        <span class="tag is-primary">Image label on overlay</span>
+    </div> -->
+
+    <footer class="card-footer">
+        <p class="card-footer-item">
+            <span class="tag is-info">
+                <!-- <button class="button is-info"> -->
+                {{ post.categories }}
+                <!-- </button> -->
+            </span>
+        </p>
+        <p class="card-footer-item">
+            <span>
+                <!-- "Jekyll-way-of-doing-it" wäre mittels post.date möglich -->
+                <!-- ^wäre zudem besser, weil Eingabeunabhängige Formatierungsoptionen offen bleiben -->
+                {{ post.releaseDate }}
+            </span>
+        </p>
+    </footer>
 </div>
+
+
+<!-- Center the blog-post title overlay on the image -->
+<style>
+    .is-overlay {
+        top: 50%;
+    }
+</style>

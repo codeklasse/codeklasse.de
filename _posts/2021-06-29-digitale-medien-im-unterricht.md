@@ -5,6 +5,8 @@ author: "codeklasse Team"
 categories: [Medientipps]
 image: assets/images/digitale-medien-im-unterricht.jpeg
 image_caption: ""
+releaseDate: "29.06.2021"
+
 toc: true
 comments: false
 featured: true
