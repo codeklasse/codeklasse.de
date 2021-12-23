@@ -5,6 +5,8 @@ author: "codeklasse Team"
 categories: [Medientipps]
 image: assets/images/test2.jpg
 image_caption: ""
+releaseDate: "23.03.2021"
+
 toc: true
 comments: false
 featured: false
