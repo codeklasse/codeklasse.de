@@ -1,25 +1,42 @@
 ---
 layout: default
-title: Blog
+title: Blog & News
 ---
 
-<div class="columns mb-3">
-    <section class="column is-12 content is-large container">
-        <div class="columns is-multiline is-horizontal notification is-primary logo-font">
-            <h1 class="column is-12 is-horizontal is-size-1-tablet is-size-4-mobile"><u>{{ page.title }}</u></h1>
+<section class="section has-background-primary is-fullheight">
+    <h2 class="title is-2">Blog & News</h2>
 
-            <div class="block">
-            </div>
-        </div>
-    </section>
-</div>
-
-<div class="columns is-multiline my-3 mb-6 padding-left-blog-list">
-    {% for post in site.posts %}
-    <div class="column is-half-tablet is-one-third-widescreen">
-        <a href="{{ post.url }}">
-            {% include blog-post-tile.html %}
-        </a>
+    <!-- Search bar -->
+    <div class="field is-pulled-right">
+        <p class="control has-icons-left">
+            <input
+                class="input"
+                type="text"
+                placeholder="Suche"
+            >
+            <span class="icon is-small is-left">
+                <i class="fas fa-lock"></i>
+            </span>
+        </p>
     </div>
-    {% endfor %}
-</div>
+
+    <br>
+    <br>
+    <!-- Category labels -->
+    <div class="buttons">
+        {% for category in site.categories %}
+        <button class="button is-info">{{ category | first }}</button>
+        {% endfor %}
+    </div>
+    
+    <!-- Post-grid -->
+    <div class="columns is-multiline my-3 mb-6 padding-left-blog-list">
+        {% for post in site.posts %}
+        <div class="column is-half-tablet is-one-third-widescreen">
+            <a href="{{ post.url }}">
+                {% include blog-post-tile.html %}
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</section>
