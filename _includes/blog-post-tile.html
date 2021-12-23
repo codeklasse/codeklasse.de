@@ -25,12 +25,13 @@
         {{ post.categories }}
     </span>
 
-    <!-- <div
+    <!-- Post answer here: https://stackoverflow.com/questions/53457981/ -->
+    <div
         id="blogpost-teaser"
         class="card-content is-overlay"
     >
-         post.excerpt | strip_html | truncatewords:25 }}
-    </div> -->
+        {{ post.excerpt | strip_html | truncatewords:25 }}
+    </div>
 
     <footer class="card-footer">
         <!-- <p class="card-footer-item"> -->
