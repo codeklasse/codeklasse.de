@@ -10,7 +10,7 @@ toc: false
 comments: false
 featured: false
 hidden: false
-draft: false
+
 ---
 
 <!-- Kontaktsektion unter dem Post einbauen & mit optionalen Parameter freischalten -->

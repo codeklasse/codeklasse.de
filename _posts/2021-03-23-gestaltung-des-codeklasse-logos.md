@@ -10,8 +10,6 @@ releaseDate: "23.03.2021"
 toc: true
 comments: false
 featured: false
-hidden: true
-draft: true
 ---
 
 # Gestaltung des codeklasse Logos

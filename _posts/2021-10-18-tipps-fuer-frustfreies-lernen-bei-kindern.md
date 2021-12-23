@@ -11,7 +11,7 @@ toc: true
 comments: false
 featured: false
 hidden: false
-draft: false
+
 ---
 
 Motivation und Neugier am Lernen sind bei Grundschulkindern sehr stark ausgeprägt.

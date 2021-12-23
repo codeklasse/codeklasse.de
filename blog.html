@@ -28,13 +28,15 @@ title: Blog & News
         <button class="button is-info">{{ category | first }}</button>
         {% endfor %}
     </div>
-    
+
     <!-- Post-grid -->
     <div class="columns is-multiline my-3 mb-6 padding-left-blog-list">
         {% for post in site.posts %}
         <div class="column is-half-tablet is-one-third-widescreen">
             <a href="{{ post.url }}">
+                {% if post.hidden != null and post.hidden != true %}
                 {% include blog-post-tile.html %}
+                {% endif %}
             </a>
         </div>
         {% endfor %}

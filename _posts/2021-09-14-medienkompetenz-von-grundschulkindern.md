@@ -11,7 +11,7 @@ toc: true
 comments: false
 featured: false
 hidden: false
-draft: false
+
 ---
 
 Digitale Medien sind im Alltag von Erwachsenen sehr präsent. 
