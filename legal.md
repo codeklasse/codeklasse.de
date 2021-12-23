@@ -1,9 +1,8 @@
 ---
-layout: default
+layout: legal-and-privacy
 title: Impressum
-last_updated_date: "2021-12-21"
+last_updated_date: "21.12.2021"
 ---
-<!-- "Zuletzt aktualisiert" hinzufügen -->
 
 **Verantwortlich für den Inhalt (gem. § 55 Abs. 2 RStV) / Responsible for content**
 
