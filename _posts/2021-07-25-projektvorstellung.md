@@ -3,7 +3,7 @@ layout: blogpost
 title:  "Eine kurze Projektvorstellung"
 author: "codeklasse Team"
 categories: [Movie Review]
-image: assets/images/fb-banner-bigger.png
+image: "assets/images/fb-banner-bigger.png"
 image_caption: ""
 releaseDate: "25.07.2021"
 toc: false
@@ -42,7 +42,7 @@ Es besteht ein potenzieller Kooperationspartner zur Visualisierung des Programmi
 Nach Entwicklung einer ersten Version der Bedienoberfläche ist Eingabeverarbeitung der aktuelle Stand der Anwendung.
 **Plan ist die Plattform zum September im Test mit Pilotschulen zu erproben.**
 
-![Erste Version der Bedienoberfläche von codeklasse](/images/codeklasse-oberflaeche.png)
+![Erste Version der Bedienoberfläche von codeklasse](/assets/images/codeklasse-oberflaeche.png)
 
 # Unsere Werte
 Parallel zur Anwendungsentwicklung ist die unternehmerische Orientierung ein bedeutsamer Punkt im Projektverlauf gewesen. 
