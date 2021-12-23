@@ -18,19 +18,28 @@
         <h2 class="has-text-weight-bold">{{ post.title }}</h2>
     </div>
 
-    <div id="blogpost-teaser" class="card-content is-overlay">
-        {{ post.excerpt | strip_html | truncatewords:25 }}
-    </div>
+    <span
+        id="blogpost-category"
+        class="tag is-info is-overlay"
+    >
+        {{ post.categories }}
+    </span>
 
+    <!-- <div
+        id="blogpost-teaser"
+        class="card-content is-overlay"
+    >
+         post.excerpt | strip_html | truncatewords:25 }}
+    </div> -->
 
     <footer class="card-footer">
-        <p class="card-footer-item">
-            <span class="tag is-info">
-                <!-- <button class="button is-info"> -->
-                {{ post.categories }}
-                <!-- </button> -->
-            </span>
-        </p>
+        <!-- <p class="card-footer-item"> -->
+        <!-- <span class="tag is-info"> -->
+        <!-- <button class="button is-info"> -->
+        <!-- {{ post.categories }} -->
+        <!-- </button> -->
+        <!-- </span> -->
+        <!-- </p> -->
         <p class="card-footer-item">
             <span>
                 <!-- "Jekyll-way-of-doing-it" wäre mittels post.date möglich -->
@@ -50,6 +59,14 @@
 <style>
     #blogpost-title-overlay.is-overlay {
         top: 50%;
+    }
+
+    #blogpost-category.is-overlay {
+        width: max-content;
+
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%, 0);
     }
 
     /* The overlay effect - lays on top of the container and over the image */
@@ -73,5 +90,6 @@
     #blogpost-teaser:hover.is-overlay {
         opacity: 1;
     }
+
     /* Read more here: https://www.w3schools.com/howto/howto_css_image_overlay_title.asp */
 </style>
