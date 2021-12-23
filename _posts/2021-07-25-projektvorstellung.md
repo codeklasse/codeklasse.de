@@ -2,7 +2,7 @@
 layout: blogpost
 title:  "Eine kurze Projektvorstellung"
 author: "codeklasse Team"
-categories: [Movie Review]
+categories: [News]
 image: "assets/images/fb-banner-bigger.png"
 image_caption: ""
 releaseDate: "25.07.2021"

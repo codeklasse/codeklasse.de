@@ -2,7 +2,7 @@
 layout: blogpost
 title: "News: Schüler testen codeklasse"
 author: "codeklasse Team"
-categories: [Movie Review]
+categories: [News]
 image: assets/images/kinder-ogs.jpg
 image_caption: ""
 releaseDate: "06.12.2021"

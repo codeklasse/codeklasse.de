@@ -2,7 +2,7 @@
 layout: blogpost
 title: "Digitale Medien im Unterricht"
 author: "codeklasse Team"
-categories: [Movie Review]
+categories: [Medientipps]
 image: assets/images/digitale-medien-im-unterricht.jpeg
 image_caption: ""
 toc: true

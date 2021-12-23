@@ -2,7 +2,7 @@
 layout: blogpost
 title:  ""
 author: ""
-categories: [Movie Review]
+categories: [Medientipps]
 image: assets/images/
 image_caption: ""
 toc: true

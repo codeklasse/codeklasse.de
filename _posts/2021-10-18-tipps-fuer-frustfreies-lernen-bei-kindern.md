@@ -2,7 +2,7 @@
 layout: blogpost
 title: "Tipps für frustfreies Lernen bei Kindern"
 author: "codeklasse Team"
-categories: [Movie Review]
+categories: [Medientipps]
 image: assets/images/tipps-fuer-frustfreies-lernen.jpg
 image_caption: ""
 releaseDate: "18.10.2021"

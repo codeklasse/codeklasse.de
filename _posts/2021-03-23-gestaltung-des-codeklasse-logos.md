@@ -2,7 +2,7 @@
 layout: blogpost
 title:  "Gestaltung des codeklasse Logos"
 author: "codeklasse Team"
-categories: [Movie Review]
+categories: [Medientipps]
 image: assets/images/test2.jpg
 image_caption: ""
 toc: true
