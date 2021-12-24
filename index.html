@@ -102,34 +102,32 @@ title: Startseite
   </div>
 
   <h4 class="subtitle is-4 has-text-right">
-    <a href="/faq">..weitere Fragen & Antworten</a></h4>
+    <a href="/faq">..weitere Fragen & Antworten</a>
+  </h4>
 </section>
 
 <section class="section has-background-primary is-fullheight">
   <h2 class="title is-2">Blog & News</h2>
-  <div class="columns">
-    <div class="column center-content">
-      <figure class="image sponsor-image">
-        <img src="assets/images/BO-Logo_m_Wortmarke_L10cmWebHQ.jpg">
-      </figure>
-    </div>
 
-    <div class="column center-content">
-      <figure class="image sponsor-image">
-        <img src="assets/images/BO-Logo_m_Wortmarke_L10cmWebHQ.jpg">
-      </figure>
+  <div class="columns is-multiline">
+    {% for post in site.posts limit:3 %}
+    <div class="column is-half-tablet is-one-third-widescreen">
+      <a href="{{ post.url }}">
+        {% if post.hidden != null and post.hidden != true %}
+        {% include blog-post-tile.html %}
+        {% endif %}
+      </a>
     </div>
-
-    <div class="column center-content">
-      <figure class="image sponsor-image">
-        <img src="assets/images/BO-Logo_m_Wortmarke_L10cmWebHQ.jpg">
-      </figure>
-    </div>
-
-    <div class="column center-content">
-      <figure class="image sponsor-image">
-        <img src="assets/images/BO-Logo_m_Wortmarke_L10cmWebHQ.jpg">
-      </figure>
-    </div>
+    {% endfor %}
   </div>
+
+  <h4 class="subtitle is-4 has-text-right">
+    <a href="/blog">..alle Artikel im codeklasse Blog</a>
+  </h4>
 </section>
+
+<style>
+  #blogpost-teaser.is-overlay {
+    transition: 1s ease-in-out;
+  }
+</style>
