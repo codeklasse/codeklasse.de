@@ -1,10 +1,18 @@
 ---
 ---
-@charset "utf-8";
-@import 'bulma-theme';
 
-.site-content {
-    padding: 0 7.5rem;
+@charset "utf-8";
+@import "bulma-theme";
+// @import "fontawesome-import";
+@import "fontawesome.min.css";
+@import "brands.min.css";
+@import "regular.min.css";
+@import "solid.min.css";
+
+@media screen and (min-width: 1200px) {
+    .site-content {
+        padding: 0 7.5rem;
+    }
 }
 
 #title-section {
@@ -17,8 +25,7 @@
         ". . . ."
         ". TitleText TitleText ."
         ". ActionButtons DemoImage DemoImage"
-        ". . . . "
-        ;
+        ". . . . ";
 }
 
 #title-teaser-text {
@@ -59,6 +66,8 @@
 }
 
 // If not enough: https://stackoverflow.com/questions/42134731
-.button.is-white:hover, .button.is-white:visited, button.is-white:focus{
+.button.is-white:hover,
+.button.is-white:visited,
+button.is-white:focus {
     border-color: black;
 }

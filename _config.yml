@@ -21,4 +21,5 @@ sass:
     sass_dir: _sass
 
 collections:
-  - faq
+  faq:
+    output: true 

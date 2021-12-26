@@ -3,10 +3,14 @@
 {% include header.html %}
 
 <body>
-    <div class="site-content">
+    <div class="columns">
+        <div class="column is-1"></div>
+        <div class="column">
         {% include navbar.html %}
         {{ content }}
         {% include footer.html %}
+        </div>
+        <div class="column is-1"></div>
     </div>
 </body>
 

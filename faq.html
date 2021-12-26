@@ -18,6 +18,7 @@ title: Häufig gestellte Fragen
         <div class="mb-6">
             {% for question in site.faq %}
             <div class="card block">
+            <a href="{{ question.url }}">
                 <div class="card-content">
                     <div class="media">
                         <div class="media-left">
@@ -33,6 +34,7 @@ title: Häufig gestellte Fragen
                         </div>
                     </div>
                 </div>
+            </a>
             </div>
             {% endfor %}
         </div>
