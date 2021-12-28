@@ -71,7 +71,7 @@ $border-color: black;
 .button.is-white:hover,
 .button.is-white:visited,
 button.is-white:focus {
-    border-color: $border-color;
+    border-color: $success;
 }
 
 #faq-contact-button,
@@ -91,6 +91,9 @@ a {
     color: $dark;
 }
 
-a:hover {
+a:hover,
+// NOT SPECIFIC enough?! >.<!!
+#footer-button-instagram:focus {
+    border-color: $success;
     color: $success;
 }
