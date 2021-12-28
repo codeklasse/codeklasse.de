@@ -39,7 +39,7 @@ title: Blog & News
         {% assign id = id | plus:1 %}
         <div
             id="postId-{{id}}"
-            class="column is-half-tablet is-one-third-widescreen"
+            class="column is-half-tablet is-one-third-widescreen blog-post"
         >
             {% if post.hidden != null and post.hidden != true %}
             {% include blog-post-tile.html %}
@@ -63,11 +63,41 @@ title: Blog & News
         var cats = {{ post.categories | jsonify }};
 
         var newId = ++id;
-        var postDiv = document.getElementById("postId-" + newId);
-        postDiv.style.display =
+        var blogPost = document.getElementById("postId-" + newId);
+        blogPost.style.display =
             (selectedCategory == 'All' || cats.includes(selectedCategory))
                 ? 'unset'
                 : 'none';
     {% endfor %}
   }
+
+    //   Related to 
+    // https://www.impressivewebs.com/animate-display-block-none/
+    // It would be nice to have fade-in/ -out animations for the categories
+  let box = document.getElementById('box'),
+    btn = document.querySelector('button');
+
+    btn.addEventListener('click', function () {
+  
+  if (box.classList.contains('hidden')) {
+    box.classList.remove('hidden');
+    setTimeout(function () {
+      box.classList.remove('visuallyhidden');
+    }, 20);
+    } else {
+        box.classList.add('visuallyhidden');    
+        box.addEventListener('transitionend', function(e) {
+        box.classList.add('hidden');
+        }, {
+        capture: false,
+        once: true,
+        passive: false
+        });
+    }}, false);
 </script>
+
+<style>
+    .blog-post {
+        transition: 1s ease-in-out;
+    }
+</style>
