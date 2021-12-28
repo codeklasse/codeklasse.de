@@ -13,15 +13,14 @@ featured: false
 hidden: false
 
 ---
-<!-- Achtung! Wenn der Titel umbenannt werden sollte,
-muss der Titel auch im about template umbenannt werden,
-da Projektbezogene Posts dort nach Namen gefiltert werden -->
-
 Vergangenen Freitag durften wir unseren nächsten Meilenstein abstempeln:
 In einem Feldtest wurde unsere App von 9 neugierigen Drittklässlern getestet!
 Wir freuen uns in diesem Post zu Lernerfolgen und Learnings zu berichten.
 Spoiler: Das eingeblendete Foto war eine Nachricht an das codeklasse Team :) 
 <!--more-->
+<!-- Achtung! Wenn der Titel umbenannt werden sollte,
+muss der Titel auch im about template umbenannt werden,
+da Projektbezogene Posts dort nach Namen gefiltert werden -->
 
 # Vorbereitung
 Vor zwei Wochen wurde unser Testtermin an einer **Bochumer Grundschule** bestätigt. 

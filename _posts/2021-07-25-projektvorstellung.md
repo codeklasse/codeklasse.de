@@ -12,14 +12,13 @@ featured: false
 hidden: false
 
 ---
-<!-- Achtung! Wenn der Titel umbenannt werden sollte,
-muss der Titel auch im about template umbenannt werden,
-da Projektbezogene Posts dort nach Namen gefiltert werden -->
-
 <!-- Kontaktsektion unter dem Post einbauen & mit optionalen Parameter freischalten -->
 Hi, ich bin Sergej Grilborzer - Softwareentwickler und Gründer von codeklasse.
 In diesem kurzen Beitrag schauen wir uns die Entstehung des Projekts an.
 <!--more-->
+<!-- Achtung! Wenn der Titel umbenannt werden sollte,
+muss der Titel auch im about template umbenannt werden,
+da Projektbezogene Posts dort nach Namen gefiltert werden -->
 
 # Die Idee (März 2020)
 Die Idee mit Emojis zu programmieren, ist im **März letzten Jahres** (2020) entstanden.

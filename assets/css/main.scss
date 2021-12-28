@@ -74,6 +74,9 @@ button.is-white:focus {
     border-color: $border-color;
 }
 
+#faq-contact-button,
+.buttons button.button,
+a.button,
 .has-border,
 .card,
 figure {
@@ -82,4 +85,8 @@ figure {
 
 .no-border {
     border: none;
+}
+
+a:link  {
+    text-decoration-color: black;
 }

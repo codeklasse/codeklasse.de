@@ -7,7 +7,7 @@ image: assets/images/digitale-medien-im-unterricht.jpeg
 image_caption: ""
 releaseDate: "29.06.2021"
 
-toc: true
+toc: false
 comments: false
 featured: true
 hidden: false
@@ -22,7 +22,7 @@ Spätestens seit Home Schooling ist der Einsatz von digitalen Lernmitteln nicht 
 Ist die Situation damit entschieden?
 Im Folgenden haben wir Vor- und Nachteile vom Unterricht mit digitalen Medien reflektiert.  
 
-# Vorteile: 
+# Vorteile
 
 **1) Graphische Darstellung komplexer Inhalte**
 
@@ -44,7 +44,7 @@ Mit der Vielzahl digitaler Hilfsmittel können Gruppenprojekte effizient gestalt
 Leistungsdruck und Angst vor Fehlern sind große Frustrationsquellen im Lernprozess.
 Einprogrammierte Aufmunterungen und interaktive Hilfestellungen können zu Folgeversuchen animieren, um langfristige Motivation aufrecht zu halten.
 
-# Nachteile:
+# Nachteile
 
 **1) Bedarf technischer Schulungen**
 
