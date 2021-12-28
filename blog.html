@@ -25,19 +25,49 @@ title: Blog & News
     <!-- Category labels -->
     <div class="buttons">
         {% for category in site.categories %}
-        <button class="button is-info">{{ category | first }}</button>
+        <button
+            class="button is-info"
+            onclick="filterUsingCategory('{{ category | first }}')"
+        >{{ category | first }}</button>
         {% endfor %}
     </div>
 
     <!-- Post-grid -->
     <div class="columns is-multiline my-3 mb-6 padding-left-blog-list">
+        {% assign id = 0 %}
         {% for post in site.posts %}
-        <div class="column is-half-tablet is-one-third-widescreen">
-            
-                {% if post.hidden != null and post.hidden != true %}
-                {% include blog-post-tile.html %}
-                {% endif %}
+        {% assign id = id | plus:1 %}
+        <div
+            id="postId-{{id}}"
+            class="column is-half-tablet is-one-third-widescreen"
+        >
+            {% if post.hidden != null and post.hidden != true %}
+            {% include blog-post-tile.html %}
+            {% endif %}
         </div>
         {% endfor %}
     </div>
 </section>
+
+<!-- Can be improved even more (probably):
+    https://esthermakes.tech/blog/2015/03/18/filtering-posts-by-tags-with-jekyll/
+ -->
+<!-- Shameless copy+pasting from 
+    https://langrsoft.com/2020/03/26/filtering-blog-posts-by-category-with-jekyll/
+ -->
+<script>
+    function filterUsingCategory(selectedCategory) {
+        // Changing the 'var's to 'let' or 'const' breaks the function
+    var id = 0;
+    {% for post in site.posts %}
+        var cats = {{ post.categories | jsonify }};
+
+        var newId = ++id;
+        var postDiv = document.getElementById("postId-" + newId);
+        postDiv.style.display =
+            (selectedCategory == 'All' || cats.includes(selectedCategory))
+                ? 'unset'
+                : 'none';
+    {% endfor %}
+  }
+</script>

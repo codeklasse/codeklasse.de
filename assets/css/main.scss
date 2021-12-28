@@ -87,11 +87,15 @@ figure {
     border: none;
 }
 
+// More infos: https://www.w3schools.com/css/css_link.asp
 a {
     color: $dark;
 }
 
 a:hover,
+// NOT SPECIFIC enough?! >.<!!
+// input.input:active,
+
 // NOT SPECIFIC enough?! >.<!!
 #footer-button-instagram:focus {
     border-color: $success;
