@@ -30,7 +30,8 @@ title: Startseite
 
 
 <section class="section">
-  <h2 class="title is-2">Unsere Partner & Förderer</h2>
+  {% include title-h2.html text="Unsere Partner & Förderer" %}
+
   <div class="columns is-vcentered">
     <div class="column center-content">
       <figure class="image sponsor-image">
@@ -51,7 +52,8 @@ title: Startseite
     </div>
   </div>
 
-  <h2 class="title is-2">Fragen & Antworten</h2>
+  {% include title-h2.html text="Fragen & Antworten" %}
+
   <div class="columns">
     <div class="column is-9">
       <h4 class="subtitle is-4 has-text-weight-semibold">"Was kann man mit codeklasse machen?"</h4>
@@ -107,7 +109,7 @@ title: Startseite
 </section>
 
 <section class="section has-background-primary is-fullheight">
-  <h2 class="title is-2">Blog & News</h2>
+  {% include title-h2.html text="Blog & News" %}
 
   <div class="columns is-multiline">
     {% for post in site.posts limit:3 %}

@@ -4,7 +4,8 @@ title: Über uns
 ---
 
 <section class="has-background-primary is-fullheight ">
-    <h2 class="title is-2 pt-5">Unsere Werte</h2>
+    
+    {% include title-h2.html text="Unsere Werte" %}
 
     <div class="columns is-multiline">
         <div class="column">
@@ -53,7 +54,8 @@ title: Über uns
         </div>
     </div>
 
-    <h2 class="title is-2 pt-5">Unser Team</h2>
+    {% include title-h2.html text="Unser Team" %}
+
     <div class="columns is-multiline mx-3 my-3">
         <div class="column">
             {% include about-us-member-tile.html
@@ -78,7 +80,7 @@ title: Über uns
         </div>
     </div>
 
-    <h2 class="title is-2 pt-5">Über das Projekt</h2>
+    {% include title-h2.html text="Über das Projekt" %}
 
     <div class="columns is-multiline mx-3 my-3">
         {% for post in site.posts reversed %}

@@ -3,7 +3,8 @@ layout: default
 ---
 
 <section class="my-3">
-    <h2 class="title is-2-tablet">{{ page.title }}</h2>
+    {% include title-h2.html text=page.title %}
+
     <p>Zuletzt aktualisiert: {{ page.last_updated_date }}</p>
     <br>
     <br>
