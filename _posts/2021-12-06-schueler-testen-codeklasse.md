@@ -13,7 +13,9 @@ featured: false
 hidden: false
 
 ---
-
+<!-- Achtung! Wenn der Titel umbenannt werden sollte,
+muss der Titel auch im about template umbenannt werden,
+da Projektbezogene Posts dort nach Namen gefiltert werden -->
 
 Vergangenen Freitag durften wir unseren nächsten Meilenstein abstempeln:
 In einem Feldtest wurde unsere App von 9 neugierigen Drittklässlern getestet!

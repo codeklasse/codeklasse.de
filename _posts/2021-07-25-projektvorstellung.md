@@ -12,6 +12,9 @@ featured: false
 hidden: false
 
 ---
+<!-- Achtung! Wenn der Titel umbenannt werden sollte,
+muss der Titel auch im about template umbenannt werden,
+da Projektbezogene Posts dort nach Namen gefiltert werden -->
 
 <!-- Kontaktsektion unter dem Post einbauen & mit optionalen Parameter freischalten -->
 Hi, ich bin Sergej Grilborzer - Softwareentwickler und Gründer von codeklasse.

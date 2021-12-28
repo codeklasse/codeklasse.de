@@ -1,4 +1,66 @@
 ---
 layout: default
-title:  Über uns
+title: Über uns
 ---
+
+<section class="has-background-primary is-fullheight">
+
+    <h2 class="title is-2">Unsere Werte</h2>
+
+    <div class="columns is-multiline">
+        <div class="column">
+            <div class="columns is-multiline">
+                {% include about-us-fact-tile.html
+                fact="codeklasse strebt an Kompetenzen des MINT Bereichs früh zu
+                stärken und Deutschlands Bedarf
+                nachhaltig zu decken."
+                img_url="/assets/emojis/heavy-check-mark_2714.png"
+                img_alt="Das codeklasse Team:
+                Liam, Sergej, Natallia" %}
+
+                {% include about-us-fact-tile.html
+                fact="Unsere Vision ist das jedes Kind nach der 4. Klasse neben Lesen, Schreiben, Rechnen auch Programmieren kann."
+                img_url="/assets/emojis/direct-hit_1f3af.png"
+                img_alt="Das codeklasse Team:
+                Liam, Sergej, Natallia" %}
+
+                {% include about-us-fact-tile.html
+                fact="Unsere Mission ist Kinder für das Programmieren zu begeistern und eine Plattform zu schaffen die diese Kompetenz spielerisch & anschaulich vermittelt."
+                img_url="/assets/emojis/grinning-face-with-star-eyes_1f929.png"
+                img_alt="Das codeklasse Team:
+                Liam, Sergej, Natallia" %}
+
+                {% include about-us-fact-tile.html
+                fact="Unsere oberste Priorität ist den Zugang zur Bildung des neuen Zeitalters unabhängig von Geld & Status zu ermöglichen."
+                img_url="/assets/emojis/white-up-pointing-index_261d.png"
+                img_alt="Das codeklasse Team:
+                Liam, Sergej, Natallia" %}
+            </div>
+        </div>
+
+        <div class="column is-4-tablet">
+            <figure class="image">
+                <img
+                    src="/assets/images/teamfoto-codeklasse.jpg"
+                    alt="Das codeklasse Team: Liam, Sergej, Natallia"
+                    style="object-fit: cover;"
+                >
+                <p class="has-text-centered">Das codeklasse Team: Liam, Sergej, Natallia</p>
+            </figure>
+        </div>
+    </div>
+
+    <h2 class="title is-2">Unser Team</h2>
+
+    <h2 class="title is-2">Über das Projekt</h2>
+
+    <div class="columns is-multiline mx-3 my-3">
+        {% for post in site.posts %}
+            {% if post.title == 'Eine kurze Projektvorstellung' or post.title contains 'Schüler testen codeklasse' %}
+        <div class="column">
+            {% include blog-post-tile.html %}
+        </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</section>
