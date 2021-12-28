@@ -8,8 +8,8 @@ baseurl: "/" # the subpath of your site, e.g. /blog
 url: "/" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: /blog/:title/
 
-twitter_username: jekyllrb
-github_username:  jekyll
+contact_phone: 0162 3292 122 
+contact_mail: sergej@codeklasse.de
 
 plugins:
   - jekyll-feed
