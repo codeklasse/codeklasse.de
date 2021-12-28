@@ -1,60 +1,61 @@
-<div class="card">
-    <div class="card-image p-5">
-        <figure class="image is-4by3">
-            <!-- Crop image according to ratio via "object-fit: cover" -->
-            <img
-                src="{{ site.baseurl }}{{ post.image }}"
-                alt="{{ post.image_caption }}"
-                style="object-fit: cover;"
-            >
-        </figure>
+<a href="{{ post.url }}">
+    <div class="card">
+        <div class="card-image p-5">
+            <figure class="image is-4by3">
+                <!-- Crop image according to ratio via "object-fit: cover" -->
+                <img
+                    src="{{ site.baseurl }}{{ post.image }}"
+                    alt="{{ post.image_caption }}"
+                    style="object-fit: cover;"
+                >
+            </figure>
+        </div>
+
+        <div
+            id="blogpost-title-overlay"
+            class="box has-background-primary has-text-centered is-overlay"
+            style="height: max-content;  border-radius: 0;"
+        >
+            <h2 class="has-text-weight-bold">{{ post.title }}</h2>
+        </div>
+
+        <span
+            id="blogpost-category"
+            class="tag is-info is-overlay"
+        >
+            {{ post.categories }}
+        </span>
+
+        <!-- Post answer here: https://stackoverflow.com/questions/53457981/ -->
+        <div
+            id="blogpost-teaser"
+            class="card-content is-overlay"
+        >
+            {{ post.excerpt | strip_html | truncatewords:25 }}
+        </div>
+
+        <footer class="card-footer">
+            <!-- <p class="card-footer-item"> -->
+            <!-- <span class="tag is-info"> -->
+            <!-- <button class="button is-info"> -->
+            <!-- {{ post.categories }} -->
+            <!-- </button> -->
+            <!-- </span> -->
+            <!-- </p> -->
+            <p class="card-footer-item">
+                <span>
+                    <!-- "Jekyll-way-of-doing-it" wäre mittels post.date möglich -->
+                    <!-- ^wäre zudem besser, weil Eingabeunabhängige Formatierungsoptionen offen bleiben -->
+                    <!-- https://learn.cloudcannon.com/jekyll/date-formatting/ -->
+
+                    <!-- Deutsche Formatierung: -->
+                    <!-- https://www.codingblatt.de/jekyll-monatsnamen-datumsformatierung/ -->
+                    {{ post.releaseDate }}
+                </span>
+            </p>
+        </footer>
     </div>
-
-    <div
-        id="blogpost-title-overlay"
-        class="box has-background-primary has-text-centered is-overlay"
-        style="height: max-content;  border-radius: 0;"
-    >
-        <h2 class="has-text-weight-bold">{{ post.title }}</h2>
-    </div>
-
-    <span
-        id="blogpost-category"
-        class="tag is-info is-overlay"
-    >
-        {{ post.categories }}
-    </span>
-
-    <!-- Post answer here: https://stackoverflow.com/questions/53457981/ -->
-    <div
-        id="blogpost-teaser"
-        class="card-content is-overlay"
-    >
-        {{ post.excerpt | strip_html | truncatewords:25 }}
-    </div>
-
-    <footer class="card-footer">
-        <!-- <p class="card-footer-item"> -->
-        <!-- <span class="tag is-info"> -->
-        <!-- <button class="button is-info"> -->
-        <!-- {{ post.categories }} -->
-        <!-- </button> -->
-        <!-- </span> -->
-        <!-- </p> -->
-        <p class="card-footer-item">
-            <span>
-                <!-- "Jekyll-way-of-doing-it" wäre mittels post.date möglich -->
-                <!-- ^wäre zudem besser, weil Eingabeunabhängige Formatierungsoptionen offen bleiben -->
-                <!-- https://learn.cloudcannon.com/jekyll/date-formatting/ -->
-
-                <!-- Deutsche Formatierung: -->
-                <!-- https://www.codingblatt.de/jekyll-monatsnamen-datumsformatierung/ -->
-                {{ post.releaseDate }}
-            </span>
-        </p>
-    </footer>
-</div>
-
+</a>
 
 <!-- Center the blog-post title overlay on the image -->
 <style>

@@ -87,6 +87,10 @@ figure {
     border: none;
 }
 
-a:link  {
-    text-decoration-color: black;
+a {
+    color: $dark;
+}
+
+a:hover {
+    color: $success;
 }
