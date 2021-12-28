@@ -3,9 +3,7 @@
 
 @charset "utf-8";
 @import "bulma-theme";
-// @import "fontawesome-import";
 @import "fontawesome.min.css";
-@import "brands.min.css";
 @import "regular.min.css";
 @import "solid.min.css";
 
@@ -14,6 +12,9 @@
         padding: 0 7.5rem;
     }
 }
+
+$border-radius: 3px;
+$border-color: black;
 
 #title-section {
     display: grid;
@@ -52,6 +53,7 @@
 .sponsor-image {
     height: auto;
     max-width: 50%;
+    border: none;
 }
 
 .social-media-icons {
@@ -62,12 +64,22 @@
 }
 
 .button.is-white {
-    border-color: black;
+    border-color: $border-color;
 }
 
 // If not enough: https://stackoverflow.com/questions/42134731
 .button.is-white:hover,
 .button.is-white:visited,
 button.is-white:focus {
-    border-color: black;
+    border-color: $border-color;
+}
+
+.has-border,
+.card,
+figure {
+    border: $border-radius solid $border-color;
+}
+
+.no-border {
+    border: none;
 }

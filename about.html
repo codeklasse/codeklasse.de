@@ -51,6 +51,29 @@ title: Über uns
     </div>
 
     <h2 class="title is-2">Unser Team</h2>
+    <div class="columns is-multiline mx-3 my-3">
+        <div class="column">
+            {% include about-us-member-tile.html
+                name="Sergej Grilborzer"
+                img_url="/assets/images/sergej.jpg"
+                img_alt="codeklasse Portrait Sergej" 
+            %}
+        </div>
+        <div class="column">
+            {% include about-us-member-tile.html
+                name="Natallia Satskevich"
+                img_url="/assets/images/natallia.jpg"
+                img_alt="codeklasse Portrait Natallia"
+            %}
+        </div>
+        <div class="column">
+            {% include about-us-member-tile.html
+                name="Liam Kranz"
+                img_url="/assets/images/liam.jpg"
+                img_alt="codeklasse Portrait Liam"
+            %}
+        </div>
+    </div>
 
     <h2 class="title is-2">Über das Projekt</h2>
 
@@ -64,3 +87,9 @@ title: Über uns
         {% endfor %}
     </div>
 </section>
+
+<style>
+    #blogpost-teaser.is-overlay {
+      transition: 1s ease-in-out;
+    }  
+</style>
