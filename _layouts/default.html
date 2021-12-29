@@ -2,16 +2,14 @@
 <html lang="de">
 {% include header.html %}
 
-<body>
-    <div class="columns">
-        <div class="column is-1"></div>
-        <div class="column">
+<body class="has-background-primary">
+
         {% include navbar.html %}
+        <div class="px-6">
         {{ content }}
-        {% include footer.html %}
         </div>
-        <div class="column is-1"></div>
-    </div>
+        {% include footer.html %}
+       
 </body>
 
 </html>

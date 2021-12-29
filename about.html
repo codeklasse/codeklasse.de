@@ -4,7 +4,7 @@ title: Über uns
 ---
 
 <section class="has-background-primary is-fullheight ">
-    
+
     {% include title-h2.html text="Unsere Werte" %}
 
     <div class="columns is-multiline">
@@ -21,21 +21,24 @@ title: Über uns
 
                 {% include about-us-fact-tile.html
                 fact_category="Vision"
-                fact="Unsere Vision ist das jedes Kind nach der 4. Klasse neben Lesen, Schreiben, Rechnen auch Programmieren kann."
+                fact="Unsere Vision ist das jedes Kind nach der 4. Klasse neben Lesen, Schreiben, Rechnen auch
+                Programmieren kann."
                 img_url="/assets/emojis/direct-hit_1f3af.png"
                 img_alt="Das codeklasse Team:
                 Liam, Sergej, Natallia" %}
 
                 {% include about-us-fact-tile.html
                 fact_category="Mission"
-                fact="Unsere Mission ist Kinder für das Programmieren zu begeistern und eine Plattform zu schaffen die diese Kompetenz spielerisch & anschaulich vermittelt."
+                fact="Unsere Mission ist Kinder für das Programmieren zu begeistern und eine Plattform zu schaffen die
+                diese Kompetenz spielerisch & anschaulich vermittelt."
                 img_url="/assets/emojis/grinning-face-with-star-eyes_1f929.png"
                 img_alt="Das codeklasse Team:
                 Liam, Sergej, Natallia" %}
 
                 {% include about-us-fact-tile.html
                 fact_category="Priorität"
-                fact="Unsere oberste Priorität ist den Zugang zur Bildung des neuen Zeitalters unabhängig von Geld & Status zu ermöglichen."
+                fact="Unsere oberste Priorität ist den Zugang zur Bildung des neuen Zeitalters unabhängig von Geld &
+                Status zu ermöglichen."
                 img_url="/assets/emojis/white-up-pointing-index_261d.png"
                 img_alt="Das codeklasse Team:
                 Liam, Sergej, Natallia" %}
@@ -59,23 +62,23 @@ title: Über uns
     <div class="columns is-multiline mx-3 my-3">
         <div class="column">
             {% include about-us-member-tile.html
-                name="Sergej Grilborzer"
-                img_url="/assets/images/sergej.jpg"
-                img_alt="codeklasse Portrait Sergej" 
+            name="Sergej Grilborzer"
+            img_url="/assets/images/sergej.jpg"
+            img_alt="codeklasse Portrait Sergej"
             %}
         </div>
         <div class="column">
             {% include about-us-member-tile.html
-                name="Natallia Satskevich"
-                img_url="/assets/images/natallia.jpg"
-                img_alt="codeklasse Portrait Natallia"
+            name="Natallia Satskevich"
+            img_url="/assets/images/natallia.jpg"
+            img_alt="codeklasse Portrait Natallia"
             %}
         </div>
         <div class="column">
             {% include about-us-member-tile.html
-                name="Liam Kranz"
-                img_url="/assets/images/liam.jpg"
-                img_alt="codeklasse Portrait Liam"
+            name="Liam Kranz"
+            img_url="/assets/images/liam.jpg"
+            img_alt="codeklasse Portrait Liam"
             %}
         </div>
     </div>
@@ -84,17 +87,19 @@ title: Über uns
 
     <div class="columns is-multiline mx-3 my-3">
         {% for post in site.posts reversed %}
-            {% if post.title == 'Eine kurze Projektvorstellung' or post.title contains 'Schüler testen codeklasse' %}
-        <div class="column">
+        {% if post.title == 'Eine kurze Projektvorstellung' or post.title contains 'Schüler testen codeklasse' %}
+        <div class="column is-one-third">
             {% include blog-post-tile.html %}
         </div>
-            {% endif %}
+        {% endif %}
         {% endfor %}
     </div>
 </section>
 
 <style>
     #blogpost-teaser.is-overlay {
-      transition: 1s ease-in-out;
-    }  
+        /* transition: 1s ease-in-out; */
+        /* Quicker transition speed is desired according to Liam -> We'll see & test. */
+        transition: .5s ease-in-out;
+    }
 </style>

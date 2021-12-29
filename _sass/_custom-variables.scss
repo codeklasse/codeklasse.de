@@ -1,11 +1,23 @@
+/* COLOR */
+/*************************************************/
 $primary : #F9F871;
 $info: #95F976;
-// $success: #F9F871; 
-// $warning:
+// $success: Bulma default
+// $warning: Bulma default
 $danger: #E46363;
 $light: #ffff78;
 $dark: #444444;
 
-// Reduce original breakpoint by a pixel to better separate between mobile & tablet
-// (iPad tablet was previously unavailable because of 1 missing pixel)
+/* BREAKPOINTS */
+/*************************************************/
+
+/* 
+ * Reduce original breakpoint by a pixel to better separate between mobile & tablet
+ * (iPad tablet was previously unavailable because of 1 missing pixel)
+ */
 $tablet: 768px;
+
+/* VARIOUS */
+/*************************************************/
+$border-radius: 3px;
+$border-color: black;

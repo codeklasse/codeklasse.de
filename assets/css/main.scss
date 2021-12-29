@@ -7,15 +7,13 @@
 @import "regular.min.css";
 @import "solid.min.css";
 
-@media screen and (min-width: 1200px) {
-    .site-content {
+
+
+.site-content {
+    @include tablet {
         padding: 0 7.5rem;
     }
 }
-
-$border-radius: 3px;
-$border-color: black;
-
 
 .column.center-content {
     justify-content: center;
@@ -33,6 +31,10 @@ $border-color: black;
     flex-direction: column;
     justify-content: center;
     max-width: max-content;
+
+    @include mobile {
+        flex-direction: row;
+    }
 }
 
 // If not enough: https://stackoverflow.com/questions/42134731
@@ -44,8 +46,7 @@ button.is-white:focus,
 
 #title-action-buttons .button:hover,
 .button.is-white:hover,
-#faq-contact-button:hover
-{
+#faq-contact-button:hover {
     border-color: $success;
 }
 
