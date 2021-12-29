@@ -65,10 +65,12 @@ figure {
 }
 
 // More infos: https://www.w3schools.com/css/css_link.asp
+.breadcrumb a,
 a {
     color: $dark;
 }
 
+.breadcrumb a:hover,
 a:hover,
 // NOT SPECIFIC enough?! >.<!!
 // input.input:active,

@@ -1,5 +1,5 @@
 ---
-layout: blog-post
+layout: faq-post
 title:  "Was kann man mit codeklasse machen?"
 last_updated_date: "2021-12-21"
 

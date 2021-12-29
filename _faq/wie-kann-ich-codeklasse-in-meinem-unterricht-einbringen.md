@@ -1,5 +1,5 @@
 ---
-layout: blog-post
+layout: faq-post
 title: "Wie kann ich codeklasse in meinem Unterricht einbringen?"
 last_updated_date: "2021-12-21"
 ---
