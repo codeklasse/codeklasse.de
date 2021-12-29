@@ -1,5 +1,5 @@
 ---
-layout: blogpost
+layout: blog-post
 title:  ""
 author: ""
 categories: [Medientipps]

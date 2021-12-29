@@ -1,5 +1,5 @@
 ---
-layout: blogpost
+layout: blog-post
 title: "Medienkompetenz von Grundschulkindern fördern"
 author: "codeklasse Team"
 categories: [Medientipps]

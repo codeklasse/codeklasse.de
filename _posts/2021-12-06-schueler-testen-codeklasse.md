@@ -1,5 +1,5 @@
 ---
-layout: blogpost
+layout: blog-post
 title: "News: Schüler testen codeklasse"
 author: "codeklasse Team"
 categories: [News]

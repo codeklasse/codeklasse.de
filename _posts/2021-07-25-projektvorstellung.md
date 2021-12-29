@@ -1,5 +1,5 @@
 ---
-layout: blogpost
+layout: blog-post
 title:  "Eine kurze Projektvorstellung"
 author: "codeklasse Team"
 categories: [News]

@@ -1,5 +1,5 @@
 ---
-layout: blogpost
+layout: blog-post
 title: "Tipps für frustfreies Lernen bei Kindern"
 author: "codeklasse Team"
 categories: [Medientipps]

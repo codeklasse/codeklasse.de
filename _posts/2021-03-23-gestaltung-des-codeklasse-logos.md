@@ -1,5 +1,5 @@
 ---
-layout: blogpost
+layout: blog-post
 title:  "Gestaltung des codeklasse Logos"
 author: "codeklasse Team"
 categories: [Medientipps]

@@ -1,5 +1,5 @@
 ---
-layout: blogpost
+layout: blog-post
 title: "Digitale Medien im Unterricht"
 author: "codeklasse Team"
 categories: [Medientipps]
