@@ -16,64 +16,40 @@
 $border-radius: 3px;
 $border-color: black;
 
-#title-section {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 10px;
-
-    grid-template-areas:
-        ". . . ."
-        ". TitleText TitleText ."
-        ". ActionButtons DemoImage DemoImage"
-        ". . . . ";
-}
-
-#title-teaser-text {
-    grid-area: TitleText;
-}
-
-#title-action-buttons {
-    grid-area: ActionButtons;
-}
-
-#title-demo-image {
-    grid-area: DemoImage;
-}
-
-.div4 {
-    grid-area: FachlicheUmsetzung;
-}
 
 .column.center-content {
     justify-content: center;
     display: flex;
 }
 
-.sponsor-image {
+.sponsors-and-partners-image {
     height: auto;
     max-width: 50%;
     border: none;
 }
 
-.social-media-icons {
+.social-media-icons-footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     max-width: max-content;
 }
 
+// If not enough: https://stackoverflow.com/questions/42134731
+.button.is-white:visited,
+button.is-white:focus,
 .button.is-white {
     border-color: $border-color;
 }
 
-// If not enough: https://stackoverflow.com/questions/42134731
+#title-action-buttons .button:hover,
 .button.is-white:hover,
-.button.is-white:visited,
-button.is-white:focus {
+#faq-contact-button:hover
+{
     border-color: $success;
 }
 
+// #title-action-buttons .button,
 #faq-contact-button,
 .buttons button.button,
 a.button,
@@ -100,4 +76,14 @@ a:hover,
 #footer-button-instagram:focus {
     border-color: $success;
     color: $success;
+}
+
+.wrap-button-text {
+    height: max-content;
+    white-space: inherit;
+}
+
+#get-in-contact {
+    color: $dark;
+    border: $border-radius solid $border-color;
 }
