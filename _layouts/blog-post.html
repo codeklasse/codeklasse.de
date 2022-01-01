@@ -2,60 +2,81 @@
 layout: default
 ---
 
-<nav class="breadcrumb" aria-label="breadcrumbs">
+
+<nav
+    class="breadcrumb"
+    aria-label="breadcrumbs"
+>
     <ul>
-      <li><a class="has-text-weight-bold" href="/blog">Alle Blogartikel</a></li>
-      <li class="is-active"><a href="#" aria-current="page">{{ page.title }}</a></li>
+        <li><a
+                class="has-text-weight-bold"
+                href="/blog"
+            >Alle Blogartikel</a></li>
+        <li class="is-active"><a
+                href="#"
+                aria-current="page"
+            >{{ page.title }}</a></li>
     </ul>
 </nav>
 
-<div class="has-text-centered">
-{% include title-h2.html text=page.title %}
-</div>
-
-<div class="columns is-multiline my-3">
-
-    <div class="column is-12 is-flex is-justify-content-center">
-        <figure
-            class="image"
-            style="max-width: 50%; height: auto;"
-        >
-            <img
-                src="{{ site.baseurl }}{{ page.image }}"
-                alt="Placeholder image"
-            >
-        </figure>
+<div class="has-background-white has-border py-6 px-6">
+    <div class="has-text-centered">
+        {% include title-h2.html text=page.title %}
     </div>
 
-    <section class="column content container px-6 is-size-5">
-        {{ content }}
-    </section>
+    <div class="columns is-multiline my-3 ">
 
-    <!-- is-reversed-mobile war ursprünglich für TOC gedacht - to fix! -->
-    {% if page.toc %}
-    <aside class="column is-one-quarter-widescreen">
-        <div class="card content is-fullwidth">
-            <header class="card-header">
-                <p class="card-header-title is-centered">Inhalt</p>
-                <a class="card-header-icon card-toggle">
-                    <figure
-                    class="image blog-post-toc-toggle-button"> 
-                    <img src="/assets/css/fontawesome-free/svgs/solid/angle-down.svg">
-                    </figure>
-                </a>
-            </header>
-            {% include toc.html html=content %}
+        <div class="column is-12 is-flex is-justify-content-center">
+            <figure
+                class="image"
+                style="max-width: 50%; height: auto;"
+            >
+                <img
+                    src="{{ site.baseurl }}{{ page.image }}"
+                    alt="Placeholder image"
+                >
+            </figure>
         </div>
-    </aside>
-    {% endif %}
-</div>
 
-<nav class="breadcrumb" aria-label="breadcrumbs">
-    <ul>
-      <li><a class="has-text-weight-bold" href="/blog">Alle Blogartikel</a></li>
-      <li class="is-active"><a href="#" aria-current="page">{{ page.title }}</a></li>
-    </ul>
-</nav>
+        <section class="column content container px-6 is-size-5 ">
+            {{ content }}
+        </section>
+
+        <!-- is-reversed-mobile war ursprünglich für TOC gedacht - to fix! -->
+        {% if page.toc %}
+        <aside class="column is-one-quarter-widescreen">
+            <div class="card content is-fullwidth">
+                <header class="card-header">
+                    <p class="card-header-title is-centered">Inhalt</p>
+                    <a class="card-header-icon card-toggle">
+                        <figure class="image blog-post-toc-toggle-button">
+                            <img src="/assets/css/fontawesome-free/svgs/solid/angle-down.svg">
+                        </figure>
+                    </a>
+                </header>
+                {% include toc.html html=content %}
+            </div>
+        </aside>
+        {% endif %}
+
+        <nav
+            class="column is-12 breadcrumb px-6"
+            aria-label="breadcrumbs"
+        >
+            <ul>
+                <li><a
+                        class="has-text-weight-bold"
+                        href="/blog"
+                    >Alle Blogartikel</a></li>
+                <li class="is-active"><a
+                        href="#"
+                        aria-current="page"
+                    >{{ page.title }}</a></li>
+            </ul>
+        </nav>
+    </div>
+
+</div>
 
 <script
     src="/assets/js/toggle-toc-visibility.js"
@@ -64,7 +85,8 @@ layout: default
 
 <style>
     .blog-post-toc-toggle-button {
-        width: 0.75rem;;
+        width: 0.75rem;
+        ;
         border: none;
     }
 </style>
