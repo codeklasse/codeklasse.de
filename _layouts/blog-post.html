@@ -36,7 +36,10 @@ layout: default
             <header class="card-header">
                 <p class="card-header-title is-centered">Inhalt</p>
                 <a class="card-header-icon card-toggle">
-                    <i class="fa fa-angle-down"></i>
+                    <figure
+                    class="image blog-post-toc-toggle-button"> 
+                    <img src="/assets/css/fontawesome-free/svgs/solid/angle-down.svg">
+                    </figure>
                 </a>
             </header>
             {% include toc.html html=content %}
@@ -56,3 +59,10 @@ layout: default
     src="/assets/js/toggle-toc-visibility.js"
     async
 ></script>
+
+<style>
+    .blog-post-toc-toggle-button {
+        width: 0.75rem;;
+        border: none;
+    }
+</style>
