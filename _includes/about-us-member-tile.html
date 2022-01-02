@@ -11,9 +11,14 @@
     </div>
 
     <div class="card-content">
-        <div class="media-content has-text-centered">
-            <p class="title is-4">{{ include.name }}</p>
-            <p class="subtitle is-6">@johnsmith</p>
+        <div class="media-content ">
+            <p class="title is-4 has-text-centered">{{ include.name }}</p>
+            <!-- <p class="subtitle is-6">@johnsmith</p> -->
+
+            <p class="subtitle is-6 pt-3">
+                {{ include.bio_description }}
+            </p>
+
         </div>
     </div>
 </div>
