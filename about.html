@@ -7,7 +7,7 @@ title: Über uns
 
     {% include title-h2.html text="Unsere Werte" %}
 
-    <div class="columns is-multiline">
+    <div class="columns is-multiline is-desktop">
         <div class="column">
             <div class="columns is-multiline">
                 {% include about-us-fact-tile.html
@@ -45,7 +45,7 @@ title: Über uns
             </div>
         </div>
 
-        <div class="column is-4-tablet">
+        <div class="column is-4-desktop">
             <figure class="image">
                 <img
                     src="/assets/images/teamfoto-codeklasse.jpg"
@@ -59,8 +59,8 @@ title: Über uns
 
     {% include title-h2.html text="Unser Team" %}
 
-    <div class="columns is-multiline mx-3 my-3">
-        <div class="column">
+    <div class="columns is-multiline mx-3-desktop my-3-desktop">
+        <div class="column is-half-tablet is-one-third-desktop">
             {% include about-us-member-tile.html
             name="Sergej Grilborzer"
             bio_description="
@@ -74,7 +74,7 @@ title: Über uns
             img_alt="codeklasse Portrait Sergej"
             %}
         </div>
-        <div class="column">
+        <div class="column is-half-tablet is-one-third-desktop">
             {% include about-us-member-tile.html
             name="Natallia Satskevich"
             bio_description="
@@ -90,7 +90,7 @@ title: Über uns
             img_alt="codeklasse Portrait Natallia"
             %}
         </div>
-        <div class="column">
+        <div class="column is-half-tablet is-one-third-desktop">
             {% include about-us-member-tile.html
             name="Liam Kranz"
             bio_description="
@@ -137,10 +137,10 @@ title: Über uns
 
     {% include title-h2.html text="Über das Projekt" %}
 
-    <div class="columns is-multiline mx-3 my-3">
+    <div class="columns is-multiline mx-3-desktop my-3-desktop">
         {% for post in site.posts reversed %}
         {% if post.title == 'Eine kurze Projektvorstellung' or post.title contains 'Schüler testen codeklasse' %}
-        <div class="column is-one-third">
+        <div class="column is-half-tablet is-one-third-desktop">
             {% include blog-post-tile.html %}
         </div>
         {% endif %}
