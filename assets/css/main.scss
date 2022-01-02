@@ -7,7 +7,6 @@
 // @import "regular.min.css";
 // @import "solid.min.css";
 
-
 /*
 *  Enable smooth scrolling for all elements
 */
@@ -18,6 +17,28 @@
 .site-content {
     @include tablet {
         padding: 0 7.5rem;
+    }
+}
+
+#title-section {
+    @include desktop {
+        padding-left: 3rem;
+    }
+}
+
+#main-navbar {
+    padding: 1rem 0;
+    display: flex;
+
+    @include desktop {
+        padding: 1rem 6rem;
+    }
+}
+
+.navbar-brand {
+    @include touch {
+        align-items: unset;
+        width: 100%;
     }
 }
 

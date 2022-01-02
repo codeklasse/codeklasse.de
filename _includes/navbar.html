@@ -1,5 +1,6 @@
 <!-- Make it sticky: navbar is-fixed-top AND "has-navbar-fixed-top" on parent HTML to adjust for padding -->
 <nav
+    id="main-navbar"
     class="navbar is-fixed-top has-background-primary has-shadow"
     role="navigation"
     aria-label="main navigation"
@@ -7,7 +8,7 @@
     <div class="navbar-brand">
         <a
             role="button"
-            class="navbar-burger"
+            class="navbar-burger element-left"
             aria-label="menu"
             aria-expanded="false"
         >
@@ -26,6 +27,7 @@
                 height="28"
             >
         </a>
+        <div class="element-right"></div>
     </div>
 
     <div class="navbar-menu">
@@ -80,8 +82,9 @@
 </nav>
 
 <style>
-    .navbar {
-        padding: 1rem 6rem;
+    /* Used to bring burger menu to left & center the logo */
+    .element-left, .element-right {
+        flex: 1;
     }
 
     a.navbar-item:hover {
