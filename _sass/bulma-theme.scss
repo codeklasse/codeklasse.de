@@ -52,5 +52,123 @@ $sizes: $size-1 $size-2 $size-3 $size-4 $size-5 $size-6 $size-7;
 @import "../node_modules/bulma/sass/layout/_all.sass";
 @import "../node_modules/bulma-block-list/src/block-list";
 
-// Your styles
-// @import 'main';
+
+// Responsive spacing helpers kindly provided by
+// https://github.com/jgthms/bulma/issues/451#issuecomment-703709105 
+@each $property, $shortcut in $spacing-shortcuts {
+    @each $name, $value in $spacing-values {
+      // Cardinal directions
+      @each $direction, $suffix in $spacing-directions {
+        @include mobile {
+          .#{$shortcut}#{$suffix}-#{$name}-mobile {
+            #{$property}-#{$direction}: $value !important;
+          }
+        }
+        @include tablet {
+          .#{$shortcut}#{$suffix}-#{$name}-tablet {
+            #{$property}-#{$direction}: $value !important;
+          }
+        }
+        @include touch {
+          .#{$shortcut}#{$suffix}-#{$name}-touch {
+            #{$property}-#{$direction}: $value !important;
+          }
+        }
+        @include desktop {
+          .#{$shortcut}#{$suffix}-#{$name}-desktop {
+            #{$property}-#{$direction}: $value !important;
+          }
+        }
+        @include widescreen {
+          .#{$shortcut}#{$suffix}-#{$name}-widescreen {
+            #{$property}-#{$direction}: $value !important;
+          }
+        }
+        @include fullhd {
+          .#{$shortcut}#{$suffix}-#{$name}-fullhd {
+            #{$property}-#{$direction}: $value !important;
+          }
+        }
+      }
+  
+      // Horizontal axis
+      @if $spacing-horizontal != null {
+        @include mobile {
+          .#{$shortcut}#{$spacing-horizontal}-#{$name}-mobile {
+            #{$property}-left: $value !important;
+            #{$property}-right: $value !important;
+          }
+        }
+        @include tablet {
+          .#{$shortcut}#{$spacing-horizontal}-#{$name}-tablet {
+            #{$property}-left: $value !important;
+            #{$property}-right: $value !important;
+          }
+        }
+        @include touch {
+          .#{$shortcut}#{$spacing-horizontal}-#{$name}-touch {
+            #{$property}-left: $value !important;
+            #{$property}-right: $value !important;
+          }
+        }
+        @include desktop {
+          .#{$shortcut}#{$spacing-horizontal}-#{$name}-desktop {
+            #{$property}-left: $value !important;
+            #{$property}-right: $value !important;
+          }
+        }
+        @include widescreen {
+          .#{$shortcut}#{$spacing-horizontal}-#{$name}-widescreen {
+            #{$property}-left: $value !important;
+            #{$property}-right: $value !important;
+          }
+        }
+        @include fullhd {
+          .#{$shortcut}#{$spacing-horizontal}-#{$name}-fullhd {
+            #{$property}-left: $value !important;
+            #{$property}-right: $value !important;
+          }
+        }
+      }
+  
+      // Vertical axis
+      @if $spacing-vertical != null {
+        @include mobile {
+          .#{$shortcut}#{$spacing-vertical}-#{$name}-mobile {
+            #{$property}-top: $value !important;
+            #{$property}-bottom: $value !important;
+          }
+        }
+        @include tablet {
+          .#{$shortcut}#{$spacing-vertical}-#{$name}-tablet {
+            #{$property}-top: $value !important;
+            #{$property}-bottom: $value !important;
+          }
+        }
+        @include touch {
+          .#{$shortcut}#{$spacing-vertical}-#{$name}-touch {
+            #{$property}-top: $value !important;
+            #{$property}-bottom: $value !important;
+          }
+        }
+        @include desktop {
+          .#{$shortcut}#{$spacing-vertical}-#{$name}-desktop {
+            #{$property}-top: $value !important;
+            #{$property}-bottom: $value !important;
+          }
+        }
+        @include widescreen {
+          .#{$shortcut}#{$spacing-vertical}-#{$name}-widescreen {
+            #{$property}-top: $value !important;
+            #{$property}-bottom: $value !important;
+          }
+        }
+        @include fullhd {
+          .#{$shortcut}#{$spacing-vertical}-#{$name}-fullhd {
+            #{$property}-top: $value !important;
+            #{$property}-bottom: $value !important;
+          }
+        }
+      }
+    }
+}
