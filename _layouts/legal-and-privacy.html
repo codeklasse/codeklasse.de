@@ -2,14 +2,22 @@
 layout: default
 ---
 
-<section class="my-3 has-background-white has-border py-6 px-6">
-    {% include title-h2.html text=page.title %}
+<div class="navbar-fixed-top-padding">
+    <section class="my-3 has-background-white has-border py-6 px-6">
+        {% include title-h2.html text=page.title %}
 
-    <p>Zuletzt aktualisiert: {{ page.last_updated_date }}</p>
-    <br>
-    <br>
+        <p>Zuletzt aktualisiert: {{ page.last_updated_date }}</p>
+        <br>
+        <br>
 
         <div class="content is-size-5-tablet">
             {{ content }}
         </div>
-</section>
+    </section>
+</div>
+
+<style>
+    .navbar-fixed-top-padding {
+        padding-top: 3.25rem;
+    }
+</style>

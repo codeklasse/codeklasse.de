@@ -8,6 +8,12 @@
 // @import "solid.min.css";
 
 
+/*
+*  Enable smooth scrolling for all elements
+*/
+* {
+    scroll-behavior: smooth;
+}
 
 .site-content {
     @include tablet {
@@ -70,6 +76,7 @@ a {
     color: $dark;
 }
 
+a.navbar-item:hover,
 .breadcrumb a:hover,
 a:hover,
 // NOT SPECIFIC enough?! >.<!!

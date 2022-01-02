@@ -1,102 +1,94 @@
 <!-- Make it sticky: navbar is-fixed-top AND "has-navbar-fixed-top" on parent HTML to adjust for padding -->
-<nav class="navbar has-background-primary" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">  
-      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
+<nav
+    class="navbar is-fixed-top has-background-primary has-shadow"
+    role="navigation"
+    aria-label="main navigation"
+>
+    <div class="navbar-brand">
+        <a
+            role="button"
+            class="navbar-burger"
+            aria-label="menu"
+            aria-expanded="false"
+        >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
 
-      <a class="navbar-item" href="/">
-        <img src="/assets/images/logo-full.png" alt="codeklasse: Programmieren lernen mit Emojis" height="28">
-      </a>
+        <a
+            class="navbar-item"
+            href="/"
+        >
+            <img
+                src="/assets/images/logo-full.png"
+                alt="codeklasse: Programmieren lernen mit Emojis"
+                height="28"
+            >
+        </a>
     </div>
 
-    <div class="navbar-end">
-        <div class="navbar-item">
-          <div class="buttons">
-            <a class="button is-white" target="_blank" href="https://app.codeklasse.de">
-                <p>codeklasse jetzt <span class="has-text-weight-bold">kostenlos nutzen</span>!</p>
+    <div class="navbar-menu">
+        <div class="navbar-start">
+            <!-- <a
+                class="navbar-item"
+                href="/#emoji-editor"
+            >
+                Emoji Editor
+            </a> -->
+            <a
+                class="navbar-item"
+                href="/about"
+            >
+                Über uns
             </a>
-          </div>
+            <!-- <a
+                class="navbar-item"
+                href="/#contact"
+            >
+                Kontakt
+            </a> -->
+            <a
+                class="navbar-item"
+                href="/faq"
+            >
+                Fragen & Antworten
+            </a>
+            <a
+                class="navbar-item"
+                href="/blog"
+            >
+                Blog
+            </a>
+            <div class="navbar-item has-dropdown is-hoverable"></div>
         </div>
-    </div>
+
+        <div class="navbar-end">
+            <div class="navbar-item">
+                <div class="buttons">
+                    <a
+                        class="button is-white"
+                        target="_blank"
+                        href="https://app.codeklasse.de"
+                    >
+                        <p>codeklasse jetzt <span class="has-text-weight-bold">kostenlos nutzen</span>!</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>    
 </nav>
 
 <style>
     .navbar {
-        padding: 2rem 6rem;
+        padding: 1rem 6rem;
+    }
+
+    a.navbar-item:hover {
+        background-color: initial;
+    }
+
+    .navbar.has-shadow {
+        box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
     }
 </style>
-
-<!-- <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">    
-    <div class="container pr-0">
-        <a class="href-no-color-change title-logo-lettering gallery-title-lettering" href="/">
-            <p>{{ site.name }}</p>
-        </a>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarMediumish">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item {% if page.url contains 'blog' or page.url contains 'categories' %} active {% endif %}">
-                    <a class="nav-link" href="/blog">Blog</a>
-                </li>
-                <li class="nav-item {% if page.url contains 'photography' %} active {% endif %}">
-                    <a class="nav-link" href="/photography">Photography</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav> -->
-
-<!-- Burger menu: <span> elements determine the number of burger lines -->
-<!-- <nav
-    class="navbar is-fixed-top px-6"
-    style="scroll-behavior: smooth"
->
-    <div class="container">
-        <div class="navbar-brand">
-            <a
-                class="navbar-item"
-                href="/"
-            >codeklasse</a>
-            
-            <a
-                class="navbar-burger"
-                role="button"
-                aria-label="menu"
-                aria-expanded="false"
-            >
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-
-        <div class="navbar-menu">
-            <div class="navbar-start">
-                <a
-                    class="navbar-item"
-                    href="/#emoji-editor"
-                >Emoji Editor</a>
-                <a
-                    class="navbar-item"
-                    href="/#features"
-                >Features</a>
-                <a
-                    class="navbar-item"
-                    href="/#contact"
-                >Kontakt</a>
-                <a
-                    class="navbar-item"
-                    href="/blog"
-                >Blog</a>
-                <div class="navbar-item has-dropdown is-hoverable"></div>
-            </div>
-        </div>
-    </div>
-</nav> -->
