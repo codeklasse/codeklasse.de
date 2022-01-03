@@ -109,6 +109,12 @@ a:hover,
     color: $success;
 }
 
+#copyright-year-mark {
+    @include mobile {
+        text-align: center;
+    }
+}
+
 .wrap-button-text {
     height: max-content;
     white-space: inherit;
