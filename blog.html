@@ -64,6 +64,12 @@ title: Blog & News
  -->
 <script>
     function filterUsingCategory(selectedCategory) {
+        const unmatchedPosts = document.getElementsByClassName("hidden");
+        
+        for (let index = 0; index < unmatchedPosts.length; index++) {
+            unmatchedPosts[index].classList.remove("hidden");
+        }
+
         const categoryButtons = document.getElementsByClassName("category-button");
 
         for(let i = 0; i < categoryButtons.length; i++) {
@@ -82,10 +88,13 @@ title: Blog & News
 
         var newId = ++id;
         var blogPost = document.getElementById("postId-" + newId);
-        blogPost.style.display =
-            (selectedCategory == 'Alle Artikel' || categories.includes(selectedCategory))
-                ? 'unset'
-                : 'none';
+
+        if(selectedCategory == 'Alle Artikel' || categories.includes(selectedCategory)) {
+            blogPost.classList.remove('hidden');
+        } else {
+            blogPost.classList.add('hidden');
+        }
+       
     {% endfor %}}
 
     //   Related to 
@@ -120,6 +129,8 @@ title: Blog & News
 <script>
     // Still kind'a buggy - should rather use this -> https://codepen.io/jamespen/pen/PooYyqZ
     function filterPosts(rawSearchQuery) {
+        markFirstCategoryAsActive();
+
         const searchQuery = rawSearchQuery.toLowerCase().trim();
         console.log(searchQuery);
         displayAllPostsIfQueryIsEmpty(searchQuery);
@@ -131,12 +142,22 @@ title: Blog & News
                 const titleOfPost = allPosts[index].firstElementChild.innerText.toLowerCase();
 
                 if(!titleOfPost.includes(searchQuery)) {
-                    allPosts[index].classList.add("hidden")
+                    allPosts[index].classList.add("hidden");
                 }
             }
         }
 
         displayAllPostsIfQueryIsEmpty(searchQuery);
+    }
+
+    function markFirstCategoryAsActive() {
+        const categoryButtons = document.getElementsByClassName("category-button");
+
+        for(let i = 1; i < categoryButtons.length; i++) {
+            categoryButtons[i].classList.add('is-light');
+        }
+
+        categoryButtons[0].classList.remove('is-light');
     }
 
     function displayAllPostsIfQueryIsEmpty(searchQuery) {
@@ -148,6 +169,48 @@ title: Blog & News
             }
         }
     }
+</script>
+
+<script>
+    // Nah bro, it's okay for now!
+
+    // function displayFilteredPosts() {
+    //     const postIds = [];
+    //     const allPosts = [];
+    //     let id = 1;
+
+    //     {% for post in site.posts %}
+    //         {% if post.hidden != null and post.hidden != true %}
+    //             postIds.push("postId-" + id++);
+    //         {% endif %}
+    //     {% endfor %}
+
+    //     console.log("allPosts", postIds);
+
+    //     for (let index = 1; index < postIds.length + 1; index++) {
+    //         allPosts.push(document.getElementById("postId-" + index));
+
+    //         const titleOfPost = allPosts[index].firstElementChild.innerText.toLowerCase();
+
+    //         if(!titleOfPost.includes(searchQuery)) {
+    //             allPosts[index].classList.add("hidden")
+    //         }
+    //     }
+
+    //     const filteredPostIds = [];
+
+    //     for (let index = 0; index < allPosts.length; index++) {
+    //         if(allPosts[index].firstElementChild) {
+    //             const titleOfPost = allPosts[index].firstElementChild.innerText.toLowerCase();
+
+    //             if(!titleOfPost.includes(searchQuery)) {
+    //                 filteredPostIds.push("postId-" + index + 1);
+    //             }
+    //         }
+    //     }
+
+    //     console.log("filteredPostIds ", filteredPostIds);
+    // }
 </script>
 
 <style>
