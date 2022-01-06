@@ -10,9 +10,11 @@ title: Blog & News
     <div class="field is-pulled-right">
         <p class="control has-icons-left">
             <input
+                id="searchBar"
                 class="input"
                 type="text"
                 placeholder="Suche"
+                oninput="filterPosts(this.value)"
             >
             <span class="icon is-small is-left">
                 <i class="fas fa-lock"></i>
@@ -44,6 +46,7 @@ title: Blog & News
         <div
             id="postId-{{id}}"
             class="column is-half-tablet is-one-third-widescreen blog-post"
+            name="post-{{id}}"
         >
             {% if post.hidden != null and post.hidden != true %}
             {% include blog-post-tile.html %}
@@ -114,8 +117,45 @@ title: Blog & News
     }, false);
 </script>
 
+<script>
+    // Still kind'a buggy - should rather use this -> https://codepen.io/jamespen/pen/PooYyqZ
+    function filterPosts(rawSearchQuery) {
+        const searchQuery = rawSearchQuery.toLowerCase().trim();
+        console.log(searchQuery);
+        displayAllPostsIfQueryIsEmpty(searchQuery);
+
+        const allPosts = document.getElementsByClassName("blog-post");
+        
+        for (let index = 0; index < allPosts.length; index++) {
+            if(allPosts[index].firstElementChild) {
+                const titleOfPost = allPosts[index].firstElementChild.innerText.toLowerCase();
+
+                if(!titleOfPost.includes(searchQuery)) {
+                    allPosts[index].classList.add("hidden")
+                }
+            }
+        }
+
+        displayAllPostsIfQueryIsEmpty(searchQuery);
+    }
+
+    function displayAllPostsIfQueryIsEmpty(searchQuery) {
+        if(searchQuery === "") {
+            const unmatchedPosts = document.getElementsByClassName("hidden");
+        
+            for (let index = 0; index < unmatchedPosts.length; index++) {
+                unmatchedPosts[index].classList.remove("hidden");
+            }
+        }
+    }
+</script>
+
 <style>
     .blog-post {
         /* transition: 1s ease-in-out; */
+    }
+
+    .hidden {
+        display: none;
     }
 </style>
