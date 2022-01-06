@@ -3,9 +3,6 @@
 
 @charset "utf-8";
 @import "bulma-theme";
-// @import "fontawesome.min.css";
-// @import "regular.min.css";
-// @import "solid.min.css";
 
 /*
 *  Enable smooth scrolling for all elements
@@ -125,6 +122,16 @@ a:hover,
     color: $dark;
     border: $border-radius solid $border-color;
 }
+
+/* blog.html start */
+#blog-search-field {
+
+    @include mobile {
+        float: none !important;
+    }
+}
+/* blog.html end */
+
 
 /* faq.html start */
 
