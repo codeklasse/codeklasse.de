@@ -22,11 +22,15 @@ title: Blog & News
 
     <br>
     <br>
-    <!-- Category labels -->
+    <!-- Category labels - css class "category-button" is required for highlighting active categories -->
     <div class="buttons">
+        <button
+            class="button is-info category-button"
+            onclick="filterUsingCategory('Alle Artikel')"
+        >Alle Artikel</button>
         {% for category in site.categories %}
         <button
-            class="button is-info"
+            class="button is-info is-light category-button"
             onclick="filterUsingCategory('{{ category | first }}')"
         >{{ category | first }}</button>
         {% endfor %}
@@ -57,47 +61,61 @@ title: Blog & News
  -->
 <script>
     function filterUsingCategory(selectedCategory) {
+        const categoryButtons = document.getElementsByClassName("category-button");
+
+        for(let i = 0; i < categoryButtons.length; i++) {
+            console.log(categoryButtons[i].textContent);
+            if(selectedCategory && selectedCategory === categoryButtons[i].textContent) {
+                categoryButtons[i].classList.remove('is-light');
+            } else {
+                categoryButtons[i].classList.add('is-light');
+            }
+        }
+
         // Changing the 'var's to 'let' or 'const' breaks the function
     var id = 0;
     {% for post in site.posts %}
-        var cats = {{ post.categories | jsonify }};
+        var categories = {{ post.categories | jsonify }};
 
         var newId = ++id;
         var blogPost = document.getElementById("postId-" + newId);
         blogPost.style.display =
-            (selectedCategory == 'All' || cats.includes(selectedCategory))
+            (selectedCategory == 'Alle Artikel' || categories.includes(selectedCategory))
                 ? 'unset'
                 : 'none';
-    {% endfor %}
-  }
+    {% endfor %}}
 
     //   Related to 
     // https://www.impressivewebs.com/animate-display-block-none/
     // It would be nice to have fade-in/ -out animations for the categories
-  let box = document.getElementById('box'),
+    let box = document.getElementById('box'),
     btn = document.querySelector('button');
 
     btn.addEventListener('click', function () {
   
-  if (box.classList.contains('hidden')) {
-    box.classList.remove('hidden');
-    setTimeout(function () {
-      box.classList.remove('visuallyhidden');
-    }, 20);
-    } else {
-        box.classList.add('visuallyhidden');    
-        box.addEventListener('transitionend', function(e) {
-        box.classList.add('hidden');
-        }, {
-        capture: false,
-        once: true,
-        passive: false
-        });
-    }}, false);
+        if(box) {
+            if (box.classList.contains('hidden')) {
+                box.classList.remove('hidden');
+
+                setTimeout(function () {
+                box.classList.remove('visuallyhidden');
+                }, 20);
+            } else {
+                box.classList.add('visuallyhidden');    
+                box.addEventListener('transitionend', function(e) {
+                box.classList.add('hidden');
+                }, {
+                capture: false,
+                once: true,
+                passive: false
+                });
+            }
+        }    
+    }, false);
 </script>
 
 <style>
     .blog-post {
-        transition: 1s ease-in-out;
+        /* transition: 1s ease-in-out; */
     }
 </style>
