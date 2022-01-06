@@ -16,16 +16,14 @@ title: Blog & News
                 placeholder="Suche"
                 oninput="filterPosts(this.value)"
             >
-            <span class="icon is-small is-left">
-                <i class="fas fa-lock"></i>
-            </span>
+                <img class="icon is-left search-icon ml-3" src="/assets/css/fontawesome-free/svgs/solid/search.svg">
         </p>
     </div>
 
     <br>
     <br>
     <!-- Category labels - css class "category-button" is required for highlighting active categories -->
-    <div class="buttons">
+    <div class="buttons is-fullwidth">
         <button
             class="button is-info category-button"
             onclick="filterUsingCategory('Alle Artikel')"
@@ -173,5 +171,19 @@ title: Blog & News
 <style>
     .hidden {
         display: none;
+    }
+
+    .search-icon {
+        width: 1rem !important;
+        border: none;
+        /* The color attribute doesn't seem to apply in the case of svg.
+           Opacity seems to be easier than using the filter attribute
+           https://stackoverflow.com/questions/22252472/
+         */
+        opacity: 0.65;
+    }
+
+    .is-fullwidth {
+        width: 100%;
     }
 </style>
