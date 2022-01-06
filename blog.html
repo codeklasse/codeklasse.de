@@ -97,7 +97,7 @@ title: Blog & News
        
     {% endfor %}}
 
-    //   Related to 
+    // Related to 
     // https://www.impressivewebs.com/animate-display-block-none/
     // It would be nice to have fade-in/ -out animations for the categories
     let box = document.getElementById('box'),
@@ -127,7 +127,6 @@ title: Blog & News
 </script>
 
 <script>
-    // Still kind'a buggy - should rather use this -> https://codepen.io/jamespen/pen/PooYyqZ
     function filterPosts(rawSearchQuery) {
         markFirstCategoryAsActive();
 
@@ -171,53 +170,7 @@ title: Blog & News
     }
 </script>
 
-<script>
-    // Nah bro, it's okay for now!
-
-    // function displayFilteredPosts() {
-    //     const postIds = [];
-    //     const allPosts = [];
-    //     let id = 1;
-
-    //     {% for post in site.posts %}
-    //         {% if post.hidden != null and post.hidden != true %}
-    //             postIds.push("postId-" + id++);
-    //         {% endif %}
-    //     {% endfor %}
-
-    //     console.log("allPosts", postIds);
-
-    //     for (let index = 1; index < postIds.length + 1; index++) {
-    //         allPosts.push(document.getElementById("postId-" + index));
-
-    //         const titleOfPost = allPosts[index].firstElementChild.innerText.toLowerCase();
-
-    //         if(!titleOfPost.includes(searchQuery)) {
-    //             allPosts[index].classList.add("hidden")
-    //         }
-    //     }
-
-    //     const filteredPostIds = [];
-
-    //     for (let index = 0; index < allPosts.length; index++) {
-    //         if(allPosts[index].firstElementChild) {
-    //             const titleOfPost = allPosts[index].firstElementChild.innerText.toLowerCase();
-
-    //             if(!titleOfPost.includes(searchQuery)) {
-    //                 filteredPostIds.push("postId-" + index + 1);
-    //             }
-    //         }
-    //     }
-
-    //     console.log("filteredPostIds ", filteredPostIds);
-    // }
-</script>
-
 <style>
-    .blog-post {
-        /* transition: 1s ease-in-out; */
-    }
-
     .hidden {
         display: none;
     }
