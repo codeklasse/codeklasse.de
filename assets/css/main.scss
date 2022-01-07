@@ -95,6 +95,13 @@ a {
 }
 
 a.navbar-item:hover,
+a.navbar-item:focus,
+a.navbar-item:focus-within {
+    background-color: initial;
+    color: $success;
+    border-color: $success;
+}
+
 .breadcrumb a:hover,
 a:hover,
 // NOT SPECIFIC enough?! >.<!!
