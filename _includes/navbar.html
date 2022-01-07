@@ -5,10 +5,10 @@
     role="navigation"
     aria-label="main navigation"
 >
-    <div class="navbar-brand">
+    <div class="navbar-brand mr-auto">
         <a
             role="button"
-            class="navbar-burger element-left"
+            class="navbar-burger"
             aria-label="menu"
             aria-expanded="false"
             data-target="navbar-menu"
@@ -28,22 +28,27 @@
                 height="28"
             >
         </a>
-        <div class="element-right"></div>
     </div>
 
-    <div id="navbar-menu" class="navbar-menu">
+    <div id="navbar-menu" class="navbar-menu has-background-primary">
         <div class="navbar-start">
-            <!-- <a
-                class="navbar-item"
-                href="/#emoji-editor"
-            >
-                Emoji Editor
-            </a> -->
             <a
-                class="navbar-item"
+                class="navbar-item has-text-centered"
                 href="/about"
             >
                 Über uns
+            </a>
+            <a
+                class="navbar-item has-text-centered"
+                href="/faq"
+            >
+                Fragen & Antworten
+            </a>
+            <a
+                class="navbar-item has-text-centered"
+                href="/blog"
+            >
+                Blog
             </a>
             <!-- <a
                 class="navbar-item"
@@ -51,45 +56,11 @@
             >
                 Kontakt
             </a> -->
-            <a
-                class="navbar-item"
-                href="/faq"
-            >
-                Fragen & Antworten
-            </a>
-            <a
-                class="navbar-item"
-                href="/blog"
-            >
-                Blog
-            </a>
-            
-            <!-- <div class="navbar-item has-dropdown is-hoverable">
-                <a class="navbar-link">
-                  More
-                </a>
-        
-                <div class="navbar-dropdown">
-                  <a class="navbar-item">
-                    About
-                  </a>
-                  <a class="navbar-item">
-                    Jobs
-                  </a>
-                  <a class="navbar-item">
-                    Contact
-                  </a>
-                  <hr class="navbar-divider">
-                  <a class="navbar-item">
-                    Report an issue
-                  </a>
-                </div>
-            </div> -->
         </div>
 
         <div class="navbar-end">
             <div class="navbar-item">
-                <div class="buttons">
+                <div class="buttons is-justify-content-center">
                     <a
                         class="button is-white"
                         target="_blank"
@@ -105,9 +76,9 @@
 
 <style>
     /* Used to bring burger menu to left & center the logo */
-    .element-left, .element-right {
+    /* .element-left, .element-right {
         flex: 1;
-    }
+    } */
 
     a.navbar-item:hover {
         background-color: initial;

@@ -23,21 +23,20 @@
     }
 }
 
+/* navbar.html start */
 #main-navbar {
     padding: 1rem 0;
     display: flex;
+
+    @include touch {
+        flex-direction: column;
+    }
 
     @include desktop {
         padding: 1rem 6rem;
     }
 }
-
-.navbar-brand {
-    @include touch {
-        align-items: unset;
-        // width: 100%;
-    }
-} 
+/* navbar.html end */
 
 .column.center-content {
     justify-content: center;
