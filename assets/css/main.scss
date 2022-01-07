@@ -35,9 +35,9 @@
 .navbar-brand {
     @include touch {
         align-items: unset;
-        width: 100%;
+        // width: 100%;
     }
-}
+} 
 
 .column.center-content {
     justify-content: center;
