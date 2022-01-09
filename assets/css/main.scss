@@ -68,6 +68,9 @@ button.is-white:focus,
     border-color: $border-color;
 }
 
+.button.is-primary:hover,
+.button.is-primary:active,
+.button.is-primary:focus,
 #title-action-buttons .button:hover,
 .button.is-white:hover,
 #faq-contact-button:hover {
@@ -75,6 +78,7 @@ button.is-white:focus,
 }
 
 // #title-action-buttons .button,
+.button.is-primary,
 #faq-contact-button,
 .buttons button.button,
 a.button,
