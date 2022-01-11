@@ -26,9 +26,8 @@
 
 #title-section {
 
-
     @include desktop {
-        margin-top: 7.5rem;
+        margin-top: 6rem;
     }
 }
 
@@ -54,6 +53,14 @@
         left: 3rem;
     }
 }
+
+#title-teaser-call-to-action-button {
+    position: relative;
+    top: -7.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 
 /* navbar.html start */
 #main-navbar {
