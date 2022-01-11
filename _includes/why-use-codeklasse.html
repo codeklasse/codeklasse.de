@@ -1,0 +1,52 @@
+<div class="has-text-centered mb-6">
+{% include title-h2.html text="Warum ist codeklasse für mich?" %}
+</div>
+
+
+<div id="why-use-codeklasse-tabs-list" class="buttons is-justify-content-space-around">
+    <a class="button content-switcher is-active" onclick="openTab(event,'Tab-Lehrkraefte')">Lehrkräfte</a>
+    <a class="button content-switcher" onclick="openTab(event,'Tab-Eltern')">Eltern</a>
+    <a class="button content-switcher" onclick="openTab(event,'Tab-Entscheidungsgeber')">Entscheidungsgeber</a>
+</div>
+
+  <div class="container">
+    <div id="Tab-Lehrkraefte" class="content-tab" >
+      <p>
+        test1<br>
+      Overview Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+
+    <div id="Tab-Eltern" class="content-tab" style="display:none">
+        <p>
+          test2
+          <br>
+        Details Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+    <div id="Tab-Entscheidungsgeber" class="content-tab" style="display:none">
+       <p>
+         test3 <br>  
+       Specification Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+</div>
+
+
+<script>
+    // Shamelessly copied from https://codepen.io/t7team/pen/ZowdRN - thanks for that!
+    
+    function openTab(evt, tabName) {
+      let i, x, tablinks;
+
+      x = document.getElementsByClassName("content-tab");
+      for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+      }
+
+      tablinks = document.getElementsByClassName("content-switcher");
+      for (i = 0; i < x.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" is-active", "");
+      }
+
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " is-active";
+    }
+</script>

@@ -25,6 +25,7 @@
 }
 
 #title-section {
+    margin-bottom: -5rem;
 
     @include desktop {
         margin-top: 6rem;
@@ -60,6 +61,23 @@
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
+}
+
+#why-use-codeklasse-tabs-list a.button {
+    min-width: 20rem;
+
+    @include tablet {
+        min-width: 30rem;
+        height: auto;
+    }
+
+    @include desktop {
+        min-width: 20rem;
+    }
+}
+
+#why-use-codeklasse-tabs-list a.button:not(:last-child):not(.is-fullwidth) {
+    margin-right: 0;
 }
 
 
@@ -108,6 +126,10 @@ button.is-white:focus,
     border-color: $border-color;
 }
 
+#why-use-codeklasse-tabs-list a.button:hover,
+#why-use-codeklasse-tabs-list a.button:active,
+#why-use-codeklasse-tabs-list a.button:focus,
+#why-use-codeklasse-tabs-list a.button.is-active,
 .button.is-primary:hover,
 .button.is-primary:active,
 .button.is-primary:focus,
