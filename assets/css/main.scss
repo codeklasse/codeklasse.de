@@ -25,11 +25,34 @@
 }
 
 #title-section {
-    margin-top: 7.5rem;
 
-    // @include desktop {
-    //     padding-left: 3rem;
-    // }
+
+    @include desktop {
+        margin-top: 7.5rem;
+    }
+}
+
+#title-teaser-image {
+
+    @include desktop {
+        margin-left: 8.33333337%;
+
+    }
+}
+
+#title-teaser-image {
+    position: relative;
+    top: -10rem;
+    left: 10rem;
+    width: 60rem;
+
+    @include mobile {
+        left: 1rem;
+    }
+
+    @include tablet {
+        left: 3rem;
+    }
 }
 
 /* navbar.html start */
