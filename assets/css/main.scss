@@ -17,10 +17,19 @@
     }
 }
 
-#title-section {
-    @include desktop {
-        padding-left: 3rem;
+.title {
+    @include mobile {
+        font-size: 1.2rem;
+        font-weight: 500;
     }
+}
+
+#title-section {
+    margin-top: 7.5rem;
+
+    // @include desktop {
+    //     padding-left: 3rem;
+    // }
 }
 
 /* navbar.html start */
