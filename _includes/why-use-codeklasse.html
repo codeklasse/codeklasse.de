@@ -16,7 +16,8 @@
     </div>
 
     <div id="Tab-Eltern" class="content-tab">
-        <h3 class="title is-4 py-5 has-text-centered is-italic">Den Kindern die beste Bildung ermöglichen.</h3>
+        <!-- ODER: Kindern die Bildung von Morgen ermöglichen. -->
+        <h3 class="title is-4 py-5 has-text-centered is-italic">Kindern die Fähigkeiten von Morgen geben.</h3>
     
         <div class="pt-3">
             {% include codeklasse-eltern-fact-tile.html
@@ -24,7 +25,7 @@
                 fact_subtext="Zweck"
 
                 img_url="assets/images/frontpage/thisisengineering-raeng-bIltCMXIwRE-unsplash.jpg"
-                img_alt=""
+                img_alt="Von links nach rechts: Ein junger Mann, eine junge Frau und ein weiterer junger Mann schauen auf ein Notebook und sprechen sich ab. Photo credit: thisisengineering-raeng von Unsplash (photo-id bIltCMXIwRE)"
             %}
         </div>
 
@@ -34,19 +35,28 @@
                 fact_subtext="Zweck"
 
                 img_url="assets/images/frontpage/ben-white-qDY9ahp0Mto-unsplash.jpg"
-                img_alt=""
+                img_alt="Ein Junge guckt, aufgrund des Buchs in seiner Hand, erstaunt in die Kamera. Photo credit: Ben White von Unsplash (photo-id qDY9ahp0Mto)"
             %}
         <!-- </div> -->
 
         <!-- <div class="pt-1"> -->
             {% include codeklasse-eltern-fact-tile.html
                 fact="Bildschirmzeit sinnvoll gestalten"
-                fact_subtext="Zweck"
+                fact_subtext='
+                Laut der <a class="is-underlined" href="https://www.mpfs.de/fileadmin/files/Studien/KIM/2020/KIM-Studie2020_WEB_final.pdf" target="blank">
+                KIM Studie</a> aus 2020 fasst <a class="is-underlined" href="https://www.quarks.de/gesellschaft/wie-lange-duerfen-kinder-vor-einem-bildschirm-sitzen/" target="blank">
+                    Quarks</a> zusammen, dass "
+                    <span class="has-text-weight-bold">Kinder</span> im Alter von <span class="has-text-weight-bold">sechs bis sieben Jahren</span> im Durchschnitt <span class="has-text-weight-bold">133 Minuten auf einen Bildschirm schauen</span>.
+                Insgesamt kommen 12 -bis 13-Jährige auf eine Bildschirmzeit von etwa 313 Minuten, also mehr als fünf Stunden. "
+                <br>
+                <br>
+                Eins ist klar, digitale Medien sind Teil unseres Alltags - macht Medienzeit wertvoll.
+                '
 
                 img_url="assets/images/frontpage/igor-starkov-s4GL0XwPSIU-unsplash.jpg"
-                img_alt=""
+                img_alt="Ein Mädchen sitzt vor dem iPad. Photo credit: Igor Starkov von Unsplash (photo-id s4GL0XwPSIU)"
             %}
-        <!-- </div> -->
+        <!-- </div> --> 
     </div>            
         
 
@@ -55,6 +65,9 @@
     </div>
 </div>
 
+<figure class="image is-16by9">
+    <iframe class="has-ratio" width="640" height="360" src="https://app.cal.com/grilborzer" frameborder="0" allowfullscreen></iframe>
+</figure>
 
 <script>
     // Shamelessly copied from https://codepen.io/t7team/pen/ZowdRN - thanks for that!
