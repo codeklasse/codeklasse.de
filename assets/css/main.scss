@@ -101,10 +101,25 @@
     display: flex;
 }
 
+#sponsors-and-partners .column {
+    min-height: 8rem;
+}
+
 .sponsors-and-partners-image {
+    border: none;
     height: auto;
     max-width: 50%;
-    border: none;
+
+    margin-top: auto;
+    margin-bottom: auto;
+
+    @include tablet {
+        max-width: 75%;
+    }
+
+    @include desktop {
+        max-width: 60%;
+    }
 }
 
 .social-media-icons-footer {
