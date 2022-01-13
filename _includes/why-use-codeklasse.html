@@ -24,6 +24,7 @@
     >Entscheidungsgeber</a>
 </div>
 
+<!-- LEHRKRÄFTE -->
 <div class="container pt-5">
     <div
         id="Tab-Lehrkraefte"
@@ -44,11 +45,31 @@
             %}
         </div>
 
+        <!--<ol type="1">
+                <li>asd</li>
+                <li>asd</li>
+            </ol>' -->
         {% include codeklasse-fact-tile.html
             fact="Keine Eigenkenntnisse der Lehrkraft nötig"
-            fact_subtext="Zweck"
+            fact_subtext='
+            Lehrkräfte brauchen keinerlei Vorwissen, um das Programmieren in ihre Klasse zu bringen:
+            <br>
+            <br>
+            - <span class="has-text-weight-bold">codeklasse ist einfach!</span>
+            SuS meistern ihre ersten Programmiererfahrungen <span class="has-text-weight-bold">spielerisch und intuitiv</span>.
+            Ein <span class="has-text-weight-bold">eingebauter Feedback-Mechanismus</span> liefert, bei Bedarf,  <span class="has-text-weight-bold">individuelle Hinweise</span>.
+            <br>
+            <br>
+            - <span class="has-text-weight-bold">Funktionsbereit geliefert!</span>
+            codeklasse bietet einen <span class="has-text-weight-bold">vorgefertigten Lernpfad</span> mit dem SuS 
+            ihre <span class="has-text-weight-bold">Programmierkenntnisse Schritt für Schritt</span> erweitern.
+            <br>
+            <br>
+            - Eine <span class="has-text-weight-bold">breite Auswahl</span> an zusätzlichen <span class="has-text-weight-bold">Lerneinheiten</span> bietet 
+            flexiblen und umfänglichen Einsatz - ob zuhause oder im Schulalltag.
+            '
 
-            img_url="assets/images/frontpage/pexels-max-fischer-5212348.jpg"
+            img_url="assets/images/frontpage/inaki-del-olmo-NIJuEQw0RKg-unsplash.jpg"
             img_alt="Von links nach rechts: Ein junger Mann, eine junge Frau und ein weiterer junger Mann schauen auf
             ein Notebook und sprechen sich ab. Photo credit: thisisengineering-raeng von Unsplash (photo-id
             bIltCMXIwRE)"
@@ -84,6 +105,7 @@
         %}
     </div>
 
+<!-- ELTERN -->
     <div
         id="Tab-Eltern"
         class="content-tab"
@@ -161,6 +183,7 @@
         %}
     </div>
 
+<!-- ÖFFENTLICHER SEKTOR -->
     <div
         id="Tab-Entscheidungsgeber"
         class="content-tab"
@@ -178,7 +201,7 @@
 <script>
     // Shamelessly copied from https://codepen.io/t7team/pen/ZowdRN - thanks for that!
     // Initialize tab with a category
-    openTab('Tab-Eltern');
+    openTab('Tab-Lehrkraefte');
 
     function openTab(tabName) {
         let i, x, tabButtons;
