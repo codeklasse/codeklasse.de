@@ -11,17 +11,94 @@
     scroll-behavior: smooth;
 }
 
-.site-content {
+
+.site-content,
+#main-footer {
+    @include mobile {
+        padding: 0 0.75rem;
+    }
+
     @include tablet {
+        // padding: 0 7.5rem;
+        padding: 0 3rem;
+    }
+
+    @include desktop {
         padding: 0 7.5rem;
     }
 }
 
-#title-section {
-    @include desktop {
-        padding-left: 3rem;
+.title {
+    @include mobile {
+        font-size: 1.2rem;
+        font-weight: 500;
     }
 }
+
+#title-section {
+    margin-bottom: -5rem;
+
+    @include desktop {
+        margin-top: 6rem;
+    }
+}
+
+#title-teaser-image {
+
+    @include desktop {
+        margin-left: 8.33333337%;
+
+    }
+}
+
+#title-teaser-image {
+    position: relative;
+    top: -10rem;
+    left: 10rem;
+    width: 60rem;
+
+    @include mobile {
+        left: 1rem;
+    }
+
+    @include tablet {
+        left: 3rem;
+    }
+}
+
+#title-teaser-call-to-action-button {
+    position: relative;
+    top: -7.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+#why-use-codeklasse-tabs-list a.button {
+    min-width: 20rem;
+
+    @include tablet {
+        min-width: 30rem;
+        height: auto;
+    }
+
+    @include desktop {
+        min-width: 20rem;
+    }
+}
+
+#why-use-codeklasse-tabs-list a.button:not(:last-child):not(.is-fullwidth) {
+    margin-right: 0;
+}
+
+.card.why-use-codeklasse {
+    @include desktop {
+        max-width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 
 /* navbar.html start */
 #main-navbar {
@@ -43,10 +120,25 @@
     display: flex;
 }
 
+#sponsors-and-partners .column {
+    min-height: 8rem;
+}
+
 .sponsors-and-partners-image {
+    border: none;
     height: auto;
     max-width: 50%;
-    border: none;
+
+    margin-top: auto;
+    margin-bottom: auto;
+
+    @include tablet {
+        max-width: 75%;
+    }
+
+    @include desktop {
+        max-width: 60%;
+    }
 }
 
 .social-media-icons-footer {
@@ -68,6 +160,10 @@ button.is-white:focus,
     border-color: $border-color;
 }
 
+#why-use-codeklasse-tabs-list a.button:hover,
+#why-use-codeklasse-tabs-list a.button:active,
+#why-use-codeklasse-tabs-list a.button:focus,
+#why-use-codeklasse-tabs-list a.button.is-active,
 .button.is-primary:hover,
 .button.is-primary:active,
 .button.is-primary:focus,

@@ -5,54 +5,41 @@ title: Startseite
 
 <section
   id="title-section"
-  class="has-background-primary is-fullheight"
+  class="has-background-primary is-fullheight px-6-desktop mx-6-desktop px-4-mobile"
 >
-
-  <div class="columns pt-6">
+  <div class="columns is-flex-direction-column mt-6 px-4-mobile">
     <p
       id="title-teaser-text"
-      class="title column is-two-thirds-tablet"
+      class="title column is-offset-1 is-two-thirds-tablet py-6-tablet pt-4-mobile pb-6-mobile has-background-white has-border"
     >
       "Unsere Vision ist, dass jedes Kind vor der 4. Klasse <span class="is-underlined">programmieren lernt</span>."
     </p>
 
-    <div class="column"></div>
+    <div class="column is-12 py-6"></div>
   </div>
 
-  <div class="columns pt-6 pr-6">
-    <div
-      id="title-action-buttons"
-      class="column is-4"
-    >
+  <div>
+    <img id="title-teaser-image" src="assets/images/codeklasse-landing-sm.png">
+
+    <div id="title-teaser-call-to-action-button">
       <a
-        class="button wrap-button-text is-white is-medium is-fullwidth mb-3"
+        
+        class="button wrap-button-text is-white is-medium mb-3"
         target="_blank"
         href="https://app.codeklasse.de"
       >
         <p>codeklasse jetzt <span class="has-text-weight-bold">kostenlos nutzen</span>!</p>
       </a>
-      <a
-        id="get-in-contact"
-        class="button is-outlined is-white is-medium is-fullwidth mb-3"
-        href="mailto:sergej@codeklasse.de"
-      >
-        In Kontakt treten
-      </a>
+      <p>oder hier <a target="_blank" href="https://app.codeklasse.de"
+        class="has-text-weight-bold is-underlined">hier selbst ausprobieren (in Arbeit!)</a></p>
     </div>
-
-    <figure
-      id="title-demo-image"
-      class="image has-background-white column is-offset-1 mr-4"
-    >
-      <img src="assets/images/codeklasse-demo-sketch-cropped-resized.jpg">
-    </figure>
   </div>
 </section>
 
 <section class="section has-background-white has-border mt-6">
   {% include title-h2.html text="Unsere Partner & Förderer" %}
 
-  <div class="columns is-vcentered pb-1">
+  <div id="sponsors-and-partners" class="columns is-vcentered pb-1">
     <div class="column center-content">
       <figure class="image sponsors-and-partners-image">
         <img src="assets/images/GSN.png">
@@ -73,42 +60,11 @@ title: Startseite
   </div>
 </section>
 
-<section class="section has-background-white has-border mt-6">
-  {% include title-h2.html text="Fragen & Antworten" %}
-
-  <div class="tabs is-fullwidth">
-    <ul>
-      <li class="tab is-active" onclick="openTab(event,'WebDev')"><a >Lehrkräfte</a></li>
-      <li class="tab" onclick="openTab(event,'WebAud')"><a >Eltern</a></li>
-      <li class="tab" onclick="openTab(event,'Support')"><a >Entscheidungsgeber</a></li>
-    </ul>
-  </div>
-
-  <div class="container">
-    <div id="WebDev" class="content-tab" >
-      <p>
-        test1<br>
-      Overview Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-    </div>
-
-    <div id="WebAud" class="content-tab" style="display:none">
-        <p>
-          test2
-          <br>
-        Details Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-    </div>
-    <div id="Support" class="content-tab" style="display:none">
-       <p>
-         test3 <br>  
-       Specification Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-    </div>
-  </div>
-  
+<section class="section mt-5">
+  {% include why-use-codeklasse.html %}
 </section>
 
-
-
-<section class="section has-background-white has-border mt-6">
+<section class="section has-background-white has-border mt-6 mx-6-desktop mx-3-tablet">
   {% include title-h2.html text="Fragen & Antworten" %}
 
   <div class="columns">
@@ -191,24 +147,4 @@ title: Startseite
     /* Quicker transition speed is desired according to Liam -> We'll see & test. */
     transition: .5s ease-in-out;
   }
-
-  /* section {width: 100vw; position: relative; left:50%; right:50%; margin-left: -50vw; margin-right: -50vw;} */
 </style>
-
-<script>
-// Shamelessly copied from https://codepen.io/t7team/pen/ZowdRN - thanks for that!
-
-function openTab(evt, tabName) {
-  var i, x, tablinks;
-  x = document.getElementsByClassName("content-tab");
-  for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tab");
-  for (i = 0; i < x.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" is-active", "");
-  }
-  document.getElementById(tabName).style.display = "block";
-  evt.currentTarget.className += " is-active";
-}
-</script>

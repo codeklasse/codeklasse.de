@@ -7,10 +7,6 @@ body {
     font-family: "segoe-ui";
 }
 
-body .site-content {
-    flex: 1;
-}
-
 @font-face {
     font-family: "SourceSansPro";
     src: url("/fonts/SourceSansPro-Regular.ttf") format("truetype");
@@ -60,13 +56,6 @@ figure.image-size-max-120 img {
         // height: auto;
         width: 50%;
     }
-}
-
-/*
-*  Enable smooth scrolling for all elements
-*/
-* {
-    scroll-behavior: smooth;
 }
 
 /*
