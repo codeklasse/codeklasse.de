@@ -43,9 +43,11 @@ Durch kreative, selbstausgearbeitete Lösungen wird Programmieren lernen für di
 Digitale Medien sind mittlerweile Teil unseres Alltags geworden. 
 Seit der Corona-Pandemie sind sie es auch für Kinder. 
 Der Erwerb der digitalen Kompetenz bei Kindern ist oft mit vielen Hindernissen verbunden:
-* Fehlende Möglichkeiten, digitale Medien in der Schule zu benutzen 
+
+* Fehlende Möglichkeiten digitale Medien in der Schule zu benutzen 
 * Starke Abhängigkeit vom Einkommen der Eltern
 * Digitale Medien werden oft als reiner Unterhaltungsfaktor gesehen
+
 All das sind die Gründe, warum digitale Kompetenz oft auf der Strecke bleibt.
 Laut der Studie "Bildung braucht digitale Kompetenz" ist kindliches Selbstbewusstsein im Hinblick auf digitale Kompetenz positiv mit Zugang zum Computer zu Hause und in der Schule verknüpft.
 Eine erste Maßnahme für bessere Medienkompetenz der Kinder wäre eine bessere digitale Infrastruktur an den Schulen auszubauen.   
