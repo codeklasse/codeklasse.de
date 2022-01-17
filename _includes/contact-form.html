@@ -1,0 +1,52 @@
+<!-- This form only works once pushed to netlify -> Doesn't work on local setup -->
+<div class="card">
+    <div class="card-content">
+        <div class=" container my-5-tablet mx-5-desktop px-5-desktop">
+            <!-- <h2 class="title is-2">Fragen, Impulse, Kooperation?  Sprechen wir darüber!</h2> -->
+            <!-- <h2 class="title is-2">Fragen, Impulse, Kooperation?</h2> -->
+            <h2 class="title is-2 is-size-3-mobile is-spaced">Fragen? Impulse? Kooperation?</h2>
+            <p class="subtitle">Sprechen wir darüber! Gerne per Mail via <a class="has-text-weight-bold" target="_blank"
+                href="https://aemail.com/mZln">sergej@codeklasse.de</a> oder über dieses Formular.</p>
+            <form name="contact" method="post" data-netlify="true">
+                <div class="field">
+                    <label for="name" class="label is-size-4 has-text-weight-light"></label>
+                    <div class="control has-icons-left">
+                        <input type="text" name="name" id="name" class="input" placeholder="Name">
+                            <img class="icon is-left fontawesome-icon ml-3" src="/assets/css/fontawesome-free-svgs/solid/user.svg">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="email" class="label is-size-4 has-text-weight-light"></label>
+                    <div class="control has-icons-left">
+                        <input type="email" name="email" id="email" class="input" placeholder="Email">
+                        <img class="icon is-left fontawesome-icon ml-3" src="/assets/css/fontawesome-free-svgs/solid/envelope.svg">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="message" class="label is-size-4 has-text-weight-light"></label>
+                    <textarea name="message" id="message" rows="5" class="textarea is-medium" placeholder="Ihre/ Deine Nachricht"></textarea>
+                </div>
+                <button type="submit" class="button is-primary is-size-5">Senden</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- https://www.benmarshall.me/responsive-iframes/ -->
+<!-- <figure class="image is-16by9">
+    <iframe class="has-ratio" width="640" height="360" src="https://app.cal.com/grilborzer" frameborder="0" allowfullscreen></iframe>
+</figure> -->
+
+<style>
+    .fontawesome-icon {
+        width: 1rem !important;
+        border: none;
+        /* The color attribute doesn't seem to apply in the case of svg.
+           Opacity seems to be easier than using the filter attribute
+           https://stackoverflow.com/questions/22252472/
+         */
+        opacity: 0.65;
+    }
+</style>

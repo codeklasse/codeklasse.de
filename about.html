@@ -1,0 +1,159 @@
+---
+layout: default
+title: Über uns
+---
+
+<section class="has-background-primary is-fullheight py-6 px-6-tablet">
+
+    {% include title-h2.html text="Unsere Werte" %}
+
+    <div class="columns is-multiline is-desktop">
+        <div class="column mx-3-tablet mx-3-mobile">
+            <div class="columns is-multiline">
+                {% include about-us-fact-tile.html
+                fact_category="Zweck"
+                fact="codeklasse strebt an Kompetenzen des MINT Bereichs früh zu
+                stärken und Deutschlands Bedarf
+                nachhaltig zu decken."
+                img_url="/assets/emojis/heavy-check-mark_2714.png"
+                img_alt="Das codeklasse Team:
+                Liam, Sergej, Natallia" %}
+
+                {% include about-us-fact-tile.html
+                fact_category="Vision"
+                fact="Unsere Vision ist das jedes Kind nach der 4. Klasse neben Lesen, Schreiben, Rechnen auch
+                Programmieren kann."
+                img_url="/assets/emojis/direct-hit_1f3af.png"
+                img_alt="Das codeklasse Team:
+                Liam, Sergej, Natallia" %}
+
+                {% include about-us-fact-tile.html
+                fact_category="Mission"
+                fact="Unsere Mission ist Kinder für das Programmieren zu begeistern und eine Plattform zu schaffen die
+                diese Kompetenz spielerisch & anschaulich vermittelt."
+                img_url="/assets/emojis/grinning-face-with-star-eyes_1f929.png"
+                img_alt="Das codeklasse Team:
+                Liam, Sergej, Natallia" %}
+
+                {% include about-us-fact-tile.html
+                fact_category="Priorität"
+                fact="Unsere oberste Priorität ist den Zugang zur Bildung des neuen Zeitalters unabhängig von Geld &
+                Status zu ermöglichen."
+                img_url="/assets/emojis/white-up-pointing-index_261d.png"
+                img_alt="Das codeklasse Team:
+                Liam, Sergej, Natallia" %}
+            </div>
+        </div>
+
+        <div class="column is-4-desktop">
+            <figure class="image">
+                <img
+                    src="/assets/images/about/teamfoto-codeklasse.jpg"
+                    alt="Das codeklasse Team: Liam, Sergej, Natallia"
+                    style="object-fit: cover;"
+                >
+                <p class="has-text-centered">Das codeklasse Team: Liam, Sergej, Natallia</p>
+            </figure>
+        </div>
+    </div>
+
+    {% include title-h2.html text="Unser Team" %}
+
+    <div class="columns is-multiline mx-3-desktop my-3-desktop">
+        <div class="column is-half-tablet is-one-third-desktop">
+            {% include about-us-member-tile.html
+            name="Sergej Grilborzer"
+            bio_description="
+            Sergej hat codeklasse im Rahmen seiner Masterarbeit initiiert
+            <!-- und ist verantwortlich für Vertrieb & Marketing. -->
+            und vertritt das Projekt im Vertrieb & Marketing.
+            Als freiberuflicher Trainer & Software Engineer entwickelt er technische & didaktische Aspekte der Plattform.
+            <!-- sowie die Kernentwicklung der Plattform. -->
+            "
+            img_url="/assets/images/about/sergej.jpg"
+            img_alt="codeklasse Portrait Sergej"
+            %}
+        </div>
+        <div class="column is-half-tablet is-one-third-desktop">
+            {% include about-us-member-tile.html
+            name="Natallia Satskevich"
+            bio_description="
+            Natallia brennt für die Arbeit mit Menschen und
+            steht an erster Stelle für exzellenten Support.
+             <!-- der Kundschaft. -->
+            Mit ihrem Studium der Wirtschaftsinformatik hat sie den Blick für unsere Finanzen
+            und sozialen Medien. 
+            <br>
+            <br>
+            <!-- Mit ihrem wirtschaftlichen Hintergrund hat Natallia
+            den Blick auf die Zahlen und steht an erster Stelle für exzellente Kundschaftsbetreuung. -->
+            "
+            img_url="/assets/images/about/natallia.jpg"
+            img_alt="codeklasse Portrait Natallia"
+            %}
+        </div>
+        <div class="column is-half-tablet is-one-third-desktop">
+            {% include about-us-member-tile.html
+            name="Liam Kranz"
+            bio_description="
+            Liam ist ein Creative Developer und seit 2015 selbstständig.
+            <!-- Seine Passion für Motion Design fließt
+            in die 3D-Entwicklung.
+            Die Erfahrungen seiner Selbstständigkeit
+            sind eine stete Quelle von wertvollen Impulsen  
+            unserer Strategieplanung. -->
+
+            Seine Expertise ist eine unverzichtbare Kraft in unserer 3D-Entwicklung.
+            <!-- Seine Erfahrungen sind ein unverzichtbarer Antrieb in der Entwicklung unserer 3D-Visualisierung. -->
+            Neben technischer Zuständigkeit ist er wertvoller Impulsgeber in der Strategieplanung.
+
+            <!-- Im Projekt ist er der Mann für 3D-Entwicklung
+            und fester Teil der strategischen Planung. -->
+<!-- 
+            Seine Erfahrung im Motion Design ist Antrieb unserer 3D-Entwicklung.
+            
+            und fühlt sich im Motion Design zuhause.
+            Seine Erfahrung bringt viel Schwung
+            in die Entwicklung unserer 3D-Visualisierung
+            und Strategieplanung. -->
+        
+            <!-- Liams Passion für Creative Coding bringt viel Schwung
+            in die Entwicklung unserer 3D-Visualisierung.
+            Seine langjährige Erfahrung aus der Selbstständigkeit
+            ist eine stete Quelle von wertvollen Impulsen  
+            für die Strategieplanung. -->
+
+            <!-- bringt er in unsere Strategieplanung ein. 
+            Als passionierter Creative Entwickler 
+            Liam bringt seine Erfahrung im Creative Coding
+            in die Entwicklung der 3D-Visualisierung ein.
+            Seine langjährige Erfahrung aus der Selbstständigkeit bringt er in unsere Strategieplanung ein.  -->
+            <!-- Sein Interessensgebiet  -->
+            <!-- Seine langjährige Selbstständigkeit hilft uns im Strategie -->
+            "
+            img_url="/assets/images/about/liam.jpg"
+            img_alt="codeklasse Portrait Liam"
+            %}
+        </div>
+    </div>
+
+    {% include title-h2.html text="Über das Projekt" %}
+
+    <div class="columns is-multiline mx-3-desktop my-3-desktop">
+        {% for post in site.posts reversed %}
+        {% if post.title == 'Eine kurze Projektvorstellung' or post.title contains 'Schüler testen codeklasse' %}
+        <div class="column is-half-tablet is-one-third-desktop">
+            {% include blog-post-tile.html %}
+        </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+</section>
+
+<style>
+    #blogpost-teaser.is-overlay {
+        /* transition: 1s ease-in-out; */
+        /* Quicker transition speed is desired according to Liam -> We'll see & test. */
+        transition: .5s ease-in-out;
+    }
+</style>

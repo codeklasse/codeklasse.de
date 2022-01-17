@@ -1,0 +1,48 @@
+---
+layout: default
+title: Häufig gestellte Fragen
+---
+
+<section
+    class="section"
+    data-category="faqs"
+>
+    <div class="container py-4">
+        <h2
+            class="title has-text-centered mb-6"
+            data-config-id="header"
+        >
+            {{ page.title }}
+        </h2>
+
+        <div class="mb-6">
+            {% for question in site.faq %}
+            {% if question.hidden != true %}
+            <div class="card block">
+            <a href="{{ question.url }}">
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-left pl-6-desktop">
+                            <!-- Might as well provide a graphic instead of padding -->
+                        </div>
+                        <div class="media-content">
+                            <h3 class="title is-4">"{{ question.title }}"</h3>
+                            <p>{{ question.excerpt | strip_html }}</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+
+        <div class="is-flex is-justify-content-center">
+            <a
+                id="faq-contact-button"
+                class="button is-white wrap-button-text"
+                href="/#contact"
+            >Fragen offen? Wir freuen uns von Ihnen zu hören!</a>
+        </div>
+    </div>
+</section>

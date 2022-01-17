@@ -1,0 +1,115 @@
+<footer id="main-footer" class="footer">
+    <section class="section">
+        <div class="columns">
+            <div class="column">
+                <b class="is-6">Unternehmen</b>
+
+                <p><a href="/about">Über uns</a></p>
+                <p><a href="/legal">Impressum</a></p>
+                <p><a href="/privacy">Datenschutz</a></p>
+            </div>
+
+            <div class="column">
+                <b class="is-6">Ressourcen</b>
+
+                <p><a href="/blog">Blog</a></p>
+                <p><a href="/faq">Fragen & Antwort</a></p>
+                <!-- <p><a href="/guides">Anleitungen</a></p> -->
+            </div>
+
+            <div class="column">
+                <b class="is-6">Kontakt</b>
+
+                <p>{{ site.contact_mail }}</p>
+                <p>{{ site.contact_phone }}</p>
+            </div>
+
+            <div class="column has-text-right social-media-icons-footer">
+                <a
+                    id="footer-button-instagram"
+                    class="button"
+                    target="_blank"
+                    href="https://instagram.com/codeklasse"
+                >
+                    <figure class="image social-media-footer">
+                        <img src="/assets/css/fontawesome-free-svgs/brands/instagram.svg">
+                    </figure>
+                </a>
+                <a
+                    class="button"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/sergej-grilborzer-b28736205"
+                >
+                    <figure class="image social-media-footer">
+                        <img src="/assets/css/fontawesome-free-svgs/brands/linkedin.svg">
+                    </figure>
+                </a>
+                <a
+                    class="button"
+                    target="_blank"
+                    href="https://www.facebook.com/codeklasse-102971225364051"
+                >
+                    <figure
+                        class="image social-media-footer"
+                        style="width: 1rem;"
+                    >
+                        <img src="/assets/css/fontawesome-free-svgs/brands/facebook-f.svg">
+                    </figure>
+                </a>
+                <a
+                    class="button"
+                    target="_blank"
+                    href="https://twitter.com/s_gbz"
+                >
+                    <figure class="image social-media-footer">
+                        <img src="/assets/css/fontawesome-free-svgs/brands/twitter.svg">
+                    </figure>
+                </a>
+                <a
+                    class="button"
+                    target="_blank"
+                    href="https://github.com/codeklasse/codeklasse.de"
+                >
+                    <figure class="image social-media-footer">
+                        <img src="/assets/css/fontawesome-free-svgs/brands/github.svg">
+                    </figure>
+                </a>
+            </div>
+        </div>
+
+        <section class="level">
+            <p id="copyright-year-mark" class="level-left"><a href="/">&copy; codeklasse {{ 'now' | date: "%Y" }}</a></p>
+
+            <figure
+                id="footer-made-with-bulma"
+                class="level-right image no-border"
+                style="width: 7.5rem;"
+            >
+                <img src="/assets/images/made-with-bulma.png">
+            </figure>
+        </section>
+    </section>
+</footer>
+
+<style>
+    .social-media-footer {
+        width: 1.25rem;
+        border: none;
+    }
+
+    .social-media-icons-footer a.button {
+        border: none;
+        /* border-width: 0.5px; */
+        /* border-radius: 1px; */
+    }
+
+    .social-media-icons-footer a.button:hover {
+        border: orangered;
+        /* border-width: 0.5px; */
+        /* border-radius: 1px; */
+    }
+
+    footer p {
+        padding-top: 1.25rem;
+    }
+</style>

@@ -1,0 +1,174 @@
+/*! Theme created with the Bulma Builder (https://bulma.dev) */
+
+@import "../node_modules/bulma/sass/utilities/initial-variables.sass";
+@import "../node_modules/bulma/sass/utilities/functions.sass";
+@import "../node_modules/bulma/sass/utilities/derived-variables.sass";
+
+// Your variables
+@import 'custom-variables';
+
+$orange-invert   : findColorInvert($orange);
+$yellow-invert   : findColorInvert($yellow);
+$green-invert    : findColorInvert($green);
+$turquoise-invert: findColorInvert($turquoise);
+$cyan-invert     : findColorInvert($cyan);
+$blue-invert     : findColorInvert($blue);
+$purple-invert   : findColorInvert($purple);
+$red-invert      : findColorInvert($red);
+
+$primary-invert  : findColorInvert($primary);
+$primary-light   : findLightColor($primary);
+$primary-dark    : findDarkColor($primary);
+$info-invert     : findColorInvert($info);
+$info-light      : findLightColor($info);
+$info-dark       : findDarkColor($info);
+$success-invert  : findColorInvert($success);
+$success-light   : findLightColor($success);
+$success-dark    : findDarkColor($success);
+$warning-invert  : findColorInvert($warning);
+$warning-light   : findLightColor($warning);
+$warning-dark    : findDarkColor($warning);
+$danger-invert   : findColorInvert($danger);
+$danger-light    : findLightColor($danger);
+$danger-dark     : findDarkColor($danger);
+$light-invert    : findColorInvert($light);
+$dark-invert     : findColorInvert($dark);
+
+$link-invert       : findColorInvert($link);
+$link-light        : findLightColor($link);
+$link-dark         : findDarkColor($link);
+
+$colors: mergeColorMaps(("white": ($white, $black), "black": ($black, $white), "light": ($light, $light-invert), "dark": ($dark, $dark-invert), "primary": ($primary, $primary-invert, $primary-light, $primary-dark), "link": ($link, $link-invert, $link-light, $link-dark), "info": ($info, $info-invert, $info-light, $info-dark), "success": ($success, $success-invert, $success-light, $success-dark), "warning": ($warning, $warning-invert, $warning-light, $warning-dark), "danger": ($danger, $danger-invert, $danger-light, $danger-dark)), $custom-colors);
+$shades: mergeColorMaps(("black-bis": $black-bis, "black-ter": $black-ter, "grey-darker": $grey-darker, "grey-dark": $grey-dark, "grey": $grey, "grey-light": $grey-light, "grey-lighter": $grey-lighter, "white-ter": $white-ter, "white-bis": $white-bis), $custom-shades);
+$sizes: $size-1 $size-2 $size-3 $size-4 $size-5 $size-6 $size-7;
+
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "../node_modules/bulma/sass/base/_all.sass";
+@import "../node_modules/bulma/sass/elements/_all.sass";
+@import "../node_modules/bulma/sass/form/_all.sass";
+@import "../node_modules/bulma/sass/components/_all.sass";
+@import "../node_modules/bulma/sass/grid/_all.sass";
+@import "../node_modules/bulma/sass/helpers/_all.sass";
+@import "../node_modules/bulma/sass/layout/_all.sass";
+@import "../node_modules/bulma-block-list/src/block-list";
+
+
+// Responsive spacing helpers kindly provided by
+// https://github.com/jgthms/bulma/issues/451#issuecomment-703709105 
+@each $property, $shortcut in $spacing-shortcuts {
+    @each $name, $value in $spacing-values {
+      // Cardinal directions
+      @each $direction, $suffix in $spacing-directions {
+        @include mobile {
+          .#{$shortcut}#{$suffix}-#{$name}-mobile {
+            #{$property}-#{$direction}: $value !important;
+          }
+        }
+        @include tablet {
+          .#{$shortcut}#{$suffix}-#{$name}-tablet {
+            #{$property}-#{$direction}: $value !important;
+          }
+        }
+        @include touch {
+          .#{$shortcut}#{$suffix}-#{$name}-touch {
+            #{$property}-#{$direction}: $value !important;
+          }
+        }
+        @include desktop {
+          .#{$shortcut}#{$suffix}-#{$name}-desktop {
+            #{$property}-#{$direction}: $value !important;
+          }
+        }
+        @include widescreen {
+          .#{$shortcut}#{$suffix}-#{$name}-widescreen {
+            #{$property}-#{$direction}: $value !important;
+          }
+        }
+        @include fullhd {
+          .#{$shortcut}#{$suffix}-#{$name}-fullhd {
+            #{$property}-#{$direction}: $value !important;
+          }
+        }
+      }
+  
+      // Horizontal axis
+      @if $spacing-horizontal != null {
+        @include mobile {
+          .#{$shortcut}#{$spacing-horizontal}-#{$name}-mobile {
+            #{$property}-left: $value !important;
+            #{$property}-right: $value !important;
+          }
+        }
+        @include tablet {
+          .#{$shortcut}#{$spacing-horizontal}-#{$name}-tablet {
+            #{$property}-left: $value !important;
+            #{$property}-right: $value !important;
+          }
+        }
+        @include touch {
+          .#{$shortcut}#{$spacing-horizontal}-#{$name}-touch {
+            #{$property}-left: $value !important;
+            #{$property}-right: $value !important;
+          }
+        }
+        @include desktop {
+          .#{$shortcut}#{$spacing-horizontal}-#{$name}-desktop {
+            #{$property}-left: $value !important;
+            #{$property}-right: $value !important;
+          }
+        }
+        @include widescreen {
+          .#{$shortcut}#{$spacing-horizontal}-#{$name}-widescreen {
+            #{$property}-left: $value !important;
+            #{$property}-right: $value !important;
+          }
+        }
+        @include fullhd {
+          .#{$shortcut}#{$spacing-horizontal}-#{$name}-fullhd {
+            #{$property}-left: $value !important;
+            #{$property}-right: $value !important;
+          }
+        }
+      }
+  
+      // Vertical axis
+      @if $spacing-vertical != null {
+        @include mobile {
+          .#{$shortcut}#{$spacing-vertical}-#{$name}-mobile {
+            #{$property}-top: $value !important;
+            #{$property}-bottom: $value !important;
+          }
+        }
+        @include tablet {
+          .#{$shortcut}#{$spacing-vertical}-#{$name}-tablet {
+            #{$property}-top: $value !important;
+            #{$property}-bottom: $value !important;
+          }
+        }
+        @include touch {
+          .#{$shortcut}#{$spacing-vertical}-#{$name}-touch {
+            #{$property}-top: $value !important;
+            #{$property}-bottom: $value !important;
+          }
+        }
+        @include desktop {
+          .#{$shortcut}#{$spacing-vertical}-#{$name}-desktop {
+            #{$property}-top: $value !important;
+            #{$property}-bottom: $value !important;
+          }
+        }
+        @include widescreen {
+          .#{$shortcut}#{$spacing-vertical}-#{$name}-widescreen {
+            #{$property}-top: $value !important;
+            #{$property}-bottom: $value !important;
+          }
+        }
+        @include fullhd {
+          .#{$shortcut}#{$spacing-vertical}-#{$name}-fullhd {
+            #{$property}-top: $value !important;
+            #{$property}-bottom: $value !important;
+          }
+        }
+      }
+    }
+}

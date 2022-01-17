@@ -1,0 +1,119 @@
+<!-- Make it sticky: navbar is-fixed-top AND "has-navbar-fixed-top" on parent HTML to adjust for padding -->
+<nav
+    id="main-navbar"
+    class="navbar is-fixed-top has-shadow"
+    role="navigation"
+    aria-label="main navigation"
+>
+    <div class="navbar-brand mr-auto">
+        <a
+            role="button"
+            class="navbar-burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navbar-menu"
+        >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+
+        <a
+            class="navbar-item"
+            href="/"
+        >
+            <img
+                src="/assets/images/logo-full.png"
+                alt="codeklasse: Programmieren lernen mit Emojis"
+                height="28"
+            >
+        </a>
+    </div>
+
+    <div id="navbar-menu" class="navbar-menu">
+        <div class="navbar-start">
+            <a
+                class="navbar-item has-text-centered"
+                href="/about"
+            >
+                Über uns
+            </a>
+            <a
+                class="navbar-item has-text-centered"
+                href="/faq"
+            >
+                Fragen & Antworten
+            </a>
+            <a
+                class="navbar-item has-text-centered"
+                href="/blog"
+            >
+                Blog
+            </a>
+        </div>
+
+        <div class="navbar-end">
+            <div class="navbar-item">
+                <div class="buttons is-justify-content-center">
+                    <a
+                        class="button is-primary"
+                        href="/#contact"
+                    >
+                        <p>In <span class="has-text-weight-bold">Kontakt treten</span></p>
+                    </a>
+
+                    <!-- <a
+                        class="button is-primary"
+                        target="_blank"
+                        href="https://app.codeklasse.de"
+                    >
+                        <p>codeklasse jetzt <span class="has-text-weight-bold">kostenlos nutzen</span>!</p>
+                    </a> -->
+                </div>
+            </div>
+        </div>
+    </div>    
+</nav>
+
+<style>
+    /* Used to bring burger menu to left & center the logo */
+    /* .element-left, .element-right {
+        flex: 1;
+    } */
+
+    .navbar.has-shadow {
+        box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+    }
+
+    .navbar-menu {
+        box-shadow: none;
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+    // Get all "navbar-burger" elements
+    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+    // Check if there are any navbar burgers
+    if ($navbarBurgers.length > 0) {
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach( el => {
+            el.addEventListener('click', () => {
+
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+
+            });
+        });
+        }
+
+    });
+</script>

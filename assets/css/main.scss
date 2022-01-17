@@ -1,0 +1,265 @@
+---
+---
+
+@charset "utf-8";
+@import "bulma-theme";
+
+/*
+*  Enable smooth scrolling for all elements
+*/
+* {
+    scroll-behavior: smooth;
+}
+
+
+.site-content,
+#main-footer {
+    @include mobile {
+        padding: 0 0.75rem;
+    }
+
+    @include tablet {
+        // padding: 0 7.5rem;
+        padding: 0 3rem;
+    }
+
+    @include desktop {
+        padding: 0 7.5rem;
+    }
+}
+
+#footer-made-with-bulma {
+    @include mobile {
+        margin: 1.5rem auto;
+    }
+}
+
+.title {
+    @include mobile {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+}
+
+#title-section {
+    margin-bottom: -5rem;
+
+    @include desktop {
+        margin-top: 6rem;
+    }
+}
+
+#title-teaser-image {
+
+    @include desktop {
+        margin-left: 8.33333337%;
+
+    }
+}
+
+#title-teaser-image {
+    position: relative;
+    top: -10rem;
+    left: 10rem;
+    width: 60rem;
+
+    @include mobile {
+        left: 1rem;
+    }
+
+    @include tablet {
+        left: 3rem;
+    }
+}
+
+#title-teaser-call-to-action-button {
+    position: relative;
+    top: -7.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+/* why-use-codeklasse.html start */
+
+#why-use-codeklasse-tabs-list a.button {
+    min-width: 20rem;
+
+    @include tablet {
+        min-width: 30rem;
+        height: auto;
+    }
+
+    @include desktop {
+        min-width: 20rem;
+    }
+}
+
+#why-use-codeklasse-tabs-list a.button:not(:last-child):not(.is-fullwidth) {
+    margin-right: 0;
+}
+
+.card.why-use-codeklasse {
+    @include desktop {
+        // max-width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* why-use-codeklasse.html end */
+
+
+/* navbar.html start */
+#title-section {
+    @include desktop {
+        margin-top: 0;
+    }
+}
+
+#main-navbar {
+    padding: 1rem 0;
+    display: flex;
+
+    @include touch {
+        flex-direction: column;
+    }
+
+    @include desktop {
+        padding: 0 6rem;
+    }
+}
+/* navbar.html end */
+
+.column.center-content {
+    justify-content: center;
+    display: flex;
+}
+
+#sponsors-and-partners .column {
+    min-height: 8rem;
+}
+
+.sponsors-and-partners-image {
+    border: none;
+    height: auto;
+
+    margin-top: auto;
+    margin-bottom: auto;
+
+    @include mobile {
+        max-width: 70%;
+    }
+
+    @include tablet {
+        max-width: 75%;
+    }
+
+    @include desktop {
+        max-width: 75%;
+    }
+}
+
+.social-media-icons-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: max-content;
+
+    @include mobile {
+        flex-direction: row;
+    }
+}
+
+
+
+// If not enough: https://stackoverflow.com/questions/42134731
+.button.is-white:visited,
+button.is-white:focus,
+.button.is-info:focus,
+.button.is-white {
+    border-color: $border-color;
+}
+
+#why-use-codeklasse-tabs-list a.button:hover,
+#why-use-codeklasse-tabs-list a.button:active,
+#why-use-codeklasse-tabs-list a.button:focus,
+#why-use-codeklasse-tabs-list a.button.is-active,
+.button.is-primary:hover,
+.button.is-primary:active,
+.button.is-primary:focus,
+#title-action-buttons .button:hover,
+.button.is-white:hover,
+#faq-contact-button:hover {
+    border-color: $success;
+}
+
+// #title-action-buttons .button,
+.button.is-primary,
+#faq-contact-button,
+.buttons button.button,
+a.button,
+.has-border,
+.card,
+figure {
+    border: $border-radius solid $border-color;
+}
+
+.no-border {
+    border: none;
+}
+
+// More infos: https://www.w3schools.com/css/css_link.asp
+.breadcrumb a,
+a {
+    color: $dark;
+}
+
+a.navbar-item:hover,
+a.navbar-item:focus,
+a.navbar-item:focus-within {
+    background-color: initial;
+    color: $success;
+    border-color: $success;
+}
+
+.breadcrumb a:hover,
+a:hover,
+// NOT SPECIFIC enough?! >.<!!
+// input.input:active,
+
+// NOT SPECIFIC enough?! >.<!!
+#footer-button-instagram:focus {
+    border-color: $success;
+    color: $success;
+}
+
+#copyright-year-mark {
+    @include mobile {
+        text-align: center;
+    }
+}
+
+.wrap-button-text {
+    height: max-content;
+    white-space: inherit;
+}
+
+#get-in-contact {
+    color: $dark;
+    border: $border-radius solid $border-color;
+}
+
+/* blog.html start */
+#blog-search-field {
+
+    @include mobile {
+        float: none !important;
+    }
+}
+/* blog.html end */
+
+
+/* faq.html start */
+
+/* faq.html end */

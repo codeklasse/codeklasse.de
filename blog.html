@@ -1,0 +1,186 @@
+---
+layout: default
+title: Blog & News
+---
+
+<section class="section has-background-primary is-fullheight">
+    {% include title-h2.html text="Blog & News" %}
+
+    <!-- Search bar -->
+    <div id="blog-search-field" class="field is-pulled-right">
+        <p class="control has-icons-left">
+            <input
+                class="input"
+                type="text"
+                placeholder="Suche"
+                oninput="filterPosts(this.value)"
+            >
+                <img class="icon is-left search-icon ml-3" src="/assets/css/fontawesome-free-svgs/solid/search.svg">
+        </p>
+    </div>
+
+    <!-- Category labels - css class "category-button" is required for highlighting active categories -->
+    <div class="buttons is-fullwidth">
+        <button
+            class="button is-info category-button"
+            onclick="filterUsingCategory('Alle Artikel')"
+        >Alle Artikel</button>
+        {% for category in site.categories %}
+        <button
+            class="button is-info is-light category-button"
+            onclick="filterUsingCategory('{{ category | first }}')"
+        >{{ category | first }}</button>
+        {% endfor %}
+    </div>
+
+    <!-- Post-grid -->
+    <div class="columns is-multiline my-3 mb-6 padding-left-blog-list">
+        {% assign id = 0 %}
+        {% for post in site.posts %}
+        {% assign id = id | plus:1 %}
+        <div
+            id="postId-{{id}}"
+            class="column is-half-tablet is-one-third-widescreen blog-post"
+            name="post-{{id}}"
+        >
+            {% if post.hidden != null and post.hidden != true %}
+            {% include blog-post-tile.html %}
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<!-- Can be improved even more (probably):
+    https://esthermakes.tech/blog/2015/03/18/filtering-posts-by-tags-with-jekyll/
+ -->
+<!-- Shameless copy+pasting from 
+    https://langrsoft.com/2020/03/26/filtering-blog-posts-by-category-with-jekyll/
+ -->
+<script>
+    function filterUsingCategory(selectedCategory) {
+        const unmatchedPosts = document.getElementsByClassName("hidden");
+        
+        for (let index = 0; index < unmatchedPosts.length; index++) {
+            unmatchedPosts[index].classList.remove("hidden");
+        }
+
+        const categoryButtons = document.getElementsByClassName("category-button");
+
+        for(let i = 0; i < categoryButtons.length; i++) {
+            console.log(categoryButtons[i].textContent);
+            if(selectedCategory && selectedCategory === categoryButtons[i].textContent) {
+                categoryButtons[i].classList.remove('is-light');
+            } else {
+                categoryButtons[i].classList.add('is-light');
+            }
+        }
+
+        // Changing the 'var's to 'let' or 'const' breaks the function
+    var id = 0;
+    {% for post in site.posts %}
+        var categories = {{ post.categories | jsonify }};
+
+        var newId = ++id;
+        var blogPost = document.getElementById("postId-" + newId);
+
+        if(selectedCategory == 'Alle Artikel' || categories.includes(selectedCategory)) {
+            blogPost.classList.remove('hidden');
+        } else {
+            blogPost.classList.add('hidden');
+        }
+       
+    {% endfor %}}
+
+    // Related to 
+    // https://www.impressivewebs.com/animate-display-block-none/
+    // It would be nice to have fade-in/ -out animations for the categories
+    let box = document.getElementById('box'),
+    btn = document.querySelector('button');
+
+    btn.addEventListener('click', function () {
+  
+        if(box) {
+            if (box.classList.contains('hidden')) {
+                box.classList.remove('hidden');
+
+                setTimeout(function () {
+                box.classList.remove('visuallyhidden');
+                }, 20);
+            } else {
+                box.classList.add('visuallyhidden');    
+                box.addEventListener('transitionend', function(e) {
+                box.classList.add('hidden');
+                }, {
+                capture: false,
+                once: true,
+                passive: false
+                });
+            }
+        }    
+    }, false);
+</script>
+
+<script>
+    function filterPosts(rawSearchQuery) {
+        markFirstCategoryAsActive();
+
+        const searchQuery = rawSearchQuery.toLowerCase().trim();
+        console.log(searchQuery);
+        displayAllPostsIfQueryIsEmpty(searchQuery);
+
+        const allPosts = document.getElementsByClassName("blog-post");
+        
+        for (let index = 0; index < allPosts.length; index++) {
+            if(allPosts[index].firstElementChild) {
+                const titleOfPost = allPosts[index].firstElementChild.innerText.toLowerCase();
+
+                if(!titleOfPost.includes(searchQuery)) {
+                    allPosts[index].classList.add("hidden");
+                }
+            }
+        }
+
+        displayAllPostsIfQueryIsEmpty(searchQuery);
+    }
+
+    function markFirstCategoryAsActive() {
+        const categoryButtons = document.getElementsByClassName("category-button");
+
+        for(let i = 1; i < categoryButtons.length; i++) {
+            categoryButtons[i].classList.add('is-light');
+        }
+
+        categoryButtons[0].classList.remove('is-light');
+    }
+
+    function displayAllPostsIfQueryIsEmpty(searchQuery) {
+        if(searchQuery === "") {
+            const unmatchedPosts = document.getElementsByClassName("hidden");
+        
+            for (let index = 0; index < unmatchedPosts.length; index++) {
+                unmatchedPosts[index].classList.remove("hidden");
+            }
+        }
+    }
+</script>
+
+<style>
+    .hidden {
+        display: none;
+    }
+
+    .search-icon {
+        width: 1rem !important;
+        border: none;
+        /* The color attribute doesn't seem to apply in the case of svg.
+           Opacity seems to be easier than using the filter attribute
+           https://stackoverflow.com/questions/22252472/
+         */
+        opacity: 0.65;
+    }
+
+    .is-fullwidth {
+        width: 100%;
+    }
+</style>
