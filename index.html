@@ -47,22 +47,28 @@ title: Startseite
 <section id="partners-and-sponsors-front-page" class="section has-background-white has-border mt-6 mx-6-desktop mx-3-tablet mx-5-mobile">
   {% include title-h2.html text="Unsere Partner & Förderer" %}
 
-  <div id="sponsors-and-partners" class="columns is-vcentered pb-1">
-    <div class="column center-content">
+  <div id="sponsors-and-partners" class="columns is-vcentered is-multiline pb-1">
+    <div class="column center-content is-one-quarter-desktop is-half-tablet">
       <figure class="image sponsors-and-partners-image">
-        <img src="assets/images/GSN.png">
+        <img src="assets/images/partners-and-sponsors/GSN.png" alt="Logo vom Gründerstipendium NRW">
       </figure>
     </div>
 
-    <div class="column center-content">
+    <div class="column center-content is-one-quarter-desktop is-half-tablet">
       <figure class="image sponsors-and-partners-image">
-        <img src="assets/images/WERKX-Stempel.png">
+        <img src="assets/images/partners-and-sponsors/WERKX-Stempel.png" alt="Logo vom Bochumer Startup Inkubator Werk-X">
       </figure>
     </div>
 
-    <div class="column center-content">
+    <div class="column center-content is-one-quarter-desktop is-half-tablet">
       <figure class="image sponsors-and-partners-image">
-        <img src="assets/images/BO-Logo_m_Wortmarke_L10cmWebHQ.jpg">
+        <img src="assets/images/partners-and-sponsors/BO-Logo_m_Wortmarke_L10cmWebHQ.jpg" alt="Logo der Hochschule Bochum">
+      </figure>
+    </div>
+
+    <div class="column center-content is-one-quarter-desktop is-half-tablet">
+      <figure class="image sponsors-and-partners-image">
+        <img src="assets/images/partners-and-sponsors/RVSC.png" alt="Logo vom Ruhr Valley Startup Campus">
       </figure>
     </div>
   </div>
@@ -134,7 +140,7 @@ title: Startseite
 
   <div class="columns is-multiline">
     {% for post in site.posts limit:3 %}
-    <div class="column is-half-tablet is-one-third-widescreen">
+    <div class="columnis-one-quarter-desktop  is-half-tablet is-one-third-widescreen">
       <a href="{{ post.url }}">
         {% if post.hidden != null and post.hidden != true %}
         {% include blog-post-tile.html %}
