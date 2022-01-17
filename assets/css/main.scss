@@ -28,6 +28,12 @@
     }
 }
 
+#footer-made-with-bulma {
+    @include mobile {
+        margin: 1.5rem auto;
+    }
+}
+
 .title {
     @include mobile {
         font-size: 1.2rem;
@@ -74,6 +80,8 @@
     text-align: center;
 }
 
+/* why-use-codeklasse.html start */
+
 #why-use-codeklasse-tabs-list a.button {
     min-width: 20rem;
 
@@ -93,11 +101,13 @@
 
 .card.why-use-codeklasse {
     @include desktop {
-        max-width: 75%;
+        // max-width: 75%;
         margin-left: auto;
         margin-right: auto;
     }
 }
+
+/* why-use-codeklasse.html end */
 
 
 /* navbar.html start */
@@ -127,10 +137,13 @@
 .sponsors-and-partners-image {
     border: none;
     height: auto;
-    max-width: 50%;
 
     margin-top: auto;
     margin-bottom: auto;
+
+    @include mobile {
+        max-width: 70%;
+    }
 
     @include tablet {
         max-width: 75%;
