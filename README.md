@@ -13,3 +13,5 @@ How to use scss in Jekyll:
 - https://jekyllrb.com/docs/assets/
 
 FAQ section created via [Jekyll collections](https://jekyllrb.com/docs/collections/)
+
+Basic SEO functionality provided by the [Jekyll SEO Tag](https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/installation.md)

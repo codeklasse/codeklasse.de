@@ -1,4 +1,6 @@
 title: codeklasse
+tagline: Programmieren lernen mit Emojis - kinderleicht & altersgerecht
+logo: /assets/images/logo-full.png
 email: sergej@codeklasse.de
 description: Programmieren lernen für Kinder - mit Emojis! codeklasse ermöglicht altersgerechtes, frustfreies Programmieren lernen ohne Bedarf von Lesekompetenz oder Vorkenntnissen.  
 baseurl: "/" # the subpath of your site, e.g. /blog
@@ -10,7 +12,7 @@ contact_mail: sergej@codeklasse.de
 
 plugins:
   - jekyll-feed
-
+  - jekyll-seo-tag
 
 exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock, vendor, portfolio-assets/portfolio-photos/.git/FETCH_HEAD]
 
@@ -20,3 +22,25 @@ sass:
 collections:
   faq:
     output: true 
+
+# Further SEO configuration
+
+social:
+  name: codeklasse
+  links:
+    - https://www.linkedin.com/company/codeklasse
+    - https://github.com/codeklasse
+    - https://twitter.com/codeklasse
+    - https://www.facebook.com/codeklasse-102971225364051
+    - https://www.instagram.com/codeklasse/
+
+twitter:
+  card: summary_large_image
+ 
+timezone: Europe/Berlin
+locale: de_DE
+
+author:
+  name: codeklasse Team - Sergej Grilborzer, Natallia Satskevich, Liam Kranz
+  twitter: codeklasse
+  image: logo-full.png
