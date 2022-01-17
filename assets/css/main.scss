@@ -111,6 +111,12 @@
 
 
 /* navbar.html start */
+#title-section {
+    @include desktop {
+        margin-top: 0;
+    }
+}
+
 #main-navbar {
     padding: 1rem 0;
     display: flex;
@@ -120,7 +126,7 @@
     }
 
     @include desktop {
-        padding: 1rem 6rem;
+        padding: 0 6rem;
     }
 }
 /* navbar.html end */
