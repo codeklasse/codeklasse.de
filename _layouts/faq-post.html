@@ -19,23 +19,21 @@ layout: default
         </ul>
     </nav>
 
-    <section class="container has-background-white has-border py-6 mb-6">
-        <div class="has-text-centered mb-6">
+    <section class="container has-background-white has-border mx-3 py-6 mb-6">
+        <div class="has-text-centered pb-6-desktop pb-5-touch">
             {% include title-h2.html text=page.title %}
         </div>
 
-        <div class="columns">
-            <div class="column is-two-thirds-tablet is-offset-2 is-size-5 has-text-weight-bold">
-                {{ content }}
-            </div>
-        </div>
+        <div class="is-size-5-desktop is-size-6-mobile px-6 px-4-mobile">
+            {{ content }}
 
-        <div class="is-flex is-justify-content-center">
-            <a
-                id="faq-contact-button"
-                class="button is-primary wrap-button-text"
-                href="mailto:sergej@codeklasse.de"
-            >Fragen offen? Wir freuen uns von Ihnen zu hören!</a>
+            <div class="is-flex is-justify-content-center pt-6-desktop pt-5-touch">
+                <a
+                    id="faq-contact-button"
+                    class="button is-primary wrap-button-text"
+                    href="mailto:sergej@codeklasse.de"
+                >Fragen offen? Wir freuen uns von Ihnen zu hören!</a>
+            </div>
         </div>
     </section>
 </div>

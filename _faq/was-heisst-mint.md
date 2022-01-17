@@ -6,7 +6,8 @@ hidden: false
 ---
 
 MINT ist ein Sammelbegriff für:
-
+<br>
+<br>
 - **M**athe
 - **I**nformatik
 - **N**aturwissenschaft
