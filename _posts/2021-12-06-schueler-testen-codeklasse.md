@@ -3,7 +3,7 @@ layout: blog-post
 title: "News: Schüler testen codeklasse"
 author: "codeklasse Team"
 categories: [News]
-image: assets/images/kinder-ogs.jpg
+image: assets/images/blog/schueler-testen-codeklasse.jpg
 image_caption: ""
 releaseDate: "06.12.2021"
 

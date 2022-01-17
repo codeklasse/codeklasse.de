@@ -3,7 +3,7 @@ layout: blog-post
 title: "Medienkompetenz von Grundschulkindern fördern"
 author: "codeklasse Team"
 categories: [Medientipps]
-image: assets/images/medienkompetenz-von-grundschulkindern.jpg
+image: assets/images/blog/medienkompetenz-von-grundschulkindern.jpg
 image_caption: ""
 releaseDate: "14.09.2021"
 

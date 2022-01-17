@@ -3,7 +3,7 @@ layout: blog-post
 title: "Digitale Medien im Unterricht"
 author: "codeklasse Team"
 categories: [Medientipps]
-image: assets/images/digitale-medien-im-unterricht.jpeg
+image: assets/images/blog/digitale-medien-im-unterricht.jpeg
 image_caption: ""
 releaseDate: "29.06.2021"
 
