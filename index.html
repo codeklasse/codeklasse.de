@@ -192,7 +192,7 @@ title: Startseite
 
   <div class="columns is-multiline">
     {% for post in site.posts limit:3 %}
-    <div class="columnis-one-quarter-desktop  is-half-tablet is-one-third-widescreen">
+    <div class="column is-one-quarter-desktop is-half-tablet is-one-third-widescreen">
       <a href="{{ post.url }}">
         {% if post.hidden != null and post.hidden != true %}
         {% include blog-post-tile.html %}
