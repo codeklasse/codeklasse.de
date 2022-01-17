@@ -20,11 +20,13 @@ title: Startseite
 
   <div>
     <!-- <img id="title-teaser-image" src="assets/images/codeklasse-landing-sm.png" width="2079" height="1200"> -->
-    <img id="title-teaser-image" src="assets/images/codeklasse-landing-sm.png">
+    <img
+      id="title-teaser-image"
+      src="assets/images/codeklasse-landing-sm.png"
+    >
 
     <div id="title-teaser-call-to-action-button">
       <a
-        
         class="button wrap-button-text is-white is-medium mb-3"
         href="/#contact"
       >
@@ -38,47 +40,94 @@ title: Startseite
     >
       <p>codeklasse jetzt <span class="has-text-weight-bold">kostenlos nutzen</span>!</p>
       </a> -->
-      <p>oder <a target="_blank" href="https://app.codeklasse.de"
-        class="has-text-weight-bold is-underlined">hier selbst ausprobieren (in Arbeit!)</a></p>
+      <p>oder <a
+          target="_blank"
+          href="https://app.codeklasse.de"
+          class="has-text-weight-bold is-underlined"
+        >hier selbst ausprobieren (in Arbeit!)</a></p>
     </div>
   </div>
 </section>
 
-<section id="partners-and-sponsors-front-page" class="section has-background-white has-border mt-6 mx-6-desktop mx-3-tablet mx-5-mobile">
+<section
+  id="partners-and-sponsors-front-page"
+  class="section has-background-white has-border mt-6 mx-6-desktop mx-3-tablet mx-5-mobile"
+>
   {% include title-h2.html text="Unsere Partner & Förderer" %}
 
-  <div id="sponsors-and-partners" class="columns is-vcentered is-multiline pb-1">
+  <div
+    id="sponsors-and-partners"
+    class="columns is-vcentered is-multiline pb-1"
+  >
     <div class="column center-content is-one-quarter-desktop is-half-tablet">
       <figure class="image sponsors-and-partners-image">
-        <img src="assets/images/partners-and-sponsors/GSN.png" alt="Logo vom Gründerstipendium NRW">
+        <a
+          href="https://www.gruenderstipendium.nrw/gruenden"
+          target="_blank"
+        >
+          <img
+            src="assets/images/partners-and-sponsors/GSN.png"
+            alt="Logo vom Gründerstipendium NRW"
+          >
+        </a>
       </figure>
     </div>
 
     <div class="column center-content is-one-quarter-desktop is-half-tablet">
       <figure class="image sponsors-and-partners-image">
-        <img src="assets/images/partners-and-sponsors/WERKX-Stempel.png" alt="Logo vom Bochumer Startup Inkubator Werk-X">
+        <a
+          href="https://www.werk-x.ruhr"
+          target="_blank"
+        >
+          <img
+            src="assets/images/partners-and-sponsors/WERKX-Stempel.png"
+            alt="Logo vom Bochumer Startup Inkubator Werk-X"
+          >
+        </a>
       </figure>
     </div>
 
     <div class="column center-content is-one-quarter-desktop is-half-tablet">
       <figure class="image sponsors-and-partners-image">
-        <img src="assets/images/partners-and-sponsors/BO-Logo_m_Wortmarke_L10cmWebHQ.jpg" alt="Logo der Hochschule Bochum">
+        <a
+          href="https://www.hochschule-bochum.de"
+          target="_blank"
+        >
+          <img
+            src="assets/images/partners-and-sponsors/BO-Logo_m_Wortmarke_L10cmWebHQ.jpg"
+            alt="Logo der Hochschule Bochum"
+          >
+        </a>
       </figure>
     </div>
 
     <div class="column center-content is-one-quarter-desktop is-half-tablet">
       <figure class="image sponsors-and-partners-image">
-        <img src="assets/images/partners-and-sponsors/RVSC.png" alt="Logo vom Ruhr Valley Startup Campus">
+        <a
+          href="https://www.rv-startupcampus.de"
+          target="_blank"
+        >
+          <img
+            src="assets/images/partners-and-sponsors/RVSC.png"
+            alt="Logo vom Ruhr Valley Startup Campus"
+          >
+        </a>
       </figure>
     </div>
   </div>
 </section>
 
-<section id="why-use-codeklasse-front-page" class="section mt-5">
+<section
+  id="why-use-codeklasse-front-page"
+  class="section mt-5"
+>
   {% include why-use-codeklasse.html %}
 </section>
 
-<section id="faq-front-page" class="section has-background-white has-border mt-6-desktop mx-6-desktop mx-5-tablet mx-5-mobile">
+<section
+  id="faq-front-page"
+  class="section has-background-white has-border mt-6-desktop mx-6-desktop mx-5-tablet mx-5-mobile"
+>
   {% include title-h2.html text="Fragen & Antworten" %}
 
   <div class="columns">
@@ -135,7 +184,10 @@ title: Startseite
   </h4>
 </section>
 
-<section id="blog-and-news-front-page" class="section mt-6 is-fullheight">
+<section
+  id="blog-and-news-front-page"
+  class="section mt-6 is-fullheight"
+>
   {% include title-h2.html text="Blog & News" %}
 
   <div class="columns is-multiline">
@@ -155,7 +207,10 @@ title: Startseite
   </h4>
 </section>
 
-<section id="contact" class="section">
+<section
+  id="contact"
+  class="section"
+>
   {% include contact-form.html %}
 </section>
 
