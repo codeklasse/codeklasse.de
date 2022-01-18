@@ -1,6 +1,6 @@
 ---
 layout: blog-post
-title: "Warum Programmieren für Kinder so wichtig wie Lesen und Schreiben ist?"
+title: "Warum Programmieren für Kinder so wichtig wie Lesen und Schreiben ist"
 author: "codeklasse Team"
 categories: [Medientipps]
 image: assets/images/blog/Programmieren-so-wichtig-wie-Lesen-und-Schreiben.jpg
