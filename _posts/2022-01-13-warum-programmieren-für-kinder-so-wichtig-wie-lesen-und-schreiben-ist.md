@@ -38,7 +38,7 @@ Die Kinder entwickeln nicht nur eine zukunftsorientierte Fähigkeit, sondern wer
 
 Diese Annahme durften wir letztens während <a class="is-underlined" href="https://codeklasse.de/blog/schueler-testen-codeklasse/" target="_blank">unseres Testtermins an der Grundschule</a> beweisen. 
 Programmieren lernen gibt Kindern Ansporn für eigenständiges Lernen. 
-Durch kreative, selbstausgearbeitete Lösungen wird Programmieren lernen für die Kinder ein richtiges Abenteuer. 
+Durch kreative, selbst ausgearbeitete Lösungen wird Programmieren lernen für die Kinder ein richtiges Abenteuer. 
 
 # Digitale Kompetenz
 
