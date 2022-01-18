@@ -14,7 +14,7 @@ hidden: false
 ---
 
 Digitale Kompetenz, Eigenständigkeit und die Rettung der Wirtschaft - 
-In diesen Blogbeitrag reflektieren wir Gründe, weshalb Programmieren lernen für Kinder so wichtig ist. 
+In diesem Blogbeitrag reflektieren wir Gründe, weshalb Programmieren lernen für Kinder so wichtig ist. 
 Viel Spaß beim Lesen und Teilen!
 
 # Problemlösendes Denken 
