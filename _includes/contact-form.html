@@ -7,28 +7,32 @@
             <h2 class="title is-2 is-size-3-mobile is-spaced">Fragen? Impulse? Kooperation?</h2>
             <p class="subtitle">Sprechen wir darüber! Gerne per Mail via <a class="has-text-weight-bold" target="_blank"
                 href="https://aemail.com/mZln">sergej@codeklasse.de</a> oder über dieses Formular.</p>
-            <form name="contact" method="post" data-netlify="true">
+            <form name="contact" method="post" onclick="errorCheck()" data-netlify="true" class="validate">
                 <div class="field">
                     <label for="name" class="label is-size-4 has-text-weight-light"></label>
                     <div class="control has-icons-left">
-                        <input type="text" name="name" id="name" class="input" placeholder="Name" required>
+                        <input type="text" name="name" id="name" class="input" data-validation="not-blank" placeholder="Name" required>
                             <img class="icon is-left fontawesome-icon ml-3" src="/assets/css/fontawesome-free-svgs/solid/user.svg">
                     </div>
+                    <!-- <div class="validation-error-message hidden has-text-danger">your error message</div> -->
                 </div>
 
                 <div class="field">
                     <label for="email" class="label is-size-4 has-text-weight-light"></label>
                     <div class="control has-icons-left">
-                        <input type="email" name="email" id="email" class="input" placeholder="Email" required>
+                        <input type="email" name="email" id="email" class="input" data-validation="email not-blank" placeholder="Email" required>
                         <img class="icon is-left fontawesome-icon ml-3" src="/assets/css/fontawesome-free-svgs/solid/envelope.svg">
                     </div>
+                    <!-- <div class="validation-error-message hidden has-text-danger">your error message</div> -->
                 </div>
 
                 <div class="field">
                     <label for="message" class="label is-size-4 has-text-weight-light"></label>
-                    <textarea name="message" id="message" rows="5" class="textarea is-medium" placeholder="Ihre/ Deine Nachricht" required></textarea>
+                    <textarea name="message" id="message" rows="5" class="textarea is-medium" data-validation="not-blank" placeholder="Ihre/ Deine Nachricht" required></textarea>
+                    <!-- <div class="validation-error-message hidden has-text-danger">your error message</div> -->
                 </div>
                 <button type="submit" class="button is-primary is-size-5">Senden</button>
+                <div class="validation-error-message hidden has-text-danger">Bitte füllen Sie alle Felder aus</div>
             </form>
         </div>
     </div>
@@ -50,3 +54,11 @@
         opacity: 0.65;
     }
 </style>
+<script>
+    const errorCheck = () => {
+        console.log("worked");
+    }
+
+
+</script>
+<script type="text/javascript" src="../assets/js/bulma-form-validation.js"></script>
