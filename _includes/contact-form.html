@@ -1,41 +1,107 @@
 <!-- This form only works once pushed to netlify -> Doesn't work on local setup -->
 <div class="card">
-    <div class="card-content">
-        <div class=" container my-5-tablet mx-5-desktop px-5-desktop">
-            <!-- <h2 class="title is-2">Fragen, Impulse, Kooperation?  Sprechen wir darüber!</h2> -->
-            <!-- <h2 class="title is-2">Fragen, Impulse, Kooperation?</h2> -->
-            <h2 class="title is-2 is-size-3-mobile is-spaced">Fragen? Impulse? Kooperation?</h2>
-            <p class="subtitle">Sprechen wir darüber! Gerne per Mail via <a class="has-text-weight-bold" target="_blank"
-                href="https://aemail.com/mZln">sergej@codeklasse.de</a> oder über dieses Formular.</p>
-            <form name="contact" method="post" onclick="errorCheck()" data-netlify="true" class="validate">
-                <div class="field">
-                    <label for="name" class="label is-size-4 has-text-weight-light"></label>
-                    <div class="control has-icons-left">
-                        <input type="text" name="name" id="name" class="input" data-validation="not-blank" placeholder="Name" required>
-                            <img class="icon is-left fontawesome-icon ml-3" src="/assets/css/fontawesome-free-svgs/solid/user.svg">
-                    </div>
-                    <!-- <div class="validation-error-message hidden has-text-danger">your error message</div> -->
-                </div>
-
-                <div class="field">
-                    <label for="email" class="label is-size-4 has-text-weight-light"></label>
-                    <div class="control has-icons-left">
-                        <input type="email" name="email" id="email" class="input" data-validation="email not-blank" placeholder="Email" required>
-                        <img class="icon is-left fontawesome-icon ml-3" src="/assets/css/fontawesome-free-svgs/solid/envelope.svg">
-                    </div>
-                    <!-- <div class="validation-error-message hidden has-text-danger">your error message</div> -->
-                </div>
-
-                <div class="field">
-                    <label for="message" class="label is-size-4 has-text-weight-light"></label>
-                    <textarea name="message" id="message" rows="5" class="textarea is-medium" data-validation="not-blank" placeholder="Ihre/ Deine Nachricht" required></textarea>
-                    <!-- <div class="validation-error-message hidden has-text-danger">your error message</div> -->
-                </div>
-                <button type="submit" class="button is-primary is-size-5">Senden</button>
-                <div class="validation-error-message hidden has-text-danger">Bitte füllen Sie alle Felder aus</div>
-            </form>
+  <div class="card-content">
+    <div class="container my-5-tablet mx-5-desktop px-5-desktop">
+      <!-- <h2 class="title is-2">Fragen, Impulse, Kooperation?  Sprechen wir darüber!</h2> -->
+      <!-- <h2 class="title is-2">Fragen, Impulse, Kooperation?</h2> -->
+      <h2 class="title is-2 is-size-3-mobile is-spaced">
+        Fragen? Impulse? Kooperation?
+      </h2>
+      <p class="subtitle">
+        Sprechen wir darüber! Gerne per Mail via
+        <a
+          class="has-text-weight-bold"
+          target="_blank"
+          href="https://aemail.com/mZln"
+          >sergej@codeklasse.de</a
+        >
+        oder über dieses Formular.
+      </p>
+      <form name="contact" method="post" data-netlify="true">
+        <div class="field">
+          <label
+            for="name"
+            class="label is-size-4 has-text-weight-light"
+          ></label>
+          <div class="control has-icons-left">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="input name"
+              placeholder="Name"
+              required
+            />
+            <img
+              class="icon is-left fontawesome-icon ml-3"
+              src="/assets/css/fontawesome-free-svgs/solid/user.svg"
+            />
+          </div>
+          <!-- <div class="validation-error-message hidden has-text-danger">your error message</div> -->
         </div>
+
+        <div class="field">
+          <label
+            for="email"
+            class="label is-size-4 has-text-weight-light"
+          ></label>
+          <div class="control has-icons-left">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="input email"
+              placeholder="Email"
+              required
+            />
+            <img
+              class="icon is-left fontawesome-icon ml-3"
+              src="/assets/css/fontawesome-free-svgs/solid/envelope.svg"
+            />
+          </div>
+          <!-- <p
+            id="emailActionHint"
+            class="help is-danger nezobrazovat"
+            style="display: none"
+          >
+            Please enter a valid email so Majka can reach you
+          </p> -->
+          <!-- <div class="validation-error-message hidden has-text-danger">your error message</div> -->
+        </div>
+
+        <div class="field">
+          <label
+            for="message"
+            class="label is-size-4 has-text-weight-light"
+          ></label>
+          <textarea
+            name="message"
+            id="message"
+            rows="5"
+            class="textarea is-medium message"
+            placeholder="Ihre/ Deine Nachricht"
+            required
+          ></textarea>
+          <!-- <div class="validation-error-message hidden has-text-danger">your error message</div> -->
+        </div>
+        <button
+          type="submit"
+          class="button is-primary is-size-5"
+          id="submitButton"
+        >
+          Senden
+        </button>
+        <p
+          id="submitActionHint"
+          class="help is-danger nezobrazovat"
+          style="display: none"
+        >
+          Bitte füllen Sie alle Felder aus
+        </p>
+        <!-- <div class="validation-error-message hidden has-text-danger">Bitte füllen Sie alle Felder aus</div> -->
+      </form>
     </div>
+  </div>
 </div>
 
 <!-- https://www.benmarshall.me/responsive-iframes/ -->
@@ -44,21 +110,111 @@
 </figure> -->
 
 <style>
-    .fontawesome-icon {
-        width: 1rem !important;
-        border: none;
-        /* The color attribute doesn't seem to apply in the case of svg.
+  .fontawesome-icon {
+    width: 1rem !important;
+    border: none;
+    /* The color attribute doesn't seem to apply in the case of svg.
            Opacity seems to be easier than using the filter attribute
            https://stackoverflow.com/questions/22252472/
          */
-        opacity: 0.65;
-    }
+    opacity: 0.65;
+  }
 </style>
 <script>
-    const errorCheck = () => {
-        console.log("worked");
+  const submit = document.getElementById("submitButton");
+  const inputName = document.getElementById("name");
+  const inputEmail = document.getElementById("email");
+  const inputMessage = document.getElementById("message");
+  const submitMessage = document.getElementById("submitActionHint");
+  let nameValidated = false;
+  let emailValidated = false;
+  let messageValidated = false;
+  const MAXCHARNAMEFIELD = 40;
+
+  function validateRegexString(email) {
+    const regexString =
+      /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return regexString.test(String(email).toLowerCase()); // true|false
+  }
+  function validateMessage() {
+    if (inputMessage.value != null) {
+      inputMessage.classList.remove("is-danger");
+      inputMessage.classList.add("is-success");
+
+      messageValidated = true;
+    } else {
+      inputMessage.classList.remove("is-sucess");
+      inputMessage.classList.add("is-danger");
+
+      messageValidated = false;
     }
+  }
+  function validateName() {
+    var regexString =
+      /^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/u; //words separated by space
 
+    const conditions =
+      inputName.value.length < MAXCHARNAMEFIELD &&
+      inputName.value != null &&
+      regexString.test(inputName.value); //test for regex string
 
+    if (conditions) {
+      inputName.classList.remove("is-danger");
+      inputName.classList.add("is-success");
+
+      nameValidated = true;
+      submitMessage.style = "display:none";
+    } else {
+      // input box color
+      inputName.classList.remove("is-sucess");
+      inputName.classList.add("is-danger");
+
+      submitMessage.style = "display:block";
+      nameValidated = false;
+    }
+  }
+
+  function validateEmail(value) {
+    if (validateRegexString(value)) {
+      console.log("valid");
+
+      inputEmail.classList.remove("is-danger");
+      inputEmail.classList.add("is-success");
+
+      submitMessage.style = "display:none";
+      emailValidated = true;
+    } else {
+      inputEmail.classList.remove("is-sucess");
+      inputEmail.classList.add("is-danger");
+
+      emailValidated = false;
+    }
+  }
+  const checkFields = () => {
+    if (nameValidated && emailValidated && messageValidated) {
+      submitMessage.style = "display:none";
+    } else {
+      submitMessage.style = "display:block";
+    }
+  };
+  // EVENT LISTENERS
+  document.addEventListener(
+    "change",
+    (event) => {
+      if (event.target.matches(".name")) {
+        validateName();
+        checkFields();
+      } else if (event.target.matches(".email")) {
+        validateEmail(event.target.value);
+        checkFields();
+      } else if (event.target.matches(".message")) {
+        validateMessage();
+        checkFields();
+      } else {
+        //nothing
+      }
+    },
+    false
+  );
 </script>
-<script type="text/javascript" src="../assets/js/bulma-form-validation.js"></script>
+<!-- <script type="text/javascript" src="../assets/js/bulma-form-validation.js"></script> -->

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "bundle exec jekyll serve --livereload --no-watch",
+    "start": "bundle exec jekyll serve --livereload",
     "installUpdateFontawesome": "npm i && rm -rf ./assets/fontawesome-free && cp -r ./node_modules/@fortawesome/fontawesome-free/ ./assets/fontawesome-free && rm -rf ./static/webfonts && cp -r ./node_modules/@fortawesome/fontawesome-free/webfonts/ ./static/webfonts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
