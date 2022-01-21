@@ -37,7 +37,6 @@
               src="/assets/css/fontawesome-free-svgs/solid/user.svg"
             />
           </div>
-          <!-- <div class="validation-error-message hidden has-text-danger">your error message</div> -->
         </div>
 
         <div class="field">
@@ -59,14 +58,6 @@
               src="/assets/css/fontawesome-free-svgs/solid/envelope.svg"
             />
           </div>
-          <!-- <p
-            id="emailActionHint"
-            class="help is-danger nezobrazovat"
-            style="display: none"
-          >
-            Please enter a valid email so Majka can reach you
-          </p> -->
-          <!-- <div class="validation-error-message hidden has-text-danger">your error message</div> -->
         </div>
 
         <div class="field">
@@ -82,7 +73,6 @@
             placeholder="Ihre/ Deine Nachricht"
             required
           ></textarea>
-          <!-- <div class="validation-error-message hidden has-text-danger">your error message</div> -->
         </div>
         <button
           type="submit"
@@ -165,7 +155,6 @@
       nameValidated = true;
       submitMessage.style = "display:none";
     } else {
-      // input box color
       inputName.classList.remove("is-sucess");
       inputName.classList.add("is-danger");
 
@@ -197,7 +186,7 @@
       submitMessage.style = "display:block";
     }
   };
-  // EVENT LISTENERS
+
   document.addEventListener(
     "change",
     (event) => {
@@ -217,4 +206,3 @@
     false
   );
 </script>
-<!-- <script type="text/javascript" src="../assets/js/bulma-form-validation.js"></script> -->
