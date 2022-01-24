@@ -3,7 +3,7 @@ layout: blog-post
 title: "Interview mit dem codeklasse Gründer Sergej Grilborzer"
 author: "codeklasse Team"
 categories: [Interviews]
-image: "/assets/images/blog/interview-mit-dem-codeklasse-Gründer-Sergej-Grilborzer.jpg"
+image: assets/images/blog/interview-mit-dem-codeklasse-Gründer-Sergej-Grilborzer.jpg
 image_caption: ""
 releaseDate: "24.01.2022"
 
