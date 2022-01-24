@@ -1,6 +1,6 @@
 ---
 layout: blog-post
-title: "Interview mit dem Gründer Sergej Grilborzer"
+title: "Interview mit dem codeklasse Gründer Sergej Grilborzer"
 author: "codeklasse Team"
 categories: [Medientipps]
 image: 
