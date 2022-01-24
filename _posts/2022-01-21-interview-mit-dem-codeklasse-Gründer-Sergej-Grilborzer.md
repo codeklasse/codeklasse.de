@@ -3,7 +3,7 @@ layout: blog-post
 title: "Interview mit dem codeklasse Gründer Sergej Grilborzer"
 author: "codeklasse Team"
 categories: [Interviews]
-image: 
+image: "assets/images/blog/interview-mit-dem-codeklasse-Gründer-Sergej-Grilborzer.jpg"
 image_caption: ""
 releaseDate: "24.01.2022"
 
@@ -57,6 +57,7 @@ Kurz danach in der 8. Klasse habe ich meine erste HTML-Seite gebaut!
 Das hat mir besonders gut gefallen und viel Ansporn gegeben, technisches Abitur zu machen. 
 
 # Gibt es etwas, das du an deiner Bildung in der Kindheit ändern würdest?
+
 Tatsächlich bin ich sehr zufrieden. 
 Nun fehlte mir die Unterstützung beim Programmieren zu Hause. 
 Damals hätte ich gerne Tools gehabt, mit denen man Programmieren der Spiele sich selber beibringen könnte. 
@@ -65,6 +66,7 @@ Außerdem hatten wir einen sehr coolen Informatikkurs gehabt.
 Es war eine sehr bereichernde Erfahrung für mich. 
 
 # Erzähle mir über deine Studienzeit – wie sah dein Weg aus?
+
 Ich habe meine Studienzeit sehr genossen. 
 Dank dem BAföG konnte ich meine Zeit nicht nur in mein Informatikstudium investieren, sondern auch vielen kulturellen Aktivitäten nachgehen. 
 Natürlich waren die Noten nicht immer perfekt. 
