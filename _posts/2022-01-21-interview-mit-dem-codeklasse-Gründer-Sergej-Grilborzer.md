@@ -3,11 +3,11 @@ layout: blog-post
 title: "Interview mit dem codeklasse Gründer Sergej Grilborzer"
 author: "codeklasse Team"
 categories: [Interviews]
-image: "assets/images/blog/interview-mit-dem-codeklasse-Gründer-Sergej-Grilborzer.jpg"
+image: "/assets/images/blog/interview-mit-dem-codeklasse-Gründer-Sergej-Grilborzer.jpg"
 image_caption: ""
 releaseDate: "24.01.2022"
 
-toc: true
+toc: false
 comments: false
 featured: false
 hidden: false
@@ -18,96 +18,95 @@ Diese Woche startet unser Interview mit Sergej Grilborzer, dem Erfinder und Soft
 
 # Was war als Kind dein Lieblingsspielzeug?
 
-Als ich das erste Mal nach Deutschland gekommen bin, hatte ich witzigerweise eine Eisenbahn gehabt.  
-Mein Lieblingsspielzeug damals passt ja sogar heute zu Idee von codeklasse.
-Ansonsten habe ich ganz viel mit Lego gespielt. 
+Als ich das erste Mal nach Deutschland gekommen bin, hatte ich witzigerweise eine Eisenbahn gehabt! 
+Das war zwar nicht mein Lieblingsspielzeug, aber es passt heute zu der Idee von codeklasse.
+Ansonsten habe ich ganz viel mit Lego gespielt.
 
 # Was wolltest du als Kind werden, wenn du groß bist?
 
 Ich wollte Spielentwickler werden. 
 
-# Welche Spiele wolltest du entwickleln?
+# Welche Spiele wolltest du entwickeln?
 
-Ich wollte vor allem meine eigenen Spiele entwickeln. 
+Ich wollte vor allem meine eigenen Spiele entwickeln!
 Ich hatte viele Ideen und habe sie dann auf Papier gemalt, mir vorgestellt, wie die Spiele in der Realität aussehen würden. 
-Dazu habe ich mir unendlich viele Bücher zum Programmieren in C++ ausgeliehen und versucht, Spiele  
-zu programmieren. 
-Damals noch mit CD-ROM, ohne Internet.
-Das hat leider immer gescheitert.
-Und ich habe so oft versucht. 
-Ungelogen bestimmt zehn Bücher durchprobiert.
-Es war einfach zu schwierig für mich. 
-Leider habe ich es als Kind nicht geschafft. 
+Dazu habe ich mir unendlich viele Bücher zum Programmieren in C++ ausgeliehen und versucht zu programmieren - 
+damals noch mit CD-ROM, **ohne Internet**!
+Ich habe es immer wieder versucht (Ungelogen bestimmt zehn Bücher durchprobiert),
+aber es ist leider jedes Mal gescheitert.
+
+In Retrospektive wette ich das irgendwo etwas Banales wie ein Semikolon gefehlt hat.
 
 # Wann hast du dein erstes Spiel entwickelt?
 
-Leider kann ich mich nicht daran erinnern, dass wir in der Realschule Spiele programmiert haben. 
-Wir hatten nur HTML...
-Mein erstes richtiges Spiel habe ich erst im Berufskolleg entwickelt. 
-Damals in der elften oder zwölften Klasse.
-Da hatten wir 2D Shooter Spiel in Java gebaut.
-Es hat mir sehr viel Spaß gemacht. 
+Leider kann ich mich nicht daran erinnern, dass wir in der Realschule Spiele programmiert haben
+(da haben wir Webseiten mit HTML gebaut!).
+Mein erstes richtiges Spiel habe ich erst am Berufskolleg entwickelt,
+das müsste in der elften oder zwölften Klasse gewesen sein,
+und war ein 2D Shooter in Java <a href="https://www.greenfoot.org/door" target="_blank" class="is-underlined">Greenfoot</a>.
+Das hatte echt viel Spaß gemacht!
 
 # Beschreibe deine Kindheitserinnerungen an die Schulzeit.
 
 Eine der besten Kindheitserinnerungen an die Schulzeit ist die Realschule. 
-Ab der 5. Klasse haben wir Computer-AG gehabt. 
-Bereits ab der 7. Klasse konnte ich Informatik als Wahlpflichtfach wählen und mit der Bildbearbeitung starten. 
-Kurz danach in der 8. Klasse habe ich meine erste HTML-Seite gebaut!
-Das hat mir besonders gut gefallen und viel Ansporn gegeben, technisches Abitur zu machen. 
+In der 5. Klasse hatten wir eine Computer-AG in der wir die Basics zu Word und Excel gelernt haben. 
+Ab der 7. Klasse habe ich dann selbstverständlich Informatik als Wahlpflichtfach gewählt
+und noch mehr Excel Tricks erkundet. 
+Darauf folgten eigene Webseiten in HTML, Bildbearbeitung mit GIMP und Programmieren in Visual Basic!
+
+Unser Info-Kurs war das Beste! Grüße gehen raus!
 
 # Gibt es etwas, das du an deiner Bildung in der Kindheit ändern würdest?
 
-Tatsächlich bin ich sehr zufrieden. 
-Nun fehlte mir die Unterstützung beim Programmieren zu Hause. 
-Damals hätte ich gerne Tools gehabt, mit denen man Programmieren der Spiele sich selber beibringen könnte. 
-Wenn es damals anders gewesen wäre, hätte ich heute sicher Spiele entwickelt. 
-Außerdem hatten wir einen sehr coolen Informatikkurs gehabt. 
-Es war eine sehr bereichernde Erfahrung für mich. 
+Tatsächlich bin ich sehr zufrieden!
+Ich hätte mir einzig Unterstützung beim Programmieren gewünscht.
+Damals hätte ich gerne die Tools gehabt, mit denen man heute Spiele programmieren kann. 
+Ich glaube das hätte mir viel Spaß bereitet.
+Und wie schon erwähnt hatten wir einen sehr coolen Informatikkurs! 
+Alles in allem durfte ich eine tolle Schulbildung genießen!
 
 # Erzähle mir über deine Studienzeit – wie sah dein Weg aus?
-
-Ich habe meine Studienzeit sehr genossen. 
-Dank dem BAföG konnte ich meine Zeit nicht nur in mein Informatikstudium investieren, sondern auch vielen kulturellen Aktivitäten nachgehen. 
+Ich habe meine Studienzeit sehr genossen!
+Dank dem BAföG konnte ich meine Zeit nicht nur in mein Informatikstudium investieren,
+sondern auch vielen kulturellen Aktivitäten nachgehen. 
 Natürlich waren die Noten nicht immer perfekt. 
 Am Ende hat es trotzdem mit 1.9 im Bachelor und mit 1.3 im Master geklappt.
-Nachdem 4 Semester meines Studiums vergangen waren, habe ich kurz an mir als Informatiker gezweifelt.
-Der Grund war, dass viele Kommilitonen von mir coole Nebenprojekte gemacht haben. 
-Zu dem Zeitpunkt hatte ich noch keine Projekte in Aussicht gehabt. 
-Danach kam Softwarepraktikum in dem vierten/fünften Semester. 
-Da hatten wir einen Open-Source Customisible Organisator gebaut.
-Der hieß Shepard Keep It Together und das haben wir nach einem Jahr geschafft. 
-Wir hatten nicht nur eine mobile App, sondern auch eine Webanwendung mit Stream..., Docker Deploy..
-Die Arbeit an dem Projekt hat sich definitiv gelohnt. 
-Es war ein Wendepunkt für mich, wo ich festgestellt habe, dass ich doch als Softwareentwickler irgendwo anfangen könnte. 
-Dann habe ich mich bei adesso beworben und ab da hat meine Reise begonnen. 
 
-# Wie kam es zu deiner Gründung von codeklasse?
+Im vierten Semester hatte ich noch Zweifel mich als arbeitsfähigen Informatiker zu sehen.
+Der Grund war, dass viele Kommilitonen von mir an eigenen Projekten gearbeitet haben, was ich nicht tat. 
+Zum Glück hatten wir dann aber ein zweisemestriges Softwarepraktikum in dem wir einen
+individualisierbaren Open Source Organizer entwickelt haben.
 
-Beruflich hatte ich mich ganz viel mit KI beschäftigt.
-Auch meine Bachelorarbeit war mit künstlicher Intelligenz verbunden. 
-Irgendwann habe ich aber gemerkt, dass ich doch was anderes machen möchte. 
-Nachdem ich meine Bachelorarbeit abgeschlossen habe, habe ich mir die Gedanken über meinen Master gemacht.
-In meinem Master wollte ich unbedingt etwas bei Herrn Ritschel machen, weil er ein sehr cooler Professor an der Hochschule Bochum ist. 
-Im Verlauf meines Masterstudiums hatten wir Compiler-Bau als Fach gehabt. 
-Für das Projekt in diesem Fach haben wir eine Java-Applikation geschrieben, die Emojis in Java gepasst hat. 
-Danach kam der Impuls von dem Herrn Ritschel, dass Programm mit Emojis auch was für Kinder sein könnte.
-Dann wurde es in Gang gesetzt. 
+Der Slogan war "Shepherd - Keep it together!"
+Das Projekt war eine Cross-Plattform Anwendung basierend auf dem QtFramework
+und wurde mittels Docker und Spring Boot in einer Microservice-Architektur ausgeliefert.
+Die Arbeit an dem Projekt war ein MASSIVES Erfolgserlebnis und ein persönlicher Wendepunkt. 
+Danach habe ich mich im Open Source Team von adesso beworben und erst richtig angefangen Softwareentwicklung zu lernen. 
+
+# Wie kam es zu der Gründung von codeklasse?
+
+Angefangen mit meiner Bachelorarbeit hatte ich mich die letzten zwei Jahre sehr intensiv mit KI beschäftigt.
+Irgendwann fühlte ich mich davon aber einfach ausgebrannt.
+Als ich im Master dann Herrn Ritschel in Compilerbau kennengelernt hatte,
+wollte ich die Masterarbeit dann gerne bei ihm schreiben. 
+Als wir in Compilerbau dann eine Java-Applikation entwickelt hatten,
+die Emojis in Java übersetzt hat, kam der Impuls dass dies auch für Kinder interessant sein könnte.
+Das hat alles in den Gang gesetzt.
 
 # Wenn ein Kind dir erzählen würde, dass es gründen möchte – welchen Ratschlag würdest du ihm geben?
 
-Ich würde dem Kind empfehlen, Dinge selber in die Hand zu nehmen!
+Ich würde dem Kind empfehlen Dinge selber in die Hand zu nehmen!
 >Don’t ask for permission – ask for forgiveness.
 
 # Wenn du die Zeit zurückdrehen könntest, welchen Ratschlag würdest du deinem 10-jährigen Ich geben?
 
-Meinem 10-Jährigen habe ich nichts zu sagen. 
-Außer:  
->Hey! Cool, dass du Linkin Park hörst.
+Da fällt mir ehrlich nichts ein.
+Außer vielleicht 
+>Hey, cool das du Linkin Park hörst!
 
 # Die größten Hürden auf dem Weg zur Gründung waren?
 
-[Denkt lange nach…] Keine Ahnung, ich habe keine Hürden gehabt, weil der <a class="is-underlined" href="https://www.rv-startupcampus.de/" target="_blank">Ruhrvalley Start-up-Campus</a>, Grüße an Lenka, mir alle Fragen geklärt hatte. 
+[Denkt lange nach…] Keine Ahnung, mir fallen keine Hürden ein, weil der <a class="is-underlined" href="https://www.rv-startupcampus.de/" target="_blank">ruhrvalley Start-up-Campus</a>, Grüße an Lenka Mildner, mir alle Fragen geklärt hatte. 
 
 # Welche wichtige Empfehlung oder welchen Tipp würdest du Gründern mit auf den Weg geben?
 
@@ -116,16 +115,21 @@ Außer:
 # Wie sieht dein Arbeitsalltag aus – gibt es überhaupt schon so etwas wie einen „Alltag“?
 
 Letztes Jahr war mein Arbeitsalltag sehr variabel.
-Meine Arbeitsroutine hat sich vor allem als sehr flexibel etabliert, weil ich alleine gearbeitet habe. 
-Als Team gewachsen hat, hat es eine Umstellung gegeben.
-Jetzt sieht meine Arbeitsroutine wie folgt aus. 
-Am wichtigsten ist es für mich, mit dem guten Frühstück in den Tag zu starten. 
-Danach setze ich mich an die Arbeit und diese Zeit des Tages ist somit die produktivste für mich. 
-Nach der Mittagspause fehlt leider meine Produktivität etwas ab. 
-In der Phase gehe ich oft spazieren oder unterhalte mich mit jemanden. 
-Danach geht die Arbeit weiter. 
+Das lag vor allem daren, dass ich alleine gearbeitet hatte. 
+Als das dann Team gewachsen ist, gab es ein wenig mehr Planung was Aktivitäten und Zeiten angeht.
+Jetzt sieht meine Arbeitsroutine wie folgt aus:
 
-# Was ist der nächste große Schritt?
+Am wichtigsten ist es für mich, mit einem guten Frühstück in den Tag zu starten.
+Danach folgt der produktivste Block meines Tages an dem ich die wichtigsten oder kompliziertesten Aufgaben angehe.
+Nach der Mittagspause fällt die Produktivität dann ein wenig ab
+und gehe spazieren, unterhalte mich mit jemanden oder mache "stupide" Arbeit, die wenig Konzentration benötigt. 
+Wenn es gut läuft, schaffe ich noch einen Block mit viel Fokus und habe dann gegen 19 Uhr Feierabend.
 
-Der nächste große Schritt von codeklasse ist ein qualitativ hochwertiges Produkt zu entwickeln, um den Anforderungen unserer Zielgruppe gerecht zu werden.
-Wenn ich vorsichtig in die Zukunft von codeklasse blicken darf, würde ich gerne mit unserem Produkt den Kindern erste Programmiererfahrung sichern.  
+Aktuell sind die Tage lang und erfüllt!
+
+# Was ist der nächste, große Schritt?
+
+Der nächste, große Schritt von codeklasse ist ein qualitativ hochwertiges Produkt zu entwickeln,
+um den Anforderungen unserer Zielgruppe gerecht zu werden.
+Wenn ich vorsichtig in die Zukunft von codeklasse blicken darf,
+würde ich in einem halben Jahr gerne erste, reale Programmiererfahrungen vermitteln.
