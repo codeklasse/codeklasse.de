@@ -1,11 +1,11 @@
 ---
 layout: blog-post
-title: "Interview mit dem Gründer Sergej Grilborzer"
+title: "Interview mit dem codeklasse Gründer Sergej Grilborzer"
 author: "codeklasse Team"
-categories: [Medientipps]
+categories: [Interviews]
 image: 
 image_caption: ""
-releaseDate: ""
+releaseDate: "24.01.2022"
 
 toc: true
 comments: false
@@ -15,19 +15,18 @@ hidden: false
 
 In diesem Format stellen wir Gründer, Entwickler, Betreiber und Förderer der MINT-Welt näher für euch dar.
 Diese Woche startet unser Interview mit Sergej Grilborzer, dem Erfinder und Softwareentwickler von codeklasse. 
-<!--more-->
 
-**Was war als Kind dein Lieblingsspielzeug?**
+# Was war als Kind dein Lieblingsspielzeug?
 
 Als ich das erste Mal nach Deutschland gekommen bin, hatte ich witzigerweise eine Eisenbahn gehabt.  
 Mein Lieblingsspielzeug damals passt ja sogar heute zu Idee von codeklasse.
 Ansonsten habe ich ganz viel mit Lego gespielt. 
 
-**Was wolltest du als Kind werden, wenn du groß bist?**
+# Was wolltest du als Kind werden, wenn du groß bist?
 
 Ich wollte Spielentwickler werden. 
 
-**Welche Spiele wolltest du entwickleln?**
+# Welche Spiele wolltest du entwickleln?
 
 Ich wollte vor allem meine eigenen Spiele entwickeln. 
 Ich hatte viele Ideen und habe sie dann auf Papier gemalt, mir vorgestellt, wie die Spiele in der Realität aussehen würden. 
@@ -40,7 +39,7 @@ Ungelogen bestimmt zehn Bücher durchprobiert.
 Es war einfach zu schwierig für mich. 
 Leider habe ich es als Kind nicht geschafft. 
 
-**Wann hast du dein erstes Spiel entwickelt?**
+# Wann hast du dein erstes Spiel entwickelt?
 
 Leider kann ich mich nicht daran erinnern, dass wir in der Realschule Spiele programmiert haben. 
 Wir hatten nur HTML...
@@ -49,7 +48,7 @@ Damals in der elften oder zwölften Klasse.
 Da hatten wir 2D Shooter Spiel in Java gebaut.
 Es hat mir sehr viel Spaß gemacht. 
 
-**Beschreibe deine Kindheitserinnerungen an die Schulzeit.**
+# Beschreibe deine Kindheitserinnerungen an die Schulzeit.
 
 Eine der besten Kindheitserinnerungen an die Schulzeit ist die Realschule. 
 Ab der 5. Klasse haben wir Computer-AG gehabt. 
@@ -57,7 +56,7 @@ Bereits ab der 7. Klasse konnte ich Informatik als Wahlpflichtfach wählen und m
 Kurz danach in der 8. Klasse habe ich meine erste HTML-Seite gebaut!
 Das hat mir besonders gut gefallen und viel Ansporn gegeben, technisches Abitur zu machen. 
 
-**Gibt es etwas, das du an deiner Bildung in der Kindheit ändern würdest?**
+# Gibt es etwas, das du an deiner Bildung in der Kindheit ändern würdest?
 Tatsächlich bin ich sehr zufrieden. 
 Nun fehlte mir die Unterstützung beim Programmieren zu Hause. 
 Damals hätte ich gerne Tools gehabt, mit denen man Programmieren der Spiele sich selber beibringen könnte. 
@@ -65,7 +64,7 @@ Wenn es damals anders gewesen wäre, hätte ich heute sicher Spiele entwickelt.
 Außerdem hatten wir einen sehr coolen Informatikkurs gehabt. 
 Es war eine sehr bereichernde Erfahrung für mich. 
 
-**Erzähle mir über deine Studienzeit – wie sah dein Weg aus?**
+# Erzähle mir über deine Studienzeit – wie sah dein Weg aus?
 Ich habe meine Studienzeit sehr genossen. 
 Dank dem BAföG konnte ich meine Zeit nicht nur in mein Informatikstudium investieren, sondern auch vielen kulturellen Aktivitäten nachgehen. 
 Natürlich waren die Noten nicht immer perfekt. 
@@ -81,7 +80,7 @@ Die Arbeit an dem Projekt hat sich definitiv gelohnt.
 Es war ein Wendepunkt für mich, wo ich festgestellt habe, dass ich doch als Softwareentwickler irgendwo anfangen könnte. 
 Dann habe ich mich bei adesso beworben und ab da hat meine Reise begonnen. 
 
-**Wie kam es zu deiner Gründung von codeklasse?**
+# Wie kam es zu deiner Gründung von codeklasse?
 
 Beruflich hatte ich mich ganz viel mit KI beschäftigt.
 Auch meine Bachelorarbeit war mit künstlicher Intelligenz verbunden. 
@@ -93,27 +92,26 @@ Für das Projekt in diesem Fach haben wir eine Java-Applikation geschrieben, die
 Danach kam der Impuls von dem Herrn Ritschel, dass Programm mit Emojis auch was für Kinder sein könnte.
 Dann wurde es in Gang gesetzt. 
 
-**Wenn ein Kind dir erzählen würde, dass es gründen möchte – welchen Ratschlag würdest du ihm geben?**
+# Wenn ein Kind dir erzählen würde, dass es gründen möchte – welchen Ratschlag würdest du ihm geben?
 
 Ich würde dem Kind empfehlen, Dinge selber in die Hand zu nehmen!
 >Don’t ask for permission – ask for forgiveness.
 
-**Wenn du die Zeit zurückdrehen könntest, welchen Ratschlag würdest du deinem 10-jährigen Ich geben?**
+# Wenn du die Zeit zurückdrehen könntest, welchen Ratschlag würdest du deinem 10-jährigen Ich geben?
 
 Meinem 10-Jährigen habe ich nichts zu sagen. 
 Außer:  
 >Hey! Cool, dass du Linkin Park hörst.
 
-**Die größten Hürden auf dem Weg zur Gründung waren?**
+# Die größten Hürden auf dem Weg zur Gründung waren?
 
-Ich hatte keine Hürden gehabt, weil ich an meiner Seite Ruhrvalley Start-up-Campus hatte.
-Damals wurden mir alle Fragen geklärt. 
+[Denkt lange nach…] Keine Ahnung, ich habe keine Hürden gehabt, weil der <a class="is-underlined" href="https://www.rv-startupcampus.de/" target="_blank">Ruhrvalley Start-up-Campus</a>, Grüße an Lenka, mir alle Fragen geklärt hatte. 
 
-**Welche wichtige Empfehlung oder welchen Tipp würdest du Gründern mit auf den Weg geben?**
+# Welche wichtige Empfehlung oder welchen Tipp würdest du Gründern mit auf den Weg geben?
 
 >„Don’t ask for permission – ask for forgiveness.“
 
-**Wie sieht dein Arbeitsalltag aus – gibt es überhaupt schon so etwas wie einen „Alltag“?**
+# Wie sieht dein Arbeitsalltag aus – gibt es überhaupt schon so etwas wie einen „Alltag“?
 
 Letztes Jahr war mein Arbeitsalltag sehr variabel.
 Meine Arbeitsroutine hat sich vor allem als sehr flexibel etabliert, weil ich alleine gearbeitet habe. 
@@ -125,7 +123,7 @@ Nach der Mittagspause fehlt leider meine Produktivität etwas ab.
 In der Phase gehe ich oft spazieren oder unterhalte mich mit jemanden. 
 Danach geht die Arbeit weiter. 
 
-**Was ist der nächste große Schritt?**
+# Was ist der nächste große Schritt?
 
 Der nächste große Schritt von codeklasse ist ein qualitativ hochwertiges Produkt zu entwickeln, um den Anforderungen unserer Zielgruppe gerecht zu werden.
 Wenn ich vorsichtig in die Zukunft von codeklasse blicken darf, würde ich gerne mit unserem Produkt den Kindern erste Programmiererfahrung sichern.  
