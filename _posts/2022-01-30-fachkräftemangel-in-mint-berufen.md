@@ -60,7 +60,7 @@ hidden: false
 
 ## Fazit
 **Einen wichtigen Satz zu jedem Punkt formulieren**
-**Als "Call to action" - Wir suchen die Unterstützung in der Marktforschung des digitalen Fortschritts der Bildungseinruchtungen, um gemeinsam gegen das Problem Fachkräftemangel in MINT-Berufen lösen zu können. 
+**Als "Call to action" - Wir suchen die Unterstützung in der Marktforschung des digitalen Fortschritts der Bildungseinruchtungen, um gemeinsam gegen das Problem Fachkräftemangel in MINT-Berufen lösen zu können**
 
 
 
