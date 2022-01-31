@@ -178,8 +178,8 @@ title: Blog & News
     function clearSearch() {
         const searchInput = document.getElementById("searchInput");
         searchInput.value = "";
-        const elems = document.querySelectorAll(".hidden");
-        elems.forEach(el => {
+        const hiddenPosts = document.querySelectorAll(".hidden");
+        hiddenPosts.forEach(el => {
             el.classList.remove("hidden");
         });
     }
