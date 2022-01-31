@@ -179,7 +179,7 @@ title: Blog & News
         const searchInput = document.getElementById("searchInput");
         searchInput.value = "";
         const elems = document.querySelectorAll(".hidden");
-        [].forEach.call(elems, function(el) {
+        elems.forEach(el => {
             el.classList.remove("hidden");
         });
     }
