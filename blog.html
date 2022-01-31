@@ -2,35 +2,44 @@
 layout: default
 title: Blog & News
 ---
-
 <section class="section has-background-primary is-fullheight">
     {% include title-h2.html text="Blog & News" %}
 
     <!-- Search bar -->
-    <div id="blog-search-field" class="field is-pulled-right">
-        <p class="control has-icons-left">
-            <input
-                class="input"
-                type="text"
-                placeholder="Suche"
-                oninput="filterPosts(this.value)"
-            >
-                <img class="icon is-left search-icon ml-3" src="/assets/css/fontawesome-free-svgs/solid/search.svg">
-        </p>
+    <div class="columns">
+        <div class="column">
+        <!-- Category labels - css class "category-button" is required for highlighting active categories -->
+        <div class="buttons is-fullwidth">
+            <button
+                class="button is-info category-button"
+                onclick="filterUsingCategory('Alle Artikel')"
+            >Alle Artikel</button>
+            {% for category in site.categories %}
+            <button
+                class="button is-info is-light category-button"
+                onclick="filterUsingCategory('{{ category | first }}')"
+            >{{ category | first }}</button>
+            {% endfor %}
+        </div>
     </div>
+    <div class="column">
+        <div id="blog-search-field" class="field is-pulled-right">
+            <p class="control has-icons-left has-icons-right">
+                <input
+                    class="input"
+                    id="searchInput"
+                    type="text"
+                    placeholder="Suche"
+                    oninput="filterPosts(this.value)"
+                >
+                    <img class="icon is-left search-icon ml-3" src="/assets/css/fontawesome-free-svgs/solid/search.svg">
 
-    <!-- Category labels - css class "category-button" is required for highlighting active categories -->
-    <div class="buttons is-fullwidth">
-        <button
-            class="button is-info category-button"
-            onclick="filterUsingCategory('Alle Artikel')"
-        >Alle Artikel</button>
-        {% for category in site.categories %}
-        <button
-            class="button is-info is-light category-button"
-            onclick="filterUsingCategory('{{ category | first }}')"
-        >{{ category | first }}</button>
-        {% endfor %}
+                    <span class="icon is-right pointer" onclick="clearSearch()">
+                        <img class="pointer search-icon ml-3" src="/assets/css/fontawesome-free-svgs/solid/times.svg">
+                      </span>
+            </p>
+        </div>
+    </div>
     </div>
 
     <!-- Post-grid -->
@@ -68,7 +77,7 @@ title: Blog & News
         const categoryButtons = document.getElementsByClassName("category-button");
 
         for(let i = 0; i < categoryButtons.length; i++) {
-            console.log(categoryButtons[i].textContent);
+            // console.log(categoryButtons[i].textContent);
             if(selectedCategory && selectedCategory === categoryButtons[i].textContent) {
                 categoryButtons[i].classList.remove('is-light');
             } else {
@@ -126,7 +135,7 @@ title: Blog & News
         markFirstCategoryAsActive();
 
         const searchQuery = rawSearchQuery.toLowerCase().trim();
-        console.log(searchQuery);
+        // console.log(searchQuery);
         displayAllPostsIfQueryIsEmpty(searchQuery);
 
         const allPosts = document.getElementsByClassName("blog-post");
@@ -156,12 +165,23 @@ title: Blog & News
 
     function displayAllPostsIfQueryIsEmpty(searchQuery) {
         if(searchQuery === "") {
+
             const unmatchedPosts = document.getElementsByClassName("hidden");
-        
+
             for (let index = 0; index < unmatchedPosts.length; index++) {
                 unmatchedPosts[index].classList.remove("hidden");
             }
+
         }
+    }
+
+    function clearSearch() {
+        const searchInput = document.getElementById("searchInput");
+        searchInput.value = "";
+        const hiddenPosts = document.querySelectorAll(".hidden");
+        hiddenPosts.forEach(el => {
+            el.classList.remove("hidden");
+        });
     }
 </script>
 
@@ -182,5 +202,10 @@ title: Blog & News
 
     .is-fullwidth {
         width: 100%;
+    }
+
+    .pointer {
+        cursor: pointer;
+        pointer-events: auto;
     }
 </style>
