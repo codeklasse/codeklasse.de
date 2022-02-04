@@ -132,7 +132,14 @@ title: Blog & News
 
 <script>
     function filterPosts(rawSearchQuery) {
+
         markFirstCategoryAsActive();
+
+        const unmatchedPosts = document.getElementsByClassName("hidden");
+        
+        for (let index = 0; index < unmatchedPosts.length; index++) {
+            unmatchedPosts[index].classList.remove("hidden");
+        }
 
         const searchQuery = rawSearchQuery.toLowerCase().trim();
         // console.log(searchQuery);
