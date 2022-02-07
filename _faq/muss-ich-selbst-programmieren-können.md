@@ -5,4 +5,4 @@ last_updated_date: "2021-12-21"
 hidden: false
 ---
 
-Unsere Mission ist Kinder für das Programmieren zu begeistern und eine Plattform zu schaffen die diese Kompetenz spielerisch & anschaulich vermittelt. 
+Nein. codeklasse ist bewusst so konzipiert, dass nicht nur Kinder, sondern auch auch fachfremde Lehrer programmieren lernen können. Unsere Plattform stellt einsatzbereite Kurse und moderne Lehrmaterialien bereit, die Schülern und Lehrern gleichermaßen den einfachen, frustfreien Zugang zum Thema Programmierung ermöglicht.
