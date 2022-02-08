@@ -25,6 +25,16 @@
         "blog",
         "content"
       ]
+    },
+    {
+      "login": "liam-k",
+      "name": "liam-k",
+      "avatar_url": "https://avatars.githubusercontent.com/u/34057943?v=4",
+      "profile": "https://github.com/liam-k",
+      "contributions": [
+        "design",
+        "content"
+      ]
     }
   ],
   "contributorsPerLine": 7,
