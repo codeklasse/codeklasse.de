@@ -35,6 +35,15 @@
         "design",
         "content"
       ]
+    },
+    {
+      "login": "seann1",
+      "name": "Sean Niesen",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7483224?v=4",
+      "profile": "https://www.seanniesen.digital/",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
