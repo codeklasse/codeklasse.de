@@ -15,6 +15,16 @@
         "content",
         "business"
       ]
+    },
+    {
+      "login": "tatosha",
+      "name": "Natallia Satskevich",
+      "avatar_url": "https://avatars.githubusercontent.com/u/62521045?v=4",
+      "profile": "https://github.com/tatosha",
+      "contributions": [
+        "blog",
+        "content"
+      ]
     }
   ],
   "contributorsPerLine": 7,
