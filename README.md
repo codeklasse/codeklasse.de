@@ -1,6 +1,6 @@
 # codeklasse.de
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 :house: of the codeklasse project - "programming with emojis".
 
@@ -45,6 +45,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://sergej.grilborzer.de/"><img src="https://avatars.githubusercontent.com/u/23424538?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sergej Grilborzer</b></sub></a><br /><a href="https://github.com/codeklasse/codeklasse.de/commits?author=s-gbz" title="Code">💻</a> <a href="#content-s-gbz" title="Content">🖋</a> <a href="#business-s-gbz" title="Business development">💼</a></td>
+    <td align="center"><a href="https://github.com/tatosha"><img src="https://avatars.githubusercontent.com/u/62521045?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Natallia Satskevich</b></sub></a><br /><a href="#blog-tatosha" title="Blogposts">📝</a> <a href="#content-tatosha" title="Content">🖋</a></td>
   </tr>
 </table>
 
