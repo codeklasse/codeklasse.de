@@ -1,0 +1,26 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "s-gbz",
+      "name": "Sergej Grilborzer",
+      "avatar_url": "https://avatars.githubusercontent.com/u/23424538?v=4",
+      "profile": "https://sergej.grilborzer.de/",
+      "contributions": [
+        "code",
+        "content",
+        "business"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "codeklasse.de",
+  "projectOwner": "codeklasse",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
