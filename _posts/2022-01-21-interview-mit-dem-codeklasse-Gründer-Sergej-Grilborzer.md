@@ -42,7 +42,7 @@ In Retrospektive wette ich das irgendwo etwas Banales wie ein Semikolon gefehlt 
 Das war ziemlich spät!
 Mein **erstes richtiges Spiel** habe ich erst am **Berufskolleg** entwickelt,
 das müsste in der elften oder zwölften Klasse gewesen sein,
-und war ein **2D Shooter in Java** <a href="https://www.greenfoot.org/door" target="_blank" class="is-underlined">Greenfoot</a>.
+und war ein **2D Shooter in Java** <a href="https://www.greenfoot.org/door" target="_blank">Greenfoot</a>.
 Das hatte echt viel Spaß gemacht!
 
 Leider kann ich mich nicht daran erinnern, dass wir in der Realschule Spiele programmiert hätten
@@ -108,7 +108,7 @@ Außer vielleicht
 
 # Die größten Hürden auf dem Weg zur Gründung waren?
 
-[Denkt lange nach…] Keine Ahnung, mir fallen keine Hürden ein, weil der <a class="is-underlined" href="https://www.rv-startupcampus.de/" target="_blank">**ruhrvalley Start-up-Campus**</a>, Grüße an Lenka Mildner, mir alle Fragen geklärt hat. 
+[Denkt lange nach…] Keine Ahnung, mir fallen keine Hürden ein, weil der <a href="https://www.rv-startupcampus.de/" target="_blank">**ruhrvalley Start-up-Campus**</a>, Grüße an Lenka Mildner, mir alle Fragen geklärt hat. 
 
 # Welche wichtige Empfehlung oder welchen Tipp würdest du Gründern mit auf den Weg geben?
 
