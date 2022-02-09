@@ -36,7 +36,7 @@ Die Fehler werden als Teil des Lernprozesses wahrgenommen.
 Frustrationstoleranz sowie Durchhaltevermögen der Kinder können durch Programmiererfahrung positiv beeinflusst werden.
 Die Kinder entwickeln nicht nur eine zukunftsorientierte Fähigkeit, sondern werden dadurch auch selbstbewusster.
 
-Diese Annahme durften wir letztens während <a class="is-underlined" href="https://codeklasse.de/blog/schueler-testen-codeklasse/" target="_blank">unseres Testtermins an der Grundschule</a> beweisen. 
+Diese Annahme durften wir letztens während <a href="https://codeklasse.de/blog/schueler-testen-codeklasse/" target="_blank">unseres Testtermins an der Grundschule</a> beweisen. 
 Programmieren lernen gibt Kindern Ansporn für eigenständiges Lernen. 
 Durch kreative, selbst ausgearbeitete Lösungen wird Programmieren lernen für die Kinder ein richtiges Abenteuer. 
 
@@ -86,8 +86,8 @@ Weiterhin ist das Programmieren als Teil der digitalen Kompetenz anzuerkennen.
 Nachhaltige Förderung der digitalen Kompetenz an Schulen ist allerdings nur mit Hilfe der Politik zu bewältigen. 
 Fortschreitende Digitalisierung und Mangel an MINT-Arbeitskräften sind die wichtigsten Gründe, um Programmierkenntnisse bereits ab der Grundschule zu fördern.
 
-Schauen Sie sich <a class="is-underlined" href="https://codeklasse.de/blog/" target="_blank">unseren Blog</a> an, um noch mehr Inspiration für das Thema Programmieren lernen für Kinder zu schöpfen
-oder berichten Sie uns von <a class="is-underlined" href="/#contact">Ihren Erfahrungen</a>.
+Schauen Sie sich <a href="https://codeklasse.de/blog/" target="_blank">unseren Blog</a> an, um noch mehr Inspiration für das Thema Programmieren lernen für Kinder zu schöpfen
+oder berichten Sie uns von <a href="/#contact">Ihren Erfahrungen</a>.
 
 # Quellen
 

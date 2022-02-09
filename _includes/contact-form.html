@@ -1,12 +1,18 @@
 <!-- This form only works once pushed to netlify -> Doesn't work on local setup -->
-<div class="card">
+<div id="contact-section" class="card">
     <div class="card-content">
         <div class=" container my-5-tablet mx-5-desktop px-5-desktop">
             <!-- <h2 class="title is-2">Fragen, Impulse, Kooperation?  Sprechen wir darüber!</h2> -->
             <!-- <h2 class="title is-2">Fragen, Impulse, Kooperation?</h2> -->
             <h2 class="title is-2 is-size-3-mobile is-spaced">Fragen? Impulse? Kooperation?</h2>
-            <p class="subtitle">Sprechen wir darüber! Gerne per Mail via <a class="has-text-weight-bold" target="_blank"
-                href="https://aemail.com/mZln">sergej@codeklasse.de</a> oder über dieses Formular.</p>
+            <p class="subtitle">Sprechen wir darüber! Gerne persönlich oder mit unserem <a href="/#contact-form">Kontaktformular.</a></p>
+
+            <iframe class="pb-6" src="https://app.simplymeet.me/grilborzer?view=compact"
+                style="width:100%; height:550px;" frameborder="0" scrolling="yes"></iframe>
+
+            <h3 id="contact-form" class="title is-3 is-size-4-mobile is-spaced">Kontaktformular</h3>    
+            <p class="subtitle">Sprechen wir darüber! Gerne persönlich oder mit unserem <a class="is-underlined" href="/#contact-form">Kontaktformular.</a></p>
+
             <form name="contact" method="post" data-netlify="true">
                 <div class="field">
                     <label for="name" class="label is-size-4 has-text-weight-light"></label>
@@ -25,20 +31,33 @@
                 </div>
 
                 <div class="field">
+                  <label for="phone" class="label is-size-4 has-text-weight-light"></label>
+                  <div class="control has-icons-left">
+                      <input type="phone" name="phone" id="phone" class="input" placeholder="Optional: Telefonnummer für Rückruf">
+                      <img class="icon is-left fontawesome-icon ml-3" src="/assets/css/fontawesome-free-svgs/solid/phone-alt.svg">
+                  </div>
+              </div>
+
+                <div class="field">
                     <label for="message" class="label is-size-4 has-text-weight-light"></label>
                     <textarea name="message" id="message" rows="5" class="textarea is-medium message" placeholder="Ihre/ Deine Nachricht" required></textarea>
                 </div>
+                
+                <div id="contact-checkbox-field" class="field">
+                  <label class="checkbox">
+                    <input id="contact-checkbox" name="contact-checkbox" type="checkbox" required>
+                    Ich habe die <a class="is-underlined" href="/privacy" target="_blank">Datenschutzerklärung</a> zur Kenntnis genommen.
+                    Ich stimme zu, dass die von mir übermittelten Daten zur Kontaktaufnahme und für Rückfragen dauerhaft gespeichert werden.
+                    Diese Zustimmung kann ich jederzeit persönlich widerrufen.
+                  </label>
+                </div>
+
                 <button type="submit" class="button is-primary is-size-5" onClick="submitCheck()">Senden</button>
                 <p id="submitActionHint" class="help is-danger nezobrazovat" style="display: none">Bitte füllen Sie alle Felder aus</p>
             </form>
         </div>
     </div>
 </div>
-
-<!-- https://www.benmarshall.me/responsive-iframes/ -->
-<!-- <figure class="image is-16by9">
-    <iframe class="has-ratio" width="640" height="360" src="https://app.cal.com/grilborzer" frameborder="0" allowfullscreen></iframe>
-</figure> -->
 
 <style>
     .fontawesome-icon {
@@ -56,10 +75,15 @@
   const inputName = document.getElementById("name");
   const inputEmail = document.getElementById("email");
   const inputMessage = document.getElementById("message");
+  const fieldPrivacyNotice = document.getElementById("contact-checkbox-field");
+  const checkboxPrivacyNotice = document.getElementById("contact-checkbox");
   const submitMessage = document.getElementById("submitActionHint");
+  
   let nameValidated = false;
   let emailValidated = false;
   let messageValidated = false;
+  let privacyNoticeValidated = false;
+  
   const MAXCHARNAMEFIELD = 40;
 
   function validateRegexString(email) {
@@ -80,12 +104,10 @@
 
     if (conditions) {
       inputName.classList.remove("is-danger");
-      inputName.classList.add("is-success");
 
       nameValidated = true;
       submitMessage.style = "display:none";
     } else {
-      inputName.classList.remove("is-sucess");
       inputName.classList.add("is-danger");
 
       submitMessage.style = "display:block";
@@ -97,12 +119,10 @@
     if (validateRegexString(value)) {
 
       inputEmail.classList.remove("is-danger");
-      inputEmail.classList.add("is-success");
 
       submitMessage.style = "display:none";
       emailValidated = true;
     } else {
-      inputEmail.classList.remove("is-sucess");
       inputEmail.classList.add("is-danger");
 
       emailValidated = false;
@@ -112,19 +132,29 @@
   function validateMessage() {
     if (inputMessage.value) {
       inputMessage.classList.remove("is-danger");
-      inputMessage.classList.add("is-success");
 
       messageValidated = true;
     } else {
-      inputMessage.classList.remove("is-sucess");
       inputMessage.classList.add("is-danger");
 
       messageValidated = false;
     }
   }
 
+  function validatePrivacyCheckbox() {
+    if (checkboxPrivacyNotice.checked) {
+      fieldPrivacyNotice.classList.remove("has-background-danger-light");
+
+      privacyNoticeValidated = true;
+    } else {
+      fieldPrivacyNotice.classList.add("has-background-danger-light");
+
+      privacyNoticeValidated = false;
+    }
+  }
+
   const checkFields = () => {
-    if (nameValidated && emailValidated && messageValidated) {
+    if (nameValidated && emailValidated && messageValidated && privacyNoticeValidated) {
       submitMessage.style = "display:none";
     } else {
       submitMessage.style = "display:block";
@@ -135,12 +165,14 @@
     validateName();
     validateEmail();
     validateMessage();
+    validatePrivacyCheckbox();
     checkFields();
   }
 
   document.addEventListener(
     "change",
     (event) => {
+      console.log(event);
       if (event.target.matches(".name")) {
         validateName();
         checkFields();
@@ -150,7 +182,11 @@
       } else if (event.target.matches(".message")) {
         validateMessage();
         checkFields();
-      } else {
+      } else if (event.target.name === "contact-checkbox") {
+        validatePrivacyCheckbox();
+        checkFields();
+      }
+      else {
         //nothing
       }
     },

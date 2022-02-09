@@ -1,16 +1,29 @@
-# Checkliste für neue Post
-Checkliste mittels der _Live Preview_ abzuhacken:
+# Choose a PR template
 
-- [ ] Rechtschreibung mit Copy+Paste in einem Checker geprüft
-- [ ] Formattierung & Layout geprüft
-- [ ] Sichtbarkeit des Posts geprüft
-- [ ] Datum der Veröffentlichung in Dateinamen & Parameter geprüft
-- [ ] [Ein Satz pro Zeile](https://github.com/adessoAG/devblog/blob/master/examples/2017-08-10-blog-post-guide.md#ein-satz-pro-zeile)
-- [ ] [Bilder](https://resizeimage.net/) sind nicht größer als MAXIMAL 300kb & sehen trotzdem gut aus.
-- [ ] Die obigen Punkte mit Hilfe der _Live Preview_ gecheckt
-_
-- [ ] Im Fall eines Blogartikels: Squash-Merge benutzen 
+## Code related
+Do you have a technical/ code related update?
+Copy & paste the following to your current URL:
 
-## Allgemeine Hinweise:
-- codeklasse nicht Codeklasse
-- Lehrkräfte statt Lehrer
+```
+?expand=1&template=code-related.md
+```
+
+The whole URL would like something like this then:
+
+```
+https://github.com/codeklasse/codeklasse.de/compare/master...test-branch?expand=1&template=code-related.md
+```
+
+## Blog related
+Do you have a blog post related update?
+Copy & paste the following to your current URL:
+
+```
+?expand=1&template=blog-related.md
+```
+
+The whole URL would like something like this then:
+
+```
+https://github.com/codeklasse/codeklasse.de/compare/master...test-branch?expand=1&template=blog-related.md
+```

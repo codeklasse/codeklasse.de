@@ -1,4 +1,7 @@
 # codeklasse.de
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 :house: of the codeklasse project - "programming with emojis".
 
 👋🌍 - Hello World!
@@ -32,3 +35,26 @@ How to use scss in Jekyll:
 FAQ section created via [Jekyll collections](https://jekyllrb.com/docs/collections/)
 
 Basic SEO functionality provided by the [Jekyll SEO Tag](https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/installation.md)
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://sergej.grilborzer.de/"><img src="https://avatars.githubusercontent.com/u/23424538?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sergej Grilborzer</b></sub></a><br /><a href="https://github.com/codeklasse/codeklasse.de/commits?author=s-gbz" title="Code">💻</a> <a href="#content-s-gbz" title="Content">🖋</a> <a href="#business-s-gbz" title="Business development">💼</a></td>
+    <td align="center"><a href="https://github.com/tatosha"><img src="https://avatars.githubusercontent.com/u/62521045?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Natallia Satskevich</b></sub></a><br /><a href="#blog-tatosha" title="Blogposts">📝</a> <a href="#content-tatosha" title="Content">🖋</a></td>
+    <td align="center"><a href="https://github.com/liam-k"><img src="https://avatars.githubusercontent.com/u/34057943?v=4?s=100" width="100px;" alt=""/><br /><sub><b>liam-k</b></sub></a><br /><a href="#design-liam-k" title="Design">🎨</a> <a href="#content-liam-k" title="Content">🖋</a></td>
+    <td align="center"><a href="https://www.seanniesen.digital/"><img src="https://avatars.githubusercontent.com/u/7483224?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sean Niesen</b></sub></a><br /><a href="https://github.com/codeklasse/codeklasse.de/commits?author=seann1" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/pramod74"><img src="https://avatars.githubusercontent.com/u/11723826?v=4?s=100" width="100px;" alt=""/><br /><sub><b>pramod74</b></sub></a><br /><a href="https://github.com/codeklasse/codeklasse.de/commits?author=pramod74" title="Code">💻</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!

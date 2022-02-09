@@ -1,0 +1,64 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "s-gbz",
+      "name": "Sergej Grilborzer",
+      "avatar_url": "https://avatars.githubusercontent.com/u/23424538?v=4",
+      "profile": "https://sergej.grilborzer.de/",
+      "contributions": [
+        "code",
+        "content",
+        "business"
+      ]
+    },
+    {
+      "login": "tatosha",
+      "name": "Natallia Satskevich",
+      "avatar_url": "https://avatars.githubusercontent.com/u/62521045?v=4",
+      "profile": "https://github.com/tatosha",
+      "contributions": [
+        "blog",
+        "content"
+      ]
+    },
+    {
+      "login": "liam-k",
+      "name": "liam-k",
+      "avatar_url": "https://avatars.githubusercontent.com/u/34057943?v=4",
+      "profile": "https://github.com/liam-k",
+      "contributions": [
+        "design",
+        "content"
+      ]
+    },
+    {
+      "login": "seann1",
+      "name": "Sean Niesen",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7483224?v=4",
+      "profile": "https://www.seanniesen.digital/",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "pramod74",
+      "name": "pramod74",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11723826?v=4",
+      "profile": "https://github.com/pramod74",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "codeklasse.de",
+  "projectOwner": "codeklasse",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
