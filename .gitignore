@@ -4,6 +4,7 @@
 *.content
 
 .vscode/
+.nova/
 
 _site
 .sass-cache
