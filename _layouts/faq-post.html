@@ -1,5 +1,6 @@
 ---
 layout: default
+
 ---
 
 <div class="navbar-fixed-top-padding">
@@ -25,7 +26,9 @@ layout: default
         </div>
 
         <div class="is-size-5-desktop is-size-6-mobile px-6 px-4-mobile">
-            {{ content }}
+            <div class="underline-links-in-posts">
+                {{ content }}
+            </div>
 
             <div class="is-flex is-justify-content-center pt-6-desktop pt-5-touch">
                 <a
@@ -41,5 +44,9 @@ layout: default
 <style>
     .navbar-fixed-top-padding {
         padding-top: 3.25rem;
+    }
+
+    .underline-links-in-posts a {
+        text-decoration: underline;
     }
 </style>
