@@ -1,0 +1,25 @@
+#title-section {
+    @include desktop {
+        margin-top: 0;
+    }
+}
+
+#main-navbar {
+    padding: 1rem 0;
+    display: flex;
+    border-bottom: 3px solid black;
+
+    @include touch {
+        flex-direction: column;
+    }
+
+    @include desktop {
+        padding: 0 6rem;
+    }
+}
+
+a.navbar-item,
+.navbar-link {
+    cursor: pointer;
+    font-weight: bold;
+}

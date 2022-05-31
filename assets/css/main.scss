@@ -2,7 +2,11 @@
 ---
 
 @charset "utf-8";
-@import "bulma-theme";
+
+@import "bulma-theme.scss";
+@import "navbar.scss";
+@import "blog.scss";
+@import "why-use-codeklasse.scss";
 
 @font-face {
     font-family: "SpaceGrotesk";
@@ -96,56 +100,6 @@ span,
     transform: translateX(-50%);
     text-align: center;
 }
-
-/* why-use-codeklasse.html start */
-
-#why-use-codeklasse-tabs-list a.button {
-    min-width: 20rem;
-
-    @include tablet {
-        min-width: 30rem;
-        height: auto;
-    }
-
-    @include desktop {
-        min-width: 20rem;
-    }
-}
-
-#why-use-codeklasse-tabs-list a.button:not(:last-child):not(.is-fullwidth) {
-    margin-right: 0;
-}
-
-.card.why-use-codeklasse {
-    @include desktop {
-        // max-width: 75%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-/* why-use-codeklasse.html end */
-
-/* navbar.html start */
-#title-section {
-    @include desktop {
-        margin-top: 0;
-    }
-}
-
-#main-navbar {
-    padding: 1rem 0;
-    display: flex;
-
-    @include touch {
-        flex-direction: column;
-    }
-
-    @include desktop {
-        padding: 0 6rem;
-    }
-}
-/* navbar.html end */
 
 .column.center-content {
     justify-content: center;
@@ -263,15 +217,3 @@ a:hover,
     color: $dark;
     border: $border-radius solid $border-color;
 }
-
-/* blog.html start */
-#blog-search-field {
-    @include mobile {
-        float: none !important;
-    }
-}
-/* blog.html end */
-
-/* faq.html start */
-
-/* faq.html end */

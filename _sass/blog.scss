@@ -1,0 +1,5 @@
+#blog-search-field {
+    @include mobile {
+        float: none !important;
+    }
+}
