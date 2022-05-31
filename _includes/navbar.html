@@ -2,10 +2,58 @@
 <nav
     id="main-navbar"
     class="navbar is-fixed-top is-primary has-shadow"
+>
+    <div class="is-flex p-3 is-align-items-center">
+        <a
+            class="left-navbar-item has-text-centered"
+            href="/about"
+        >
+            Über uns
+        </a>
+        <a
+            class="left-navbar-item has-text-centered"
+            href="/faq"
+        >
+            Fragen und Antworten
+        </a>
+        <a
+            class="left-navbar-item has-text-centered"
+            href="/blog"
+        >
+            Blog
+        </a>
+    </div>
+
+    <div class="column is-flex is-justify-content-center"><a
+            class="navbar-item"
+            href="/"
+        >
+            <img
+                src="/assets/images/logo-new-unofficial.png"
+                alt="codeklasse: Programmieren lernen mit Emojis"
+                height="28"
+            >
+        </a></div>
+    <div
+        class="p-3 is-flex is-justify-content-flex-end"
+        style="width: 33%;"
+    >
+        <a
+            class="button"
+            href="/#contact"
+        >
+            <p>In <span class="has-text-weight-bold">Kontakt treten</span></p>
+        </a>
+    </div>
+</nav>
+
+<nav
+    id="mobile-navbar"
+    class="navbar is-fixed-top is-primary has-shadow"
     role="navigation"
     aria-label="main navigation"
 >
-    <div class="navbar-brand mr-auto">
+    <div class="navbar-brand is-justify-content-center is-flex-grow-1 ">
         <a
             role="button"
             class="navbar-burger"
@@ -18,19 +66,22 @@
             <span aria-hidden="true"></span>
         </a>
 
-        <!-- <a
-            class="navbar-item"
+        <a
+            class="navbar-item is-justify-content-center is-flex-grow-1 "
             href="/"
         >
             <img
-                src="/assets/images/logo-full.png"
+                src="/assets/images/logo-new-unofficial.png"
                 alt="codeklasse: Programmieren lernen mit Emojis"
                 height="28"
             >
-        </a> -->
+        </a>
     </div>
 
-    <div id="navbar-menu" class="navbar-menu">
+    <div
+        id="navbar-menu"
+        class="navbar-menu"
+    >
         <div class="navbar-start">
             <a
                 class="navbar-item has-text-centered"
@@ -56,7 +107,7 @@
             <div class="navbar-item">
                 <div class="buttons is-justify-content-center">
                     <a
-                        class="button is-primary"
+                        class="button"
                         href="/#contact"
                     >
                         <p>In <span class="has-text-weight-bold">Kontakt treten</span></p>
@@ -64,47 +115,32 @@
                 </div>
             </div>
         </div>
-    </div>    
+    </div>
 </nav>
-
-<style>
-    /* Used to bring burger menu to left & center the logo */
-    /* .element-left, .element-right {
-        flex: 1;
-    } */
-
-    .navbar.has-shadow {
-        box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
-    }
-
-    .navbar-menu {
-        box-shadow: none;
-    }
-</style>
 
 <script>
     document.addEventListener('DOMContentLoaded', () => {
 
-    // Get all "navbar-burger" elements
-    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 
-    // Check if there are any navbar burgers
-    if ($navbarBurgers.length > 0) {
+        // Check if there are any navbar burgers
+        if ($navbarBurgers.length > 0) {
 
-        // Add a click event on each of them
-        $navbarBurgers.forEach( el => {
-            el.addEventListener('click', () => {
+            // Add a click event on each of them
+            $navbarBurgers.forEach(el => {
+                el.addEventListener('click', () => {
 
-            // Get the target from the "data-target" attribute
-            const target = el.dataset.target;
-            const $target = document.getElementById(target);
+                    // Get the target from the "data-target" attribute
+                    const target = el.dataset.target;
+                    const $target = document.getElementById(target);
 
-            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-            el.classList.toggle('is-active');
-            $target.classList.toggle('is-active');
+                    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                    el.classList.toggle('is-active');
+                    $target.classList.toggle('is-active');
 
+                });
             });
-        });
         }
 
     });
