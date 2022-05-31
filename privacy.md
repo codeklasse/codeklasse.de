@@ -59,7 +59,7 @@ last_updated_date: "21.12.2021"
 <p>58507 Lüdenscheid</p>
 <p>Deutschland</p>
 <p>Tel.: 01623292122</p>
-<p>E-Mail: sergej@codeklasse.de</p>
+<p>E-Mail: team@codeklasse.de</p>
 <p>Website: codeklasse.de</p>
 
 <h4>3. Cookies</h4>

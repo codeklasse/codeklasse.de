@@ -1,14 +1,14 @@
 title: codeklasse
 tagline: Programmieren lernen mit Emojis - kinderleicht & altersgerecht
 logo: /assets/images/logo-full.png
-email: sergej@codeklasse.de
+email: team@codeklasse.de
 description: Programmieren lernen für Kinder - mit Emojis! codeklasse ermöglicht altersgerechtes, frustfreies Programmieren lernen ohne Bedarf von Lesekompetenz oder Vorkenntnissen.  
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "/" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: /blog/:title/
 
 contact_phone: 0162 3292 122 
-contact_mail: sergej@codeklasse.de
+contact_mail: team@codeklasse.de
 
 plugins:
   - jekyll-feed

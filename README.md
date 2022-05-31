@@ -10,6 +10,13 @@
 First, install a ruby version below v3.0.
 Then, after cloning the repo execute
 
+If you don't have `bundler` installed yet.
+Make sure it's NOT installed as root if you're on Linux.
+
+```bash
+gem install bundler
+```
+
 ```bash
 bundle install
 npm install

@@ -4,13 +4,32 @@
 @charset "utf-8";
 @import "bulma-theme";
 
+@font-face {
+    font-family: "SpaceGrotesk";
+    src: url("/assets/fonts/SpaceGrotesk-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Averta Regular";
+    src: url("/assets/fonts/AvertaDemoPECuttedDemo-Regular.otf") format("opentype");
+}
+
+* {
+    font-family: "SpaceGrotesk";
+}
+
+p,
+span,
+.content {
+    font-family: "Averta Regular";
+}
+
 /*
 *  Enable smooth scrolling for all elements
 */
 * {
     scroll-behavior: smooth;
 }
-
 
 .site-content,
 #main-footer {
@@ -50,10 +69,8 @@
 }
 
 #title-teaser-image {
-
     @include desktop {
         margin-left: 8.33333337%;
-
     }
 }
 
@@ -108,7 +125,6 @@
 }
 
 /* why-use-codeklasse.html end */
-
 
 /* navbar.html start */
 #title-section {
@@ -170,8 +186,6 @@
         flex-direction: row;
     }
 }
-
-
 
 // If not enough: https://stackoverflow.com/questions/42134731
 .button.is-white:visited,
@@ -252,13 +266,11 @@ a:hover,
 
 /* blog.html start */
 #blog-search-field {
-
     @include mobile {
         float: none !important;
     }
 }
 /* blog.html end */
-
 
 /* faq.html start */
 
