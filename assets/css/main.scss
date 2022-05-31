@@ -1,12 +1,14 @@
 ---
 ---
 
-@charset "utf-8";
-
 @import "bulma-theme.scss";
 @import "navbar.scss";
 @import "blog.scss";
 @import "why-use-codeklasse.scss";
+
+/*
+*  Set and apply Custom fonts
+*/
 
 @font-face {
     font-family: "SpaceGrotesk";
@@ -20,6 +22,7 @@
 
 * {
     font-family: "SpaceGrotesk";
+    border-radius: 0 !important;
 }
 
 p,
@@ -33,6 +36,60 @@ span,
 */
 * {
     scroll-behavior: smooth;
+}
+
+/*
+*  Set general button style
+*/
+
+// If not enough: https://stackoverflow.com/questions/42134731
+.button.is-white:visited,
+button.is-white:focus,
+.button.is-info:focus,
+.button.is-white {
+    border-color: $border-color;
+}
+
+/* #why-use-codeklasse-tabs-list a.button:hover,
+#why-use-codeklasse-tabs-list a.button:active,
+#why-use-codeklasse-tabs-list a.button:focus,
+#why-use-codeklasse-tabs-list a.button.is-active,
+.button.is-primary:hover,
+.button.is-primary:active,
+.button.is-primary:focus,
+#title-action-buttons .button:hover,
+.button.is-white:hover,
+#faq-contact-button:hover {
+    border-color: $success;
+}
+ */
+
+.card,
+.button {
+    transition: ease-in-out 0.4s;
+    box-shadow: none;
+}
+
+.card:hover {
+    border-color: #000;
+    transition: ease-in-out 0.2s;
+    box-shadow: 4px 4px;
+}
+
+.button:hover:not(.social-media-icons-footer .button) {
+    border-color: #000 !important;
+    transition: ease-in-out 0.2s;
+    box-shadow: 4px 4px;
+}
+
+.button.is-primary,
+#faq-contact-button,
+.buttons button.button,
+a.button,
+.has-border,
+.card,
+figure {
+    border: $border-radius solid $border-color;
 }
 
 .site-content,
@@ -68,7 +125,7 @@ span,
     margin-bottom: -5rem;
 
     @include desktop {
-        margin-top: 6rem;
+        margin-top: 4rem;
     }
 }
 
@@ -141,38 +198,6 @@ span,
     }
 }
 
-// If not enough: https://stackoverflow.com/questions/42134731
-.button.is-white:visited,
-button.is-white:focus,
-.button.is-info:focus,
-.button.is-white {
-    border-color: $border-color;
-}
-
-#why-use-codeklasse-tabs-list a.button:hover,
-#why-use-codeklasse-tabs-list a.button:active,
-#why-use-codeklasse-tabs-list a.button:focus,
-#why-use-codeklasse-tabs-list a.button.is-active,
-.button.is-primary:hover,
-.button.is-primary:active,
-.button.is-primary:focus,
-#title-action-buttons .button:hover,
-.button.is-white:hover,
-#faq-contact-button:hover {
-    border-color: $success;
-}
-
-// #title-action-buttons .button,
-.button.is-primary,
-#faq-contact-button,
-.buttons button.button,
-a.button,
-.has-border,
-.card,
-figure {
-    border: $border-radius solid $border-color;
-}
-
 .no-border {
     border: none;
 }
@@ -186,20 +211,22 @@ a {
 a.navbar-item:hover,
 a.navbar-item:focus,
 a.navbar-item:focus-within {
-    background-color: initial;
-    color: $success;
-    border-color: $success;
+    // transform: translateY(-10%);
 }
 
-.breadcrumb a:hover,
-a:hover,
-// NOT SPECIFIC enough?! >.<!!
-// input.input:active,
+a,
+p a,
+.breadcrumb a,
+#footer-button-instagram {
+    transition: ease-in-out 0.2s;
+}
 
-// NOT SPECIFIC enough?! >.<!!
+a:hover,
+p a:hover,
+.breadcrumb a:hover,
 #footer-button-instagram:focus {
-    border-color: $success;
-    color: $success;
+    transform: translateY(-10%);
+    transition: ease-in-out 0.1s;
 }
 
 #copyright-year-mark {
@@ -209,6 +236,8 @@ a:hover,
 }
 
 .wrap-button-text {
+    color: $success;
+    border-color: $success;
     height: max-content;
     white-space: inherit;
 }
