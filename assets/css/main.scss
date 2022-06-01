@@ -73,13 +73,22 @@ button.is-white:focus,
 .card:hover {
     border-color: #000;
     transition: ease-in-out 0.2s;
-    box-shadow: 4px 4px;
+    box-shadow: 4px 4px #000;
 }
 
 .button:hover:not(.social-media-icons-footer .button) {
     border-color: #000 !important;
     transition: ease-in-out 0.2s;
-    box-shadow: 4px 4px;
+    box-shadow: 4px 4px #000;
+}
+
+#summary-section ul li {
+    transition: ease-in-out 0.2s;
+}
+
+#summary-section ul li:hover {
+    transition: ease-in-out 0.2s;
+    transform: translateY(-10%);
 }
 
 .button.is-primary,
@@ -211,22 +220,33 @@ a {
 a.navbar-item:hover,
 a.navbar-item:focus,
 a.navbar-item:focus-within {
-    // transform: translateY(-10%);
+    background-color: unset;
+    color: unset;
 }
 
 a,
-p a,
+.footer-link,
 .breadcrumb a,
 #footer-button-instagram {
     transition: ease-in-out 0.2s;
 }
 
 a:hover,
-p a:hover,
+.footer-link:hover,
 .breadcrumb a:hover,
 #footer-button-instagram:focus {
     transform: translateY(-10%);
     transition: ease-in-out 0.1s;
+}
+
+.underline-links-in-posts a {
+    text-decoration: underline;
+    transition: ease-in-out 0.2s;
+}
+
+.underline-links-in-posts a:hover {
+    transform: translateY(-10%);
+    transition: ease-in-out 0.2s;
 }
 
 #copyright-year-mark {
