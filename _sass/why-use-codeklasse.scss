@@ -1,3 +1,5 @@
+@use "./custom-variables.scss";
+
 #why-use-codeklasse-tabs-list a.button {
     min-width: 20rem;
 
@@ -9,6 +11,10 @@
     @include desktop {
         min-width: 20rem;
     }
+}
+
+#why-use-codeklasse-tabs-list a.button.is-active {
+    background-color: $primary;
 }
 
 #why-use-codeklasse-tabs-list a.button:not(:last-child):not(.is-fullwidth) {
