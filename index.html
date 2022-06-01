@@ -12,7 +12,7 @@ title: codeklasse
       id="title-teaser-text"
       class="title column is-offset-1 is-two-thirds-tablet px-5-desktop py-6-tablet pt-4-mobile pb-6-mobile has-background-primary has-border"
     >
-      Unsere Vision ist, dass jedes Kind vor der 4. Klasse programmieren lernt.
+      Noch nie war Programmieren lernen so leicht.
     </p>
 
     <div class="column is-12 py-6"></div>
@@ -41,71 +41,89 @@ title: codeklasse
 </section>
 
 <section
+  id="what-is-codeklasse-front-page"
+  class="section mt-5"
+>
+  <div class="has-text-right mb-6">
+    {% include title-h2.html text="Was ist codeklasse eigentlich?" %}
+  </div>
+
+
+  <div class="card has-background-primary">
+    <div class="card-content">
+
+      {% include title-h2.html text="Unsere Werte" %}
+
+      <div class="columns is-multiline is-desktop">
+        <div class="column mx-3-tablet mx-3-mobile">
+          <div class="columns is-multiline">
+            {% include about-us-fact-tile.html
+            fact_category="Zweck"
+            fact="codeklasse strebt an Kompetenzen des MINT Bereichs früh zu
+            stärken und Deutschlands Bedarf
+            nachhaltig zu decken."
+            img_url="/assets/emojis/heavy-check-mark_2714.png"
+            img_alt="Das codeklasse Team:
+            Liam, Sergej, Natallia" %}
+
+            {% include about-us-fact-tile.html
+            fact_category="Vision"
+            fact="Unsere Vision ist das jedes Kind nach der 4. Klasse neben Lesen, Schreiben, Rechnen auch
+            Programmieren kann."
+            img_url="/assets/emojis/direct-hit_1f3af.png"
+            img_alt="Das codeklasse Team:
+            Liam, Sergej, Natallia" %}
+
+            {% include about-us-fact-tile.html
+            fact_category="Mission"
+            fact="Unsere Mission ist Kinder für das Programmieren zu begeistern und eine Plattform zu
+            schaffen die
+            diese Kompetenz spielerisch & anschaulich vermittelt."
+            img_url="/assets/emojis/grinning-face-with-star-eyes_1f929.png"
+            img_alt="Das codeklasse Team:
+            Liam, Sergej, Natallia" %}
+
+            {% include about-us-fact-tile.html
+            fact_category="Priorität"
+            fact="Unsere oberste Priorität ist den Zugang zur Bildung des neuen Zeitalters unabhängig von
+            Geld &
+            Status zu ermöglichen."
+            img_url="/assets/emojis/white-up-pointing-index_261d.png"
+            img_alt="Das codeklasse Team:
+            Liam, Sergej, Natallia" %}
+          </div>
+        </div>
+
+        <div class="column is-4-desktop">
+          <div class="card">
+            <div class="card-content">
+              <figure class="image">
+                <img
+                  src="/assets/images/about/teamfoto-codeklasse.jpg"
+                  alt="Das codeklasse Team: Liam, Sergej, Natallia"
+                  style="object-fit: cover;"
+                >
+              </figure>
+            </div>
+            <div class="media-content has-text-centered pb-5">
+              <p class="title is-5 is-clipped">Das codeklasse Team: Liam & Sergej</p>
+              <p class="subtitle is-7">© Bochum Wirtschaftsentwicklung, Donna und der Blitz GmbH</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section
   id="partners-and-sponsors-front-page"
   class="section has-background-white has-border mt-6 mx-6-desktop mx-3-tablet mx-5-mobile"
 >
   {% include title-h2.html text="Unsere Partner & Förderer" %}
 
-  <div
-    id="sponsors-and-partners"
-    class="columns is-vcentered is-multiline pb-1"
-  >
-    <div class="column center-content is-one-quarter-desktop is-half-tablet">
-      <figure class="image sponsors-and-partners-image">
-        <a
-          href="https://www.gruenderstipendium.nrw/gruenden"
-          target="_blank"
-        >
-          <img
-            src="assets/images/partners-and-sponsors/GSN.png"
-            alt="Logo vom Gründerstipendium NRW"
-          >
-        </a>
-      </figure>
-    </div>
-
-    <div class="column center-content is-one-quarter-desktop is-half-tablet">
-      <figure class="image sponsors-and-partners-image">
-        <a
-          href="https://www.werk-x.ruhr"
-          target="_blank"
-        >
-          <img
-            src="assets/images/partners-and-sponsors/WERKX-Stempel.png"
-            alt="Logo vom Bochumer Startup Inkubator Werk-X"
-          >
-        </a>
-      </figure>
-    </div>
-
-    <div class="column center-content is-one-quarter-desktop is-half-tablet">
-      <figure class="image sponsors-and-partners-image">
-        <a
-          href="https://www.hochschule-bochum.de"
-          target="_blank"
-        >
-          <img
-            src="assets/images/partners-and-sponsors/BO-Logo_m_Wortmarke_L10cmWebHQ.jpg"
-            alt="Logo der Hochschule Bochum"
-          >
-        </a>
-      </figure>
-    </div>
-
-    <div class="column center-content is-one-quarter-desktop is-half-tablet">
-      <figure class="image sponsors-and-partners-image">
-        <a
-          href="https://www.rv-startupcampus.de"
-          target="_blank"
-        >
-          <img
-            src="assets/images/partners-and-sponsors/RVSC.png"
-            alt="Logo vom Ruhr Valley Startup Campus"
-          >
-        </a>
-      </figure>
-    </div>
-  </div>
+  {% include sponsors-and-partners.html %}
 </section>
 
 <section
@@ -159,7 +177,10 @@ title: codeklasse
       </h4>
       <p class="content">
         codeklasse ist zum aktuellen Zeitpunkt noch nicht veröffentlicht.
-        Bitte <a class="is-underlined" href="/#contact">kontaktieren</a> Sie uns dennoch, wenn Sie Interesse daran haben
+        Bitte <a
+          class="is-underlined"
+          href="/#contact"
+        >kontaktieren</a> Sie uns dennoch, wenn Sie Interesse daran haben
         codeklasse zu testen oder an Ihrer Schule einzuführen – wir freuen uns immer über neue Partnerschaften,
         mit denen wir codeklasse testen und pädagogisch sowie technisch weiterentwickeln können.</p>
     </div>
