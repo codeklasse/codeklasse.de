@@ -1,5 +1,5 @@
 <a href="{{ post.url }}">
-    <div class="card">
+    <div class="card has-background-info">
         <div class="card-image p-5">
             <figure class="image is-4by3">
                 <!-- Crop image according to ratio via "object-fit: cover" -->
@@ -14,16 +14,16 @@
         <div
             id="blogpost-title-overlay"
             class="box has-background-primary has-text-centered is-overlay"
-            style="height: max-content;  border-radius: 0;"
+            style="height: 6rem;  border-radius: 0;"
         >
             <h2 class="has-text-weight-bold">{{ post.title }}</h2>
 
-            <span
-            id="blogpost-category"
-            class="tag is-info is-overlay"
-        >
-            {{ post.categories }}
-            </span>
+            <!-- <span
+                id="blogpost-category"
+                class="tag is-info is-overlay"
+            >
+                {{ post.categories }}
+            </span> -->
         </div>
 
         <!-- Post answer here: https://stackoverflow.com/questions/53457981/ -->
@@ -42,7 +42,7 @@
             <!-- </button> -->
             <!-- </span> -->
             <!-- </p> -->
-            <p class="card-footer-item">
+            <p class="card-footer-item has-text-weight-semibold">
                 <span>
                     <!-- "Jekyll-way-of-doing-it" wäre mittels post.date möglich -->
                     <!-- ^wäre zudem besser, weil Eingabeunabhängige Formatierungsoptionen offen bleiben -->
@@ -53,6 +53,9 @@
                     {{ post.releaseDate }}
                 </span>
             </p>
+            <p class="card-footer-item has-text-weight-semibold">
+                #{{ post.categories }}
+            </p>
         </footer>
     </div>
 </a>
@@ -61,6 +64,9 @@
 <style>
     #blogpost-title-overlay.is-overlay {
         top: 50%;
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+        background-color: #fc6b6bff;
     }
 
     #blogpost-category.is-overlay {
@@ -94,4 +100,12 @@
     }
 
     /* Read more here: https://www.w3schools.com/howto/howto_css_image_overlay_title.asp */
+
+    .card-footer {
+        border-top: none;
+    }
+
+    .card-footer-item {
+        border-right: none !important;
+    }
 </style>
