@@ -20,6 +20,11 @@
     src: url("/assets/fonts/AvertaDemoPECuttedDemo-Regular.otf") format("opentype");
 }
 
+@font-face {
+    font-family: "GT Haptik Medium";
+    src: url("/assets/fonts/GT-Haptik-Medium.ttf") format("truetype");
+}
+
 * {
     font-family: "SpaceGrotesk";
     border-radius: 0 !important;
@@ -97,8 +102,20 @@ button.is-white:focus,
 a.button,
 .has-border,
 .card,
-figure {
+figure,
+#blog-search-field {
     border: $border-radius solid $border-color;
+}
+
+#blog-search-field:active,
+#blog-search-field:focus,
+#blog-search-field:focus-visible,
+input:active,
+input:focus,
+input:focus-visible  {
+    border-color: none;
+    background-color: $light;
+    outline: none !important;
 }
 
 .site-content,
@@ -265,4 +282,18 @@ a:hover,
 #get-in-contact {
     color: $dark;
     border: $border-radius solid $border-color;
+}
+
+.svg-arrow {
+    height: 6rem;
+    max-width: 100%;
+    border: none;
+}
+
+.rotate-90deg {
+    transform: rotate(90deg);
+}
+
+.rotate-180deg {
+    transform: rotate(180deg);
 }
