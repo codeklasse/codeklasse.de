@@ -13,8 +13,16 @@
     }
 }
 
-#why-use-codeklasse-tabs-list a.button.is-active {
+#why-use-codeklasse-tabs-list #Tab-Button-Unternehmen.is-active {
     background-color: $primary;
+}
+
+#why-use-codeklasse-tabs-list #Tab-Button-Lehrkraefte.is-active {
+    background-color: $info;
+}
+
+#why-use-codeklasse-tabs-list #Tab-Button-Eltern.is-active {
+    background-color: $success;
 }
 
 #why-use-codeklasse-tabs-list a.button:not(:last-child):not(.is-fullwidth) {
@@ -23,8 +31,50 @@
 
 .card.why-use-codeklasse {
     @include desktop {
-        // max-width: 75%;
+        max-width: 75%;
         margin-left: auto;
         margin-right: auto;
     }
+}
+
+#why-use-codeklasse-front-page .container {
+    @include desktop {
+        margin-bottom: 50rem;
+    }
+}
+
+#why-use-codeklasse-front-page .container .card {
+    
+    // @include mobile {
+    //     max-width: 128px;
+    // }
+
+    // @include desktop {
+    //     width: 20rem;
+    //     float: right;
+    // }
+}
+
+#why-use-codeklasse-front-page .container .card figure.image {
+    max-width: 128px;
+    
+    @include mobile {
+    }
+
+    @include desktop {
+        width: 20rem;
+        float: right;
+    }
+}
+
+#why-use-codeklasse-front-page .container #Tab-Unternehmen .card {
+    background-color: $primary;
+}
+
+#why-use-codeklasse-front-page .container #Tab-Lehrkraefte .card {
+    background-color: $info;
+}
+
+#why-use-codeklasse-front-page .container #Tab-Eltern .card {
+    background-color: $success;
 }
