@@ -194,6 +194,10 @@ input:focus-visible  {
 }
 
 .sponsors-and-partners-image {
+    filter: grayscale(100%);
+    opacity: 0.6;
+    transition: ease-in-out 0.2s;
+
     border: none;
     height: auto;
 
@@ -211,6 +215,11 @@ input:focus-visible  {
     @include desktop {
         max-width: 75%;
     }
+}
+
+.sponsors-and-partners-image:hover {
+    filter: none;
+    opacity: 0.9;
 }
 
 .social-media-icons-footer {
