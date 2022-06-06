@@ -1,19 +1,16 @@
 <div class="card mb-3">
-    <div class="card-content">
-        <div class="media">
-            <div class="media-left">
-                <figure class="image">
-                    <img
-                        src="{{ include.img_url }}"
-                        alt="{{ include.img_alt }}"
-                        style="object-fit: cover;"
-                    >
-                </figure>
-            </div>
-            <div class="media-content py-5">
-                <p class="subtitle is-6">{{ include.fact_category }}</p>
-                <p class="title is-5 is-clipped">{{ include.fact }}</p>
-            </div>
+    <div class="columns">
+        <figure class="column image">
+            <img
+                src="{{ include.img_url }}"
+                alt="{{ include.img_alt }}"
+                style="object-fit: cover;"
+            >
+        </figure>
+
+        <div class="column py-5">
+            <p class="subtitle is-6">{{ include.fact_category }}</p>
+            <p class="title is-5 is-clipped">{{ include.fact }}</p>
         </div>
     </div>
 </div>

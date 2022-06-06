@@ -67,27 +67,111 @@ title: codeklasse
         allowfullscreen
       ></iframe>
     </figure>
-    
-  <div class="columns" style="margin-top: -16rem;">
-    
-    <div class="column is-6 card has-background-primary">
-      <div class="card-content has-text-centered">
-        <p class="title is-5 is-clipped">codeklasse ist eine Programmier Lernplattform für Kinder zwischen 6 und 10
-          Jahren.</p>
 
-        <figure class="image is-16by9">
+    <div
+      class="columns"
+      style="margin-top: -16rem;"
+    >
 
-        </figure>
+      <div class="column is-6 card has-background-primary">
+        <div class="card-content has-text-centered">
+          <p class="title is-5 is-clipped">codeklasse ist eine Programmier Lernplattform für Kinder zwischen 6 und 10
+            Jahren.</p>
+
+          <figure class="image is-16by9">
+
+          </figure>
+        </div>
       </div>
     </div>
   </div>
 
-  </div>
 
+  <section
+    id="partners-and-sponsors-front-page"
+    class="section has-background-white mt-6 mx-6-desktop mx-3-tablet mx-5-mobile"
+  >
+    <div class="has-text-centered">
+      {% include title-h2.html text="Unsere Partner & Förderer" %}
+    </div>
 
+    {% include sponsors-and-partners.html %}
+  </section>
 
+  <section
+    id="why-use-codeklasse-front-page"
+    class="section mt-5"
+  >
+    {% include why-use-codeklasse.html %}
+  </section>
 
-  <div class="card has-background-primary" style="margin-top: 10rem;">
+  <section
+    id="faq-front-page"
+    class="section has-background-white has-border mt-6-desktop mx-6-desktop mx-5-tablet mx-5-mobile"
+  >
+    {% include title-h2.html text="Fragen und Antworten" %}
+
+    <div class="columns">
+      <div class="column is-9">
+        <h4 class="subtitle is-4 has-text-weight-semibold">Was kann man mit codeklasse machen?</h4>
+        <p class="content">
+          codeklasse ist eine vollumfängliche Programmier-Lernsoftware für Kinder der 1. bis 6. Klasse.
+          Sie ermöglicht nicht nur das eigenverantwortliche Lernen der Schülerinnen und Schüler,
+          sondern stellt auch vorgefertigte Kampagnen und Hilfsmaterialien für Lehrerinnen und Lehrer bereit,
+          um die Unterrichtsvorbereitung und die Vermittlung des Themas "Programmieren Lernen" zu erleichtern.</p>
+      </div>
+      <div class="column center-content">
+        <figure class="image m-auto">
+          <img src="assets/images/faq/was-kann-man-mit-codeklasse-machen.png">
+        </figure>
+      </div>
+    </div>
+
+    <div class="columns">
+      <div class="column is-9">
+        <h4 class="subtitle is-4 has-text-weight-semibold">Muss ich selbst programmieren können?</h4>
+        <p class="content">
+          Nein. codeklasse ist bewusst so konzipiert, dass nicht nur Kinder,
+          sondern auch auch fachfremde Lehrerinnen und Lehrer programmieren lernen können.
+          Unsere Plattform stellt einsatzbereite Kurse und moderne Lehrmaterialien bereit,
+          die SuS sowie KuK gleichermaßen den einfachen, frustfreien Zugang zum Thema Programmierung ermöglicht.</p>
+      </div>
+      <div class="column center-content">
+        <figure class="image m-auto">
+          <img src="assets/images/faq/muss-ich-selbst-programmieren-können.png">
+        </figure>
+      </div>
+    </div>
+
+    <div class="columns">
+      <div class="column is-9">
+        <h4 class="subtitle is-4 has-text-weight-semibold">Wie kann ich codeklasse in meinen Unterricht einbringen?
+        </h4>
+        <p class="content">
+          codeklasse ist zum aktuellen Zeitpunkt noch nicht veröffentlicht.
+          Bitte <a
+            class="is-underlined"
+            href="/#contact"
+          >kontaktieren</a> Sie uns dennoch, wenn Sie Interesse daran haben
+          codeklasse zu testen oder an Ihrer Schule einzuführen – wir freuen uns immer über neue Partnerschaften,
+          mit denen wir codeklasse testen und pädagogisch sowie technisch weiterentwickeln können.</p>
+      </div>
+      <div class="column center-content">
+        <figure class="image m-auto">
+          <img src="assets/images/faq/wie-kann-ich-codeklasse-in-meinem-unterricht-einbringen.png">
+        </figure>
+      </div>
+    </div>
+
+    <h4 class="subtitle is-4 has-text-right is-underlined">
+      <a href="/faq">...weitere Fragen und Antworten</a>
+    </h4>
+  </section>
+
+  <div
+    class="card has-background-primary"
+    style="margin-top: 10rem;"
+  >
     <div class="card-content">
 
       {% include title-h2.html text="Unsere Werte" %}
@@ -149,85 +233,6 @@ title: codeklasse
       </div>
     </div>
   </div>
-</section>
-
-<section
-  id="partners-and-sponsors-front-page"
-  class="section has-background-white has-border mt-6 mx-6-desktop mx-3-tablet mx-5-mobile"
->
-  {% include title-h2.html text="Unsere Partner & Förderer" %}
-
-  {% include sponsors-and-partners.html %}
-</section>
-
-<section
-  id="why-use-codeklasse-front-page"
-  class="section mt-5"
->
-  {% include why-use-codeklasse.html %}
-</section>
-
-<section
-  id="faq-front-page"
-  class="section has-background-white has-border mt-6-desktop mx-6-desktop mx-5-tablet mx-5-mobile"
->
-  {% include title-h2.html text="Fragen und Antworten" %}
-
-  <div class="columns">
-    <div class="column is-9">
-      <h4 class="subtitle is-4 has-text-weight-semibold">Was kann man mit codeklasse machen?</h4>
-      <p class="content">
-        codeklasse ist eine vollumfängliche Programmier-Lernsoftware für Kinder der 1. bis 6. Klasse.
-        Sie ermöglicht nicht nur das eigenverantwortliche Lernen der Schülerinnen und Schüler,
-        sondern stellt auch vorgefertigte Kampagnen und Hilfsmaterialien für Lehrerinnen und Lehrer bereit,
-        um die Unterrichtsvorbereitung und die Vermittlung des Themas "Programmieren Lernen" zu erleichtern.</p>
-    </div>
-    <div class="column center-content">
-      <figure class="image m-auto">
-        <img src="assets/images/faq/was-kann-man-mit-codeklasse-machen.png">
-      </figure>
-    </div>
-  </div>
-
-  <div class="columns">
-    <div class="column is-9">
-      <h4 class="subtitle is-4 has-text-weight-semibold">Muss ich selbst programmieren können?</h4>
-      <p class="content">
-        Nein. codeklasse ist bewusst so konzipiert, dass nicht nur Kinder,
-        sondern auch auch fachfremde Lehrerinnen und Lehrer programmieren lernen können.
-        Unsere Plattform stellt einsatzbereite Kurse und moderne Lehrmaterialien bereit,
-        die SuS sowie KuK gleichermaßen den einfachen, frustfreien Zugang zum Thema Programmierung ermöglicht.</p>
-    </div>
-    <div class="column center-content">
-      <figure class="image m-auto">
-        <img src="assets/images/faq/muss-ich-selbst-programmieren-können.png">
-      </figure>
-    </div>
-  </div>
-
-  <div class="columns">
-    <div class="column is-9">
-      <h4 class="subtitle is-4 has-text-weight-semibold">Wie kann ich codeklasse in meinen Unterricht einbringen?
-      </h4>
-      <p class="content">
-        codeklasse ist zum aktuellen Zeitpunkt noch nicht veröffentlicht.
-        Bitte <a
-          class="is-underlined"
-          href="/#contact"
-        >kontaktieren</a> Sie uns dennoch, wenn Sie Interesse daran haben
-        codeklasse zu testen oder an Ihrer Schule einzuführen – wir freuen uns immer über neue Partnerschaften,
-        mit denen wir codeklasse testen und pädagogisch sowie technisch weiterentwickeln können.</p>
-    </div>
-    <div class="column center-content">
-      <figure class="image m-auto">
-        <img src="assets/images/faq/wie-kann-ich-codeklasse-in-meinem-unterricht-einbringen.png">
-      </figure>
-    </div>
-  </div>
-
-  <h4 class="subtitle is-4 has-text-right is-underlined">
-    <a href="/faq">...weitere Fragen und Antworten</a>
-  </h4>
 </section>
 
 <section
