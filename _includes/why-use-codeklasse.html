@@ -10,26 +10,26 @@
     <a
         id="Tab-Button-Unternehmen"
         class="button content-switcher"
-        onclick="openTab('Tab-Unternehmen')"
+        onclick="openTab('Tab-Companies')"
     >Unternehmen</a>
 
     <a
         id="Tab-Button-Lehrkraefte"
         class="button content-switcher "
-        onclick="openTab('Tab-Lehrkraefte')"
+        onclick="openTab('Tab-Educators')"
     >Lehrkräfte</a>
 
     <a
         id="Tab-Button-Eltern"
         class="button content-switcher"
-        onclick="openTab('Tab-Eltern')"
+        onclick="openTab('Tab-Parents')"
     >Eltern</a>
 </div>
 
 <div class="container pt-5">
     <!-- COMPANIES -->
     <div
-        id="Tab-Unternehmen"
+        id="Tab-Companies"
         class="content-tab"
     >
         <h3 class="title is-4 pt-5 has-text-centered is-italic">Nachwuchs fördern. Regionale Kompetenz ausbauen.</h3>
@@ -99,9 +99,9 @@
         </div>
     </div>
 
-    <!-- TEACHERS -->
+    <!-- EDUCATORS -->
     <div
-        id="Tab-Lehrkraefte"
+        id="Tab-Educators"
         class="content-tab"
     >
         <h3 class="title is-4 pt-5 has-text-centered is-italic">Programmieren ab der ersten Klasse.</h3>
@@ -168,7 +168,7 @@
 
     <!-- PARENTS -->
     <div
-        id="Tab-Eltern"
+        id="Tab-Parents"
         class="content-tab"
     >
         <!-- ODER: Kindern die Bildung von Morgen ermöglichen. -->
@@ -268,7 +268,7 @@
 <script>
     // Shamelessly copied from https://codepen.io/t7team/pen/ZowdRN - thanks for that!
     // Initialize tab with a category
-    openTab('Tab-Unternehmen');
+    openTab('Tab-Companies');
 
     function openTab(tabName) {
         let i, x, tabButtons;
@@ -286,15 +286,15 @@
         document.getElementById(tabName).style.display = "block";
 
         switch (tabName) {
-            case "Tab-Lehrkraefte":
+            case "Tab-Educators":
                 document.getElementById("Tab-Button-Lehrkraefte").className += " is-active";
                 break;
 
-            case "Tab-Eltern":
+            case "Tab-Parents":
                 document.getElementById("Tab-Button-Eltern").className += " is-active";
                 break;
 
-            case "Tab-Unternehmen":
+            case "Tab-Companies":
                 document.getElementById("Tab-Button-Unternehmen").className += " is-active";
                 break;
 
