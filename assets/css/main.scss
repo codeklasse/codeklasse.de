@@ -7,7 +7,7 @@
 @import "why-use-codeklasse.scss";
 
 /*
-*  Set and apply Custom fonts
+*  Set and apply custom fonts
 */
 
 @font-face {
@@ -55,36 +55,24 @@ button.is-white:focus,
     border-color: $border-color;
 }
 
-/* #why-use-codeklasse-tabs-list a.button:hover,
-#why-use-codeklasse-tabs-list a.button:active,
-#why-use-codeklasse-tabs-list a.button:focus,
-#why-use-codeklasse-tabs-list a.button.is-active,
-.button.is-primary:hover,
-.button.is-primary:active,
-.button.is-primary:focus,
-#title-action-buttons .button:hover,
-.button.is-white:hover,
-#faq-contact-button:hover {
-    border-color: $success;
-}
- */
+/* 
+    * What about this one?
+    * .button:not(.social-media-icons-footer .button)
+*/
 
 .card,
 .button {
-    transition: ease-in-out 0.4s;
-    box-shadow: none;
-}
-
-.card:hover {
     border-color: #000;
     transition: ease-in-out 0.2s;
     box-shadow: 4px 4px #000;
 }
 
-.button:hover:not(.social-media-icons-footer .button) {
+.button:hover,
+.card:hover {
+    // transform: translate(2px, 2px);
     border-color: #000 !important;
+    box-shadow: none;
     transition: ease-in-out 0.2s;
-    box-shadow: 4px 4px #000;
 }
 
 #summary-section ul li {
@@ -112,7 +100,7 @@ figure,
 #blog-search-field:focus-visible,
 input:active,
 input:focus,
-input:focus-visible  {
+input:focus-visible {
     border-color: none;
     background-color: $light;
     outline: none !important;
