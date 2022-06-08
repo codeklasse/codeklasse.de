@@ -184,3 +184,17 @@ title: codeklasse
     transition: .5s ease-in-out;
   }
 </style>
+
+<script>
+  /* 
+   * Trying to silence all iFrame console outputs, however missing fonts etc. don't seem to be affected.
+   * Anyhow, thanks to https://stackoverflow.com/a/64317635/11515036 
+   */
+  const iframes = Array.from(document.getElementsByTagName('iframe'));
+
+  for (const item of iframes) {
+    item.contentWindow.console.log = () => { /* nop */ };
+    item.contentWindow.console.warn = () => { /* nop */ };
+    item.contentWindow.console.error = () => { /* nop */ };
+  }
+</script>

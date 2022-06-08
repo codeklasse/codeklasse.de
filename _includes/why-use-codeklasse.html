@@ -10,19 +10,19 @@
     <a
         id="Tab-Button-Unternehmen"
         class="button content-switcher"
-        onclick="openTab('Tab-Companies')"
+        onclick="openTab_WhyUseCK('Tab-Companies')"
     >Unternehmen</a>
 
     <a
         id="Tab-Button-Lehrkraefte"
         class="button content-switcher "
-        onclick="openTab('Tab-Educators')"
+        onclick="openTab_WhyUseCK('Tab-Educators')"
     >Lehrkräfte</a>
 
     <a
         id="Tab-Button-Eltern"
         class="button content-switcher"
-        onclick="openTab('Tab-Parents')"
+        onclick="openTab_WhyUseCK('Tab-Parents')"
     >Eltern</a>
 </div>
 
@@ -266,9 +266,9 @@
 <script>
     // Shamelessly copied from https://codepen.io/t7team/pen/ZowdRN - thanks for that!
     // Initialize tab with a category
-    openTab('Tab-Companies');
+    openTab_WhyUseCK('Tab-Companies');
 
-    function openTab(tabName) {
+    function openTab_WhyUseCK(tabName) {
         let i, x, tabButtons;
 
         x = document.getElementsByClassName("content-tab");

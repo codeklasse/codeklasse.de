@@ -16,12 +16,12 @@
           <li
             id="Tab-Button-Schedule-Appointment"
             class="content-switcher-contact-form"
-            onclick="openTab('Tab-Schedule-Appointment')"
+            onclick="openTab_ContactForm('Tab-Schedule-Appointment')"
           ><a>Terminbuchung</a></li>
           <li
             id="Tab-Button-Contact-Form"
             class="content-switcher-contact-form"
-            onclick="openTab('Tab-Contact-Form')"
+            onclick="openTab_ContactForm('Tab-Contact-Form')"
           ><a>Kontaktformular</a></li>
         </ul>
       </div>
@@ -53,9 +53,9 @@
 <script>
   // Shamelessly copied from https://codepen.io/t7team/pen/ZowdRN - thanks for that!
   // Initialize tab with a category
-  openTab('Tab-Schedule-Appointment');
+  openTab_ContactForm('Tab-Schedule-Appointment');
 
-  function openTab(tabName) {
+  function openTab_ContactForm(tabName) {
     let i, x, tabButtons;
 
     x = document.getElementsByClassName("content-tab-contact-form");
