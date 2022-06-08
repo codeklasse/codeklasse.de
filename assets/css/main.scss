@@ -164,12 +164,15 @@ input:focus-visible {
     }
 }
 
-#title-teaser-call-to-action-button {
+.centered-call-to-action-button {
     position: relative;
-    top: -7.5rem;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
+}
+
+.title-teaser.centered-call-to-action-button {
+    top: -7.5rem;
 }
 
 .column.center-content {

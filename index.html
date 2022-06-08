@@ -24,7 +24,7 @@ title: codeklasse
       src="assets/images/codeklasse-landing-sm.png"
     >
 
-    <div id="title-teaser-call-to-action-button">
+    <div class="title-teaser centered-call-to-action-button">
       <a
         class="button wrap-button-text is-primary is-medium mb-3"
         href="/#contact"
@@ -42,7 +42,7 @@ title: codeklasse
 
 <section
   id="what-is-codeklasse-front-page"
-  class="section mt-5"
+  class="section"
 >
   <div class="has-text-centered mb-5">
     {% include title-h2.html text="Was ist codeklasse eigentlich?" %}
@@ -86,7 +86,6 @@ title: codeklasse
     </div>
   </div>
 
-
   <section
     id="partners-and-sponsors-front-page"
     class="section has-background-white mt-6 mx-6-desktop mx-3-tablet mx-5-mobile"
@@ -103,143 +102,56 @@ title: codeklasse
     class="section mt-5"
   >
     {% include why-use-codeklasse.html %}
+
+    <div class="centered-call-to-action-button mt-6">
+      <a
+        class="button wrap-button-text is-primary is-medium mb-3"
+        href="/#contact"
+      >
+        <p>Jetzt in <span class="has-text-weight-bold">Kontakt treten</span></p>
+      </a>
+
+      <p>oder <a
+          href="/#why-use-codeklasse-front-page"
+          class="has-text-weight-bold is-underlined"
+        > andere Perspektive betrachten</a></p>
+    </div>
   </section>
 
-  <section
-    id="faq-front-page"
-    class="section has-background-white has-border mt-6-desktop mx-6-desktop mx-5-tablet mx-5-mobile"
-  >
-    {% include title-h2.html text="Fragen und Antworten" %}
-
-    <div class="columns">
-      <div class="column is-9">
-        <h4 class="subtitle is-4 has-text-weight-semibold">Was kann man mit codeklasse machen?</h4>
-        <p class="content">
-          codeklasse ist eine vollumfängliche Programmier-Lernsoftware für Kinder der 1. bis 6. Klasse.
-          Sie ermöglicht nicht nur das eigenverantwortliche Lernen der Schülerinnen und Schüler,
-          sondern stellt auch vorgefertigte Kampagnen und Hilfsmaterialien für Lehrerinnen und Lehrer bereit,
-          um die Unterrichtsvorbereitung und die Vermittlung des Themas "Programmieren Lernen" zu erleichtern.</p>
-      </div>
-      <div class="column center-content">
-        <figure class="image m-auto">
-          <img src="assets/images/faq/was-kann-man-mit-codeklasse-machen.png">
-        </figure>
-      </div>
-    </div>
-
-    <div class="columns">
-      <div class="column is-9">
-        <h4 class="subtitle is-4 has-text-weight-semibold">Muss ich selbst programmieren können?</h4>
-        <p class="content">
-          Nein. codeklasse ist bewusst so konzipiert, dass nicht nur Kinder,
-          sondern auch auch fachfremde Lehrerinnen und Lehrer programmieren lernen können.
-          Unsere Plattform stellt einsatzbereite Kurse und moderne Lehrmaterialien bereit,
-          die SuS sowie KuK gleichermaßen den einfachen, frustfreien Zugang zum Thema Programmierung ermöglicht.</p>
-      </div>
-      <div class="column center-content">
-        <figure class="image m-auto">
-          <img src="assets/images/faq/muss-ich-selbst-programmieren-können.png">
-        </figure>
-      </div>
-    </div>
-
-    <div class="columns">
-      <div class="column is-9">
-        <h4 class="subtitle is-4 has-text-weight-semibold">Wie kann ich codeklasse in meinen Unterricht einbringen?
-        </h4>
-        <p class="content">
-          codeklasse ist zum aktuellen Zeitpunkt noch nicht veröffentlicht.
-          Bitte <a
-            class="is-underlined"
-            href="/#contact"
-          >kontaktieren</a> Sie uns dennoch, wenn Sie Interesse daran haben
-          codeklasse zu testen oder an Ihrer Schule einzuführen – wir freuen uns immer über neue Partnerschaften,
-          mit denen wir codeklasse testen und pädagogisch sowie technisch weiterentwickeln können.</p>
-      </div>
-      <div class="column center-content">
-        <figure class="image m-auto">
-          <img src="assets/images/faq/wie-kann-ich-codeklasse-in-meinem-unterricht-einbringen.png">
-        </figure>
-      </div>
-    </div>
-
-    <h4 class="subtitle is-4 has-text-right is-underlined">
-      <a href="/faq">...weitere Fragen und Antworten</a>
-    </h4>
-  </section>
-
-  <div
-    class="card has-background-primary"
-    style="margin-top: 10rem;"
-  >
-    <div class="card-content">
-
-      {% include title-h2.html text="Unsere Werte" %}
-
-      <div class="columns is-multiline is-desktop">
-        <div class="column mx-3-tablet mx-3-mobile">
-          <div class="columns is-multiline">
-            {% include about-us-fact-tile.html
-            fact_category="Zweck"
-            fact="codeklasse strebt an Kompetenzen des MINT Bereichs früh zu
-            stärken und Deutschlands Bedarf
-            nachhaltig zu decken."
-            img_url="/assets/emojis/heavy-check-mark_2714.png"
-            img_alt="" %}
-
-            {% include about-us-fact-tile.html
-            fact_category="Vision"
-            fact="Unsere Vision ist das jedes Kind nach der 4. Klasse neben Lesen, Schreiben, Rechnen auch
-            Programmieren kann."
-            img_url="/assets/emojis/direct-hit_1f3af.png"
-            img_alt="" %}
-
-            {% include about-us-fact-tile.html
-            fact_category="Mission"
-            fact="Unsere Mission ist Kinder für das Programmieren zu begeistern und eine Plattform zu
-            schaffen die
-            diese Kompetenz spielerisch & anschaulich vermittelt."
-            img_url="/assets/emojis/grinning-face-with-star-eyes_1f929.png"
-            img_alt="" %}
-
-            {% include about-us-fact-tile.html
-            fact_category="Priorität"
-            fact="Unsere oberste Priorität ist den Zugang zur Bildung des neuen Zeitalters unabhängig von
-            Geld &
-            Status zu ermöglichen."
-            img_url="/assets/emojis/white-up-pointing-index_261d.png"
-            img_alt="" %}
-          </div>
-        </div>
-
-        <div class="column is-4-desktop">
-          <div class="card">
-            <div class="card-content">
-              <figure class="image">
-                <img
-                  src="/assets/images/about/teamfoto-codeklasse.jpg"
-                  alt="Das codeklasse Team: Liam, Sergej, Natallia"
-                  style="object-fit: cover;"
-                >
-              </figure>
-            </div>
-            <div class="media-content has-text-centered pb-5">
-              <p class="title is-5 is-clipped">Das codeklasse Team: Liam & Sergej</p>
-              <p class="subtitle is-7">© Bochum Wirtschaftsentwicklung, Donna und der Blitz GmbH</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
+  <div class="has-text-centered mb-4">
+    {% include title-h2.html text="Wer steckt hinter dem Projekt?" %}
   </div>
+
+  <p class="mb-5">
+    codeklasse sind Liam & Sergej.
+    codeklasse ist ein junges Team aus Bochum.
+    Wir wollen was verändern.
+    Dafür brauchen brauchen Dich!
+    Bist du der Meinung das Programmieren in Grundschulen vertreten sein sollte?
+    Meld Dich gern und lass es uns angehen!
+  </p>
+
+  {% include front-page-about-us.html %}
+</section>
+
+<section
+  id="faq-front-page"
+  class="section mx-6-desktop mx-5-tablet mx-5-mobile"
+>
+  <div class="has-text-centered mb-6">
+    {% include title-h2.html text="Noch Fragen offen?" %}
+  </div>
+
+  {% include front-page-faq.html %}
 </section>
 
 <section
   id="blog-and-news-front-page"
   class="section mt-6 is-fullheight"
 >
-  {% include title-h2.html text="Blog & News" %}
+  <div class="has-text-centered mb-6">
+    {% include title-h2.html text="Blog & News" %}
+  </div>
 
   <div class="columns is-multiline">
     {% for post in site.posts limit:3 %}

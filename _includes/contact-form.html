@@ -1,74 +1,163 @@
 <!-- This form only works once pushed to netlify -> Doesn't work on local setup -->
-<div id="contact-section" class="card has-background-primary">
-    <div class="card-content">
-        <div class=" container my-5-tablet mx-5-desktop px-5-desktop">
-            <!-- <h2 class="title is-2">Fragen, Impulse, Kooperation?  Sprechen wir darüber!</h2> -->
-            <!-- <h2 class="title is-2">Fragen, Impulse, Kooperation?</h2> -->
-            <h2 class="title is-2 is-size-3-mobile is-spaced">Fragen? Impulse? Kooperation?</h2>
-            <p class="subtitle">Sprechen wir darüber! Gerne persönlich oder mit unserem <a href="/#contact-form">Kontaktformular.</a></p>
+<div class="has-text-centered mb-6">
+  {% include title-h2.html text="Fragen? Impulse? Kooperation?" %}
+  <p class="subtitle">Sprechen wir darüber! Gerne persönlich oder mit unserem <a
+      href="/#contact-form">Kontaktformular.</a></p>
+</div>
 
-            <iframe class="pb-6" src="https://app.simplymeet.me/grilborzer?view=compact"
-                style="width:100%; height:550px;" frameborder="0" scrolling="yes"></iframe>
+<!-- This should be handled via a Tab system -->
+<div
+  id="contact-section"
+  class="card has-background-primary"
+>
+  <div class="card-content">
+    <div class="container my-5-tablet mx-5-desktop px-5-desktop">
+      <iframe
+        class="pb-6"
+        src="https://app.simplymeet.me/grilborzer?view=compact"
+        style="width:100%; height:550px;"
+        frameborder="0"
+        scrolling="yes"
+      ></iframe>
 
-            <h3 id="contact-form" class="title is-3 is-size-4-mobile is-spaced">Kontaktformular</h3>    
-            <p class="subtitle">Sprechen wir darüber! Gerne persönlich oder mit unserem <a class="is-underlined" href="/#contact-form">Kontaktformular.</a></p>
+      <h3
+        id="contact-form"
+        class="title is-3 is-size-4-mobile is-spaced"
+      >Kontaktformular</h3>
+      <p class="subtitle">Sprechen wir darüber! Gerne persönlich oder mit unserem <a
+          class="is-underlined"
+          href="/#contact-form"
+        >Kontaktformular.</a></p>
 
-            <form name="contact" method="post" data-netlify="true">
-                <div class="field">
-                    <label for="name" class="label is-size-4 has-text-weight-light"></label>
-                    <div class="control has-icons-left">
-                        <input type="text" name="name" id="name" class="input name" placeholder="Name" required>
-                            <img class="icon is-left fontawesome-icon ml-3" src="/assets/css/fontawesome-free-svgs/solid/user.svg">
-                    </div>
-                </div>
-
-                <div class="field">
-                    <label for="email" class="label is-size-4 has-text-weight-light"></label>
-                    <div class="control has-icons-left">
-                        <input type="email" name="email" id="email" class="input email" placeholder="Email" required>
-                        <img class="icon is-left fontawesome-icon ml-3" src="/assets/css/fontawesome-free-svgs/solid/envelope.svg">
-                    </div>
-                </div>
-
-                <div class="field">
-                  <label for="phone" class="label is-size-4 has-text-weight-light"></label>
-                  <div class="control has-icons-left">
-                      <input type="phone" name="phone" id="phone" class="input" placeholder="Optional: Telefonnummer für Rückruf">
-                      <img class="icon is-left fontawesome-icon ml-3" src="/assets/css/fontawesome-free-svgs/solid/phone-alt.svg">
-                  </div>
-              </div>
-
-                <div class="field">
-                    <label for="message" class="label is-size-4 has-text-weight-light"></label>
-                    <textarea name="message" id="message" rows="5" class="textarea is-medium message" placeholder="Ihre/ Deine Nachricht" required></textarea>
-                </div>
-                
-                <div id="contact-checkbox-field" class="field">
-                  <label class="checkbox">
-                    <input id="contact-checkbox" name="contact-checkbox" type="checkbox" required>
-                    Ich habe die <a class="is-underlined" href="/privacy" target="_blank">Datenschutzerklärung</a> zur Kenntnis genommen.
-                    Ich stimme zu, dass die von mir übermittelten Daten zur Kontaktaufnahme und für Rückfragen dauerhaft gespeichert werden.
-                    Diese Zustimmung kann ich jederzeit persönlich widerrufen.
-                  </label>
-                </div>
-
-                <button type="submit" class="button is-primary is-size-5" onClick="submitCheck()">Senden</button>
-                <p id="submitActionHint" class="help is-danger nezobrazovat" style="display: none">Bitte füllen Sie alle Felder aus</p>
-            </form>
+      <form
+        name="contact"
+        method="post"
+        data-netlify="true"
+      >
+        <div class="field">
+          <label
+            for="name"
+            class="label is-size-4 has-text-weight-light"
+          ></label>
+          <div class="control has-icons-left">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="input name"
+              placeholder="Name"
+              required
+            >
+            <img
+              class="icon is-left fontawesome-icon ml-3"
+              src="/assets/css/fontawesome-free-svgs/solid/user.svg"
+            >
+          </div>
         </div>
+
+        <div class="field">
+          <label
+            for="email"
+            class="label is-size-4 has-text-weight-light"
+          ></label>
+          <div class="control has-icons-left">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="input email"
+              placeholder="Email"
+              required
+            >
+            <img
+              class="icon is-left fontawesome-icon ml-3"
+              src="/assets/css/fontawesome-free-svgs/solid/envelope.svg"
+            >
+          </div>
+        </div>
+
+        <div class="field">
+          <label
+            for="phone"
+            class="label is-size-4 has-text-weight-light"
+          ></label>
+          <div class="control has-icons-left">
+            <input
+              type="phone"
+              name="phone"
+              id="phone"
+              class="input"
+              placeholder="Optional: Telefonnummer für Rückruf"
+            >
+            <img
+              class="icon is-left fontawesome-icon ml-3"
+              src="/assets/css/fontawesome-free-svgs/solid/phone-alt.svg"
+            >
+          </div>
+        </div>
+
+        <div class="field">
+          <label
+            for="message"
+            class="label is-size-4 has-text-weight-light"
+          ></label>
+          <textarea
+            name="message"
+            id="message"
+            rows="5"
+            class="textarea is-medium message"
+            placeholder="Ihre/ Deine Nachricht"
+            required
+          ></textarea>
+        </div>
+
+        <div
+          id="contact-checkbox-field"
+          class="field"
+        >
+          <label class="checkbox">
+            <input
+              id="contact-checkbox"
+              name="contact-checkbox"
+              type="checkbox"
+              required
+            >
+            Ich habe die <a
+              class="is-underlined"
+              href="/privacy"
+              target="_blank"
+            >Datenschutzerklärung</a> zur Kenntnis genommen.
+            Ich stimme zu, dass die von mir übermittelten Daten zur Kontaktaufnahme und für Rückfragen dauerhaft
+            gespeichert werden.
+            Diese Zustimmung kann ich jederzeit persönlich widerrufen.
+          </label>
+        </div>
+
+        <button
+          type="submit"
+          class="button is-primary is-size-5"
+          onClick="submitCheck()"
+        >Senden</button>
+        <p
+          id="submitActionHint"
+          class="help is-danger nezobrazovat"
+          style="display: none"
+        >Bitte füllen Sie alle Felder aus</p>
+      </form>
     </div>
+  </div>
 </div>
 
 <style>
-    .fontawesome-icon {
-        width: 1rem !important;
-        border: none;
-        /* The color attribute doesn't seem to apply in the case of svg.
+  .fontawesome-icon {
+    width: 1rem !important;
+    border: none;
+    /* The color attribute doesn't seem to apply in the case of svg.
            Opacity seems to be easier than using the filter attribute
            https://stackoverflow.com/questions/22252472/
          */
-        opacity: 0.65;
-    }
+    opacity: 0.65;
+  }
 </style>
 <script>
   const submit = document.getElementById("submitButton");
@@ -78,17 +167,17 @@
   const fieldPrivacyNotice = document.getElementById("contact-checkbox-field");
   const checkboxPrivacyNotice = document.getElementById("contact-checkbox");
   const submitMessage = document.getElementById("submitActionHint");
-  
+
   let nameValidated = false;
   let emailValidated = false;
   let messageValidated = false;
   let privacyNoticeValidated = false;
-  
+
   const MAXCHARNAMEFIELD = 40;
 
   function validateRegexString(email) {
     const regexString =
-    /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
     return regexString.test(String(email).toLowerCase()); // true|false
   }
