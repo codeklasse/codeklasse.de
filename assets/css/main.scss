@@ -55,20 +55,17 @@ button.is-white:focus,
     border-color: $border-color;
 }
 
-/* 
-    * What about this one?
-    * .button:not(.social-media-icons-footer .button)
-*/
-
 .card,
-.button {
+.button,
+.has-box-shadow {
     border-color: #000;
     transition: ease-in-out 0.2s;
     box-shadow: 4px 4px #000;
 }
 
 .button:hover,
-.card:hover {
+.card:hover,
+.has-box-shadow:hover {
     // transform: translate(2px, 2px);
     border-color: #000 !important;
     box-shadow: none;
@@ -136,6 +133,8 @@ input:focus-visible {
 }
 
 #title-section {
+    margin-top: 5rem;
+    // Required because the margin below blows up otherwise
     margin-bottom: -5rem;
 
     @include desktop {
@@ -226,6 +225,19 @@ input:focus-visible {
 
 .no-border {
     border: none;
+}
+
+.tabs ul {
+    border-bottom-color: #000;
+}
+
+.tabs li a {
+    border: none;
+}
+
+.tabs li.is-active a {
+    color: inherit;
+    font-weight: bold;
 }
 
 // More infos: https://www.w3schools.com/css/css_link.asp
