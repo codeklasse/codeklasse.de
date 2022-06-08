@@ -1,5 +1,6 @@
 @use "./custom-variables.scss";
 
+/* "Journey-selection" buttons at top of the section */
 #why-use-codeklasse-tabs-list a.button {
     min-width: 20rem;
 
@@ -13,68 +14,26 @@
     }
 }
 
-#why-use-codeklasse-tabs-list #Tab-Button-Unternehmen.is-active {
-    background-color: $primary;
-}
-
-#why-use-codeklasse-tabs-list #Tab-Button-Lehrkraefte.is-active {
-    background-color: $info;
-}
-
-#why-use-codeklasse-tabs-list #Tab-Button-Eltern.is-active {
-    background-color: $success;
-}
-
-#why-use-codeklasse-tabs-list a.button:not(:last-child):not(.is-fullwidth) {
-    margin-right: 0;
-}
-
-.card.why-use-codeklasse {
-    @include desktop {
-        max-width: 75%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-/* #why-use-codeklasse-front-page .container {
-    @include desktop {
-        margin-bottom: 50rem;
-    }
-} */
-
-#why-use-codeklasse-front-page .container .card {
-    
-    // @include mobile {
-    //     max-width: 128px;
-    // }
-
-    // @include desktop {
-    //     width: 20rem;
-    //     float: right;
-    // }
-}
-
-#why-use-codeklasse-front-page .container .card figure.image {
-    max-width: 128px;
-    
-    @include mobile {
-    }
-
-    @include desktop {
-        width: 20rem;
-        float: right;
-    }
-}
-
+/* Color journey buttons and their appropriate tiles in the same background-color */
+#why-use-codeklasse-tabs-list #Tab-Button-Unternehmen.is-active,
 #why-use-codeklasse-front-page .container #Tab-Companies .card {
     background-color: $primary;
 }
 
+#why-use-codeklasse-tabs-list #Tab-Button-Lehrkraefte.is-active,
 #why-use-codeklasse-front-page .container #Tab-Educators .card {
     background-color: $info;
 }
 
+#why-use-codeklasse-tabs-list #Tab-Button-Eltern.is-active,
 #why-use-codeklasse-front-page .container #Tab-Parents .card {
     background-color: $success;
+}
+
+#why-use-codeklasse-front-page .container .card figure.image {
+    @include mobile {
+    }
+
+    @include desktop {
+    }
 }
