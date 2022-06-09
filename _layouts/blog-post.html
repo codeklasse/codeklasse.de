@@ -19,7 +19,7 @@ layout: default
         </ul>
     </nav>
 
-    <div class="has-background-white has-border py-6 px-6">
+    <div class="pt-3 pb-6 px-6">
         <div class="has-text-centered">
             {% include title-h2.html text=page.title %}
         </div>
@@ -28,7 +28,7 @@ layout: default
 
             <div class="column is-12 is-flex is-justify-content-center">
                 <figure
-                    class="image"
+                    class="image has-box-shadow-no-hover-effect"
                     style="max-width: 50%; height: auto;"
                 >
                     <img
@@ -38,13 +38,13 @@ layout: default
                 </figure>
             </div>
 
-            <section class="column content container px-6-desktop is-size-5 underline-links-in-posts">
+            <section class="column content container px-6-desktop is-size-5 underline-links-in-posts mt-6-tablet">
                 {{ content }}
             </section>
 
             <!-- is-reversed-mobile war ursprünglich für TOC gedacht - to fix! -->
             {% if page.toc %}
-            <aside class="column is-one-quarter-widescreen">
+            <aside class="column is-one-quarter-widescreen mt-6-tablet">
                 <div class="card content is-fullwidth">
                     <header class="card-header">
                         <p class="card-header-title is-centered">Inhalt</p>

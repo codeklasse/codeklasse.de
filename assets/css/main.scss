@@ -57,14 +57,16 @@ button.is-white:focus,
 
 .card,
 .button,
-.has-box-shadow {
+.has-box-shadow,
+.has-box-shadow-no-hover-effect {
     border-color: #000;
     transition: ease-in-out 0.2s;
     box-shadow: 4px 4px #000;
 }
 
 .button:hover,
-.has-box-shadow:hover {
+.has-box-shadow:hover,
+.has-box-shadow-hover-effect:hover {
     // transform: translate(2px, 2px);
     border-color: #000 !important;
     box-shadow: none;

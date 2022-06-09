@@ -1,7 +1,7 @@
 <a href="{{ post.url }}">
     <div class="card has-background-info">
         <div class="card-image p-5">
-            <figure class="image is-4by3">
+            <figure class="image is-4by3 has-box-shadow-no-hover-effect">
                 <!-- Crop image according to ratio via "object-fit: cover" -->
                 <img
                     src="{{ site.baseurl }}{{ post.image }}"
@@ -18,12 +18,6 @@
         >
             <h2 class="has-text-weight-bold">{{ post.title }}</h2>
 
-            <!-- <span
-                id="blogpost-category"
-                class="tag is-info is-overlay"
-            >
-                {{ post.categories }}
-            </span> -->
         </div>
 
         <!-- Post answer here: https://stackoverflow.com/questions/53457981/ -->
@@ -35,13 +29,6 @@
         </div>
 
         <footer class="card-footer">
-            <!-- <p class="card-footer-item"> -->
-            <!-- <span class="tag is-info"> -->
-            <!-- <button class="button is-info"> -->
-            <!-- {{ post.categories }} -->
-            <!-- </button> -->
-            <!-- </span> -->
-            <!-- </p> -->
             <p class="card-footer-item has-text-weight-semibold">
                 <span>
                     <!-- "Jekyll-way-of-doing-it" wäre mittels post.date möglich -->
