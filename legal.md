@@ -1,14 +1,14 @@
 ---
 layout: legal-and-privacy
 title: Impressum
-last_updated_date: "21.12.2021"
+last_updated_date: "09.06.2022"
 ---
 
 **Verantwortlich für den Inhalt (gem. § 55 Abs. 2 RStV) / Responsible for content**
 
-Sergej Grilborzer
+Grilborzer & Kranz GbR – codeklasse
 
-Asenberg. 11, 58507 Lüdenscheid
+Haderslebener Str. 6, 44789 Bochum
 
 Telefon: 01623292122
 
