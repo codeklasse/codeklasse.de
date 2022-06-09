@@ -7,37 +7,7 @@ title: codeklasse
   id="title-section"
   class="is-fullheight px-6-desktop mx-6-desktop px-4-mobile"
 >
-  <div class="columns is-flex-direction-column px-4-mobile">
-    <p
-      id="title-teaser-text"
-      class="title column is-offset-1 is-two-thirds-tablet px-5-desktop py-6-tablet pt-4-mobile pb-6-mobile has-background-primary has-border"
-    >
-      Noch nie war Programmieren lernen so leicht.
-    </p>
-
-    <div class="column is-12 py-6"></div>
-  </div>
-
-  <div>
-    <img
-      id="title-teaser-image"
-      src="assets/images/codeklasse-landing-sm.png"
-    >
-
-    <div class="title-teaser centered-call-to-action-button">
-      <a
-        class="button wrap-button-text is-primary is-medium mb-3"
-        href="/#contact"
-      >
-        <p>Jetzt in <span class="has-text-weight-bold">Kontakt treten</span></p>
-      </a>
-
-      <p>oder <a
-          href="/#faq-front-page"
-          class="has-text-weight-bold is-underlined"
-        > häufige Fragen lesen </a></p>
-    </div>
-  </div>
+  {% include front-page-title-section.html %}
 </section>
 
 <section
@@ -54,84 +24,55 @@ title: codeklasse
     </img>
   </div>
 
-  <div class="columns">
-    <div class="column"></div>
+  {% include front-page-what-is-codeklasse.html %}
+</section>
 
-    <figure class="column is-5 image">
-      <iframe
-        class="has-ratio is-fullwidth-and-height"
-        src="https://www.youtube-nocookie.com/embed/GDnIxWK_Z4Q"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-    </figure>
+<section
+  id="partners-and-sponsors-front-page"
+  class="section has-background-white mt-6 mx-6-desktop mx-3-tablet mx-5-mobile"
+>
+  <div class="has-text-centered">
+    {% include title-h2.html text="Unsere Partner & Förderer" %}
+  </div>
 
-    <div
-      class="columns"
-      style="margin-top: -16rem;"
+  {% include sponsors-and-partners.html %}
+</section>
+
+<section
+  id="why-use-codeklasse-front-page"
+  class="section mt-5"
+>
+  {% include why-use-codeklasse.html %}
+
+  <div class="centered-call-to-action-button mt-6">
+    <a
+      class="button wrap-button-text is-primary is-medium mb-3"
+      href="/#contact"
     >
+      <p>Jetzt in <span class="has-text-weight-bold">Kontakt treten</span></p>
+    </a>
 
-      <div class="column is-6 card has-background-primary">
-        <div class="card-content has-text-centered">
-          <p class="title is-5 is-clipped">codeklasse ist eine Programmier Lernplattform für Kinder zwischen 6 und 10
-            Jahren.</p>
-
-          <figure class="image is-16by9">
-
-          </figure>
-        </div>
-      </div>
-    </div>
+    <p>oder <a
+        href="/#why-use-codeklasse-front-page"
+        class="has-text-weight-bold is-underlined"
+      > andere Perspektive betrachten</a></p>
   </div>
+</section>
 
-  <section
-    id="partners-and-sponsors-front-page"
-    class="section has-background-white mt-6 mx-6-desktop mx-3-tablet mx-5-mobile"
-  >
-    <div class="has-text-centered">
-      {% include title-h2.html text="Unsere Partner & Förderer" %}
-    </div>
+<div class="has-text-centered mb-4">
+  {% include title-h2.html text="Wer steckt hinter dem Projekt?" %}
+</div>
 
-    {% include sponsors-and-partners.html %}
-  </section>
+<p class="mb-5">
+  codeklasse sind Liam & Sergej.
+  codeklasse ist ein junges Team aus Bochum.
+  Wir wollen was verändern.
+  Dafür brauchen brauchen Dich!
+  Bist du der Meinung das Programmieren in Grundschulen vertreten sein sollte?
+  Meld Dich gern und lass es uns angehen!
+</p>
 
-  <section
-    id="why-use-codeklasse-front-page"
-    class="section mt-5"
-  >
-    {% include why-use-codeklasse.html %}
-
-    <div class="centered-call-to-action-button mt-6">
-      <a
-        class="button wrap-button-text is-primary is-medium mb-3"
-        href="/#contact"
-      >
-        <p>Jetzt in <span class="has-text-weight-bold">Kontakt treten</span></p>
-      </a>
-
-      <p>oder <a
-          href="/#why-use-codeklasse-front-page"
-          class="has-text-weight-bold is-underlined"
-        > andere Perspektive betrachten</a></p>
-    </div>
-  </section>
-
-  <div class="has-text-centered mb-4">
-    {% include title-h2.html text="Wer steckt hinter dem Projekt?" %}
-  </div>
-
-  <p class="mb-5">
-    codeklasse sind Liam & Sergej.
-    codeklasse ist ein junges Team aus Bochum.
-    Wir wollen was verändern.
-    Dafür brauchen brauchen Dich!
-    Bist du der Meinung das Programmieren in Grundschulen vertreten sein sollte?
-    Meld Dich gern und lass es uns angehen!
-  </p>
-
-  {% include front-page-about-us.html %}
+{% include front-page-about-us.html %}
 </section>
 
 <section
