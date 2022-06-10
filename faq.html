@@ -1,6 +1,10 @@
 ---
 layout: default
-title: navigation-headlines.faq
+title: navigation_headlines.faq
+
+namespace: faq
+permalink: /faq/
+permalink_en: /faq/
 ---
 
 <section
@@ -19,19 +23,28 @@ title: navigation-headlines.faq
             {% for question in site.faq %}
             {% if question.hidden != true %}
             <div class="card block has-box-shadow-hover-effect has-background-primary">
-            <a href="{{ question.url }}">
-                <div class="card-content">
-                    <div class="media">
-                        <div class="media-left pl-6-desktop">
-                            <!-- Might as well provide a graphic instead of padding -->
-                        </div>
-                        <div class="media-content">
-                            <h3 class="title is-4">"{{ question.title }}"</h3>
-                            <p>{{ question.excerpt | strip_html }}</p>
+
+                {% if site.lang == "de" %}
+                {% capture faq_link_to_post %}{{ question.url }}{% endcapture %}
+                {% elsif site.lang == "en" %}
+                {% capture faq_link_to_post %}{{ site.url }}/{{ site.lang }}{{ question.permalink_en }}{% endcapture %}
+                {% else %}
+                {% capture faq_link_to_post %}{{ site.baseurl }}{{ question.url }}{% endcapture %}
+                {% endif %}
+
+                <a href="{{ faq_link_to_post }}">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-left pl-6-desktop">
+                                <!-- Might as well provide a graphic instead of padding -->
+                            </div>
+                            <div class="media-content">
+                                <h3 class="title is-4">"{% t {{ question.title }} %}"</h3>
+                                <p>{{ question.excerpt | strip_html }}</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </a>
+                </a>
             </div>
             {% endif %}
             {% endfor %}
@@ -42,7 +55,7 @@ title: navigation-headlines.faq
                 id="faq-contact-button"
                 class="button is-primary wrap-button-text"
                 href="/#contact"
-            >Fragen offen? Wir freuen uns von Ihnen zu hören!</a>
+            >{% t buttons.faq_get_in_touch %}</a>
         </div>
     </div>
 </section>

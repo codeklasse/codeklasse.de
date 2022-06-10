@@ -1,5 +1,5 @@
-navigation-headlines:
-  front-page: codeklasse
+navigation_headlines:
+  front_page: codeklasse
   faq: Häufig gestellte Fragen
   about: Über uns
   blog: Blog & News
@@ -9,8 +9,18 @@ navigation-headlines:
   resources: Ressourcen
   downloads: Downloads
   contact: Kontakt
+
+buttons:
   get_in_touch: In Kontakt treten
+  faq_get_in_touch: Fragen offen? Wir freuen uns von Ihnen zu hören!
 
 status404:
   title404: Entschuldigung!
   subtitle404: Die gewünschte Seite wurde nicht gefunden.
+
+faq_titles:
+  muss_ich_selbst_programmieren_koennen: Muss ich selbst programmieren können?
+  wie_kann_ich_codeklasse_in_meinem_unterricht_nutzen: Wie kann ich codeklasse in meinen Unterricht nutzen?
+  was_kann_man_mit_codeklasse_machen: Was kann man mit codeklasse machen?
+  was_heisst_mint: Was heißt MINT?
+  technical_requirements_for_codeklasse: Was sind die technischen Voraussetzungen für codeklasse?

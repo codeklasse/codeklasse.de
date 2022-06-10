@@ -1,12 +1,12 @@
 ---
 layout: faq-post
-title:  "Was sind die technischen Voraussetzungen für codeklasse?"
+title:  faq_titles.technical_requirements_for_codeklasse
 last_updated_date: "2021-12-21"
 hidden: false
+
+namespace: faq.technische-voraussetzungen
+permalink: faq/technische-voraussetzungen
+permalink_en: /faq/technical-requirements-for-codeklasse
 ---
 
-codeklasse läuft auf jedem Gerät, das eine Internetverbindung und einen Webbrowser hat und idealerweise nicht älter als 4 Jahre ist. Wir empfehlen Firefox auf Computern und Google Chrome auf Android-Tablets.
-Auf iPads funktioniert codeklasse mit dem Standardbrowser Safari.
-
-Sollten Sie Beratung zur technischen Umsetzung benötigen,
-freuen wir uns von [Ihnen zu hören](/#contact).
+{% tf _faq/technische-voraussetzungen.md %}
