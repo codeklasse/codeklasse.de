@@ -3,7 +3,7 @@
         id="title-teaser-text"
         class="title column is-offset-1 is-two-thirds-tablet px-5-desktop py-6-tablet pt-4-mobile pb-6-mobile has-background-primary has-border has-box-shadow"
     >
-        Noch nie war Programmieren lernen so leicht.
+        {% t front_page.exclamation_introduction %}
     </p>
 
     <div class="column is-12 py-6"></div>
@@ -20,12 +20,12 @@
             class="button wrap-button-text is-primary is-medium mb-3"
             href="/#contact"
         >
-            <p>Jetzt in <span class="has-text-weight-bold">Kontakt treten</span></p>
+            <p class="has-text-weight-bold">{% t buttons.get_in_touch_now %}</p>
         </a>
 
-        <p>oder <a
+        <p>{% t buttons.read_faqs_pretext %} <a
                 href="/#faq-front-page"
                 class="has-text-weight-bold is-underlined"
-            > häufige Fragen lesen </a></p>
+            > {% t buttons.read_faqs_call_to_action %} </a></p>
     </div>
 </div>

@@ -16,11 +16,31 @@ languages:
 
 buttons:
   get_in_touch: Get in touch
+  get_in_touch_now: Get in touch now
+  read_faqs_pretext: or
+  read_faqs_call_to_action: read our frequently asked questions
   faq_get_in_touch: Any questions? We look forward to hearing from you!
 
-status404:
-  title404: Excuse us!
-  subtitle404: The requested page could not be found.
+front_page:
+  exclamation_introduction: Teaching programming has never been that easy!
+
+contact_form:
+  title: Questions? Ideas? Cooperations?
+  subtitle: Let's talk about it! Schedule an appointment or leave us a message.
+  scheduler: Appointment booking
+  scheduler_subtext: Use our schedular service to conveniently book an appointment with Sergej Grilborzer.
+  form: Contact form
+  form_subtext: We are looking forward to your message!
+  form_name: Name
+  form_email: Email
+  form_optional_phone_number: Optional - phone number for a return call
+  form_message: Your message
+  form_privacy_confirmation_before_link: I have taken note of the 
+  form_privacy_confirmation_link: Privacy policy
+  form_privacy_confirmation_after_link: I agree that the data I have provided will be stored permanently for the purpose of contacting me and for the purpose of enquiries.
+   I can revoke this consent personally at any time.
+  form_send_button: Send
+  form_hint_fill_out_all_fields: Please fill out all fields
 
 faq_titles:
   muss_ich_selbst_programmieren_koennen: Do I have to know programming myself?
@@ -28,3 +48,7 @@ faq_titles:
   was_kann_man_mit_codeklasse_machen: What can you do with codeklasse?
   was_heisst_mint: What does MINT stand for?
   technical_requirements_for_codeklasse: What are the technical requirements for codeklasse?
+
+status404:
+  title404: Excuse us!
+  subtitle404: The requested page could not be found.

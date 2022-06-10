@@ -1,8 +1,8 @@
 <h3
     id="contact-form"
     class="title is-3 is-size-4-mobile is-spaced mb-2"
->Kontaktformular</h3>
-<p class="subtitle">Wir freuen uns auf Ihre Nachricht!</p>
+>{% t contact_form.form %}</h3>
+<p class="subtitle">{% t contact_form.form_subtext %}</p>
 
 <form
     name="contact"
@@ -20,7 +20,7 @@
                 name="name"
                 id="name"
                 class="input name"
-                placeholder="Name"
+                placeholder="{% t contact_form.form_name %}"
                 required
             >
             <img
@@ -41,7 +41,7 @@
                 name="email"
                 id="email"
                 class="input email"
-                placeholder="Email"
+                placeholder="{% t contact_form.form_email %}"
                 required
             >
             <img
@@ -62,7 +62,7 @@
                 name="phone"
                 id="phone"
                 class="input"
-                placeholder="Optional: Telefonnummer für Rückruf"
+                placeholder="{% t contact_form.form_optional_phone_number %}"
             >
             <img
                 class="icon is-left fontawesome-icon ml-3"
@@ -81,7 +81,7 @@
             id="message"
             rows="5"
             class="textarea is-medium message"
-            placeholder="Ihre/ Deine Nachricht"
+            placeholder="{% t contact_form.form_message %}"
             required
         ></textarea>
     </div>
@@ -97,14 +97,11 @@
                 type="checkbox"
                 required
             >
-            Ich habe die <a
+            {% t contact_form.form_privacy_confirmation_before_link %} <a
                 class="is-underlined"
                 href="/privacy"
                 target="_blank"
-            >Datenschutzerklärung</a> zur Kenntnis genommen.
-            Ich stimme zu, dass die von mir übermittelten Daten zur Kontaktaufnahme und für Rückfragen dauerhaft
-            gespeichert werden.
-            Diese Zustimmung kann ich jederzeit persönlich widerrufen.
+            >{% t contact_form.form_privacy_confirmation_link %}</a>. {% t contact_form.form_privacy_confirmation_after_link %}
         </label>
     </div>
 
@@ -112,12 +109,12 @@
         type="submit"
         class="button is-primary is-size-5"
         onClick="submitCheck()"
-    >Senden</button>
+    >{% t contact_form.form_send_button %}</button>
     <p
         id="submitActionHint"
         class="help is-danger nezobrazovat"
         style="display: none"
-    >Bitte füllen Sie alle Felder aus</p>
+    >{% t contact_form.form_hint_fill_out_all_fields %}</p>
 </form>
 
 

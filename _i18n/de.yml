@@ -16,11 +16,33 @@ languages:
 
 buttons:
   get_in_touch: In Kontakt treten
+  get_in_touch_now: In Kontakt treten
+  read_faqs_pretext: oder
+  read_faqs_call_to_action: häufige Fragen lesen
   faq_get_in_touch: Fragen offen? Wir freuen uns von Ihnen zu hören!
 
-status404:
-  title404: Entschuldigung!
-  subtitle404: Die gewünschte Seite wurde nicht gefunden.
+front_page:
+  exclamation_introduction: Programmieren lernen war noch nie so leicht!
+
+contact_form:
+  title: Fragen? Impulse? Kooperation?
+  subtitle: Sprechen wir darüber! Gerne persönlich oder mit unserem Kontaktformular.
+  scheduler: Terminbuchung
+  scheduler_subtext: Buchen Sie Ihren Wunschtermin mit Sergej Grilborzer bequem & direkt.
+  form: Kontaktformular
+  form_subtext: Wir freuen uns auf Ihre Nachricht! 
+  form_name: Name
+  form_email: Email
+  form_optional_phone_number: Optional - Telefonnummer für Rückruf
+  form_message: Ihre/ Deine Nachricht
+  form_privacy_confirmation_before_link: Ich habe die 
+  form_privacy_confirmation_link: Datenschutzerklärung
+  form_privacy_confirmation_after_link:  zur Kenntnis genommen.
+            Ich stimme zu, dass die von mir übermittelten Daten zur Kontaktaufnahme und für Rückfragen dauerhaft
+            gespeichert werden.
+            Diese Zustimmung kann ich jederzeit persönlich widerrufen.
+  form_send_button: Senden
+  form_hint_fill_out_all_fields: Bitte füllen Sie alle Felder aus
 
 faq_titles:
   muss_ich_selbst_programmieren_koennen: Muss ich selbst programmieren können?
@@ -28,3 +50,7 @@ faq_titles:
   was_kann_man_mit_codeklasse_machen: Was kann man mit codeklasse machen?
   was_heisst_mint: Was heißt MINT?
   technical_requirements_for_codeklasse: Was sind die technischen Voraussetzungen für codeklasse?
+
+status404:
+  title404: Entschuldigung!
+  subtitle404: Die gewünschte Seite wurde nicht gefunden.

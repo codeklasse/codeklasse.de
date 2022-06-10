@@ -1,10 +1,9 @@
-<!-- This form only works once pushed to netlify -> Doesn't work on local setup -->
+<!-- This form relies on Netlify and thus only works online -> No support for a local setup -->
 <div class="has-text-centered mb-6">
-  {% include title-h2.html text="Fragen? Impulse? Kooperation?" %}
-  <p class="subtitle">Sprechen wir darüber! Gerne persönlich oder mit unserem Kontaktformular.</p>
+  {% include title-h2.html text="contact_form.title" is_translate_key=true %}
+  <p class="subtitle">{% t contact_form.subtitle %}</p>
 </div>
 
-<!-- This should be handled via a Tab system -->
 <div
   id="contact-section"
   class="card has-background-primary"
@@ -17,12 +16,12 @@
             id="Tab-Button-Schedule-Appointment"
             class="content-switcher-contact-form"
             onclick="openTab_ContactForm('Tab-Schedule-Appointment')"
-          ><a>Terminbuchung</a></li>
+          ><a>{% t contact_form.scheduler %}</a></li>
           <li
             id="Tab-Button-Contact-Form"
             class="content-switcher-contact-form"
             onclick="openTab_ContactForm('Tab-Contact-Form')"
-          ><a>Kontaktformular</a></li>
+          ><a>{% t contact_form.form %}</a></li>
         </ul>
       </div>
 
@@ -30,8 +29,8 @@
         id="Tab-Schedule-Appointment"
         class="content-tab-contact-form pb-6"
       >
-        <h3 class="title is-3 is-size-4-mobile is-spaced mb-2">Terminbuchung</h3>
-        <p class="subtitle">Buchen Sie Ihren Wunschtermin mit Sergej Grilborzer bequem & direkt.</p>
+        <h3 class="title is-3 is-size-4-mobile is-spaced mb-2">{% t contact_form.scheduler %}</h3>
+        <p class="subtitle">{% t contact_form.scheduler_subtext %}</p>
         <iframe
           src="https://app.simplymeet.me/grilborzer?view=compact"
           style="width:100%; height:550px;"
@@ -44,7 +43,7 @@
         id="Tab-Contact-Form"
         class="content-tab-contact-form"
       >
-        {% include contact-form-actual-form.html %}
+        {% include contact-section-form.html %}
       </div>
     </div>
   </div>
