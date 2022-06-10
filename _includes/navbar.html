@@ -45,6 +45,52 @@
         >
             <p class="has-text-weight-bold">{% t buttons.get_in_touch %}</p>
         </a>
+
+        <div class="navbar-item has-dropdown is-hoverable ml-4">
+            <!-- Currently selected language = primary language
+                 Default: primary = German, secondary = English  -->
+
+            {% if site.lang == "de" %}
+            {% capture language_primary_content %}{% t languages.de %}{% endcapture %}
+            {% capture language_secondary_content %}{% t languages.en %}{% endcapture %}
+            {% assign language_primary_url = "" %}
+            {% assign language_secondary_url = "en" %}
+            {% elsif site.lang == "en" %}
+            {% capture language_secondary_content %}{% t languages.de %}{% endcapture %}
+            {% assign language_primary_url = "en" %}
+            {% assign language_secondary_url = "" %}
+            {% else %}
+            {% capture language_primary_content %}{% t languages.de %}{% endcapture %}
+            {% capture language_secondary_content %}{% t languages.en %}{% endcapture %}
+            {% assign language_primary_url = "en" %}
+            {% assign language_secondary_url = "" %}
+            {% endif %}
+
+            <!-- Show selected/ primary language -->
+            <a
+                href="/{{ language_primary_url }}"
+                class="navbar-link"
+            >
+                {% if site.lang == "de" %}
+                {% t languages.de %}
+                {% elsif site.lang == "en" %}
+                {% t languages.en %}
+                {% else %}
+                {% t languages.de %}
+                {% endif %}
+            </a>
+
+            <div class="navbar-dropdown">
+                <!-- Show the secondary language if the primary is selected -->
+                <a
+                    href="/{{ language_secondary_url }}"
+                    class="navbar-item"
+                >
+                    {{ language_secondary_content }}
+                </a>
+            </div>
+
+        </div>
     </div>
 </nav>
 

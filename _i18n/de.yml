@@ -10,6 +10,10 @@ navigation_headlines:
   downloads: Downloads
   contact: Kontakt
 
+languages:
+  de: 🇩🇪 Deutsch
+  en: 🇬🇧 English
+
 buttons:
   get_in_touch: In Kontakt treten
   faq_get_in_touch: Fragen offen? Wir freuen uns von Ihnen zu hören!

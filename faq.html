@@ -28,7 +28,7 @@ permalink_en: /faq/
                 {% elsif site.lang == "en" %}
                 {% capture faq_link_to_post %}/{{ site.lang }}{{ question.permalink_en }}{% endcapture %}
                 {% else %}
-                {% capture faq_link_to_post %}{{ site.baseurl }}{{ question.url }}{% endcapture %}
+                {% capture faq_link_to_post %}{{ question.url }}{% endcapture %}
                 {% endif %}
 
                 <a href="{{ faq_link_to_post }}">
