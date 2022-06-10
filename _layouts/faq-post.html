@@ -12,7 +12,7 @@ layout: default
             {% if site.lang == "de" %}
             {% assign faq_link = "/faq" %}
             {% elsif site.lang == "en" %}
-            {% capture faq_link %}{{ site.url }}/{{ site.lang }}/faq{% endcapture %}
+            {% capture faq_link %}/{{ site.lang }}/faq{% endcapture %}
             {% else %}
             {% assign faq_link = "/faq" %}
             {% endif %}
