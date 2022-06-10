@@ -2,23 +2,24 @@
     <section class="section">
         <div class="columns">
             <div class="column">
-                <b class="is-6">Unternehmen</b>
+                <b class="is-6">{% t navigation-headlines.company %}</b>
 
-                <p class="footer-link"><a href="/about">Über uns</a>
-                <p class="footer-link"><a href="/legal">Impressum</a></p>
-                <p class="footer-link"><a href="/privacy">Datenschutz</a></p>
+                <p class="footer-link"><a href="/about">{% t navigation-headlines.about %}</a>
+                <p class="footer-link"><a href="/legal">{% t navigation-headlines.legal %}</a></p>
+                <p class="footer-link"><a href="/privacy">{% t navigation-headlines.privacy %}</a></p>
             </div>
 
             <div class="column">
-                <b class="is-6">Ressourcen</b>
+                <b class="is-6">{% t navigation-headlines.resources %}</b>
 
-                <p class="footer-link"><a href="/blog">Blog</a></p>
-                <p class="footer-link"><a href="/faq">Fragen & Antwort</a></p>
+                <p class="footer-link"><a href="/downloads">{% t navigation-headlines.downloads %}</a></p>
+                <p class="footer-link"><a href="/blog">{% t navigation-headlines.blog %}</a></p>
+                <p class="footer-link"><a href="/faq">{% t navigation-headlines.faq %}</a></p>
                 <!-- <p><a href="/guides">Anleitungen</a></p> -->
             </div>
 
             <div class="column">
-                <b class="is-6">Kontakt</b>
+                <b class="is-6">{% t navigation-headlines.contact %}</b>
 
                 <p>{{ site.contact_mail }}</p>
                 <p>{{ site.contact_phone }}</p>
@@ -38,7 +39,7 @@
                 <a
                     class="button"
                     target="_blank"
-                    href="https://www.linkedin.com/in/sergej-grilborzer-b28736205"
+                    href="https://de.linkedin.com/company/codeklasse"
                 >
                     <figure class="image social-media-footer">
                         <img src="/assets/css/fontawesome-free-svgs/brands/linkedin.svg">

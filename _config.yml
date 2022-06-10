@@ -7,7 +7,7 @@ baseurl: "/" # the subpath of your site, e.g. /blog
 url: "/" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: /blog/:title/
 
-contact_phone: 0162 3292 122 
+contact_phone: +49 162 3292 122 
 contact_mail: team@codeklasse.de
 
 plugins:

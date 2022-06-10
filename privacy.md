@@ -1,6 +1,6 @@
 ---
 layout: legal-and-privacy
-title: Datenschutzerklärung
+title: navigation-headlines.privacy
 last_updated_date: "09.06.2022"
 ---
 
