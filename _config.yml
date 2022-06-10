@@ -13,6 +13,10 @@ contact_mail: team@codeklasse.de
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-multiple-languages-plugin 
+ 
+languages: ["de", "en"] 
+exclude_from_localizations: ["_sass"] 
 
 exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock, vendor, portfolio-assets/portfolio-photos/.git/FETCH_HEAD]
 

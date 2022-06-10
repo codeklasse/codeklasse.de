@@ -1,0 +1,124 @@
+<section class="is-fullheight py-6 px-6-tablet">
+
+    <div class="card has-background-primary">
+        <div class="card-content">
+
+            {% include title-h2.html text="Unsere Werte" %}
+
+            <div class="columns is-multiline is-desktop">
+                <div class="column mx-3-tablet mx-3-mobile">
+                    <div class="columns is-multiline">
+                        {% include about-us-fact-tile.html
+                        fact_category="Zweck"
+                        fact="codeklasse aims to strengthen competencies in the STEM field at an early stage and to meet
+                        Germany's needs in the long term."
+                        img_url="/assets/emojis/heavy-check-mark_2714.png"
+                        img_alt="" %}
+
+                        {% include about-us-fact-tile.html
+                        fact_category="Vision"
+                        fact="Unsere Vision ist das jedes Kind nach der 4. Klasse neben Lesen, Schreiben, Rechnen auch
+                        Programmieren kann."
+                        img_url="/assets/emojis/direct-hit_1f3af.png"
+                        img_alt="" %}
+
+                        {% include about-us-fact-tile.html
+                        fact_category="Mission"
+                        fact="Unsere Mission ist Kinder für das Programmieren zu begeistern und eine Plattform zu
+                        schaffen die
+                        diese Kompetenz spielerisch & anschaulich vermittelt."
+                        img_url="/assets/emojis/grinning-face-with-star-eyes_1f929.png"
+                        img_alt="" %}
+
+                        {% include about-us-fact-tile.html
+                        fact_category="Priorität"
+                        fact="Unsere oberste Priorität ist den Zugang zur Bildung des neuen Zeitalters unabhängig von
+                        Geld &
+                        Status zu ermöglichen."
+                        img_url="/assets/emojis/white-up-pointing-index_261d.png"
+                        img_alt="" %}
+                    </div>
+                </div>
+
+                <div class="column is-4-desktop">
+                    <div class="card">
+                        <div class="card-content">
+                            <figure class="image">
+                                <img
+                                    src="/assets/images/about/teamfoto-codeklasse.jpg"
+                                    alt="Das codeklasse Team: Liam, Sergej, Natallia"
+                                    style="object-fit: cover;"
+                                >
+                            </figure>
+                        </div>
+                        <div class="media-content has-text-centered pb-5">
+                            <p class="title is-5 is-clipped">Das codeklasse Team: Liam & Sergej</p>
+                            <p class="subtitle is-7">© Bochum Wirtschaftsentwicklung, Donna und der Blitz GmbH</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="card has-background-danger mt-6">
+        <div class="card-content">
+            {% include title-h2.html text="Unser Team" %}
+
+            <div class="columns is-multiline is-justify-content-center mx-3-desktop my-3-desktop">
+                <div class="column is-half-tablet is-one-third-desktop">
+                    {% include about-us-member-tile.html
+                    name="Sergej Grilborzer"
+                    bio_description="
+                    Sergej hat codeklasse im Rahmen seiner Masterarbeit initiiert
+                    und vertritt das Projekt im Vertrieb & Marketing.
+                    Als freiberuflicher Trainer & Software Engineer entwickelt er technische & didaktische Aspekte der
+                    Plattform.
+                    "
+                    img_url="/assets/images/about/sergej.jpg"
+                    img_alt="codeklasse Portrait Sergej"
+                    %}
+                </div>
+
+                <div class="column is-half-tablet is-one-third-desktop">
+                    {% include about-us-member-tile.html
+                    name="Liam Kranz"
+                    bio_description="
+                    Liam ist ein Creative Developer und seit 2015 selbstständig.
+                    Seine Expertise ist eine unverzichtbare Kraft in unserer 3D-Entwicklung.
+                    Neben technischer Zuständigkeit ist er wertvoller Impulsgeber in der Strategieplanung.
+                    "
+                    img_url="/assets/images/about/liam.jpg"
+                    img_alt="codeklasse Portrait Liam"
+                    %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card has-background-info mt-6">
+        <div class="card-content">
+            {% include title-h2.html text="Über das Projekt" %}
+
+            <div class="columns is-multiline is-justify-content-center mx-3-desktop my-3-desktop">
+                {% for post in site.posts reversed %}
+                {% if post.title == 'Eine kurze Projektvorstellung' or post.title contains 'Schüler testen codeklasse'
+                %}
+                <div class="column is-half-tablet is-one-third-desktop">
+                    {% include blog-post-tile.html %}
+                </div>
+                {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    #blogpost-teaser.is-overlay {
+        /* transition: 1s ease-in-out; */
+        /* Quicker transition speed is desired according to Liam -> We'll see & test. */
+        transition: .5s ease-in-out;
+    }
+</style>
