@@ -7,16 +7,23 @@ layout: default
   <div class="container has-text-centered">
     <div class="columns is-centered is-multiline">
       <div class="column is-7">
-        <h1 class="title is-1">404</h1>
-        <p class="subtitle is-3">Entschuldigung!</p>
-        <p>Die gewünschte Seite wurde nicht gefunden.</p>
+        <h1 class="title is-1">{% t status404.title404 %}</h1>
+        <p class="subtitle is-3"></p>
+        <p>{% t status404.subtitle404 %}</p>
+        <h2 class="title is-2 mt-5">404</h2>
       </div>
       <div class="column is-half">
-          <a class="button is-primary is-fullwidth" href="/">
-            <figure class="image no-border" style="width: 1.5rem">
-              <img src="/assets/css/fontawesome-free-svgs/solid/home.svg">
-            </figure>
-          </a>
+        <a
+          class="button is-primary is-fullwidth"
+          href="/"
+        >
+          <figure
+            class="image no-border"
+            style="width: 1.5rem"
+          >
+            <img src="/assets/css/fontawesome-free-svgs/solid/home.svg">
+          </figure>
+        </a>
       </div>
     </div>
   </div>

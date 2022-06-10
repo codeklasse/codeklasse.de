@@ -11,3 +11,7 @@ navigation-headlines:
   contact: Contact
   get_in_touch: Get in touch
 
+status404:
+  title404: Excuse us!
+  subtitle404: The requested page could not be found.
+

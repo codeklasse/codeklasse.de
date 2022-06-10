@@ -10,3 +10,7 @@ navigation-headlines:
   downloads: Downloads
   contact: Kontakt
   get_in_touch: In Kontakt treten
+
+status404:
+  title404: Entschuldigung!
+  subtitle404: Die gewünschte Seite wurde nicht gefunden.
