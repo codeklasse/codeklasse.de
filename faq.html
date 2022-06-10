@@ -23,6 +23,10 @@ permalink_en: /faq/
             {% for question in site.faq %}
             {% if question.hidden != true %}
             <div class="card block has-box-shadow-hover-effect has-background-primary">
+                lang: {{ site.lang }}
+                url: {{ site.url }}
+                baseurl: {{ site.baseurl }}
+                site object: {{ site }}
 
                 {% if site.lang == "de" %}
                 {% capture faq_link_to_post %}{{ question.url }}{% endcapture %}
