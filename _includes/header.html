@@ -15,10 +15,27 @@
         href="/assets/css/main.css"
     >
     <!-- Thank you https://favicon.io/favicon-converter/ -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
-    <link rel="manifest" href="/assets/favicons/site.webmanifest">
+    <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="/assets/favicons/apple-touch-icon.png"
+    >
+    <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="/assets/favicons/favicon-32x32.png"
+    >
+    <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="/assets/favicons/favicon-16x16.png"
+    >
+    <link
+        rel="manifest"
+        href="/assets/favicons/site.webmanifest"
+    >
 
     {% if site.lazyimages == "enabled" %}
     <script
@@ -26,8 +43,19 @@
         src="/assets/js/lazyload.js"
     ></script>
     {% endif %}
-    
-    <script defer data-domain="codeklasse.de" src="https://plausible.io/js/plausible.js"></script>
+
+    <script>
+        var lang = navigator.language || navigator.userLanguage;
+        if (lang.indexOf('en') == 0) {
+            window.location = '/en/';
+        }   
+    </script>
+
+    <script
+        defer
+        data-domain="codeklasse.de"
+        src="https://plausible.io/js/plausible.js"
+    ></script>
 
     {% seo %}
 </head>
