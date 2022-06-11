@@ -18,13 +18,13 @@
     <div class="title-teaser centered-call-to-action-button">
         <a
             class="button wrap-button-text is-primary is-medium mb-3"
-            href="/{{ site.lang }}#contact"
+            href="{% tl front-page %}#contact"
         >
             <p class="has-text-weight-bold">{% t buttons.get_in_touch_now %}</p>
         </a>
 
         <p>{% t buttons.read_faqs_pretext %} <a
-                href="/{{ site.lang }}#faq-front-page"
+                href="{{ site.baseurl }}{{ "#faq-front-page" | prepend: site.baseurl_root}}"
                 class="has-text-weight-bold is-underlined"
             > {% t buttons.read_faqs_call_to_action %} </a></p>
     </div>
