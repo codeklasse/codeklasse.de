@@ -32,7 +32,7 @@ layout: default
                     style="max-width: 50%; height: auto;"
                 >
                     <img
-                        src="{{ site.baseurl }}{{ page.image }}"
+                        src="{{ page.image | prepend: site.baseurl_root}}"
                         alt="Placeholder image"
                     >
                 </figure>

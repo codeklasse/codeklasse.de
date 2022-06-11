@@ -4,7 +4,7 @@
             <figure class="image is-4by3 has-box-shadow-no-hover-effect">
                 <!-- Crop image according to ratio via "object-fit: cover" -->
                 <img
-                    src="{{ site.baseurl }}{{ post.image }}"
+                    src="{{ post.image | prepend: site.baseurl_root }}"
                     alt="{{ post.image_caption }}"
                     style="object-fit: cover;"
                 >
