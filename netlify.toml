@@ -1,20 +1,13 @@
-# Default: redirect to english version
-[[redirects]]
-  from = "/"
-  to = "/en"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/"
-  to = "/en"
-  status = 301
-  force = true
-  conditions = {Language = ["en"]}
-
+# Default: redirect to English version else redirect to German
 [[redirects]]
   from = "/"
   to = "/de"
   status = 301
   force = true
   conditions = {Language = ["de"]}
+
+[[redirects]]
+  from = "/"
+  to = "/en"
+  status = 301
+  force = true
