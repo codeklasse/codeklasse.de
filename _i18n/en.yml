@@ -24,6 +24,9 @@ buttons:
 front_page:
   exclamation_introduction: Teaching programming has never been that easy!
 
+about:
+  title_our_values: Our values
+
 contact_form:
   title: Questions? Ideas? Cooperations?
   subtitle: Let's talk about it! Schedule an appointment or leave us a message.

@@ -24,6 +24,9 @@ buttons:
 front_page:
   exclamation_introduction: Programmieren lernen war noch nie so leicht!
 
+about:
+  title_our_values: Unsere Werte
+
 contact_form:
   title: Fragen? Impulse? Kooperation?
   subtitle: Sprechen wir darüber! Gerne persönlich oder mit unserem Kontaktformular.
