@@ -3,3 +3,87 @@ layout: default
 title: navigation_headlines.downloads
 
 ---
+
+<section class="section is-fullheight mb-6">
+    <div class="has-text-centered">
+        {% include title-h2.html text="navigation_headlines.downloads" is_translate_key="true" %}
+        <!-- <p class="subtitle">{% t contact_form.subtitle %}</p> -->
+        <p class="subtitle">Sie finden hier Materialien für Pressemitteilungen und co. Bitte achten Sie auf unseren
+            Styleguide.
+        </p>
+    </div>
+
+    <div class="columns is-multiline is-justify-content-center mx-3-desktop my-3-desktop pt-6">
+        <div class="column is-full">
+            <div class="columns">
+                <div class="column is-one-third-tablet">
+                    {% include downloads-file-tile.html
+                    name="Informationsbroschüre"
+                    bio_description="
+                    All the intel you need."
+
+                    img_url="/assets/images/logos/codeklasse-one-pager.pdf"
+                    img_alt="codeklasse logo package"
+                    %}
+                </div>
+
+                <div class="column is-one-third-tablet">
+                    {% include downloads-file-tile.html
+                        name="Logopaket"
+                        bio_description="
+                        All the logos you need."
+    
+                        img_url="/assets/images/logos/codeklasse-logos.zip"
+                        img_alt="codeklasse logo package"
+                        %}
+                </div>
+
+                <div class="column is-one-third-tablet">
+                    {% include downloads-file-tile.html
+                    name="Pitch"
+                    bio_description="
+                    All the pitching you need."
+
+                    img_url="/assets/images/logos/emoji_weiss.png"
+                    img_alt="codeklasse Emoji weiss"
+                    %}
+                </div>
+            </div>
+        </div>
+
+        <div class="column is-full pt-6 mt-5">
+            <div class="columns">
+                <div class="column is-half-tablet">
+                    <h3 class="title is-3 has-text-centered">Please do</h3>
+                    <div class="content">
+                        <ol type="1">
+                            <li>Coffee</li>
+                            <li>Tea</li>
+                            <li>Milk</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="column is-half-tablet">
+                    <h3 class="title is-3 has-text-centered">Please don't</h3>
+                    <div class="content">
+                        <ol type="1">
+                            <li>Coffee</li>
+                            <li>Tea</li>
+                            <li>Milk</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="is-flex is-justify-content-center mt-6">
+            <a
+                id="faq-contact-button"
+                class="button is-primary wrap-button-text"
+                href="{{ site.lang | prepend: "
+                /"
+                }}/#contact"
+            >{% t buttons.faq_get_in_touch %}</a>
+        </div>
+</section>
