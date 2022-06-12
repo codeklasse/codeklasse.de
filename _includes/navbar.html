@@ -6,19 +6,19 @@
     <div class="is-flex p-3 is-align-items-center">
         <a
             class="left-navbar-item has-text-centered"
-            href="{{ site.baseurl_root }}{{ site.lang }}/{% tl about %}"
+            href="{{ site.lang | prepend: "/" }}/about"
         >
             {% t navigation_headlines.about %}
         </a>
         <a
             class="left-navbar-item has-text-centered"
-            href="/faq"
+            href="{{ site.lang | prepend: "/" }}/faq"
         >
             {% t navigation_headlines.faq %}
         </a>
         <a
             class="left-navbar-item has-text-centered"
-            href="/blog"
+            href="{{ site.lang | prepend: "/" }}/blog"
         >
             {% t navigation_headlines.blog %}
         </a>
@@ -41,7 +41,7 @@
     >
         <a
             class="button is-white"
-            href="/#contact"
+            href="{{ site.lang | prepend: "/" }}#contact"
         >
             <p class="has-text-weight-bold">{% t buttons.get_in_touch %}</p>
         </a>
