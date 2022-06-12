@@ -16,9 +16,10 @@ plugins:
   - jekyll-multiple-languages-plugin 
  
 languages: ["de", "en"] 
-exclude_from_localizations: ["_sass", "assets"] 
+exclude_from_localizations: ["_redirects", "_sass", "assets"] 
 default_locale_in_subfolder: true
 
+include: ["_redirects"]
 exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock, vendor, portfolio-assets/portfolio-photos/.git/FETCH_HEAD]
 
 sass:
