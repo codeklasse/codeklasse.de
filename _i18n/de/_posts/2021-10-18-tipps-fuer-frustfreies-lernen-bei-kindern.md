@@ -52,7 +52,7 @@ Laut der befragten Eltern können die Kinder von folgenden Online-Inhalten profi
 
 Mit Online-Lernmethoden oder alternativen, analogen Lernmöglichkeiten können Sie selbständiges Lernen Ihrer Kinder fördern und Motivation zum Lernprozess im Großen und Ganzen stärken. 
 Zu beachten ist nur wie fit sich Ihr Kind für eigenständiges Agieren im Internet fühlt. 
-Hierfür helfen Ihnen unsere <a href = "https://codeklasse.de/blog/medienkompetenz-von-grundschulkindern/"  target="_blank">Empfehlungen</a>.
+Hierfür helfen Ihnen unsere <a href = "https://codeklasse.de/de/blog/medienkompetenz-von-grundschulkindern/"  target="_blank">Empfehlungen</a>.
 
 # Selbstbewusstsein stärken 
 

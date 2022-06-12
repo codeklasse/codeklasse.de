@@ -2,4 +2,4 @@ codeklasse runs on any device that has an internet connection and a web browser,
 On iPads, codeklasse works with the default Safari browser.
 
 If you need advice on technical implementation,
-we would be happy to hear from [you](/#contact).
+we would be happy to hear from [you](/en#contact).

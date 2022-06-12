@@ -101,5 +101,5 @@ Das Projekt mit direktem Einfluss der Zielgruppe zu gestalten ist nicht nur eine
 sondern auch **Voraussetzung**, um den **Ansprüchen** der Gruppe **gerecht** zu werden. 
 
 Wenn auch Sie unsere App in Ihrer Schule testen möchten, freuen wir uns von
-<a href="/#contact">Ihnen zu hören</a>. 
+<a href="/de#contact">Ihnen zu hören</a>. 
 Wir sind sicher das **Programmieren mit codeklasse** auch Ihrer Klasse viel Spaß bereiten wird!

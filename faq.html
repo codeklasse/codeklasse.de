@@ -23,12 +23,13 @@ permalink_en: /faq/
             {% for question in site.faq %}
             {% if question.hidden != true %}
             <div class="card block has-box-shadow-hover-effect has-background-primary">
+                <!-- This case handling is necessary, because faq & blog posts have localized & thus different URLs -->
                 {% if site.lang == "de" %}
-                {% capture faq_link_to_post %}{{ question.url }}{% endcapture %}
+                {% capture faq_link_to_post %}/{{ site.lang }}{{ question.url }}{% endcapture %}
                 {% elsif site.lang == "en" %}
                 {% capture faq_link_to_post %}/{{ site.lang }}{{ question.permalink_en }}{% endcapture %}
                 {% else %}
-                {% capture faq_link_to_post %}{{ question.url }}{% endcapture %}
+                {% capture faq_link_to_post %}/{{ site.lang }}{{ question.url }}{% endcapture %}
                 {% endif %}
 
                 <a href="{{ faq_link_to_post }}">
@@ -53,7 +54,7 @@ permalink_en: /faq/
             <a
                 id="faq-contact-button"
                 class="button is-primary wrap-button-text"
-                href="/#contact"
+                href="{{ site.lang | prepend: "/" }}/#contact"
             >{% t buttons.faq_get_in_touch %}</a>
         </div>
     </div>

@@ -45,10 +45,14 @@
     {% endif %}
 
     <script>
-        var lang = navigator.language || navigator.userLanguage;
-        if (lang.indexOf('en') == 0) {
+        const lang = navigator.language || navigator.userLanguage;
+        console.log("language: ", lang);
+/*         if (lang.indexOf('de') == 0) {
+            window.location = '/de/';
+        }
+        else {
             window.location = '/en/';
-        }   
+        }    */
     </script>
 
     <script

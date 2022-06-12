@@ -9,17 +9,9 @@ layout: default
         aria-label="breadcrumbs"
     >
         <ul>
-            {% if site.lang == "de" %}
-            {% assign faq_link = "/faq" %}
-            {% elsif site.lang == "en" %}
-            {% capture faq_link %}/{{ site.lang }}/faq{% endcapture %}
-            {% else %}
-            {% assign faq_link = "/faq" %}
-            {% endif %}
-
             <li><a
                     class="has-text-weight-bold"
-                    href="{{ faq_link }}"
+                    href="{{ site.lang | prepend: "/" }}/faq"
                 >{% t navigation_headlines.faq %}</a></li>
             <li class="is-active"><a
                     href="#"
@@ -42,7 +34,7 @@ layout: default
                 <a
                     id="faq-contact-button"
                     class="button is-primary wrap-button-text"
-                    href="mailto:sergej@codeklasse.de"
+                    href="mailto:team@codeklasse.de"
                 >{% t buttons.faq_get_in_touch %}</a>
             </div>
         </div>

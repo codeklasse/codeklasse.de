@@ -36,7 +36,7 @@ Es wäre durchaus vorteilhaft, wenn Sie dem Kind offen die Chancen und Risiken i
 Die Basics der Internetnutzung werden selbstverständlich mit Eltern geübt, mit dem Ziel den Kindern später die selbständige Nutzung zu ermöglichen.
 Natürlich läuft diese unter bestimmten Voraussetzungen, wie zum Beispiel die Festlegung einer angemessenen Mediennutzungszeit.
 Für Kinder im Grundschulalter liegt die empfohlene Zeit zwischen 30 bis 45 Minuten täglich(außerhalb der Nutzung in der Schule bzw. für Hausaufgaben).
-Hier finden Sie übrigens noch mehr Information zu dem Thema <a href="https://codeklasse.de/blog/digitale-medien-im-unterricht/" target="_blank">"Digitale Medien im Unterricht".</a>
+Hier finden Sie übrigens noch mehr Information zu dem Thema <a href="https://codeklasse.de/de/blog/digitale-medien-im-unterricht/" target="_blank">"Digitale Medien im Unterricht".</a>
 
 ### Medienkonsum der Eltern als Vorbildfunktion für Kinder ###
 

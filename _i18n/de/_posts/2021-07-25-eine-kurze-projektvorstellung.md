@@ -58,4 +58,4 @@ Mit codeklasse sollen junge Menschen für das Programmieren begeistert werden, u
 Auch wenn codeklasse finanziell durch das NRW-Gründerstipendium gefördert wird, wächst das Projekt vor allem durch Begeisterung und **überzeugte Mitstreiter**.
 Mit steigenden Projektfortschritt laden wir auch Sie ein, Teil des Teams zu werden und das Programmieren ins Klassenzimmer zu bringen.
 
-**<a href="mailto:sergej@codeklasse.de?subject=codeklasse%20testen">codeklasse jetzt kostenlos nutzen und Pilotklasse werden!</a>**
+**<a href="mailto:team@codeklasse.de?subject=codeklasse%20testen">codeklasse jetzt kostenlos nutzen und Pilotklasse werden!</a>**

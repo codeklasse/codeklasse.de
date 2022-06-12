@@ -99,7 +99,7 @@
             >
             {% t contact_form.form_privacy_confirmation_before_link %} <a
                 class="is-underlined"
-                href="/privacy"
+                href="{{ site.lang | prepend: "/" }}/privacy"
                 target="_blank"
             >{% t contact_form.form_privacy_confirmation_link %}</a>. {% t contact_form.form_privacy_confirmation_after_link %}
         </label>
