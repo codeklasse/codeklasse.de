@@ -45,7 +45,9 @@ permalink_de: /
   <div class="centered-call-to-action-button mt-6">
     <a
       class="button wrap-button-text is-primary is-medium mb-3"
-      href="{{ site.lang | prepend: "/" }}#contact"
+      href="{{ site.lang | prepend: "
+      /"
+      }}#contact"
     >
       <p>Jetzt in <span class="has-text-weight-bold">Kontakt treten</span></p>
     </a>
@@ -99,7 +101,13 @@ permalink_de: /
   <div class="columns is-multiline">
     {% for post in site.posts limit:3 %}
     <div class="column is-one-quarter-desktop is-half-tablet is-one-third-widescreen">
-      <a href="{{ post.url }}">
+      <a
+        href="{{ site.lang | prepend: "
+        /"
+        }}{{
+        post.url
+        }}"
+      >
         {% if post.hidden != null and post.hidden != true %}
         {% include blog-post-tile.html %}
         {% endif %}
@@ -109,7 +117,11 @@ permalink_de: /
   </div>
 
   <h4 class="subtitle is-4 has-text-right is-underlined">
-    <a href="/blog">..alle Artikel im codeklasse Blog</a>
+    <a
+      href="{{ site.lang | prepend: "
+      /"
+      }}/blog"
+    >..alle Artikel im codeklasse Blog</a>
   </h4>
 </section>
 

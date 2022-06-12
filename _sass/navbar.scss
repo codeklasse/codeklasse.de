@@ -5,25 +5,12 @@
 }
 
 #main-navbar {
-    // padding: 1rem 0;
-    // display: flex;
     border-bottom: 3px solid black;
-
-    @include mobile {
-    }
-
-    // @include touch {
-    //     flex-direction: column;
-    // }
 
     @include desktop {
         padding: 0 1rem;
         padding: 0 16.5rem 0 5em;
     }
-
-    // @include widescreen {
-    //     padding: 0 3rem;
-    // }
 }
 
 #mobile-navbar {
