@@ -2,169 +2,128 @@
 <nav
     id="main-navbar"
     class="navbar is-fixed-top is-primary"
+    role="navigation"
+    aria-label="main navigation"
 >
-    <div class="is-flex p-3 is-align-items-center">
+    <div class="navbar-brand">
         <a
-            class="left-navbar-item has-text-centered"
-            href="{{ site.lang | prepend: "/" }}/about"
-        >
-            {% t navigation_headlines.about %}
-        </a>
-        <a
-            class="left-navbar-item has-text-centered"
-            href="{{ site.lang | prepend: "/" }}/faq"
-        >
-            {% t navigation_headlines.faq %}
-        </a>
-        <a
-            class="left-navbar-item has-text-centered"
-            href="{{ site.lang | prepend: "/" }}/blog"
-        >
-            {% t navigation_headlines.blog %}
-        </a>
-    </div>
-
-    <div class="column is-flex is-justify-content-center"><a
             class="navbar-item"
             href="{{ site.lang | prepend: "/" }}"
-            style="padding-left: 35%;"
         >
             <img
                 src="/assets/images/logo_emoji_v1_weiss.png"
                 alt="codeklasse: Programmieren lernen mit Emojis"
                 height="28"
             >
-        </a></div>
-    <div
-        class="p-3 is-flex is-justify-content-flex-end"
-        style="width: 33%;"
-    >
-        <a
-            class="button is-white"
-            href="{{ site.lang | prepend: "/" }}#contact"
-        >
-            <p class="has-text-weight-bold">{% t buttons.get_in_touch %}</p>
         </a>
 
-        <div class="navbar-item has-dropdown is-hoverable ml-4">
-            <!-- Currently selected language = primary language
-                 Default: primary = German, secondary = English  -->
-
-            {% if site.lang == "de" %}
-            {% capture language_primary_content %}{% t languages.de %}{% endcapture %}
-            {% capture language_secondary_content %}{% t languages.en %}{% endcapture %}
-            {% assign language_primary_url = "de" %}
-            {% assign language_secondary_url = "en" %}
-            {% elsif site.lang == "en" %}
-            {% capture language_primary_content %}{% t languages.en %}{% endcapture %}
-            {% capture language_secondary_content %}{% t languages.de %}{% endcapture %}
-            {% assign language_primary_url = "en" %}
-            {% assign language_secondary_url = "de" %}
-            {% else %}
-            {% capture language_primary_content %}{% t languages.de %}{% endcapture %}
-            {% capture language_secondary_content %}{% t languages.en %}{% endcapture %}
-            {% assign language_primary_url = "de" %}
-            {% assign language_secondary_url = "en" %}
-            {% endif %}
-
-            <!-- Show selected/ primary language -->
-            <a
-                href="/{{ language_primary_url }}"
-                class="navbar-link"
-            >
-                {% if site.lang == "de" %}
-                {% t languages.de %}
-                {% elsif site.lang == "en" %}
-                {% t languages.en %}
-                {% else %}
-                {% t languages.de %}
-                {% endif %}
-            </a>
-
-            <div class="navbar-dropdown">
-                <!-- Show the secondary language if the primary is selected -->
-                <a
-                    href="/{{ language_secondary_url }}"
-                    class="navbar-item"
-                >
-                    {{ language_secondary_content }}
-                </a>
-            </div>
-
-        </div>
-    </div>
-</nav>
-
-<nav
-    id="mobile-navbar"
-    class="navbar is-fixed-top is-primary has-shadow"
-    role="navigation"
-    aria-label="main navigation"
->
-    <div class="navbar-brand is-justify-content-center is-flex-grow-1 ">
         <a
             role="button"
             class="navbar-burger"
             aria-label="menu"
             aria-expanded="false"
-            data-target="navbar-menu"
+            data-target="navbarBasicExample"
         >
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
-        </a>
-
-        <a
-            class="navbar-item is-justify-content-center is-flex-grow-1 "
-            href="{{ site.lang | prepend: "/" }}/"
-        >
-            <img
-                src="/assets/images/logo_emoji_v1_weiss.png"
-                alt="codeklasse: Programmieren lernen mit Emojis"
-                height="28"
-            >
         </a>
     </div>
 
     <div
-        id="navbar-menu"
+        id="navbarBasicExample"
         class="navbar-menu"
     >
         <div class="navbar-start">
             <a
-                class="navbar-item has-text-centered"
-                href="{{ site.lang | prepend: "/" }}/about"
+                class="navbar-item"
+                href="{{ site.lang | prepend: "
+                /"
+                }}/about"
             >
                 {% t navigation_headlines.about %}
             </a>
             <a
-                class="navbar-item has-text-centered"
-                href="{{ site.lang | prepend: "/" }}/faq"
+                class="navbar-item"
+                href="{{ site.lang | prepend: "
+                /"
+                }}/faq"
             >
                 {% t navigation_headlines.faq %}
             </a>
             <a
-                class="navbar-item has-text-centered"
-                href="{{ site.lang | prepend: "/" }}/blog"
+                class="navbar-item"
+                href="{{ site.lang | prepend: "
+                /"
+                }}/blog"
             >
                 {% t navigation_headlines.blog %}
             </a>
-        </div>
 
-        <div class="navbar-end">
-            <div class="navbar-item">
-                <div class="buttons is-justify-content-center">
+            <div class="navbar-item has-dropdown is-hoverable pt-4-mobile">
+                <!-- Currently selected language = primary language
+                     Default: primary = German, secondary = English  -->
+
+                {% if site.lang == "de" %}
+                {% capture language_primary_content %}{% t languages.de %}{% endcapture %}
+                {% capture language_secondary_content %}{% t languages.en %}{% endcapture %}
+                {% assign language_primary_url = "de" %}
+                {% assign language_secondary_url = "en" %}
+                {% elsif site.lang == "en" %}
+                {% capture language_primary_content %}{% t languages.en %}{% endcapture %}
+                {% capture language_secondary_content %}{% t languages.de %}{% endcapture %}
+                {% assign language_primary_url = "en" %}
+                {% assign language_secondary_url = "de" %}
+                {% else %}
+                {% capture language_primary_content %}{% t languages.de %}{% endcapture %}
+                {% capture language_secondary_content %}{% t languages.en %}{% endcapture %}
+                {% assign language_primary_url = "de" %}
+                {% assign language_secondary_url = "en" %}
+                {% endif %}
+
+                <!-- Show selected/ primary language -->
+                <a
+                    href="/{{ language_primary_url }}"
+                    class="navbar-link"
+                >
+                    {% if site.lang == "de" %}
+                    {% t languages.de %}
+                    {% elsif site.lang == "en" %}
+                    {% t languages.en %}
+                    {% else %}
+                    {% t languages.de %}
+                    {% endif %}
+                </a>
+
+                <div class="navbar-dropdown">
+                    <!-- Show the secondary language if the primary is selected -->
                     <a
-                        class="button"
-                        href="{{ site.lang | prepend: "/" }}/#contact"
+                        href="/{{ language_secondary_url }}"
+                        class="navbar-item"
                     >
-                        <p class="has-text-weight-bold">{% t buttons.get_in_touch %}</p>
+                        {{ language_secondary_content }}
                     </a>
                 </div>
             </div>
         </div>
+
+        <div
+            class="navbar-end is-flex is-justify-content-center"
+        >
+            <div class="navbar-item">
+                <a
+                    class="button is-white"
+                    href="{{ site.lang | prepend: "
+                    /"
+                    }}#contact"
+                >
+                    <p class="has-text-weight-bold">{% t buttons.get_in_touch %}</p>
+                </a>
+            </div>
+        </div>
     </div>
 </nav>
+
 
 <script>
     document.addEventListener('DOMContentLoaded', () => {

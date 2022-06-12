@@ -262,11 +262,21 @@ a,
 }
 
 a:hover,
+.navbar-link:hover,
 .footer-link:hover,
 .breadcrumb a:hover,
 #footer-button-instagram:focus {
     transform: translateY(-10%);
     transition: ease-in-out 0.1s;
+
+    // Avoid mobile navbar color highlighting 
+    background-color: inherit;
+    color: inherit;
+}
+
+.navbar-link:focus {
+    background-color: $primary-dark !important;
+    color: #485fc7;
 }
 
 .underline-links-in-posts a {
