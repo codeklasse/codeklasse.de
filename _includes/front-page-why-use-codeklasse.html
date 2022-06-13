@@ -1,5 +1,5 @@
 <div class="has-text-centered mb-6">
-    {% include title-h2.html text="Wie ist codeklasse für mich relevant?" %}
+    {% include title-h2.html text="front_page.title_why_use_codeklasse" is_translate_key=true %}
 </div>
 
 
@@ -11,19 +11,19 @@
         id="Tab-Button-Unternehmen"
         class="button content-switcher"
         onclick="openTab_WhyUseCK('Tab-Companies')"
-    >Unternehmen</a>
+    >{% t front_page.title_why_use_codeklasse_companies %}</a>
 
     <a
         id="Tab-Button-Lehrkraefte"
         class="button content-switcher "
         onclick="openTab_WhyUseCK('Tab-Educators')"
-    >Lehrkräfte</a>
+    >{% t front_page.title_why_use_codeklasse_educators %}</a>
 
     <a
         id="Tab-Button-Eltern"
         class="button content-switcher"
         onclick="openTab_WhyUseCK('Tab-Parents')"
-    >Eltern</a>
+    >{% t front_page.title_why_use_codeklasse_parents %}</a>
 </div>
 
 <div class="container pt-5">
@@ -32,6 +32,7 @@
         id="Tab-Companies"
         class="content-tab"
     >
+    <!-- @LIAM - feel free to comment these sections out if it's too much for today -->
         <h3 class="title is-4 pt-5 has-text-centered is-italic">Nachwuchs fördern. Regionale Kompetenz ausbauen.</h3>
 
         <p class="mb-5">
@@ -130,11 +131,9 @@
                 <div class="columns">
                     <div class="column is-offset-one-fifth is-three-fifths">
                         {% include codeklasse-fact-tile.html
-                        fact_category="Keine Eigenkenntnisse der Lehrkraft nötig"
+                        fact_category="front_page.front_page.why_use_codeklasse_companies_fact_category_1"
 
-                        fact='codeklasse ist einfach!
-                        Funktionsbereit geliefert! codeklasse bietet einen vorgefertigten Lernpfad mit dem SuS ihre
-                        Programmierkenntnisse Schritt für Schritt erweitern.'
+                        fact='front_page.why_use_codeklasse_companies_fact_1'
                         img_url="/assets/images/why-use-codeklasse/inaki-del-olmo-NIJuEQw0RKg-unsplash.jpg"
                         img_alt="" %}
                     </div>
