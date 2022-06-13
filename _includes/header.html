@@ -7,9 +7,13 @@
     <meta
         name="viewport"
         content="width=device-width, initial-scale=1"
-    >
-    <!-- <title>{% t  page.title %}{{ page.title }}</title> -->
+    >    
+    {% if page.url == "/" %}
+    <title>{{ page.title }}</title>
+    {% else %}
     <title>{% t page.title %}</title>
+    {% endif %}
+    
     <link
         rel="stylesheet"
         href="/assets/css/main.css"
