@@ -19,7 +19,7 @@ permalink_de: /
   class="section"
 >
   <div class="has-text-centered mb-5">
-    {% include title-h2.html text="Was ist codeklasse eigentlich?" %}
+    {% include title-h2.html text="front_page.title_what_is_codeklasse" is_translate_key=true %}
   </div>
 
   {% include front-page-what-is-codeklasse.html %}
@@ -30,7 +30,7 @@ permalink_de: /
   class="section mx-6-desktop mx-3-tablet mx-5-mobile"
 >
   <div class="has-text-centered">
-    {% include title-h2.html text="Unsere Partner & Förderer" %}
+    {% include title-h2.html text="front_page.title_partners" is_translate_key=true %}
   </div>
 
   {% include sponsors-and-partners.html %}
@@ -40,7 +40,7 @@ permalink_de: /
   id="why-use-codeklasse-front-page"
   class="section mt-5"
 >
-  {% include why-use-codeklasse.html %}
+  {% include front-page-why-use-codeklasse.html %}
 
   <div class="centered-call-to-action-button mt-6">
     <a
@@ -49,13 +49,15 @@ permalink_de: /
       /"
       }}#contact"
     >
-      <p>Jetzt in <span class="has-text-weight-bold">Kontakt treten</span></p>
+      <p class="has-text-weight-bold">{% t buttons.get_in_touch_now %}</p>
     </a>
 
-    <p>oder <a
-        href="/#why-use-codeklasse-front-page"
+    <p>{% t buttons.or %} <a
+        href="{{ site.lang | prepend: "
+        /"
+        }}#why-use-codeklasse-front-page"
         class="has-text-weight-bold is-underlined"
-      > andere Perspektive betrachten</a></p>
+      > {% t buttons.take_another_perspective %}</a></p>
   </div>
 </section>
 
@@ -64,16 +66,11 @@ permalink_de: /
   class="section"
 >
   <div class="has-text-centered mb-4">
-    {% include title-h2.html text="Wer steckt hinter dem Projekt?" %}
+    {% include title-h2.html text="front_page.title_team_behind_project" is_translate_key=true %}
   </div>
 
   <p class="mb-5">
-    codeklasse sind Liam & Sergej.
-    codeklasse ist ein junges Team aus Bochum.
-    Wir wollen was verändern.
-    Dafür brauchen brauchen Dich!
-    Bist du der Meinung das Programmieren in Grundschulen vertreten sein sollte?
-    Meld Dich gern und lass es uns angehen!
+    {% t front_page.subtitle_team_behind_project %}
   </p>
 
   {% include front-page-about-us.html %}
@@ -84,7 +81,7 @@ permalink_de: /
   class="section mx-6-desktop mx-5-tablet mx-5-mobile"
 >
   <div class="has-text-centered mb-6">
-    {% include title-h2.html text="Noch Fragen offen?" %}
+    {% include title-h2.html text="front_page.title_any_questions" is_translate_key=true %}
   </div>
 
   {% include front-page-faq.html %}
@@ -95,7 +92,7 @@ permalink_de: /
   class="section is-fullheight"
 >
   <div class="has-text-centered mb-6">
-    {% include title-h2.html text="Blog & News" %}
+    {% include title-h2.html text="navigation_headlines.blog" is_translate_key=true %}
   </div>
 
   <div class="columns is-multiline">
@@ -121,7 +118,7 @@ permalink_de: /
       href="{{ site.lang | prepend: "
       /"
       }}/blog"
-    >..alle Artikel im codeklasse Blog</a>
+    >{% t buttons.take_another_perspective %}</a>
   </h4>
 </section>
 

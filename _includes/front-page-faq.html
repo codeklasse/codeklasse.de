@@ -2,12 +2,12 @@
     <div class="card-content">
         <div class="columns">
             <div class="column is-9">
-                <h4 class="subtitle is-4 has-text-weight-semibold">Was kann man mit codeklasse machen?</h4>
+                <h4 class="subtitle is-4 has-text-weight-semibold">{% t faq_titles.was_kann_man_mit_codeklasse_machen %}
+                </h4>
                 <p class="content">
-                    codeklasse ist eine vollumfängliche Programmier-Lernsoftware für Kinder der 1. bis 6. Klasse.
-                    Sie ermöglicht nicht nur das eigenverantwortliche Lernen der Schülerinnen und Schüler,
-                    sondern stellt auch vorgefertigte Kampagnen und Hilfsmaterialien für Lehrerinnen und Lehrer bereit,
-                    um die Unterrichtsvorbereitung und die Vermittlung des Themas "Programmieren Lernen" zu erleichtern.
+                    {% assign post = site.faq | where: "title", "faq_titles.was_kann_man_mit_codeklasse_machen" | first
+                    %}
+                    {{ post.content }}
                 </p>
             </div>
             <div class="column center-content">
@@ -23,13 +23,13 @@
     <div class="card-content">
         <div class="columns">
             <div class="column is-9">
-                <h4 class="subtitle is-4 has-text-weight-semibold">Muss ich selbst programmieren können?</h4>
+                <h4 class="subtitle is-4 has-text-weight-semibold">{% t faq_titles.muss_ich_selbst_programmieren_koennen
+                    %}</h4>
                 <p class="content">
-                    Nein. codeklasse ist bewusst so konzipiert, dass nicht nur Kinder,
-                    sondern auch auch fachfremde Lehrerinnen und Lehrer programmieren lernen können.
-                    Unsere Plattform stellt einsatzbereite Kurse und moderne Lehrmaterialien bereit,
-                    die SuS sowie KuK gleichermaßen den einfachen, frustfreien Zugang zum Thema Programmierung
-                    ermöglicht.
+                    {% assign post = site.faq | where: "title", "faq_titles.muss_ich_selbst_programmieren_koennen" |
+                    first
+                    %}
+                    {{ post.content }}
                 </p>
             </div>
             <div class="column center-content">
@@ -45,18 +45,15 @@
     <div class="card-content">
         <div class="columns">
             <div class="column is-9">
-                <h4 class="subtitle is-4 has-text-weight-semibold">Wie kann ich codeklasse in meinen Unterricht
-                    einbringen?
+                <h4 class="subtitle is-4 has-text-weight-semibold">{% t
+                    faq_titles.wie_kann_ich_codeklasse_in_meinem_unterricht_nutzen %}
                 </h4>
                 <p class="content">
-                    codeklasse ist zum aktuellen Zeitpunkt noch nicht veröffentlicht.
-                    Bitte <a
-                        class="is-underlined"
-                        href="{{ site.lang | prepend: "/" }}/#contact"
-                    >kontaktieren</a> Sie uns dennoch, wenn Sie Interesse daran haben
-                    codeklasse zu testen oder an Ihrer Schule einzuführen – wir freuen uns immer über neue
-                    Partnerschaften,
-                    mit denen wir codeklasse testen und pädagogisch sowie technisch weiterentwickeln können.</p>
+                    {% assign post = site.faq | where: "title",
+                    "faq_titles.wie_kann_ich_codeklasse_in_meinem_unterricht_nutzen" | first
+                    %}
+                    {{ post.content }}
+                </p>
             </div>
             <div class="column center-content">
                 <figure class="image has-box-shadow m-auto">
@@ -68,5 +65,9 @@
 </div>
 
 <h4 class="subtitle is-4 has-text-right is-underlined mt-4">
-    <a href="{{ site.lang | prepend: "/" }}/faq">...weitere Fragen und Antworten</a>
+    <a
+        href="{{ site.lang | prepend: "
+        /"
+        }}/faq"
+    >{% t front_page.all_faqs %}</a>
 </h4>

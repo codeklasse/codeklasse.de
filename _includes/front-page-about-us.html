@@ -4,33 +4,26 @@
             <div class="column mx-3-tablet mx-3-mobile">
                 <div class="columns is-multiline">
                     {% include about-us-fact-tile.html
-                    fact_category="Zweck"
-                    fact="codeklasse strebt an Kompetenzen des MINT Bereichs früh zu
-                    stärken und Deutschlands Bedarf
-                    nachhaltig zu decken."
+                    fact_category="front_page.about_fact_category_purpose"
+                    fact="front_page.about_fact_purpose"
                     img_url="/assets/emojis/heavy-check-mark_2714.png"
                     img_alt="" %}
 
                     {% include about-us-fact-tile.html
-                    fact_category="Vision"
-                    fact="Unsere Vision ist das jedes Kind nach der 4. Klasse neben Lesen, Schreiben, Rechnen auch
-                    Programmieren kann."
+                    fact_category="front_page.about_fact_category_vision"
+                    fact="front_page.about_fact_vision"
                     img_url="/assets/emojis/direct-hit_1f3af.png"
                     img_alt="" %}
 
                     {% include about-us-fact-tile.html
-                    fact_category="Mission"
-                    fact="Unsere Mission ist Kinder für das Programmieren zu begeistern und eine Plattform zu
-                    schaffen die
-                    diese Kompetenz spielerisch & anschaulich vermittelt."
+                    fact_category="front_page.about_fact_category_mission"
+                    fact="front_page.about_fact_mission"
                     img_url="/assets/emojis/grinning-face-with-star-eyes_1f929.png"
                     img_alt="" %}
 
                     {% include about-us-fact-tile.html
-                    fact_category="Priorität"
-                    fact="Unsere oberste Priorität ist den Zugang zur Bildung des neuen Zeitalters unabhängig von
-                    Geld &
-                    Status zu ermöglichen."
+                    fact_category="front_page.about_fact_category_priority"
+                    fact="front_page.about_fact_priority"
                     img_url="/assets/emojis/white-up-pointing-index_261d.png"
                     img_alt="" %}
                 </div>
@@ -42,13 +35,13 @@
                         <figure class="image">
                             <img
                                 src="/assets/images/about/teamfoto-codeklasse-2to3-low_res-min.jpg"
-                                alt="Das codeklasse Team: Liam, Sergej, Natallia"
+                                alt="{% t front_page.about_codeklasse_team_photo %}"
                                 style="object-fit: cover;"
                             >
                         </figure>
                     </div>
                     <div class="media-content has-text-centered pb-5">
-                        <p class="title is-5 is-clipped">Das codeklasse Team: Liam & Sergej</p>
+                        <p class="title is-5 is-clipped">{% t front_page.about_codeklasse_team_photo %}</p>
                         <p class="subtitle is-7">© Bochum Wirtschaftsentwicklung, Donna und der Blitz GmbH</p>
                     </div>
                 </div>

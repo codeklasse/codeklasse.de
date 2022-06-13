@@ -15,16 +15,43 @@ languages:
 
 buttons:
   get_in_touch: In Kontakt treten
-  get_in_touch_now: In Kontakt treten
+  get_in_touch_now: Jetzt in Kontakt treten
+  or: oder
+  take_another_perspective: andere Perspektive betrachten
   read_faqs_pretext: oder
   read_faqs_call_to_action: häufige Fragen lesen
   faq_get_in_touch: Fragen offen? Wir freuen uns von Ihnen zu hören!
 
 front_page:
   exclamation_introduction: Programmieren lernen war noch nie so leicht!
-
-about:
-  title_our_values: Unsere Werte
+  title_what_is_codeklasse: Was ist codeklasse eigentlich?
+  title_partners: Unsere Partner & Förderer
+  title_team_behind_project: Wer steckt hinter dem Projekt?
+  subtitle_team_behind_project: codeklasse sind Liam & Sergej.
+    codeklasse ist ein junges Team aus Bochum.
+    Wir wollen was verändern.
+    Dafür brauchen brauchen Dich!
+    Bist du der Meinung das Programmieren in Grundschulen vertreten sein sollte?
+    Meld Dich gern und lass es uns angehen!
+  title_any_questions: Noch Fragen offen?
+  all_articles_in_blog: ...alle Artikel im codeklasse Blog
+  all_faqs: ...weitere Fragen und Antworten
+  about_codeklasse_team_photo: 'Die Gründer Liam & Sergej'
+  about_fact_category_purpose: Purpose
+  about_fact_purpose: codeklasse strebt an Kompetenzen des MINT Bereichs früh zu
+                    stärken und Deutschlands Bedarf
+                    nachhaltig zu decken.
+  about_fact_category_vision: Vision
+  about_fact_vision: Unsere Vision ist das jedes Kind nach der 4. Klasse neben Schreiben und Rechnen auch
+                    Programmieren kann.
+  about_fact_category_mission: Mission
+  about_fact_mission: Unsere Mission ist Kinder für das Programmieren zu begeistern und eine Plattform zu
+                    schaffen, die
+                    diese Kompetenz spielerisch & anschaulich vermittelt.
+  about_fact_category_priority: Priorität
+  about_fact_priority: Unsere oberste Priorität ist den Zugang zur Bildung des neuen Zeitalters unabhängig von
+                    Geld &
+                    Status zu ermöglichen.
 
 contact_form:
   title: Fragen? Impulse? Kooperation?

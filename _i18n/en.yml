@@ -16,15 +16,35 @@ languages:
 buttons:
   get_in_touch: Get in touch
   get_in_touch_now: Get in touch now
+  or: or
+  take_another_perspective: take another perspective
   read_faqs_pretext: or
   read_faqs_call_to_action: read our frequently asked questions
   faq_get_in_touch: Any questions? We look forward to hearing from you!
 
 front_page:
   exclamation_introduction: Teaching programming has never been that easy!
-
-about:
-  title_our_values: Our values
+  title_what_is_codeklasse: What is codeklasse?
+  title_partners: Our partners & supporters
+  title_team_behind_project: Who's behind the project?
+  subtitle_team_behind_project: codeklasse sind Liam & Sergej.
+    codeklasse ist ein junges Team aus Bochum.
+    Wir wollen was verändern.
+    Dafür brauchen brauchen Dich!
+    Bist du der Meinung das Programmieren in Grundschulen vertreten sein sollte?
+    Meld Dich gern und lass es uns angehen!
+  title_any_questions: Any questions left?
+  all_articles_in_blog: ...all articles in the codeklasse blog
+  all_faqs: ...more questions and answers
+  about_codeklasse_team_photo: 'The founders Liam & Sergej'
+  about_fact_category_purpose: Purpose
+  about_fact_purpose: codeklasse aims to strengthen competencies in the STEM field at an early stage and to meet Germany's needs in the long term.
+  about_fact_category_vision: Vision
+  about_fact_vision: Our vision is that after the 4th grade, every child will be able to program as well as write and do math.
+  about_fact_category_mission: Mission
+  about_fact_mission: Our mission is to get kids excited about programming and create a platform that teaches this skill in a fun & descriptive way.
+  about_fact_category_priority: Priority
+  about_fact_priority: Our top priority is to provide access to new age education regardless of money & status.
 
 contact_form:
   title: Questions? Ideas? Cooperations?
@@ -51,6 +71,7 @@ faq_titles:
   was_heisst_mint: What does MINT stand for?
   technical_requirements_for_codeklasse: What are the technical requirements for codeklasse?
 
+# Inspiration: https://github.com/logos
 downloads:
   title: Download area  
   subtitle: You'll find materials for press releases and co. Please note our use-instructions.
