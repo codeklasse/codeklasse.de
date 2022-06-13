@@ -54,6 +54,24 @@ faq_titles:
   was_heisst_mint: Was heißt MINT?
   technical_requirements_for_codeklasse: Was sind die technischen Voraussetzungen für codeklasse?
 
+downloads:
+  title: Downloadbereich  
+  subtitle: Sie finden hier Materialien für Pressemitteilungen und co. Bitte beachten Sie unsere Verwendungshinweise.
+  package_infos_title: Informationsbroschüre
+  package_infos_subtitle: All the intel you need.
+  package_logos_title: Logopaket
+  package_logos_subtitle: All the logos you need. 
+  package_pitch_title: Öffentlicher Pitch
+  package_pitch_subtitle: All the pitching you need. 
+  usage_yes_title: Please do
+  usage_no_title: Please don't
+  usage_yes_1: 
+  usage_yes_2: 
+  usage_yes_3: 
+  usage_no_1: 
+  usage_no_2: 
+  usage_no_3:
+
 status404:
   title404: Entschuldigung!
   subtitle404: Die gewünschte Seite wurde nicht gefunden.

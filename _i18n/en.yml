@@ -52,6 +52,27 @@ faq_titles:
   was_heisst_mint: What does MINT stand for?
   technical_requirements_for_codeklasse: What are the technical requirements for codeklasse?
 
+downloads:
+  title: Download area  
+  subtitle: You'll find materials for press releases and co. Please note our use-instructions.
+  package_infos_title: Informationsbroschüre
+  package_infos_subtitle: (A one pager) All the intel you need.
+  package_infos_img_alt: codeklasse information package
+  package_logos_title: Logopaket
+  package_logos_subtitle: All the logos you need.
+  package_logos_img_alt: codeklasse logo package
+  package_pitch_title: Public pitch
+  package_pitch_subtitle: (Notes for investors?) All the pitching you need.
+  package_pitch_img_alt: codeklasse public pitch
+  usage_yes_title: Please do
+  usage_no_title: Please don't
+  usage_yes_1: 
+  usage_yes_2: 
+  usage_yes_3: 
+  usage_no_1: 
+  usage_no_2: 
+  usage_no_3: 
+
 status404:
   title404: Excuse us!
   subtitle404: The requested page could not be found.
