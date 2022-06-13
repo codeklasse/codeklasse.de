@@ -27,12 +27,9 @@ front_page:
   title_what_is_codeklasse: What is codeklasse?
   title_partners: Our partners & supporters
   title_team_behind_project: Who's behind the project?
-  subtitle_team_behind_project: codeklasse sind Liam & Sergej.
-    codeklasse ist ein junges Team aus Bochum.
-    Wir wollen was verändern.
-    Dafür brauchen brauchen Dich!
-    Bist du der Meinung das Programmieren in Grundschulen vertreten sein sollte?
-    Meld Dich gern und lass es uns angehen!
+  subtitle_team_behind_project: "Initially working on a master's thesis, Sergej developed the first version of the app and launched it as a university spin-off with the NRW-Gründerstipendium.
+  Liam first contributed in an advisory capacity until he jumped on board as a co-founder in January '22 to bring his passion for creative coding into product development.
+  Together, the two are a young team from Bochum that wants to make a difference."
   title_any_questions: Any questions left?
   all_articles_in_blog: ...all articles in the codeklasse blog
   all_faqs: ...more questions and answers
