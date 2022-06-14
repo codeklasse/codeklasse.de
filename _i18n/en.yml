@@ -23,26 +23,31 @@ buttons:
   faq_get_in_touch: Any questions? We look forward to hearing from you!
 
 front_page:
-  exclamation_introduction: Teaching programming has never been that easy!
+  exclamation_introduction: "Teaching programming has never been that easy!"
   title_what_is_codeklasse: What is codeklasse?
   subtitle_what_is_codeklasse: "codeklasse is a fully comprehensive programming learning software for children from 1st to 4th grade. It not only enables students to learn programming on their own, but also provides ready-made campaigns and support materials for teachers to facilitate lesson preparation."
   title_why_use_codeklasse: Wie ist codeklasse für mich relevant?
+  subtitle_what_is_codeklasse: "codeklasse is a fully comprehensive programming learning software for children from 1st to 4th grade. It not only enables students to learn programming on their own, but also provides ready-made campaigns and support material for teachers to support lesson preparation."
   title_why_use_codeklasse_companies: Corporations
   title_why_use_codeklasse_educators: Educators
   title_why_use_codeklasse_parents: Parents
-  why_use_codeklasse_companies_fact_1: "codeklasse ist einfach!
-                        Funktionsbereit geliefert! codeklasse bietet einen vorgefertigten Lernpfad mit dem SuS ihre
-                        Programmierkenntnisse Schritt für Schritt erweitern."
+  why_use_codeklasse_companies_fact_1: "Around 54% of companies in Germany expect demand for IT specialists to rise. 65% expect more digitization in the company in the future."
+  why_use_codeklasse_companies_fact_2: "Germany's schools are currently failing to get enough future workers interested in STEM subjects. But we need nationwide measures to solve this problem in time."
+  why_use_codeklasse_companies_fact_3: "This is where codeklasse comes in. Since 2020, we've been developing our platform to get children excited about programming starting in first grade and without any reading skills at all. We’re looking for strong partners who want to push this topic forward with us."
+  why_use_codeklasse_parents_fact_1: "Learning programming pays off! Technology-related positions are among the most sought-after professions in the coming years."
+  why_use_codeklasse_parents_fact_2: "Learning is fun! With cool animations, individual assistance and many small success experiences, we want to give children the joy of learning. In small steps to big success."
+  why_use_codeclass_parents_fact_3: "Children aged six to seven spend an average of 133 minutes a day looking at a screen. Digital media have long been part of our everyday lives - we should use them consciously and wisely."
+  why_use_codeklasse_educators_fact_1: "Teachers don't need any prior programming knowledge to bring codeklasse to their class."
+  why_use_codeklasse_educators_fact_2: "codeklasse is easy to use and provides a pre-built learning path for students to expand their programming skills step by step."
+  why_use_codeklasse_educators_fact_3: "A wide selection of additional learning units offers flexible and comprehensive learning - whether at home or at school."
   why_use_codeklasse_companies_fact_category_1: "Keine Eigenkenntnisse der Lehrkraft nötig"
   title_partners: Our partners & supporters
   title_team_behind_project: Who's behind the project?
-  subtitle_team_behind_project: "Initially working on a master's thesis, Sergej developed the first version of the app and launched it as a university spin-off with the NRW-Gründerstipendium.
-  Liam first contributed in an advisory capacity until he jumped on board as a co-founder in January '22 to bring his passion for creative coding into product development.
-  Together, the two are a young team from Bochum that wants to make a difference."
+  subtitle_team_behind_project: "Initially working on a master's thesis, Sergej developed the first version of the app and launched it as a university spin-off with the NRW-Gründerstipendium. Liam first contributed in an advisory capacity until he jumped on board as a co-founder in January '22 to bring his passion for creative coding into product development. Together, the two are a young team from Bochum that wants to make a difference."
   title_any_questions: Any questions left?
   all_articles_in_blog: ...all articles in the codeklasse blog
   all_faqs: ...more questions and answers
-  about_codeklasse_team_photo: 'The founders Liam & Sergej'
+  about_codeklasse_team_photo: "The founders Liam & Sergej"
   about_fact_category_purpose: Purpose
   about_fact_purpose: codeklasse aims to strengthen competencies in the STEM field at an early stage and to meet Germany's needs in the long term.
   about_fact_category_vision: Vision
@@ -63,10 +68,11 @@ contact_form:
   form_email: Email
   form_optional_phone_number: Optional - phone number for a return call
   form_message: Your message
-  form_privacy_confirmation_before_link: I have taken note of the 
+  form_privacy_confirmation_before_link: I have taken note of the
   form_privacy_confirmation_link: Privacy policy
-  form_privacy_confirmation_after_link: I agree that the data I have provided will be stored permanently for the purpose of contacting me and for the purpose of enquiries.
-   I can revoke this consent personally at any time.
+  form_privacy_confirmation_after_link:
+    I agree that the data I have provided will be stored permanently for the purpose of contacting me and for the purpose of enquiries.
+    I can revoke this consent personally at any time.
   form_send_button: Send
   form_hint_fill_out_all_fields: Please fill out all fields
 
@@ -79,7 +85,7 @@ faq_titles:
 
 # Inspiration: https://github.com/logos
 downloads:
-  title: Download area  
+  title: Download area
   subtitle: You'll find materials for press releases and co. Please note our use-instructions.
   package_infos_title: Informationsbroschüre
   package_infos_subtitle: (A one pager) All the intel you need.
@@ -92,12 +98,12 @@ downloads:
   package_pitch_img_alt: codeklasse public pitch
   usage_yes_title: Please do
   usage_no_title: Please don't
-  usage_yes_1: 
-  usage_yes_2: 
-  usage_yes_3: 
-  usage_no_1: 
-  usage_no_2: 
-  usage_no_3: 
+  usage_yes_1:
+  usage_yes_2:
+  usage_yes_3:
+  usage_no_1:
+  usage_no_2:
+  usage_no_3:
 
 status404:
   title404: Excuse us!

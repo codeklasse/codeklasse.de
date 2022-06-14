@@ -1,244 +1,203 @@
 <div class="has-text-centered mb-6">
-    {% include title-h2.html text="front_page.title_why_use_codeklasse" is_translate_key=true %}
+  {% include title-h2.html text="front_page.title_why_use_codeklasse"
+  is_translate_key=true %}
 </div>
 
-
 <div
-    id="why-use-codeklasse-tabs-list"
-    class="buttons is-justify-content-space-around"
+  id="why-use-codeklasse-tabs-list"
+  class="buttons is-justify-content-space-around"
 >
-    <a
-        id="Tab-Button-Unternehmen"
-        class="button content-switcher"
-        onclick="openTab_WhyUseCK('Tab-Companies')"
-    >{% t front_page.title_why_use_codeklasse_companies %}</a>
+  <a
+    id="Tab-Button-Unternehmen"
+    class="button content-switcher"
+    onclick="openTab_WhyUseCK('Tab-Companies')"
+    >{% t front_page.title_why_use_codeklasse_companies %}</a
+  >
 
-    <a
-        id="Tab-Button-Lehrkraefte"
-        class="button content-switcher "
-        onclick="openTab_WhyUseCK('Tab-Educators')"
-    >{% t front_page.title_why_use_codeklasse_educators %}</a>
+  <a
+    id="Tab-Button-Lehrkraefte"
+    class="button content-switcher"
+    onclick="openTab_WhyUseCK('Tab-Educators')"
+    >{% t front_page.title_why_use_codeklasse_educators %}</a
+  >
 
-    <a
-        id="Tab-Button-Eltern"
-        class="button content-switcher"
-        onclick="openTab_WhyUseCK('Tab-Parents')"
-    >{% t front_page.title_why_use_codeklasse_parents %}</a>
+  <a
+    id="Tab-Button-Eltern"
+    class="button content-switcher"
+    onclick="openTab_WhyUseCK('Tab-Parents')"
+    >{% t front_page.title_why_use_codeklasse_parents %}</a
+  >
 </div>
 
 <div class="container pt-5">
-    <!-- COMPANIES -->
-    <div
-        id="Tab-Companies"
-        class="content-tab"
-    >
+  <!-- COMPANIES -->
+  <div id="Tab-Companies" class="content-tab">
     <!-- @LIAM - feel free to comment these sections out if it's too much for today -->
-        <h3 class="title is-4 pt-5 has-text-centered is-italic">Nachwuchs fördern. Regionale Kompetenz ausbauen.</h3>
+    <h3 class="title is-4 pt-5 has-text-centered is-italic">
+      Nachwuchs fördern. Regionale Kompetenz ausbauen.
+    </h3>
 
-        <p class="mb-5">
-            Digitale Kompetenzen und IT als Schulfach ausbauen: Die ICILS-Studie hat gezeigt, dass es keine
-            Fortschritte bei informations- und computerbezogenen Kompetenzen der Schülerinnen und
-            Schüler im Zeitraum von 2013 bis 2018 gegeben hat. Der Unterricht in diesen Bereichen ist zu
-            stärken, das Schulfach IT sollte ausgebaut werden.
-        </p>
+    <p class="mb-5">
+      <!-- Since this is consistent in all language versions, "subtitle_what_is_codeklasse", which I prepared, needs to be embedded here, but unfortunately I don’t know how. -->
 
-        <div class="columns is-multiline">
-            <div class="column is-full">
-                <div class="columns">
-                    <div class="column is-three-fifths">
-                        {% include codeklasse-fact-tile.html
-                        fact_category="Keine Eigenkenntnisse der Lehrkraft nötig"
+      Digitale Kompetenzen und IT als Schulfach ausbauen: Die ICILS-Studie hat
+      gezeigt, dass es keine Fortschritte bei informations- und
+      computerbezogenen Kompetenzen der Schülerinnen und Schüler im Zeitraum von
+      2013 bis 2018 gegeben hat. Der Unterricht in diesen Bereichen ist zu
+      stärken, das Schulfach IT sollte ausgebaut werden.
+    </p>
 
-                        fact='codeklasse ist einfach!
-                        SuS meistern ihre ersten Programmiererfahrungen spielerisch und
-                        intuitiv.
-                        Ein eingebauter Feedback-Mechanismus liefert, bei Bedarf, individuelle Hinweise.'
-
-                        img_url="/assets/images/why-use-codeklasse/inaki-del-olmo-NIJuEQw0RKg-unsplash.jpg"
-                        img_alt="" %}
-                    </div>
-                </div>
-            </div>
-
-            <div class="column is-full">
-                <div class="columns">
-                    <div class="column is-offset-one-fifth is-three-fifths">
-                        {% include codeklasse-fact-tile.html
-                        fact_category="Keine Eigenkenntnisse der Lehrkraft nötig"
-
-                        fact='codeklasse ist einfach!
-                        SuS meistern ihre ersten Programmiererfahrungen spielerisch und
-                        intuitiv.
-                        Ein eingebauter Feedback-Mechanismus liefert, bei Bedarf, individuelle Hinweise.'
-
-                        img_url="/assets/images/why-use-codeklasse/inaki-del-olmo-NIJuEQw0RKg-unsplash.jpg"
-                        img_alt="" %}
-                    </div>
-                </div>
-            </div>
-
-            <div class="column is-full">
-                <div class="columns">
-                    <div class="column is-offset-two-fifths is-three-fifths">
-                        {% include codeklasse-fact-tile.html
-                        fact_category="Keine Eigenkenntnisse der Lehrkraft nötig"
-
-                        fact='codeklasse ist einfach!
-                        SuS meistern ihre ersten Programmiererfahrungen spielerisch und
-                        intuitiv.
-                        Ein eingebauter Feedback-Mechanismus liefert, bei Bedarf, individuelle Hinweise.'
-
-                        img_url="/assets/images/why-use-codeklasse/inaki-del-olmo-NIJuEQw0RKg-unsplash.jpg"
-                        img_alt="" %}
-                    </div>
-                </div>
-            </div>
+    <div class="columns is-multiline">
+      <div class="column is-full">
+        <div class="columns">
+          <div class="column is-three-fifths">
+            {% include codeklasse-fact-tile.html
+            fact_category="front_page.front_page.why_use_codeklasse_companies_fact_category_1"
+            fact='front_page.why_use_codeklasse_companies_fact_1'
+            img_url="/assets/images/why-use-codeklasse/companies_pie_chart.jpg"
+            img_alt="" %}
+          </div>
         </div>
-    </div>
+      </div>
 
-    <!-- EDUCATORS -->
-    <div
-        id="Tab-Educators"
-        class="content-tab"
-    >
-        <h3 class="title is-4 pt-5 has-text-centered is-italic">Programmieren ab der ersten Klasse.</h3>
-
-        <p class="mb-5">
-            Digitale Kompetenzen und IT als Schulfach ausbauen: Die ICILS-Studie hat gezeigt, dass es keine
-            Fortschritte bei informations- und computerbezogenen Kompetenzen der Schülerinnen und
-            Schüler im Zeitraum von 2013 bis 2018 gegeben hat. Der Unterricht in diesen Bereichen ist zu
-            stärken, das Schulfach IT sollte ausgebaut werden.
-        </p>
-
-        <div class="columns is-multiline">
-            <div class="column is-full">
-                <div class="columns">
-                    <div class="column is-three-fifths">
-                        {% include codeklasse-fact-tile.html
-                        fact_category="Keine Eigenkenntnisse der Lehrkraft nötig"
-
-                        fact='codeklasse ist einfach!
-                        SuS meistern ihre ersten Programmiererfahrungen spielerisch und
-                        intuitiv.
-                        Ein eingebauter Feedback-Mechanismus liefert, bei Bedarf, individuelle Hinweise.'
-                        img_url="/assets/images/why-use-codeklasse/inaki-del-olmo-NIJuEQw0RKg-unsplash.jpg"
-                        img_alt="" %}
-                    </div>
-                </div>
-            </div>
-
-            <div class="column is-full">
-                <div class="columns">
-                    <div class="column is-offset-one-fifth is-three-fifths">
-                        {% include codeklasse-fact-tile.html
-                        fact_category="front_page.front_page.why_use_codeklasse_companies_fact_category_1"
-
-                        fact='front_page.why_use_codeklasse_companies_fact_1'
-                        img_url="/assets/images/why-use-codeklasse/inaki-del-olmo-NIJuEQw0RKg-unsplash.jpg"
-                        img_alt="" %}
-                    </div>
-                </div>
-            </div>
-
-            <div class="column is-full">
-                <div class="columns">
-                    <div class="column is-offset-two-fifths is-three-fifths">
-                        {% include codeklasse-fact-tile.html
-                        fact_category="Keine Eigenkenntnisse der Lehrkraft nötig"
-
-                        fact='Eine breite Auswahl an zusätzlichen Lerneinheiten bietet flexiblen und umfänglichen
-                        Einsatz - ob zuhause
-                        oder im Schulalltag.'
-                        img_url="/assets/images/why-use-codeklasse/inaki-del-olmo-NIJuEQw0RKg-unsplash.jpg"
-                        img_alt="" %}
-                    </div>
-                </div>
-            </div>
+      <div class="column is-full">
+        <div class="columns">
+          <div class="column is-offset-one-fifth is-three-fifths">
+            {% include codeklasse-fact-tile.html
+            fact_category="front_page.front_page.why_use_codeklasse_companies_fact_category_2"
+            fact='front_page.why_use_codeklasse_companies_fact_2'
+            img_url="/assets/images/why-use-codeklasse/patricia-prudente-qESmLLXAmWs-unsplash-original.jpg"
+            img_alt="" %}
+          </div>
         </div>
-    </div>
+      </div>
 
-    <!-- PARENTS -->
-    <div
-        id="Tab-Parents"
-        class="content-tab"
-    >
-        <!-- ODER: Kindern die Bildung von Morgen ermöglichen. -->
-        <h3 class="title is-4 pt-5 has-text-centered is-italic">Kindern die Fähigkeiten von Morgen geben.</h3>
-
-        <p class="mb-5">
-            Digitale Kompetenzen und IT als Schulfach ausbauen: Die ICILS-Studie hat gezeigt, dass es keine
-            Fortschritte bei informations- und computerbezogenen Kompetenzen der Schülerinnen und
-            Schüler im Zeitraum von 2013 bis 2018 gegeben hat. Der Unterricht in diesen Bereichen ist zu
-            stärken, das Schulfach IT sollte ausgebaut werden.
-        </p>
-
-        <div class="columns is-multiline">
-            <div class="column is-full">
-                <div class="columns">
-                    <div class="column is-three-fifths">
-                        {% include codeklasse-fact-tile.html
-                        fact_category="Für Berufe der Zukunft vorbereiten"
-
-                        fact='Programmieren lernen lohnt sich! Neben essenziellen Stellen in Gesundheit, Medizin,
-                        Pflege, Bildung &
-                        Erziehung, gehören vor allem Technik-nahe Positionen zu den gefragtesten Berufen der kommenden
-                        Jahren.
-
-                        Mit codeklasse machen wir Programmieren lernen kinderleicht!'
-
-                        img_url="/assets/images/why-use-codeklasse/thisisengineering-raeng-bIltCMXIwRE-unsplash.jpg"
-                        img_alt="Von links nach rechts: Ein junger Mann, eine junge Frau und ein weiterer junger Mann
-                        schauen auf
-                        ein Notebook und sprechen sich ab. Photo credit: thisisengineering-raeng von Unsplash (photo-id
-                        bIltCMXIwRE)" %}
-                    </div>
-                </div>
-            </div>
-
-            <div class="column is-full">
-                <div class="columns">
-                    <div class="column is-offset-one-fifth is-three-fifths">
-                        {% include codeklasse-fact-tile.html
-                        fact_category="Wunsch nach mehr wecken"
-
-                        fact='Erfolg macht süchtig! Mit coolen Animationen, individueller Hilfestellung und vielen,
-                        kleinen
-                        Erfolgserlebnissen, möchten wir Kindern die Freude am Lernen mitgeben.
-
-                        In kleinen Schritten zum großen Erfolg!'
-
-                        img_url="/assets/images/why-use-codeklasse/ben-white-qDY9ahp0Mto-unsplash.jpg"
-                        img_alt="Ein Junge guckt, aufgrund des Buchs in seiner Hand, erstaunt in die Kamera. Photo
-                        credit: Ben White von
-                        Unsplash (photo-id qDY9ahp0Mto)" %}
-                    </div>
-                </div>
-            </div>
-
-            <div class="column is-full">
-                <div class="columns">
-                    <div class="column is-offset-two-fifths is-three-fifths">
-                        {% include codeklasse-fact-tile.html
-                        fact_category="Bildschirmzeit sinnvoll gestalten"
-
-                        fact='Laut der KIM Studie aus 2020 fasst Quarks zusammen, dass " Kinder im Alter von sechs bis
-                        sieben Jahren im
-                        Durchschnitt 133 Minuten auf einen Bildschirm schauen. Insgesamt kommen 12 -bis 13-Jährige auf
-                        eine
-                        Bildschirmzeit von etwa 313 Minuten, also mehr als fünf Stunden. "
-
-                        Eins ist klar, digitale Medien sind Teil unseres Alltags - macht Medienzeit wertvoll.'
-
-                        img_url="/assets/images/why-use-codeklasse/igor-starkov-s4GL0XwPSIU-unsplash.jpg"
-                        img_alt="Ein Mädchen sitzt vor dem iPad. Photo credit: Igor Starkov von Unsplash (photo-id
-                        s4GL0XwPSIU)" %}
-                    </div>
-                </div>
-            </div>
+      <div class="column is-full">
+        <div class="columns">
+          <div class="column is-offset-two-fifths is-three-fifths">
+            {% include codeklasse-fact-tile.html
+            fact_category="front_page.front_page.why_use_codeklasse_companies_fact_category_3"
+            fact='front_page.why_use_codeklasse_companies_fact_3'
+            img_url="/assets/images/why-use-codeklasse/pexels-julia-m-cameron-4144038-original.jpg"
+            img_alt="" %}
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 
-    <!-- 
+  <!-- EDUCATORS -->
+  <div id="Tab-Educators" class="content-tab">
+    <h3 class="title is-4 pt-5 has-text-centered is-italic">
+      Programmieren ab der ersten Klasse.
+    </h3>
+
+    <p class="mb-5">
+      Digitale Kompetenzen und IT als Schulfach ausbauen: Die ICILS-Studie hat
+      gezeigt, dass es keine Fortschritte bei informations- und
+      computerbezogenen Kompetenzen der Schülerinnen und Schüler im Zeitraum von
+      2013 bis 2018 gegeben hat. Der Unterricht in diesen Bereichen ist zu
+      stärken, das Schulfach IT sollte ausgebaut werden.
+    </p>
+
+    <div class="columns is-multiline">
+      <div class="column is-full">
+        <div class="columns">
+          <div class="column is-three-fifths">
+            {% include codeklasse-fact-tile.html
+            fact_category="front_page.front_page.why_use_codeklasse_educators_fact_category_1"
+            fact='front_page.why_use_codeklasse_educators_fact_1'
+            img_url="/assets/images/why-use-codeklasse/pexels-max-fischer-5212348-original.jpg"
+            img_alt="" %}
+          </div>
+        </div>
+      </div>
+
+      <div class="column is-full">
+        <div class="columns">
+          <div class="column is-offset-one-fifth is-three-fifths">
+            {% include codeklasse-fact-tile.html
+            fact_category="front_page.front_page.why_use_codeklasse_educators_fact_category_2"
+            fact='front_page.why_use_codeklasse_educators_fact_2'
+            img_url="/assets/images/why-use-codeklasse/igor-starkov-s4GL0XwPSIU-unsplash-original.jpg"
+            img_alt="" %}
+          </div>
+        </div>
+      </div>
+
+      <div class="column is-full">
+        <div class="columns">
+          <div class="column is-offset-two-fifths is-three-fifths">
+            {% include codeklasse-fact-tile.html
+            fact_category="front_page.front_page.why_use_codeklasse_educators_fact_category_3"
+            fact='front_page.why_use_codeklasse_educators_fact_3'
+            img_url="/assets/images/why-use-codeklasse/thisisengineering-raeng-69wEv-G2W_s-unsplash-original.jpg"
+            img_alt="" %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PARENTS -->
+  <div id="Tab-Parents" class="content-tab">
+    <!-- ODER: Kindern die Bildung von Morgen ermöglichen. -->
+    <h3 class="title is-4 pt-5 has-text-centered is-italic">
+      Kindern die Fähigkeiten von Morgen geben.
+    </h3>
+
+    <p class="mb-5">
+      Digitale Kompetenzen und IT als Schulfach ausbauen: Die ICILS-Studie hat
+      gezeigt, dass es keine Fortschritte bei informations- und
+      computerbezogenen Kompetenzen der Schülerinnen und Schüler im Zeitraum von
+      2013 bis 2018 gegeben hat. Der Unterricht in diesen Bereichen ist zu
+      stärken, das Schulfach IT sollte ausgebaut werden.
+    </p>
+
+    <div class="columns is-multiline">
+      <div class="column is-full">
+        <div class="columns">
+          <div class="column is-three-fifths">
+            {% include codeklasse-fact-tile.html
+            fact_category="front_page.front_page.why_use_codeklasse_parents_fact_category_1"
+            fact='front_page.why_use_codeklasse_parents_fact_1'
+            img_url="/assets/images/why-use-codeklasse/thisisengineering-raeng-bIltCMXIwRE-unsplash.jpg"
+            img_alt="Von links nach rechts: Ein junger Mann, eine junge Frau und
+            ein weiterer junger Mann schauen auf ein Notebook und sprechen sich
+            ab." %}
+          </div>
+        </div>
+      </div>
+
+      <div class="column is-full">
+        <div class="columns">
+          <div class="column is-offset-one-fifth is-three-fifths">
+            {% include codeklasse-fact-tile.html
+            fact_category="front_page.front_page.why_use_codeklasse_parents_fact_category_2"
+            fact='front_page.why_use_codeklasse_parents_fact_2'
+            img_url="/assets/images/why-use-codeklasse/ben-white-qDY9ahp0Mto-unsplash.jpg"
+            img_alt="Ein Junge guckt, aufgrund des Buchs in seiner Hand,
+            erstaunt in die Kamera." %}
+          </div>
+        </div>
+      </div>
+
+      <div class="column is-full">
+        <div class="columns">
+          <div class="column is-offset-two-fifths is-three-fifths">
+            {% include codeklasse-fact-tile.html
+            fact_category="front_page.front_page.why_use_codeklasse_parents_fact_category_3"
+            fact='front_page.why_use_codeklasse_parents_fact_3'
+            img_url="/assets/images/why-use-codeklasse/pexels-anastasia-shuraeva-8465500-original.jpg"
+            img_alt="Ein Mädchen meldet sich im Unterricht. Sie scheint stolz zu
+            sein, die Antwort zu wissen." %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 
             Sources:
             <a
             class="is-underlined"
@@ -253,50 +212,55 @@
 </div>
 
 <style>
-    .content-tab {
-        display: none;
-    }
+  .content-tab {
+    display: none;
+  }
 
-    .codeklasse-fact-image {
-        width: 50%;
-    }
+  .codeklasse-fact-image {
+    width: 50%;
+  }
 </style>
 
 <script>
-    // Shamelessly copied from https://codepen.io/t7team/pen/ZowdRN - thanks for that!
-    // Initialize tab with a category
-    openTab_WhyUseCK('Tab-Companies');
+  // Shamelessly copied from https://codepen.io/t7team/pen/ZowdRN - thanks for that!
+  // Initialize tab with a category
+  openTab_WhyUseCK("Tab-Companies")
 
-    function openTab_WhyUseCK(tabName) {
-        let i, x, tabButtons;
+  function openTab_WhyUseCK(tabName) {
+    let i, x, tabButtons
 
-        x = document.getElementsByClassName("content-tab");
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-
-        tabButtons = document.getElementsByClassName("content-switcher");
-        for (i = 0; i < x.length; i++) {
-            tabButtons[i].className = tabButtons[i].className.replace(" is-active", "");
-        }
-
-        document.getElementById(tabName).style.display = "block";
-
-        switch (tabName) {
-            case "Tab-Educators":
-                document.getElementById("Tab-Button-Lehrkraefte").className += " is-active";
-                break;
-
-            case "Tab-Parents":
-                document.getElementById("Tab-Button-Eltern").className += " is-active";
-                break;
-
-            case "Tab-Companies":
-                document.getElementById("Tab-Button-Unternehmen").className += " is-active";
-                break;
-
-            default:
-                break;
-        }
+    x = document.getElementsByClassName("content-tab")
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"
     }
+
+    tabButtons = document.getElementsByClassName("content-switcher")
+    for (i = 0; i < x.length; i++) {
+      tabButtons[i].className = tabButtons[i].className.replace(
+        " is-active",
+        ""
+      )
+    }
+
+    document.getElementById(tabName).style.display = "block"
+
+    switch (tabName) {
+      case "Tab-Educators":
+        document.getElementById("Tab-Button-Lehrkraefte").className +=
+          " is-active"
+        break
+
+      case "Tab-Parents":
+        document.getElementById("Tab-Button-Eltern").className += " is-active"
+        break
+
+      case "Tab-Companies":
+        document.getElementById("Tab-Button-Unternehmen").className +=
+          " is-active"
+        break
+
+      default:
+        break
+    }
+  }
 </script>
