@@ -1,21 +1,16 @@
-<div class="card why-use-codeklasse my-6">
-    <div class="card-content">
+<div class="card columns mb-3">
+    <div class="column">
+        <figure class="image">
+            <img
+                src="{{ include.img_url }}"
+                alt="{{ include.img_alt }}"
+                style="object-fit: cover;"
+            >
+        </figure>
+    </div>
 
-        <p class="title is-4 pt-5-desktop pt-2-tablet">{{ include.fact }}</p>
-        <div class="columns is-multiline">
-            <div class="column is-half-tablet">
-                <p class="subtitle content is-6 mt-3">{{ include.fact_subtext }}</p>
-            </div>
-
-            <div class="column">
-                <figure class="image is-4by3">
-                    <img
-                        src="{{ include.img_url }}"
-                        alt="{{ include.img_alt }}"
-                        style="object-fit: cover;"
-                    >
-                </figure>
-            </div>
-        </div>
+    <div class="column py-5">
+        <p class="subtitle is-6">{% t {{ include.fact_category }} %}</p>
+        <p class="title is-5 is-clipped">{% t {{ include.fact }} %}</p>
     </div>
 </div>

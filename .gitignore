@@ -13,3 +13,4 @@ _site
 vendor
 
 .DS_Store
+Gemfile.lock

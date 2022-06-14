@@ -1,19 +1,12 @@
 ---
 layout: faq-post
-title: "Was heißt MINT?"
+title: faq_titles.was_heisst_mint
 last_updated_date: "2021-12-21"
 hidden: false
+
+namespace: faq.was-heisst-mint
+permalink: faq/was-heisst-mint
+permalink_en: /faq/what-does-mint-stand-for
 ---
 
-MINT ist ein Sammelbegriff für:
-<br>
-<br>
-- **M**athematik
-- **I**nformatik
-- **N**aturwissenschaft
-- **T**echnik
-<br>
-<br>
-
-Deutschlands Schulen sind aktuell nicht ausreichend mit Know-How und Mitteln ausgestattet, um der enorm hohen Nachfrage von MINT-Arbeitskräften aus dem wirtschaftlichen Sektor gerecht zu werden.
-Wir haben codeklasse gegründet, um diesem Defizit in der MINT-Bildung entgegenzuwirken und deutschen Schulen sowie KuK diese Arbeit zu erleichtern. 
+{% tf _faq/was-heisst-mint.md %}

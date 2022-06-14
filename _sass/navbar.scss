@@ -1,0 +1,57 @@
+#title-section {
+    @include desktop {
+        margin-top: 0;
+    }
+}
+
+#main-navbar {
+    border-bottom: 3px solid black;
+
+    @include desktop {
+        padding: 0 1rem;
+        padding: 0 16.5rem 0 5em;
+    }
+}
+
+#mobile-navbar {
+    // Very important! Opens the menu below the navbar
+    flex-direction: column;
+
+    padding: 1rem 0;
+    display: flex;
+    border-bottom: 3px solid black;
+
+    display: none;
+
+    @include touch {
+        display: flex;
+    }
+}
+
+a.navbar-item,
+.navbar-link {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.navbar-menu {
+    background-color: unset;
+    width: 100%;
+}
+
+/* Used to bring burger menu to left & center the logo */
+/* .element-left, .element-right {
+        flex: 1;
+    } */
+.left-navbar-item {
+    margin-right: 1rem;
+    font-weight: bold;
+}
+
+.navbar.has-shadow {
+    box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+}
+
+.navbar-menu {
+    box-shadow: none;
+}

@@ -1,0 +1,49 @@
+<div class="card has-background-primary">
+  <div class="card-content">
+    <div class="columns is-multiline is-desktop">
+      <div class="column mx-3-tablet mx-3-mobile">
+        <div class="columns is-multiline">
+          {% include about-us-fact-tile.html
+          fact_category="front_page.about_fact_category_purpose"
+          fact="front_page.about_fact_purpose"
+          img_url="/assets/emojis/heavy-check-mark_2714.png" img_alt="" %} {%
+          include about-us-fact-tile.html
+          fact_category="front_page.about_fact_category_vision"
+          fact="front_page.about_fact_vision"
+          img_url="/assets/emojis/direct-hit_1f3af.png" img_alt="" %} {% include
+          about-us-fact-tile.html
+          fact_category="front_page.about_fact_category_mission"
+          fact="front_page.about_fact_mission"
+          img_url="/assets/emojis/grinning-face-with-star-eyes_1f929.png"
+          img_alt="" %} {% include about-us-fact-tile.html
+          fact_category="front_page.about_fact_category_priority"
+          fact="front_page.about_fact_priority"
+          img_url="/assets/emojis/white-up-pointing-index_261d.png" img_alt=""
+          %}
+        </div>
+      </div>
+
+      <div class="column is-4-desktop">
+        <div class="card">
+          <div class="card-content">
+            <figure class="image">
+              <img
+                src="/assets/images/about/teamfoto-codeklasse-less-headroom.jpg"
+                alt="{% t front_page.about_codeklasse_team_photo %}"
+                style="object-fit: cover"
+              />
+            </figure>
+          </div>
+          <div class="media-content has-text-centered pb-5">
+            <p class="title is-5 is-clipped">
+              {% t front_page.about_codeklasse_team_photo %}
+            </p>
+            <p class="subtitle is-7">
+              © Bochum Wirtschaftsentwicklung, Donna und der Blitz GmbH
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

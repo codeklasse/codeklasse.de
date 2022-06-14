@@ -7,16 +7,39 @@
     <meta
         name="viewport"
         content="width=device-width, initial-scale=1"
-    >
+    >    
+    {% if page.url == "/" %}
     <title>{{ page.title }}</title>
+    {% else %}
+    <title>{% t page.title %}</title>
+    {% endif %}
+    
     <link
         rel="stylesheet"
         href="/assets/css/main.css"
     >
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
-    <link rel="manifest" href="/assets/favicons/site.webmanifest">
+    <!-- Thank you https://favicon.io/favicon-converter/ -->
+    <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="/assets/favicons/apple-touch-icon.png"
+    >
+    <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="/assets/favicons/favicon-32x32.png"
+    >
+    <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="/assets/favicons/favicon-16x16.png"
+    >
+    <link
+        rel="manifest"
+        href="/assets/favicons/site.webmanifest"
+    >
 
     {% if site.lazyimages == "enabled" %}
     <script
@@ -24,8 +47,12 @@
         src="/assets/js/lazyload.js"
     ></script>
     {% endif %}
-    
-    <script defer data-domain="codeklasse.de" src="https://plausible.io/js/plausible.js"></script>
+
+    <script
+        defer
+        data-domain="codeklasse.de"
+        src="https://plausible.io/js/plausible.js"
+    ></script>
 
     {% seo %}
 </head>

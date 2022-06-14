@@ -1,190 +1,110 @@
 ---
 layout: default
 title: codeklasse
+
+namespace: front-page
+permalink: /
+permalink_de: /
 ---
 
 <section
   id="title-section"
-  class="has-background-primary is-fullheight px-6-desktop mx-6-desktop px-4-mobile"
+  class="is-fullheight px-6-desktop mx-6-desktop px-4-mobile"
 >
-  <div class="columns is-flex-direction-column mt-6 px-4-mobile">
-    <p
-      id="title-teaser-text"
-      class="title column is-offset-1 is-two-thirds-tablet px-5-desktop py-6-tablet pt-4-mobile pb-6-mobile has-background-white has-border"
-    >
-      Unsere Vision ist, dass jedes Kind vor der 4. Klasse programmieren lernt.
-    </p>
+  {% include front-page-title-section.html %}
+</section>
 
-    <div class="column is-12 py-6"></div>
+<section
+  id="what-is-codeklasse-front-page"
+  class="section"
+>
+  <div class="has-text-centered mb-5">
+    {% include title-h2.html text="front_page.title_what_is_codeklasse" is_translate_key=true %}
   </div>
 
-  <div>
-    <img
-      id="title-teaser-image"
-      src="assets/images/codeklasse-landing-sm.png"
-    >
-
-    <div id="title-teaser-call-to-action-button">
-      <a
-        class="button wrap-button-text is-white is-medium mb-3"
-        href="/#contact"
-      >
-        <p>Jetzt in <span class="has-text-weight-bold">Kontakt treten</span></p>
-      </a>
-
-      <p>oder <a
-          href="/#faq-front-page"
-          class="has-text-weight-bold is-underlined"
-        > häufige Fragen lesen </a></p>
-    </div>
-  </div>
+  {% include front-page-what-is-codeklasse.html %}
 </section>
 
 <section
   id="partners-and-sponsors-front-page"
-  class="section has-background-white has-border mt-6 mx-6-desktop mx-3-tablet mx-5-mobile"
+  class="section mx-6-desktop mx-3-tablet mx-5-mobile"
 >
-  {% include title-h2.html text="Unsere Partner & Förderer" %}
-
-  <div
-    id="sponsors-and-partners"
-    class="columns is-vcentered is-multiline pb-1"
-  >
-    <div class="column center-content is-one-quarter-desktop is-half-tablet">
-      <figure class="image sponsors-and-partners-image">
-        <a
-          href="https://www.gruenderstipendium.nrw/gruenden"
-          target="_blank"
-        >
-          <img
-            src="assets/images/partners-and-sponsors/GSN.png"
-            alt="Logo vom Gründerstipendium NRW"
-          >
-        </a>
-      </figure>
-    </div>
-
-    <div class="column center-content is-one-quarter-desktop is-half-tablet">
-      <figure class="image sponsors-and-partners-image">
-        <a
-          href="https://www.werk-x.ruhr"
-          target="_blank"
-        >
-          <img
-            src="assets/images/partners-and-sponsors/WERKX-Stempel.png"
-            alt="Logo vom Bochumer Startup Inkubator Werk-X"
-          >
-        </a>
-      </figure>
-    </div>
-
-    <div class="column center-content is-one-quarter-desktop is-half-tablet">
-      <figure class="image sponsors-and-partners-image">
-        <a
-          href="https://www.hochschule-bochum.de"
-          target="_blank"
-        >
-          <img
-            src="assets/images/partners-and-sponsors/BO-Logo_m_Wortmarke_L10cmWebHQ.jpg"
-            alt="Logo der Hochschule Bochum"
-          >
-        </a>
-      </figure>
-    </div>
-
-    <div class="column center-content is-one-quarter-desktop is-half-tablet">
-      <figure class="image sponsors-and-partners-image">
-        <a
-          href="https://www.rv-startupcampus.de"
-          target="_blank"
-        >
-          <img
-            src="assets/images/partners-and-sponsors/RVSC.png"
-            alt="Logo vom Ruhr Valley Startup Campus"
-          >
-        </a>
-      </figure>
-    </div>
+  <div class="has-text-centered">
+    {% include title-h2.html text="front_page.title_partners" is_translate_key=true %}
   </div>
+
+  {% include sponsors-and-partners.html %}
 </section>
 
 <section
   id="why-use-codeklasse-front-page"
   class="section mt-5"
 >
-  {% include why-use-codeklasse.html %}
+  {% include front-page-why-use-codeklasse.html %}
+
+  <div class="centered-call-to-action-button mt-6">
+    <a
+      class="button wrap-button-text is-primary is-medium mb-3"
+      href="{{ site.lang | prepend: "
+      /"
+      }}#contact"
+    >
+      <p class="has-text-weight-bold">{% t buttons.get_in_touch_now %}</p>
+    </a>
+
+    <p>{% t buttons.or %} <a
+        href="{{ site.lang | prepend: "
+        /"
+        }}#why-use-codeklasse-front-page"
+        class="has-text-weight-bold is-underlined"
+      > {% t buttons.take_another_perspective %}</a></p>
+  </div>
+</section>
+
+<section
+  id="about"
+  class="section"
+>
+  <div class="has-text-centered mb-4">
+    {% include title-h2.html text="front_page.title_team_behind_project" is_translate_key=true %}
+  </div>
+
+  <p class="mb-5 has-text-centered">
+    {% t front_page.subtitle_team_behind_project %}
+  </p>
+
+  {% include front-page-about-us.html %}
 </section>
 
 <section
   id="faq-front-page"
-  class="section has-background-white has-border mt-6-desktop mx-6-desktop mx-5-tablet mx-5-mobile"
+  class="section mx-6-desktop mx-5-tablet mx-5-mobile"
 >
-  {% include title-h2.html text="Fragen & Antworten" %}
-
-  <div class="columns">
-    <div class="column is-9">
-      <h4 class="subtitle is-4 has-text-weight-semibold">Was kann man mit codeklasse machen?</h4>
-      <p class="content">
-        codeklasse ist eine vollumfängliche Programmier-Lernsoftware für Kinder der 1. bis 6. Klasse.
-        Sie ermöglicht nicht nur das eigenverantwortliche Lernen der Schülerinnen und Schüler,
-        sondern stellt auch vorgefertigte Kampagnen und Hilfsmaterialien für Lehrerinnen und Lehrer bereit,
-        um die Unterrichtsvorbereitung und die Vermittlung des Themas "Programmieren Lernen" zu erleichtern.</p>
-    </div>
-    <div class="column center-content">
-      <figure class="image m-auto">
-        <img src="assets/images/faq/was-kann-man-mit-codeklasse-machen.png">
-      </figure>
-    </div>
+  <div class="has-text-centered mb-6">
+    {% include title-h2.html text="front_page.title_any_questions" is_translate_key=true %}
   </div>
 
-  <div class="columns">
-    <div class="column is-9">
-      <h4 class="subtitle is-4 has-text-weight-semibold">Muss ich selbst programmieren können?</h4>
-      <p class="content">
-        Nein. codeklasse ist bewusst so konzipiert, dass nicht nur Kinder,
-        sondern auch auch fachfremde Lehrerinnen und Lehrer programmieren lernen können.
-        Unsere Plattform stellt einsatzbereite Kurse und moderne Lehrmaterialien bereit,
-        die SuS sowie KuK gleichermaßen den einfachen, frustfreien Zugang zum Thema Programmierung ermöglicht.</p>
-    </div>
-    <div class="column center-content">
-      <figure class="image m-auto">
-        <img src="assets/images/faq/muss-ich-selbst-programmieren-können.png">
-      </figure>
-    </div>
-  </div>
-
-  <div class="columns">
-    <div class="column is-9">
-      <h4 class="subtitle is-4 has-text-weight-semibold">Wie kann ich codeklasse in meinen Unterricht einbringen?
-      </h4>
-      <p class="content">
-        codeklasse ist zum aktuellen Zeitpunkt noch nicht veröffentlicht.
-        Bitte <a class="is-underlined" href="/#contact">kontaktieren</a> Sie uns dennoch, wenn Sie Interesse daran haben
-        codeklasse zu testen oder an Ihrer Schule einzuführen – wir freuen uns immer über neue Partnerschaften,
-        mit denen wir codeklasse testen und pädagogisch sowie technisch weiterentwickeln können.</p>
-    </div>
-    <div class="column center-content">
-      <figure class="image m-auto">
-        <img src="assets/images/faq/wie-kann-ich-codeklasse-in-meinem-unterricht-einbringen.png">
-      </figure>
-    </div>
-  </div>
-
-  <h4 class="subtitle is-4 has-text-right is-underlined">
-    <a href="/faq">...weitere Fragen & Antworten</a>
-  </h4>
+  {% include front-page-faq.html %}
 </section>
 
 <section
   id="blog-and-news-front-page"
-  class="section mt-6 is-fullheight"
+  class="section is-fullheight"
 >
-  {% include title-h2.html text="Blog & News" %}
+  <div class="has-text-centered mb-6">
+    {% include title-h2.html text="navigation_headlines.blog" is_translate_key=true %}
+  </div>
 
   <div class="columns is-multiline">
     {% for post in site.posts limit:3 %}
     <div class="column is-one-quarter-desktop is-half-tablet is-one-third-widescreen">
-      <a href="{{ post.url }}">
+      <a
+        href="{{ site.lang | prepend: "
+        /"
+        }}{{
+        post.url
+        }}"
+      >
         {% if post.hidden != null and post.hidden != true %}
         {% include blog-post-tile.html %}
         {% endif %}
@@ -194,7 +114,11 @@ title: codeklasse
   </div>
 
   <h4 class="subtitle is-4 has-text-right is-underlined">
-    <a href="/blog">..alle Artikel im codeklasse Blog</a>
+    <a
+      href="{{ site.lang | prepend: "
+      /"
+      }}/blog"
+    >{% t buttons.take_another_perspective %}</a>
   </h4>
 </section>
 
@@ -202,7 +126,7 @@ title: codeklasse
   id="contact"
   class="section"
 >
-  {% include contact-form.html %}
+  {% include contact-section.html %}
 </section>
 
 <style>
@@ -212,3 +136,17 @@ title: codeklasse
     transition: .5s ease-in-out;
   }
 </style>
+
+<script>
+  /* 
+   * Trying to silence all iFrame console outputs, however missing fonts etc. don't seem to be affected.
+   * Anyhow, thanks to https://stackoverflow.com/a/64317635/11515036 
+   */
+  const iframes = Array.from(document.getElementsByTagName('iframe'));
+
+  for (const item of iframes) {
+    item.contentWindow.console.log = () => { /* nop */ };
+    item.contentWindow.console.warn = () => { /* nop */ };
+    item.contentWindow.console.error = () => { /* nop */ };
+  }
+</script>

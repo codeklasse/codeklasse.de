@@ -1,1 +1,7 @@
-<h2 class="title is-2 is-size-3-mobile pt-5">{{ include.text }}</h2>
+<h2 class="title is-2 is-size-3-mobile pt-5">
+    {% if include.is_translate_key %}
+    {% t include.text %}
+    {% else %}
+    {{ include.text }}
+    {% endif %}
+</h2>

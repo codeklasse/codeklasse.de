@@ -1,0 +1,73 @@
+<div class="card has-background-primary mt-5">
+    <div class="card-content">
+        <div class="columns">
+            <div class="column is-9">
+                <h4 class="subtitle is-4 has-text-weight-semibold">{% t faq_titles.was_kann_man_mit_codeklasse_machen %}
+                </h4>
+                <p class="content">
+                    {% assign post = site.faq | where: "title", "faq_titles.was_kann_man_mit_codeklasse_machen" | first
+                    %}
+                    {{ post.content }}
+                </p>
+            </div>
+            <div class="column center-content">
+                <figure class="image has-box-shadow m-auto">
+                    <img src="/assets/images/faq/was-kann-man-mit-codeklasse-machen.png">
+                </figure>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card has-background-primary mt-5">
+    <div class="card-content">
+        <div class="columns">
+            <div class="column is-9">
+                <h4 class="subtitle is-4 has-text-weight-semibold">{% t faq_titles.muss_ich_selbst_programmieren_koennen
+                    %}</h4>
+                <p class="content">
+                    {% assign post = site.faq | where: "title", "faq_titles.muss_ich_selbst_programmieren_koennen" |
+                    first
+                    %}
+                    {{ post.content }}
+                </p>
+            </div>
+            <div class="column center-content">
+                <figure class="image has-box-shadow m-auto">
+                    <img src="/assets/images/faq/muss-ich-selbst-programmieren-können.png">
+                </figure>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card has-background-primary mt-5">
+    <div class="card-content">
+        <div class="columns">
+            <div class="column is-9">
+                <h4 class="subtitle is-4 has-text-weight-semibold">{% t
+                    faq_titles.wie_kann_ich_codeklasse_in_meinem_unterricht_nutzen %}
+                </h4>
+                <p class="content">
+                    {% assign post = site.faq | where: "title",
+                    "faq_titles.wie_kann_ich_codeklasse_in_meinem_unterricht_nutzen" | first
+                    %}
+                    {{ post.content }}
+                </p>
+            </div>
+            <div class="column center-content">
+                <figure class="image has-box-shadow m-auto">
+                    <img src="/assets/images/faq/wie-kann-ich-codeklasse-in-meinem-unterricht-einbringen.png">
+                </figure>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h4 class="subtitle is-4 has-text-right is-underlined mt-4">
+    <a
+        href="{{ site.lang | prepend: "
+        /"
+        }}/faq"
+    >{% t front_page.all_faqs %}</a>
+</h4>

@@ -2,23 +2,24 @@
     <section class="section">
         <div class="columns">
             <div class="column">
-                <b class="is-6">Unternehmen</b>
+                <b class="is-6">{% t navigation_headlines.company %}</b>
 
-                <p><a href="/about">Über uns</a></p>
-                <p><a href="/legal">Impressum</a></p>
-                <p><a href="/privacy">Datenschutz</a></p>
+                <p class="footer-link"><a href="{{ site.lang | prepend: "/" }}/#about">{% t navigation_headlines.about %}</a>
+                <p class="footer-link"><a href="{{ site.lang | prepend: "/" }}/legal">{% t navigation_headlines.legal %}</a></p>
+                <p class="footer-link"><a href="{{ site.lang | prepend: "/" }}/privacy">{% t navigation_headlines.privacy %}</a></p>
             </div>
 
             <div class="column">
-                <b class="is-6">Ressourcen</b>
+                <b class="is-6">{% t navigation_headlines.resources %}</b>
 
-                <p><a href="/blog">Blog</a></p>
-                <p><a href="/faq">Fragen & Antwort</a></p>
+                <!-- <p class="footer-link"><a href="{{ site.lang | prepend: "/" }}/downloads">{% t navigation_headlines.downloads %}</a></p> -->
+                <p class="footer-link"><a href="{{ site.lang | prepend: "/" }}/blog">{% t navigation_headlines.blog %}</a></p>
+                <p class="footer-link"><a href="{{ site.lang | prepend: "/" }}/faq">{% t navigation_headlines.faq %}</a></p>
                 <!-- <p><a href="/guides">Anleitungen</a></p> -->
             </div>
 
             <div class="column">
-                <b class="is-6">Kontakt</b>
+                <b class="is-6">{% t navigation_headlines.contact %}</b>
 
                 <p>{{ site.contact_mail }}</p>
                 <p>{{ site.contact_phone }}</p>
@@ -38,7 +39,7 @@
                 <a
                     class="button"
                     target="_blank"
-                    href="https://www.linkedin.com/in/sergej-grilborzer-b28736205"
+                    href="https://de.linkedin.com/company/codeklasse"
                 >
                     <figure class="image social-media-footer">
                         <img src="/assets/css/fontawesome-free-svgs/brands/linkedin.svg">
@@ -78,7 +79,7 @@
         </div>
 
         <section class="level">
-            <p id="copyright-year-mark" class="level-left"><a href="/">&copy; codeklasse {{ 'now' | date: "%Y" }}</a></p>
+            <p id="copyright-year-mark" class="level-left"><a href="{{ site.lang | prepend: "/" }}/">&copy; codeklasse {{ 'now' | date: "%Y" }}</a></p>
 
             <figure
                 id="footer-made-with-bulma"

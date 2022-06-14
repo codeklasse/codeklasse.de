@@ -1,7 +1,7 @@
 ---
 layout: legal-and-privacy
-title: Datenschutzerklärung
-last_updated_date: "21.12.2021"
+title: navigation_headlines.privacy
+last_updated_date: "09.06.2022"
 ---
 
 <p>Wir freuen uns sehr über Ihr Interesse an unserem Unternehmen. Datenschutz hat einen besonders hohen Stellenwert für die Geschäftsleitung der codeklasse. Eine Nutzung der Internetseiten der codeklasse ist grundsätzlich ohne jede Angabe personenbezogener Daten möglich. Sofern eine betroffene Person besondere Services unseres Unternehmens über unsere Internetseite in Anspruch nehmen möchte, könnte jedoch eine Verarbeitung personenbezogener Daten erforderlich werden. Ist die Verarbeitung personenbezogener Daten erforderlich und besteht für eine solche Verarbeitung keine gesetzliche Grundlage, holen wir generell eine Einwilligung der betroffenen Person ein.</p>
@@ -54,12 +54,12 @@ last_updated_date: "21.12.2021"
 <h4>2. Name und Anschrift des für die Verarbeitung Verantwortlichen</h4>
 <p>Verantwortlicher im Sinne der Datenschutz-Grundverordnung, sonstiger in den Mitgliedstaaten der Europäischen Union geltenden Datenschutzgesetze und anderer Bestimmungen mit datenschutzrechtlichem Charakter ist</p>
 
-<p>Sergej Grilborzer</p>
-<p>Asenberg 11</p>
-<p>58507 Lüdenscheid</p>
+<p>Grilborzer & Kranz GbR – codeklasse</p>
+<p>Haderslebener Str. 6</p>
+<p>44789 Bochum</p>
 <p>Deutschland</p>
 <p>Tel.: 01623292122</p>
-<p>E-Mail: sergej@codeklasse.de</p>
+<p>E-Mail: team@codeklasse.de</p>
 <p>Website: codeklasse.de</p>
 
 <h4>3. Cookies</h4>

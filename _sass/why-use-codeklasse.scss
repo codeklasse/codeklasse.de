@@ -1,0 +1,71 @@
+@use "./custom-variables.scss";
+
+/* "Journey-selection" buttons at top of the section */
+#why-use-codeklasse-tabs-list a.button {
+    min-width: 20rem;
+
+    @include tablet {
+        min-width: 30rem;
+        height: auto;
+    }
+
+    @include desktop {
+        min-width: 20rem;
+    }
+}
+
+/* Color journey buttons and their appropriate tiles in the same background-color */
+#why-use-codeklasse-tabs-list #Tab-Button-Unternehmen.is-active,
+#why-use-codeklasse-front-page .container #Tab-Companies .card {
+    background-color: $primary;
+}
+
+#why-use-codeklasse-tabs-list #Tab-Button-Lehrkraefte.is-active,
+#why-use-codeklasse-front-page .container #Tab-Educators .card {
+    background-color: $info;
+}
+
+#why-use-codeklasse-tabs-list #Tab-Button-Eltern.is-active,
+#why-use-codeklasse-front-page .container #Tab-Parents .card {
+    background-color: $success;
+}
+
+#Tab-Button-Unternehmen,
+#Tab-Button-Lehrkraefte,
+#Tab-Button-Eltern {
+    @include mobile {
+        margin-bottom: 0.75rem;
+    }
+}
+
+/* Compensate for missing Bulma class "is-three-fifths-desktop" */
+#why-use-codeklasse-front-page .column.is-three-fifths {
+    @include tablet {
+        width: 100%;
+    }
+
+    @include desktop {
+        width: 60%;
+    }
+}
+
+/* Related to "is-three-fifths-desktop" compensation: Remove margins on tablets */
+#why-use-codeklasse-front-page .column.is-offset-one-fifth.is-three-fifths {
+    @include tablet {
+        margin-left: 0%;
+    }
+
+    @include desktop {
+        margin-left: 20%;
+    }
+}
+
+#why-use-codeklasse-front-page .column.is-offset-two-fifths.is-three-fifths {
+    @include tablet {
+        margin-left: 0%;
+    }
+
+    @include desktop {
+        margin-left: 40%;
+    }
+}

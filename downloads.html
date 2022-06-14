@@ -1,0 +1,83 @@
+---
+layout: default
+title: navigation_headlines.downloads
+
+---
+
+<section class="section is-fullheight mb-6">
+    <div class="has-text-centered">
+        {% include title-h2.html text="downloads.title" is_translate_key="true" %}
+        <p class="subtitle">{% t downloads.subtitle %}</p>
+    </div>
+
+    <div class="columns is-multiline is-justify-content-center mx-3-desktop my-3-desktop pt-6">
+        <div class="column is-full">
+            <div class="columns">
+                <div class="column is-one-third-tablet">
+                    {% include downloads-file-tile.html
+                    package_title="downloads.package_infos_title"
+                    package_subtitle="downloads.package_infos_subtitle"
+
+                    img_url="/assets/images/logos/codeklasse-one-pager.pdf"
+                    img_alt="downloads.package_infos_img_alt"
+                    %}
+                </div>
+
+                <div class="column is-one-third-tablet">
+                    {% include downloads-file-tile.html
+                    package_title="downloads.package_logos_title"
+                    package_subtitle="downloads.package_logos_subtitle"
+
+                    img_url="/assets/images/logos/codeklasse-logos.zip"
+                    img_alt="downloads.package_logos_img_alt"
+                    %}
+                </div>
+
+                <div class="column is-one-third-tablet">
+                    {% include downloads-file-tile.html
+                    package_title="downloads.package_pitch_title"
+                    package_subtitle="downloads.package_pitch_subtitle"
+
+                    img_url="/assets/images/logos/emoji_weiss.png"
+                    img_alt="downloads.package_pitch_img_alt"
+                    %}
+                </div>
+            </div>
+        </div>
+
+        <div class="column is-full pt-6 mt-5">
+            <div class="columns">
+                <div class="column is-half-tablet">
+                    <h3 class="title is-3 has-text-centered">{% t downloads.usage_yes_title %}</h3>
+                    <div class="content">
+                        <ol type="1">
+                            <li>{% t downloads.usage_yes_1 %}</li>
+                            <li>{% t downloads.usage_yes_2 %}</li>
+                            <li>{% t downloads.usage_yes_3 %}</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="column is-half-tablet">
+                    <h3 class="title is-3 has-text-centered">{% t downloads.usage_no_title %}</h3>
+                    <div class="content">
+                        <ol type="1">
+                            <li>{% t downloads.usage_no_1 %}</li>
+                            <li>{% t downloads.usage_no_2 %}</li>
+                            <li>{% t downloads.usage_no_3 %}</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="is-flex is-justify-content-center mt-6">
+            <a
+                id="faq-contact-button"
+                class="button is-primary wrap-button-text"
+                href="{{ site.lang | prepend: "
+                /"
+                }}/#contact"
+            >{% t buttons.faq_get_in_touch %}</a>
+        </div>
+</section>

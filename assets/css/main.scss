@@ -1,8 +1,40 @@
 ---
 ---
 
-@charset "utf-8";
-@import "bulma-theme";
+@import "bulma-theme.scss";
+@import "navbar.scss";
+@import "blog.scss";
+@import "why-use-codeklasse.scss";
+
+/*
+*  Set and apply custom fonts
+*/
+
+@font-face {
+    font-family: "SpaceGrotesk";
+    src: url("/assets/fonts/SpaceGrotesk-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Averta Regular";
+    src: url("/assets/fonts/AvertaDemoPECuttedDemo-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "GT Haptik Medium";
+    src: url("/assets/fonts/GT-Haptik-Medium.ttf") format("truetype");
+}
+
+* {
+    font-family: "SpaceGrotesk";
+    border-radius: 0 !important;
+}
+
+p,
+span,
+.content {
+    font-family: "Averta Regular";
+}
 
 /*
 *  Enable smooth scrolling for all elements
@@ -11,6 +43,66 @@
     scroll-behavior: smooth;
 }
 
+/*
+*  Set general button style
+*/
+
+// If not enough: https://stackoverflow.com/questions/42134731
+.button.is-white:visited,
+button.is-white:focus,
+.button.is-info:focus,
+.button.is-white {
+    border-color: $border-color;
+}
+
+.card,
+.button,
+.has-box-shadow,
+.has-box-shadow-no-hover-effect {
+    border-color: #000;
+    transition: ease-in-out 0.2s;
+    box-shadow: 4px 4px #000;
+}
+
+.button:hover,
+.has-box-shadow:hover,
+.has-box-shadow-hover-effect:hover {
+    // transform: translate(2px, 2px);
+    border-color: #000 !important;
+    box-shadow: none;
+    transition: ease-in-out 0.2s;
+}
+
+#summary-section ul li {
+    transition: ease-in-out 0.2s;
+}
+
+#summary-section ul li:hover {
+    transition: ease-in-out 0.2s;
+    transform: translateY(-10%);
+}
+
+.button.is-primary,
+#faq-contact-button,
+.buttons button.button,
+a.button,
+.has-border,
+.card,
+figure,
+#blog-search-field {
+    border: $border-radius solid $border-color;
+}
+
+#blog-search-field:active,
+#blog-search-field:focus,
+#blog-search-field:focus-visible,
+input:active,
+input:focus,
+input:focus-visible {
+    border-color: none;
+    background-color: $light;
+    outline: none !important;
+}
 
 .site-content,
 #main-footer {
@@ -42,18 +134,18 @@
 }
 
 #title-section {
+    margin-top: 5rem;
+    // Required because the margin below blows up otherwise
     margin-bottom: -5rem;
 
     @include desktop {
-        margin-top: 6rem;
+        margin-top: 4rem;
     }
 }
 
 #title-teaser-image {
-
     @include desktop {
         margin-left: 8.33333337%;
-
     }
 }
 
@@ -72,64 +164,16 @@
     }
 }
 
-#title-teaser-call-to-action-button {
+.centered-call-to-action-button {
     position: relative;
-    top: -7.5rem;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
 }
 
-/* why-use-codeklasse.html start */
-
-#why-use-codeklasse-tabs-list a.button {
-    min-width: 20rem;
-
-    @include tablet {
-        min-width: 30rem;
-        height: auto;
-    }
-
-    @include desktop {
-        min-width: 20rem;
-    }
+.title-teaser.centered-call-to-action-button {
+    top: -7.5rem;
 }
-
-#why-use-codeklasse-tabs-list a.button:not(:last-child):not(.is-fullwidth) {
-    margin-right: 0;
-}
-
-.card.why-use-codeklasse {
-    @include desktop {
-        // max-width: 75%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-/* why-use-codeklasse.html end */
-
-
-/* navbar.html start */
-#title-section {
-    @include desktop {
-        margin-top: 0;
-    }
-}
-
-#main-navbar {
-    padding: 1rem 0;
-    display: flex;
-
-    @include touch {
-        flex-direction: column;
-    }
-
-    @include desktop {
-        padding: 0 6rem;
-    }
-}
-/* navbar.html end */
 
 .column.center-content {
     justify-content: center;
@@ -141,6 +185,10 @@
 }
 
 .sponsors-and-partners-image {
+    filter: grayscale(100%);
+    opacity: 0.6;
+    transition: ease-in-out 0.2s;
+
     border: none;
     height: auto;
 
@@ -160,6 +208,11 @@
     }
 }
 
+.sponsors-and-partners-image:hover {
+    filter: none;
+    opacity: 0.9;
+}
+
 .social-media-icons-footer {
     display: flex;
     flex-direction: column;
@@ -171,42 +224,21 @@
     }
 }
 
-
-
-// If not enough: https://stackoverflow.com/questions/42134731
-.button.is-white:visited,
-button.is-white:focus,
-.button.is-info:focus,
-.button.is-white {
-    border-color: $border-color;
-}
-
-#why-use-codeklasse-tabs-list a.button:hover,
-#why-use-codeklasse-tabs-list a.button:active,
-#why-use-codeklasse-tabs-list a.button:focus,
-#why-use-codeklasse-tabs-list a.button.is-active,
-.button.is-primary:hover,
-.button.is-primary:active,
-.button.is-primary:focus,
-#title-action-buttons .button:hover,
-.button.is-white:hover,
-#faq-contact-button:hover {
-    border-color: $success;
-}
-
-// #title-action-buttons .button,
-.button.is-primary,
-#faq-contact-button,
-.buttons button.button,
-a.button,
-.has-border,
-.card,
-figure {
-    border: $border-radius solid $border-color;
-}
-
 .no-border {
     border: none;
+}
+
+.tabs ul {
+    border-bottom-color: #000;
+}
+
+.tabs li a {
+    border: none;
+}
+
+.tabs li.is-active a {
+    color: inherit;
+    font-weight: bold;
 }
 
 // More infos: https://www.w3schools.com/css/css_link.asp
@@ -218,20 +250,43 @@ a {
 a.navbar-item:hover,
 a.navbar-item:focus,
 a.navbar-item:focus-within {
-    background-color: initial;
-    color: $success;
-    border-color: $success;
+    background-color: unset;
+    color: unset;
 }
 
-.breadcrumb a:hover,
-a:hover,
-// NOT SPECIFIC enough?! >.<!!
-// input.input:active,
+a,
+.footer-link,
+.breadcrumb a,
+#footer-button-instagram {
+    transition: ease-in-out 0.2s;
+}
 
-// NOT SPECIFIC enough?! >.<!!
+a:hover,
+.navbar-link:hover,
+.footer-link:hover,
+.breadcrumb a:hover,
 #footer-button-instagram:focus {
-    border-color: $success;
-    color: $success;
+    transform: translateY(-10%);
+    transition: ease-in-out 0.1s;
+
+    // Avoid mobile navbar color highlighting 
+    background-color: inherit;
+    color: inherit;
+}
+
+.navbar-link:focus {
+    background-color: $primary-dark !important;
+    color: #485fc7;
+}
+
+.underline-links-in-posts a {
+    text-decoration: underline;
+    transition: ease-in-out 0.2s;
+}
+
+.underline-links-in-posts a:hover {
+    transform: translateY(-10%);
+    transition: ease-in-out 0.2s;
 }
 
 #copyright-year-mark {
@@ -241,6 +296,8 @@ a:hover,
 }
 
 .wrap-button-text {
+    color: $success;
+    border-color: $success;
     height: max-content;
     white-space: inherit;
 }
@@ -250,16 +307,21 @@ a:hover,
     border: $border-radius solid $border-color;
 }
 
-/* blog.html start */
-#blog-search-field {
-
-    @include mobile {
-        float: none !important;
-    }
+.svg-arrow {
+    height: 6rem;
+    max-width: 100%;
+    border: none;
 }
-/* blog.html end */
 
+.rotate-90deg {
+    transform: rotate(90deg);
+}
 
-/* faq.html start */
+.rotate-180deg {
+    transform: rotate(180deg);
+}
 
-/* faq.html end */
+.is-fullwidth-and-height {
+    width: 100%;
+    height: 100%;
+}

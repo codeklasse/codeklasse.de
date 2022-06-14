@@ -72,7 +72,7 @@ Hier finden Sie <a href = "https://www.pinterest.de/search/pins/?rs=ac&len=2&q=l
 Außerdem sind spannende Aktivitäten als Abwechslung zum Lernen nicht zu unterschätzen. 
 Aus diesem guten Grund stammt die Idee zu codeklasse.
 Unsere Mission ist frustfreies Lernen der wichtigen Programmierinhalte für jedes Kind zu ermöglichen. 
-Apropos können Sie hierzu auch gerne unseren <a href="https://codeklasse.de/#contact" target="_blank">Newsletter</a> abonnieren😉!
+Apropos können Sie hierzu auch gerne unseren <a href="https://codeklasse.de/de#contact" target="_blank">Newsletter</a> abonnieren😉!
 
 # Fazit 
 

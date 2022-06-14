@@ -1,0 +1,120 @@
+navigation_headlines:
+  faq: Häufig gestellte Fragen
+  about: Über uns
+  blog: Blog & News
+  legal: Impressum
+  privacy: Datenschutz
+  company: Unternehmen
+  resources: Ressourcen
+  downloads: Downloads
+  contact: Kontakt
+
+languages:
+  de: 🇩🇪 Deutsch
+  en: 🇬🇧 English
+
+buttons:
+  get_in_touch: In Kontakt treten
+  get_in_touch_now: Jetzt in Kontakt treten
+  or: oder
+  take_another_perspective: andere Perspektive betrachten
+  read_faqs_pretext: oder
+  read_faqs_call_to_action: häufige Fragen lesen
+  faq_get_in_touch: Fragen offen? Wir freuen uns von Ihnen zu hören!
+
+front_page:
+  exclamation_introduction: Programmieren lernen war noch nie so leicht!
+  title_what_is_codeklasse: Was ist codeklasse eigentlich?
+  subtitle_what_is_codeklasse: "codeklasse ist eine vollumfängliche Programmier-Lernsoftware für Kinder der 1. bis 4. Klasse. Sie ermöglicht nicht nur das eigenverantwortliche Programmieren lernen der Schülerinnen und Schüler, sondern stellt auch vorgefertigte Kampagnen und Hilfsmaterialien für Lehrerinnen und Lehrer bereit, um Unterrichtsvorbereitung zu erleichtern."
+  title_why_use_codeklasse: Wie ist codeklasse für mich relevant?
+  title_why_use_codeklasse_companies: Unternehmen
+  subtitle_why_use_codeklasse_companies: " Digitale Kompetenzen und IT als Schulfach ausbauen: Die ICILS-Studie hat gezeigt, dass es keine Fortschritte bei informations- und computerbezogenen Kompetenzen der Schülerinnen und Schüler im Zeitraum von 2013 bis 2018 gegeben hat. Der Unterricht in diesen Bereichen ist zu stärken, das Schulfach IT sollte ausgebaut werden. "
+  title_why_use_codeklasse_educators: Lehrkräfte
+  title_why_use_codeklasse_parents: Eltern
+  why_use_codeklasse_companies_fact_1: "Rund 54% der Unternehmen in Deutschland erwarten einen steigenden Bedarf an IT-Fachkräften. 65% erwarten künftig mehr Digitalisierung im Unternehmen."
+  why_use_codeklasse_companies_fact_2: "Deutschlands Schulen schaffen es aktuell nicht, genug zukünftige Arbeitskräfte für MINT-Fächer zu begeistern. Doch die Problematik ist nur mit flächendeckenden Maßnahmen rechtzeitig lösbar."
+  why_use_codeklasse_companies_fact_3: "Hier setzt codeklasse an. Seit 2020 entwickeln wir unsere Plattform, mit der Kinder schon ab der ersten Klasse und ganz ohne Lesekompetenzen für Programmierung begeistert werden. Wir suchen starke Partner, die dieses Thema mit uns vorantreiben möchten. "
+  why_use_codeklasse_parents_fact_1:  "Programmieren lernen lohnt sich! Technik-nahe Positionen gehören zu den gefragtesten Berufen der kommenden Jahre."
+  why_use_codeklasse_parents_fact_2:  "Lernen macht Spaß! Mit coolen Animationen, individueller Hilfestellung und vielen kleinen Erfolgserlebnissen möchten wir Kindern die Freude am Lernen mitgeben. In kleinen Schritten zum großen Erfolg."
+  why_use_codeklasse_parents_fact_3:  "Kinder im Alter von sechs bis sieben Jahren schauen im Durchschnitt 133 Minuten pro Tag auf einen Bildschirm. Digitale Medien sind längst Teil unseres Alltags - wir sollten sie bewusst und sinnvoll nutzen."
+  why_use_codeklasse_educators_fact_1: "Lehrkräfte brauchen keinerlei Vorwissen, um das Programmieren in ihre Klasse zu bringen."
+  why_use_codeklasse_educators_fact_2: "Funktionsbereit geliefert ist codeklasse einfach zu bedienen und bietet einen vorgefertigten Lernpfad mit dem SuS ihre Programmierkenntnisse Schritt für Schritt erweitern."
+  why_use_codeklasse_educators_fact_3: "Eine breite Auswahl an zusätzlichen Lerneinheiten bietet flexiblen und umfänglichen Einsatz - ob zuhause oder im Schulalltag."
+  why_use_codeklasse_educators_fact_category_1: Keine Eigenkenntnisse der Lehrkraft nötig
+  why_use_codeklasse_educators_fact_category_2: Selbstständig Lernen All-Inclusive
+  why_use_codeklasse_educators_fact_category_2: Zusätzliche Inhalte
+  title_partners: Unsere Partner & Förderer
+  title_team_behind_project: Wer steckt hinter dem Projekt?
+  subtitle_team_behind_project:
+    "Angefangen mit einer Masterarbeit hat Sergej Grilborzer die erste Version der App entwickelt und ist mit dem NRW-Gründerstipendium als Hochschulausgründung gestartet. Liam Kranz hat zunächst beratend mitgewirkt, bis er im Januar '22 als Mitgründer an Bord kam, um seine Leidenschaft für kreatives Coding in die Produktentwicklung einzubringen. Gemeinsam sind die beiden ein junges Team aus Bochum, das etwas bewegen will."
+  title_any_questions: Noch Fragen offen?
+  all_articles_in_blog: ...alle Artikel im codeklasse Blog
+  all_faqs: ...weitere Fragen und Antworten
+  about_codeklasse_team_photo: "Die Gründer Liam & Sergej"
+  about_fact_category_purpose: Purpose
+  about_fact_purpose: codeklasse strebt an Kompetenzen des MINT Bereichs früh zu
+    stärken und Deutschlands Bedarf
+    nachhaltig zu decken.
+  about_fact_category_vision: Vision
+  about_fact_vision:
+    Unsere Vision ist, dass jedes Kind nach der 4. Klasse neben Schreiben und Rechnen auch
+    Programmieren kann.
+  about_fact_category_mission: Mission
+  about_fact_mission:
+    Unsere Mission ist Kinder für das Programmieren zu begeistern und eine Plattform zu
+    schaffen, die
+    diese Kompetenz spielerisch & anschaulich vermittelt.
+  about_fact_category_priority: Priorität
+  about_fact_priority:
+    Unsere oberste Priorität ist den Zugang zur Bildung des neuen Zeitalters unabhängig von
+    Geld &
+    Status zu ermöglichen.
+
+contact_form:
+  title: Fragen? Impulse? Kooperation?
+  subtitle: Sprechen wir darüber! Gerne persönlich oder mit unserem Kontaktformular.
+  scheduler: Terminbuchung
+  scheduler_subtext: Buchen Sie Ihren Wunschtermin mit Sergej Grilborzer bequem & direkt.
+  form: Kontaktformular
+  form_subtext: Wir freuen uns auf Ihre Nachricht!
+  form_name: Name
+  form_email: Email
+  form_optional_phone_number: Optional - Telefonnummer für Rückruf
+  form_message: Ihre/ Deine Nachricht
+  form_privacy_confirmation_before_link: Ich habe die
+  form_privacy_confirmation_link: Datenschutzerklärung
+  form_privacy_confirmation_after_link: zur Kenntnis genommen.
+    Ich stimme zu, dass die von mir übermittelten Daten zur Kontaktaufnahme und für Rückfragen dauerhaft
+    gespeichert werden.
+    Diese Zustimmung kann ich jederzeit persönlich widerrufen.
+  form_send_button: Senden
+  form_hint_fill_out_all_fields: Bitte füllen Sie alle Felder aus
+
+faq_titles:
+  muss_ich_selbst_programmieren_koennen: Muss ich selbst programmieren können?
+  wie_kann_ich_codeklasse_in_meinem_unterricht_nutzen: Wie kann ich codeklasse in meinen Unterricht nutzen?
+  was_kann_man_mit_codeklasse_machen: Was kann man mit codeklasse machen?
+  was_heisst_mint: Was heißt MINT?
+  technical_requirements_for_codeklasse: Was sind die technischen Voraussetzungen für codeklasse?
+
+downloads:
+  title: Downloadbereich
+  subtitle: Sie finden hier Materialien für Pressemitteilungen und co. Bitte beachten Sie unsere Verwendungshinweise.
+  package_infos_title: Informationsbroschüre
+  package_infos_subtitle: All the intel you need.
+  package_logos_title: Logopaket
+  package_logos_subtitle: All the logos you need.
+  package_pitch_title: Öffentlicher Pitch
+  package_pitch_subtitle: All the pitching you need.
+  usage_yes_title: Please do
+  usage_no_title: Please don't
+  usage_yes_1:
+  usage_yes_2:
+  usage_yes_3:
+  usage_no_1:
+  usage_no_2:
+  usage_no_3:
+
+status404:
+  title404: Entschuldigung!
+  subtitle404: Die gewünschte Seite wurde nicht gefunden.

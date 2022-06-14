@@ -1,0 +1,18 @@
+<a
+    href="{{ include.img_url }}"
+    download="{{ include.img_url }}"
+>
+    <figure class="image is-1by1 has-box-shadow">
+        <img
+            class="p-6"
+            src="{{ include.img_url }}"
+            alt="{% t{{ include.img_alt }} %}"
+            style="object-fit: contain;"
+        >
+    </figure>
+</a>
+
+<p class="title is-4 has-text-centered pt-5">{% t {{ include.package_title }} %}</p>
+<p class="subtitle is-6 has-text-centered">
+    {% t {{ include.package_subtitle }} %}
+</p>

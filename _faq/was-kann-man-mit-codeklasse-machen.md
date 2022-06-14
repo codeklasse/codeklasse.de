@@ -1,11 +1,11 @@
 ---
 layout: faq-post
-title:  "Was kann man mit codeklasse machen?"
+title:  faq_titles.was_kann_man_mit_codeklasse_machen
 last_updated_date: "2021-12-21"
-hidden: false
+
+namespace: faq.was-kann-man-mit-codeklasse-machen
+permalink: faq/was-kann-man-mit-codeklasse-machen
+permalink_en: /faq/what-can-you-use-codeklasse-for
 ---
 
-codeklasse ist eine vollumfängliche Programmier-Lernsoftware für Kinder der 1. bis 6. Klasse.
-Sie ermöglicht nicht nur das eigenverantwortliche Lernen der Schülerinnen und Schüler,
-sondern stellt auch vorgefertigte Kampagnen und Hilfsmaterialien für Lehrerinnen und Lehrer bereit,
-um die Unterrichtsvorbereitung und die Vermittlung des Themas "Programmieren Lernen" zu erleichtern.
+{% tf _faq/was-kann-man-mit-codeklasse-machen.md %}

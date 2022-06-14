@@ -1,12 +1,12 @@
 ---
 layout: faq-post
-title: "Wie kann ich codeklasse in meinen Unterricht einbringen?"
+title: faq_titles.wie_kann_ich_codeklasse_in_meinem_unterricht_nutzen
 last_updated_date: "2021-12-21"
 hidden: false
+
+namespace: faq.wie-kann-ich-codeklasse-in-meinem-unterricht-einbringen
+permalink: faq/wie-kann-ich-codeklasse-in-meinem-unterricht-einbringen
+permalink_en: /faq/how-can-i-use-codeklasse-in-my-class
 ---
 
-codeklasse ist zum aktuellen Zeitpunkt noch nicht veröffentlicht.
-Bitte [kontaktieren](/#contact) Sie uns dennoch,
-wenn Sie Interesse daran haben codeklasse zu testen oder an Ihrer Schule einzuführen
-– wir freuen uns immer über neue Partnerschaften,
-mit denen wir codeklasse auf pädagogischer und technischer Ebene testen und weiterentwickeln können.
+{% tf _faq/wie-kann-ich-codeklasse-in-meinem-unterricht-einbringen.md %}

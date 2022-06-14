@@ -1,0 +1,19 @@
+# Set German language else default to English
+#
+# About Netlify's rule order:
+# The redirects engine will process the first matching rule it finds, reading from top to bottom.
+# Rules in the _redirects file are always processed first, followed by rules in the Netlify configuration file.
+#
+# We use netlify.toml instead of _redirects, because this file allows us to set conditions
+[[redirects]]
+  from = "/"
+  to = "/de"
+  status = 301
+  force = true
+  conditions = {Language = ["de"]}
+
+[[redirects]]
+  from = "/"
+  to = "/en"
+  status = 301
+  force = true

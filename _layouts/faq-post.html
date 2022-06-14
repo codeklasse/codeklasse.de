@@ -11,18 +11,18 @@ layout: default
         <ul>
             <li><a
                     class="has-text-weight-bold"
-                    href="/faq"
-                >Häufig gestellte Fragen</a></li>
+                    href="{{ site.lang | prepend: "/" }}/faq"
+                >{% t navigation_headlines.faq %}</a></li>
             <li class="is-active"><a
                     href="#"
                     aria-current="page"
-                >{{ page.title }}</a></li>
+                >{% t page.title %}</a></li>
         </ul>
     </nav>
 
-    <section class="container has-background-white has-border mx-3 py-6 mb-6">
+    <section class="container has-border has-box-shadow-no-hover-effect mx-3 py-6 mb-6">
         <div class="has-text-centered pb-6-desktop pb-5-touch">
-            {% include title-h2.html text=page.title %}
+            {% include title-h2.html text=page.title is_translate_key=true %}
         </div>
 
         <div class="is-size-5-desktop is-size-6-mobile px-6 px-4-mobile">
@@ -34,8 +34,8 @@ layout: default
                 <a
                     id="faq-contact-button"
                     class="button is-primary wrap-button-text"
-                    href="mailto:sergej@codeklasse.de"
-                >Fragen offen? Wir freuen uns von Ihnen zu hören!</a>
+                    href="mailto:team@codeklasse.de"
+                >{% t buttons.faq_get_in_touch %}</a>
             </div>
         </div>
     </section>
@@ -44,9 +44,5 @@ layout: default
 <style>
     .navbar-fixed-top-padding {
         padding-top: 3.25rem;
-    }
-
-    .underline-links-in-posts a {
-        text-decoration: underline;
     }
 </style>
