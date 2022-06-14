@@ -33,19 +33,23 @@
   <!-- COMPANIES -->
   <div id="Tab-Companies" class="content-tab">
     <!-- @LIAM - feel free to comment these sections out if it's too much for today -->
-    <h3 class="title is-4 pt-5 has-text-centered is-italic">
+    <h3 class="title is-4 py-5 has-text-centered is-italic">
+      {% if site.lang == "de" %}
       Nachwuchs fördern. Regionale Kompetenz ausbauen.
+      {% elsif site.lang == "en" %}
+      Promote young talent. Expand regional competence.
+      {% endif %}
     </h3>
 
-    <p class="mb-5">
+    <!-- <p class="mb-5"> -->
       <!-- Since this is consistent in all language versions, "subtitle_what_is_codeklasse", which I prepared, needs to be embedded here, but unfortunately I don’t know how. -->
-
+<!-- 
       Digitale Kompetenzen und IT als Schulfach ausbauen: Die ICILS-Studie hat
       gezeigt, dass es keine Fortschritte bei informations- und
       computerbezogenen Kompetenzen der Schülerinnen und Schüler im Zeitraum von
       2013 bis 2018 gegeben hat. Der Unterricht in diesen Bereichen ist zu
-      stärken, das Schulfach IT sollte ausgebaut werden.
-    </p>
+      stärken, das Schulfach IT sollte ausgebaut werden. -->
+    <!-- </p> -->
 
     <div class="columns is-multiline">
       <div class="column is-full">
@@ -89,7 +93,11 @@
   <!-- EDUCATORS -->
   <div id="Tab-Educators" class="content-tab">
     <h3 class="title is-4 pt-5 has-text-centered is-italic">
+      {% if site.lang == "de" %}
       Programmieren ab der ersten Klasse.
+      {% elsif site.lang == "en" %}
+      Learn programming from the very first grade.
+      {% endif %}
     </h3>
 
     <p class="mb-5">
@@ -143,7 +151,11 @@
   <div id="Tab-Parents" class="content-tab">
     <!-- ODER: Kindern die Bildung von Morgen ermöglichen. -->
     <h3 class="title is-4 pt-5 has-text-centered is-italic">
+      {% if site.lang == "de" %}
       Kindern die Fähigkeiten von Morgen geben.
+      {% elsif site.lang == "en" %}
+      Providing children with the skills of tomorrow.
+      {% endif %}
     </h3>
 
     <p class="mb-5">
