@@ -15,14 +15,10 @@
     src: url("/assets/fonts/SpaceGrotesk-VariableFont_wght.ttf") format("truetype");
 }
 
-// Deprecated
-// @font-face {
-//     font-family: "Averta Regular";
-//     src: url("/assets/fonts/AvertaDemoPECuttedDemo-Regular.otf") format("opentype");
-// }
-
-// Test use, hence the Google import
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@font-face {
+    font-family: "Montserrat";
+    src: url("/assets/fonts/Montserrat-Regular.ttf") format("truetype");
+}
 
 * {
     font-family: "SpaceGrotesk";
@@ -34,9 +30,7 @@ span,
 .content,
 // Specific selector for blog posts
 .content.underline-links-in-posts {
-    // Deprecated
-    // font-family: "Averta Regular";
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 /*
@@ -272,7 +266,7 @@ a:hover,
     transform: translateY(-10%);
     transition: ease-in-out 0.1s;
 
-    // Avoid mobile navbar color highlighting 
+    // Avoid mobile navbar color highlighting
     background-color: inherit;
     color: inherit;
 }
