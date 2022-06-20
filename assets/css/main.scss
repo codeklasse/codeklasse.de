@@ -16,13 +16,8 @@
 }
 
 @font-face {
-    font-family: "Averta Regular";
-    src: url("/assets/fonts/AvertaDemoPECuttedDemo-Regular.otf") format("opentype");
-}
-
-@font-face {
-    font-family: "GT Haptik Medium";
-    src: url("/assets/fonts/GT-Haptik-Medium.ttf") format("truetype");
+    font-family: "Montserrat";
+    src: url("/assets/fonts/Montserrat-Regular.ttf") format("truetype");
 }
 
 * {
@@ -32,8 +27,10 @@
 
 p,
 span,
-.content {
-    font-family: "Averta Regular";
+.content,
+// Specific selector for blog posts
+.content.underline-links-in-posts {
+    font-family: "Montserrat", sans-serif;
 }
 
 /*
@@ -269,7 +266,7 @@ a:hover,
     transform: translateY(-10%);
     transition: ease-in-out 0.1s;
 
-    // Avoid mobile navbar color highlighting 
+    // Avoid mobile navbar color highlighting
     background-color: inherit;
     color: inherit;
 }
