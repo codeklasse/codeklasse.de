@@ -17,11 +17,7 @@
             class="content-switcher-contact-form"
             onclick="openTab_ContactForm('Tab-Schedule-Appointment')"
           ><a>{% t contact_form.scheduler %}</a></li>
-          <li
-            id="Tab-Button-Contact-Form"
-            class="content-switcher-contact-form"
-            onclick="openTab_ContactForm('Tab-Contact-Form')"
-          ><a>{% t contact_form.form %}</a></li>
+          
         </ul>
       </div>
 
@@ -57,15 +53,15 @@
   function openTab_ContactForm(tabName) {
     let i, x, tabButtons;
 
-    x = document.getElementsByClassName("content-tab-contact-form");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-    }
+    // x = document.getElementsByClassName("content-tab-contact-form");
+    // for (i = 0; i < x.length; i++) {
+    //   x[i].style.display = "none";
+    // }
 
-    tabButtons = document.getElementsByClassName("content-switcher-contact-form");
-    for (i = 0; i < x.length; i++) {
-      tabButtons[i].className = tabButtons[i].className.replace(" is-active", "");
-    }
+    // tabButtons = document.getElementsByClassName("content-switcher-contact-form");
+    // for (i = 0; i < x.length; i++) {
+    //   tabButtons[i].className = tabButtons[i].className.replace(" is-active", "");
+    // }
 
     document.getElementById(tabName).style.display = "block";
 
