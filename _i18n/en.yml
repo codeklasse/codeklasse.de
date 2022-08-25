@@ -25,9 +25,8 @@ buttons:
 front_page:
   exclamation_introduction: "Teaching programming has never been that easy!"
   title_what_is_codeklasse: What is codeklasse?
-  subtitle_what_is_codeklasse: "codeklasse is a fully comprehensive programming learning software for children from 1st to 4th grade. It not only enables students to learn programming on their own, but also provides ready-made campaigns and support materials for teachers to facilitate lesson preparation."
-  title_why_use_codeklasse: How is codeklasse relevant to me?
   subtitle_what_is_codeklasse: "codeklasse is an educational coding game for children aged 6-12.It’s built with autonomous learning in mind,  but it also provides ready-made campaigns and support material for parents (or teachers) to support children in the process."
+  title_why_use_codeklasse: How is codeklasse relevant to me?
   title_why_use_codeklasse_companies: Corporations
   title_why_use_codeklasse_educators: Educators
   title_why_use_codeklasse_parents: Parents
