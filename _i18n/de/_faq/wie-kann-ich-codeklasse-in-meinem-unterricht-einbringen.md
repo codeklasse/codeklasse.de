@@ -1,5 +1,3 @@
 codeklasse ist zum aktuellen Zeitpunkt noch nicht veröffentlicht.
-Bitte [kontaktieren](/de#contact) Sie uns dennoch,
-wenn Sie Interesse daran haben codeklasse zu testen oder an Ihrer Schule einzuführen
-– wir freuen uns immer über neue Partnerschaften,
-mit denen wir codeklasse auf pädagogischer und technischer Ebene testen und weiterentwickeln können.
+Bitte [kontaktieren](/de#contact) Sie uns jedoch,
+wenn Sie Interesse daran haben codeklasse auszuprobieren. Wir freuen uns immer über Feedback oder interessierte Tester, mit denen wir codeklasse auf pädagogischer und technischer Ebene verbessern können.

@@ -24,8 +24,8 @@ buttons:
 
 front_page:
   exclamation_introduction: Programmieren lernen war noch nie so leicht!
-  title_what_is_codeklasse: Was ist codeklasse eigentlich?
-  subtitle_what_is_codeklasse: "codeklasse ist eine vollumfängliche Programmier-Lernsoftware für Kinder der 1. bis 4. Klasse. Sie ermöglicht nicht nur das eigenverantwortliche Programmieren lernen der Schülerinnen und Schüler, sondern stellt auch vorgefertigte Kampagnen und Hilfsmaterialien für Lehrerinnen und Lehrer bereit, um Unterrichtsvorbereitung zu erleichtern."
+  title_what_is_codeklasse: Was ist codeklasse?
+  subtitle_what_is_codeklasse: "codeklasse ist ein Programmier-Lernspiel für Kinder zwischen 6 und 12 Jahren. Es ermöglicht nicht nur das eigenverantwortliche Lernen der Kinder, sondern stellt auch vorgefertigte Kampagnen und Hilfsmaterialien für Eltern oder Lehrerinnen und Lehrer bereit. Zur Zeit befindet sich codeklasse noch in Entwicklung."
   title_why_use_codeklasse: Wie ist codeklasse für mich relevant?
   title_why_use_codeklasse_companies: Unternehmen
   subtitle_why_use_codeklasse_companies: " Digitale Kompetenzen und IT als Schulfach ausbauen: Die ICILS-Studie hat gezeigt, dass es keine Fortschritte bei informations- und computerbezogenen Kompetenzen der Schülerinnen und Schüler im Zeitraum von 2013 bis 2018 gegeben hat. Der Unterricht in diesen Bereichen ist zu stärken, das Schulfach IT sollte ausgebaut werden. "
@@ -92,7 +92,7 @@ contact_form:
 
 faq_titles:
   muss_ich_selbst_programmieren_koennen: Muss ich selbst programmieren können?
-  wie_kann_ich_codeklasse_in_meinem_unterricht_nutzen: Wie kann ich codeklasse in meinen Unterricht nutzen?
+  wie_kann_ich_codeklasse_in_meinem_unterricht_nutzen: Wie kann ich codeklasse mit meinen Kindern oder Schülern nutzen?
   was_kann_man_mit_codeklasse_machen: Was kann man mit codeklasse machen?
   was_heisst_mint: Was heißt MINT?
   technical_requirements_for_codeklasse: Was sind die technischen Voraussetzungen für codeklasse?

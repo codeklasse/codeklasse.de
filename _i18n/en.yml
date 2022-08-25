@@ -25,10 +25,9 @@ buttons:
 front_page:
   exclamation_introduction: "Teaching programming has never been that easy!"
   title_what_is_codeklasse: What is codeklasse?
-  subtitle_what_is_codeklasse: "codeklasse is a fully comprehensive programming learning software for children from 1st to 4th grade. It not only enables students to learn programming on their own, but also provides ready-made campaigns and support materials for teachers to facilitate lesson preparation."
+  subtitle_what_is_codeklasse: "codeklasse is an educational coding game for children aged 6 to 12. It’s built with autonomous learning in mind, while also providing ready-made campaigns and support material for parents (or teachers) to support children in the process."
   title_why_use_codeklasse: How is codeklasse relevant to me?
-  subtitle_what_is_codeklasse: "codeklasse is a fully comprehensive programming learning software for children from 1st to 4th grade. It not only enables students to learn programming on their own, but also provides ready-made campaigns and support material for teachers to support lesson preparation."
-  title_why_use_codeklasse_companies: Corporations
+  title_why_use_codeklasse_companies: Companies
   title_why_use_codeklasse_educators: Educators
   title_why_use_codeklasse_parents: Parents
   why_use_codeklasse_companies_fact_1: "Around 54% of companies in Germany expect demand for IT specialists to rise. 65% expect more digitization in the company in the future."
@@ -78,7 +77,7 @@ contact_form:
 
 faq_titles:
   muss_ich_selbst_programmieren_koennen: Do I have to know programming myself?
-  wie_kann_ich_codeklasse_in_meinem_unterricht_nutzen: How can I use codeklasse in my class?
+  wie_kann_ich_codeklasse_in_meinem_unterricht_nutzen: How can I use codeklasse with my children or students?
   was_kann_man_mit_codeklasse_machen: What can you do with codeklasse?
   was_heisst_mint: What does MINT stand for?
   technical_requirements_for_codeklasse: What are the technical requirements for codeklasse?

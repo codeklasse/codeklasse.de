@@ -1,4 +1,2 @@
-codeclass is not yet published at the current time.
-Please [contact](/#contact) us anyway,
-if you are interested in testing codeklasse or implementing it at your school - we are always happy about new partnerships
-with whom we can test and develop codeklasse on a pedagogical and technical level.
+As of today, codeklasse hasn’t been released yet.
+But please do __[contact](/#contact)__ us if you are interested in testing it. We’re always happy about feedback or early testers who help us improve codeklasse.
